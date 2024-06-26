@@ -60,14 +60,9 @@ def create_prompt(file_content):
 
     return prompt
 
-def main():
-    parser = argparse.ArgumentParser()
-    parser.add_argument("file_path", type=str)
-    args = parser.parse_args()
-
-    file_content = read_c_file(args.file_path)
+def main(file_path):
+    file_content = read_c_file(file_path)
     prompt = create_prompt(file_content)
-
     print(prompt)
 
     return prompt

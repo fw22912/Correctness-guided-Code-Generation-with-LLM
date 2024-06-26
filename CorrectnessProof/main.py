@@ -6,7 +6,7 @@ $ pip install google-generativeai
 See the getting started guide for more information:
 https://ai.google.dev/gemini-api/docs/get-started/python
 """
-
+import argparse
 import os
 import pathlib
 import textwrap
@@ -18,6 +18,13 @@ import Prompt_Generator as pg
 # from google.colab import userdata
 
 genai.configure(api_key="AIzaSyB5dDr6a-rnJWEBu5Rky_nMdcMBWtVUy7k")
+
+parser = argparse.ArgumentParser()
+parser.add_argument("file_path", type=str)
+args = parser.parse_args()
+
+prompt = pg.main(args.file_path)
+
 
 # Create the model
 # See https://ai.google.dev/api/python/google/generativeai/GenerativeModel
@@ -47,8 +54,7 @@ chat_session = model.start_chat(
   ]
 )
 
-prompt = pg.main()
 
-response = chat_session.send_message("How are you today?")
+response = chat_session.send_message(prompt)
 
 print(response.text)
