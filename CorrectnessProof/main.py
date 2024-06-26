@@ -13,6 +13,8 @@ import textwrap
 
 
 import google.generativeai as genai
+import Prompt_Generator as pg
+
 # from google.colab import userdata
 
 genai.configure(api_key="AIzaSyB5dDr6a-rnJWEBu5Rky_nMdcMBWtVUy7k")
@@ -30,7 +32,6 @@ generation_config = {
 model = genai.GenerativeModel(
   model_name="gemini-1.5-pro",
   generation_config=generation_config,
-  # safety_settings = Adjust safety settings
   # See https://ai.google.dev/gemini-api/docs/safety-settings
 )
 
@@ -45,6 +46,8 @@ chat_session = model.start_chat(
     },
   ]
 )
+
+prompt = pg.main()
 
 response = chat_session.send_message("How are you today?")
 
