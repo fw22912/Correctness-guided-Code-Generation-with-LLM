@@ -46,7 +46,7 @@ def create_prompt(file_content):
     Give me a proof harness code of the below C code.
 
     # Query
-    Q: Write method "void proof_harness_newNode()" that tests method transfer below for all possible inputs.
+    Q: Write method "void proof_harness()" that tests method transfer below for all possible inputs.
 
     {query_code}
 
@@ -55,7 +55,7 @@ def create_prompt(file_content):
     - Give me only the translated code, don't add explanations or anything else. 
     - Use only safe C.
     - Do not use custom generics. # fuzzer limitation
-    - Ensure there is an entry point in main.
+    - 
     """
 
     return prompt
