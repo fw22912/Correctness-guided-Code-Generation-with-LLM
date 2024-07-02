@@ -59,7 +59,7 @@ def create_prompt(file_content, prev_output, counterexamples):
     Human:
     That is incorrect on the following inputs:
     #Counterexamples
-    //Input counterexamples here.
+    //Enter counterexamples here.
     {counterexamples}
     """
 
