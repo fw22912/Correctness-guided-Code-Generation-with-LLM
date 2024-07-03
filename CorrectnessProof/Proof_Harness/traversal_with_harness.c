@@ -30,3 +30,11 @@ void postOrderTraversal(struct node *node){
 int main(void){
     return 0;
 }
+
+void proof_harness() {
+    struct node *node;
+    CPROVER_assume(node != NULL);
+    inOrderTraversal(node);
+    preOrderTraversal(node);
+    postOrderTraversal(node);
+}

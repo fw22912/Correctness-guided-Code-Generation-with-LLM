@@ -1,29 +1,42 @@
-// Define the Account structure
-struct Account {
-    unsigned short bal;
+#include <stdio.h>
+#include <stdlib.h>
+
+struct node{
+    struct node *leftNode;
+    int data;
+    struct node *rightNode;
 };
 
-// Function to transfer an amount from one account to another
-void transfer(struct Account *source, struct Account *dest, unsigned short amount) { 
-    source->bal = source->bal - amount;
-    dest->bal = dest->bal + amount;
+struct node *newNode(int data){
+    struct node *node = (struct node *)malloc(sizeof(struct node));
+    node->leftNode = NULL;
+    node->data = data; node->rightNode = NULL;
+    return node;
+}
+
+void transfer(struct node **root, int data1, int data2){
+    if (*root == NULL){
+        *root = newNode(data1);
+        return;
+    }
+    if ((*root)->data == data1){
+        (*root)->data = data2;
+        return;
+    }
+    if (data1 < (*root)->data){
+        transfer(&(*root)->leftNode, data1, data2);
+    } else {
+        transfer(&(*root)->rightNode, data1, data2);
+    }
 }
 
 void proof_harness() {
-    struct Account *source;
-    struct Account *dest;
-    unsigned short amount;
-    CPROVER_assume(source->bal >= 0);
-    CPROVER_assume(dest->bal >= 0);
-    CPROVER_assume(amount > 0);
-    CPROVER_assume(source->bal >= amount);
+    struct node *root = NULL;
+    int data1, data2;
+    transfer(&root, data1, data2);
+    CPROVER_assert(root != NULL, "Root should not be null");
+}
 
-    // Save the initial balances for verification 
-    unsigned short initial_source_balance = source->bal;
-    unsigned short initial_dest_balance = dest->bal;
-    transfer(source, dest, amount);
-
-    // Check that the new balances are the expected values after transfer
-    assert(source->bal == initial_source_balance - amount);
-    assert(dest->bal == initial_dest_balance + amount);
+int main(void){
+    return 0;
 }
