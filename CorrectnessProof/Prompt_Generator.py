@@ -59,12 +59,17 @@ def create_prompt(file_content):
 
     return prompt
 
+def clean_code(response_text):
+    cleaned_text = response_text.replace('```c', '').replace('```', '').strip()
+    return cleaned_text
+
 def main(file_path):
+    print("Running Gemini...")
     file_content = read_c_file(file_path)
     prompt = create_prompt(file_content)
+    prompt = clean_code(prompt)
     print(prompt)
 
     return prompt
 
-if __name__ == "__main__":
-    main()
+

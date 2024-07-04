@@ -14,23 +14,23 @@ def run_cbmc(file_path):
 
     with open(cbmc_output_file, 'w+') as file:
         subprocess.run(f'cbmc Proof_Harness/{harness_file_name} --function proof_harness --unwind 5 --trace --json-ui', shell=True, stdout=file)
+
     return cbmc_output_file
 
-# def cbmc_result_parsing(cbmc_output_file):
-#     cbmc_pass = False
-#     return cbmc_pass
-#
-#
-# def create_couter_example_prompt(counter_examples):
-#     #needs original code,
-#     cg.main()
+def cbmc_result_parsing(file_name):
+    cbmc_result_file = "CBMC_Result" + file_name + "_cbmc.json"
+    cbmc_pass = True
+    return cbmc_pass
+
+
+def create_couter_example_prompt(original_code, prev_output, counter_examples):
+    counter_prompt = cg.main(original_code, prev_output, counter_examples)
+    return counter_prompt
 
 def main(file_path):
-    gemini.main(file_path)
+    file_name = os.path.splitext(os.path.basename(file_path))[0]
+    # gemini.main(file_path)
+    print("Running CBMC...")
     run_cbmc(file_path)
-
-if __name__ == "__main__":
-    parser = argparse.ArgumentParser()
-    parser.add_argument("file_path", type=str)
-    args = parser.parse_args()
-    main(args.file_path)
+    reiteration = cbmc_result_parsing(file_name)
+    return reiteration

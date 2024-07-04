@@ -49,21 +49,22 @@ def generate_harness_file(cleaned_text, original_file_path):
         f.write(cleaned_text)
 
 
-def main(file_path):
+def main(prompt, file_path):
     configure_genai(api_key=os.environ['GENAI_API_KEY'])
-    prompt = generate_prompt(file_path)
+    # prompt = generate_prompt(file_path)
     response_text = generate_content(prompt)
+
+    print("Response_text...")
     print(response_text)
+
     # Extracting texts
     cleaned_text = clean_code(response_text)
     harness_function = extract_harness(response_text)
+
     # Saving them into a file
     generate_file(cleaned_text, file_path)
     generate_harness_file(harness_function, file_path)
 
+    return cleaned_text
 
-if __name__ == "__main__":
-    parser = argparse.ArgumentParser()
-    parser.add_argument("file_path", type=str)
-    args = parser.parse_args()
-    main(args.file_path)
+
