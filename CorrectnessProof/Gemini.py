@@ -23,7 +23,8 @@ def clean_code(response_text):
     return cleaned_text
 
 def extract_harness(response_text):
-    harness_function = re.search(r'void proof_harness\(\) {[^}]*}', response_text, re.MULTILINE | re.DOTALL)
+    # This regex should match the proof_harness function even if it spans multiple lines
+    harness_function = re.search(r'void\s+proof_harness\s*\(\s*\)\s*{[^}]*}', response_text, re.MULTILINE | re.DOTALL)
     if harness_function:
         return harness_function.group(0)
     else:

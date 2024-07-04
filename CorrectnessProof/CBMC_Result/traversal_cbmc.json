@@ -28,17 +28,7 @@
     "sourceLocation": {
       "file": "Proof_Harness/traversal_with_harness.c",
       "function": "proof_harness",
-      "line": "17",
-      "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-    }
-  },
-  {
-    "messageText": "function 'assert' is not declared",
-    "messageType": "WARNING",
-    "sourceLocation": {
-      "file": "Proof_Harness/traversal_with_harness.c",
-      "function": "proof_harness",
-      "line": "28",
+      "line": "33",
       "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
     }
   },
@@ -71,1614 +61,1162 @@
     "messageType": "WARNING"
   },
   {
-    "messageText": "Runtime Symex: 0.00180596s",
+    "messageText": "Unwinding recursion inOrderTraversal iteration 1",
     "messageType": "STATUS-MESSAGE"
   },
   {
-    "messageText": "size of program expression: 49 steps",
+    "messageText": "Unwinding recursion inOrderTraversal iteration 2",
     "messageType": "STATUS-MESSAGE"
   },
   {
-    "messageText": "simple slicing removed 2 assignments",
+    "messageText": "Unwinding recursion inOrderTraversal iteration 3",
     "messageType": "STATUS-MESSAGE"
   },
   {
-    "messageText": "Generated 2 VCC(s), 2 remaining after simplification",
+    "messageText": "Unwinding recursion inOrderTraversal iteration 4",
     "messageType": "STATUS-MESSAGE"
   },
   {
-    "messageText": "Runtime Postprocess Equation: 2.3292e-05s",
+    "messageText": "Unwinding recursion inOrderTraversal iteration 5",
     "messageType": "STATUS-MESSAGE"
   },
   {
-    "messageText": "Passing problem to propositional reduction",
+    "messageText": "Not unwinding recursion inOrderTraversal iteration 6",
     "messageType": "STATUS-MESSAGE"
   },
   {
-    "messageText": "converting SSA",
+    "messageText": "Unwinding recursion inOrderTraversal iteration 5",
     "messageType": "STATUS-MESSAGE"
   },
   {
-    "messageText": "Runtime Convert SSA: 0.00114912s",
+    "messageText": "Not unwinding recursion inOrderTraversal iteration 6",
     "messageType": "STATUS-MESSAGE"
   },
   {
-    "messageText": "Running propositional reduction",
+    "messageText": "Unwinding recursion inOrderTraversal iteration 4",
     "messageType": "STATUS-MESSAGE"
   },
   {
-    "messageText": "Post-processing",
+    "messageText": "Unwinding recursion inOrderTraversal iteration 5",
     "messageType": "STATUS-MESSAGE"
   },
   {
-    "messageText": "Runtime Post-process: 2.0541e-05s",
+    "messageText": "Not unwinding recursion inOrderTraversal iteration 6",
     "messageType": "STATUS-MESSAGE"
   },
   {
-    "messageText": "Solving with MiniSAT 2.2.1 with simplifier",
+    "messageText": "Unwinding recursion inOrderTraversal iteration 5",
     "messageType": "STATUS-MESSAGE"
   },
   {
-    "messageText": "855 variables, 2185 clauses",
+    "messageText": "Not unwinding recursion inOrderTraversal iteration 6",
     "messageType": "STATUS-MESSAGE"
   },
   {
-    "messageText": "SAT checker: instance is SATISFIABLE",
+    "messageText": "Unwinding recursion inOrderTraversal iteration 3",
     "messageType": "STATUS-MESSAGE"
   },
   {
-    "messageText": "Runtime Solver: 0.000959958s",
+    "messageText": "Unwinding recursion inOrderTraversal iteration 4",
     "messageType": "STATUS-MESSAGE"
   },
   {
-    "messageText": "Runtime decision procedure: 0.00215908s",
+    "messageText": "Unwinding recursion inOrderTraversal iteration 5",
     "messageType": "STATUS-MESSAGE"
   },
   {
-    "messageText": "Building error trace",
+    "messageText": "Not unwinding recursion inOrderTraversal iteration 6",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion inOrderTraversal iteration 5",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Not unwinding recursion inOrderTraversal iteration 6",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion inOrderTraversal iteration 4",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion inOrderTraversal iteration 5",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Not unwinding recursion inOrderTraversal iteration 6",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion inOrderTraversal iteration 5",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Not unwinding recursion inOrderTraversal iteration 6",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion inOrderTraversal iteration 2",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion inOrderTraversal iteration 3",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion inOrderTraversal iteration 4",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion inOrderTraversal iteration 5",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Not unwinding recursion inOrderTraversal iteration 6",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion inOrderTraversal iteration 5",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Not unwinding recursion inOrderTraversal iteration 6",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion inOrderTraversal iteration 4",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion inOrderTraversal iteration 5",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Not unwinding recursion inOrderTraversal iteration 6",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion inOrderTraversal iteration 5",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Not unwinding recursion inOrderTraversal iteration 6",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion inOrderTraversal iteration 3",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion inOrderTraversal iteration 4",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion inOrderTraversal iteration 5",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Not unwinding recursion inOrderTraversal iteration 6",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion inOrderTraversal iteration 5",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Not unwinding recursion inOrderTraversal iteration 6",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion inOrderTraversal iteration 4",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion inOrderTraversal iteration 5",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Not unwinding recursion inOrderTraversal iteration 6",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion inOrderTraversal iteration 5",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Not unwinding recursion inOrderTraversal iteration 6",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion inOrderTraversal iteration 1",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion inOrderTraversal iteration 2",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion inOrderTraversal iteration 3",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion inOrderTraversal iteration 4",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion inOrderTraversal iteration 5",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Not unwinding recursion inOrderTraversal iteration 6",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion inOrderTraversal iteration 5",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Not unwinding recursion inOrderTraversal iteration 6",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion inOrderTraversal iteration 4",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion inOrderTraversal iteration 5",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Not unwinding recursion inOrderTraversal iteration 6",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion inOrderTraversal iteration 5",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Not unwinding recursion inOrderTraversal iteration 6",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion inOrderTraversal iteration 3",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion inOrderTraversal iteration 4",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion inOrderTraversal iteration 5",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Not unwinding recursion inOrderTraversal iteration 6",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion inOrderTraversal iteration 5",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Not unwinding recursion inOrderTraversal iteration 6",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion inOrderTraversal iteration 4",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion inOrderTraversal iteration 5",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Not unwinding recursion inOrderTraversal iteration 6",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion inOrderTraversal iteration 5",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Not unwinding recursion inOrderTraversal iteration 6",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion inOrderTraversal iteration 2",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion inOrderTraversal iteration 3",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion inOrderTraversal iteration 4",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion inOrderTraversal iteration 5",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Not unwinding recursion inOrderTraversal iteration 6",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion inOrderTraversal iteration 5",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Not unwinding recursion inOrderTraversal iteration 6",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion inOrderTraversal iteration 4",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion inOrderTraversal iteration 5",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Not unwinding recursion inOrderTraversal iteration 6",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion inOrderTraversal iteration 5",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Not unwinding recursion inOrderTraversal iteration 6",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion inOrderTraversal iteration 3",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion inOrderTraversal iteration 4",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion inOrderTraversal iteration 5",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Not unwinding recursion inOrderTraversal iteration 6",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion inOrderTraversal iteration 5",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Not unwinding recursion inOrderTraversal iteration 6",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion inOrderTraversal iteration 4",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion inOrderTraversal iteration 5",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Not unwinding recursion inOrderTraversal iteration 6",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion inOrderTraversal iteration 5",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Not unwinding recursion inOrderTraversal iteration 6",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion preOrderTraversal iteration 1",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion preOrderTraversal iteration 2",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion preOrderTraversal iteration 3",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion preOrderTraversal iteration 4",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion preOrderTraversal iteration 5",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Not unwinding recursion preOrderTraversal iteration 6",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion preOrderTraversal iteration 5",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Not unwinding recursion preOrderTraversal iteration 6",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion preOrderTraversal iteration 4",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion preOrderTraversal iteration 5",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Not unwinding recursion preOrderTraversal iteration 6",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion preOrderTraversal iteration 5",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Not unwinding recursion preOrderTraversal iteration 6",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion preOrderTraversal iteration 3",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion preOrderTraversal iteration 4",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion preOrderTraversal iteration 5",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Not unwinding recursion preOrderTraversal iteration 6",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion preOrderTraversal iteration 5",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Not unwinding recursion preOrderTraversal iteration 6",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion preOrderTraversal iteration 4",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion preOrderTraversal iteration 5",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Not unwinding recursion preOrderTraversal iteration 6",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion preOrderTraversal iteration 5",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Not unwinding recursion preOrderTraversal iteration 6",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion preOrderTraversal iteration 2",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion preOrderTraversal iteration 3",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion preOrderTraversal iteration 4",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion preOrderTraversal iteration 5",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Not unwinding recursion preOrderTraversal iteration 6",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion preOrderTraversal iteration 5",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Not unwinding recursion preOrderTraversal iteration 6",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion preOrderTraversal iteration 4",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion preOrderTraversal iteration 5",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Not unwinding recursion preOrderTraversal iteration 6",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion preOrderTraversal iteration 5",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Not unwinding recursion preOrderTraversal iteration 6",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion preOrderTraversal iteration 3",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion preOrderTraversal iteration 4",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion preOrderTraversal iteration 5",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Not unwinding recursion preOrderTraversal iteration 6",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion preOrderTraversal iteration 5",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Not unwinding recursion preOrderTraversal iteration 6",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion preOrderTraversal iteration 4",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion preOrderTraversal iteration 5",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Not unwinding recursion preOrderTraversal iteration 6",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion preOrderTraversal iteration 5",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Not unwinding recursion preOrderTraversal iteration 6",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion preOrderTraversal iteration 1",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion preOrderTraversal iteration 2",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion preOrderTraversal iteration 3",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion preOrderTraversal iteration 4",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion preOrderTraversal iteration 5",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Not unwinding recursion preOrderTraversal iteration 6",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion preOrderTraversal iteration 5",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Not unwinding recursion preOrderTraversal iteration 6",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion preOrderTraversal iteration 4",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion preOrderTraversal iteration 5",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Not unwinding recursion preOrderTraversal iteration 6",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion preOrderTraversal iteration 5",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Not unwinding recursion preOrderTraversal iteration 6",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion preOrderTraversal iteration 3",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion preOrderTraversal iteration 4",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion preOrderTraversal iteration 5",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Not unwinding recursion preOrderTraversal iteration 6",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion preOrderTraversal iteration 5",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Not unwinding recursion preOrderTraversal iteration 6",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion preOrderTraversal iteration 4",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion preOrderTraversal iteration 5",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Not unwinding recursion preOrderTraversal iteration 6",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion preOrderTraversal iteration 5",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Not unwinding recursion preOrderTraversal iteration 6",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion preOrderTraversal iteration 2",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion preOrderTraversal iteration 3",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion preOrderTraversal iteration 4",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion preOrderTraversal iteration 5",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Not unwinding recursion preOrderTraversal iteration 6",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion preOrderTraversal iteration 5",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Not unwinding recursion preOrderTraversal iteration 6",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion preOrderTraversal iteration 4",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion preOrderTraversal iteration 5",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Not unwinding recursion preOrderTraversal iteration 6",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion preOrderTraversal iteration 5",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Not unwinding recursion preOrderTraversal iteration 6",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion preOrderTraversal iteration 3",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion preOrderTraversal iteration 4",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion preOrderTraversal iteration 5",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Not unwinding recursion preOrderTraversal iteration 6",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion preOrderTraversal iteration 5",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Not unwinding recursion preOrderTraversal iteration 6",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion preOrderTraversal iteration 4",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion preOrderTraversal iteration 5",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Not unwinding recursion preOrderTraversal iteration 6",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion preOrderTraversal iteration 5",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Not unwinding recursion preOrderTraversal iteration 6",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion postOrderTraversal iteration 1",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion postOrderTraversal iteration 2",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion postOrderTraversal iteration 3",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion postOrderTraversal iteration 4",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion postOrderTraversal iteration 5",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Not unwinding recursion postOrderTraversal iteration 6",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion postOrderTraversal iteration 5",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Not unwinding recursion postOrderTraversal iteration 6",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion postOrderTraversal iteration 4",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion postOrderTraversal iteration 5",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Not unwinding recursion postOrderTraversal iteration 6",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion postOrderTraversal iteration 5",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Not unwinding recursion postOrderTraversal iteration 6",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion postOrderTraversal iteration 3",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion postOrderTraversal iteration 4",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion postOrderTraversal iteration 5",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Not unwinding recursion postOrderTraversal iteration 6",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion postOrderTraversal iteration 5",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Not unwinding recursion postOrderTraversal iteration 6",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion postOrderTraversal iteration 4",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion postOrderTraversal iteration 5",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Not unwinding recursion postOrderTraversal iteration 6",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion postOrderTraversal iteration 5",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Not unwinding recursion postOrderTraversal iteration 6",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion postOrderTraversal iteration 2",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion postOrderTraversal iteration 3",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion postOrderTraversal iteration 4",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion postOrderTraversal iteration 5",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Not unwinding recursion postOrderTraversal iteration 6",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion postOrderTraversal iteration 5",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Not unwinding recursion postOrderTraversal iteration 6",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion postOrderTraversal iteration 4",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion postOrderTraversal iteration 5",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Not unwinding recursion postOrderTraversal iteration 6",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion postOrderTraversal iteration 5",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Not unwinding recursion postOrderTraversal iteration 6",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion postOrderTraversal iteration 3",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion postOrderTraversal iteration 4",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion postOrderTraversal iteration 5",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Not unwinding recursion postOrderTraversal iteration 6",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion postOrderTraversal iteration 5",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Not unwinding recursion postOrderTraversal iteration 6",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion postOrderTraversal iteration 4",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion postOrderTraversal iteration 5",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Not unwinding recursion postOrderTraversal iteration 6",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion postOrderTraversal iteration 5",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Not unwinding recursion postOrderTraversal iteration 6",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion postOrderTraversal iteration 1",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion postOrderTraversal iteration 2",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion postOrderTraversal iteration 3",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion postOrderTraversal iteration 4",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion postOrderTraversal iteration 5",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Not unwinding recursion postOrderTraversal iteration 6",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion postOrderTraversal iteration 5",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Not unwinding recursion postOrderTraversal iteration 6",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion postOrderTraversal iteration 4",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion postOrderTraversal iteration 5",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Not unwinding recursion postOrderTraversal iteration 6",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion postOrderTraversal iteration 5",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Not unwinding recursion postOrderTraversal iteration 6",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion postOrderTraversal iteration 3",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion postOrderTraversal iteration 4",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion postOrderTraversal iteration 5",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Not unwinding recursion postOrderTraversal iteration 6",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion postOrderTraversal iteration 5",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Not unwinding recursion postOrderTraversal iteration 6",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion postOrderTraversal iteration 4",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion postOrderTraversal iteration 5",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Not unwinding recursion postOrderTraversal iteration 6",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion postOrderTraversal iteration 5",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Not unwinding recursion postOrderTraversal iteration 6",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion postOrderTraversal iteration 2",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion postOrderTraversal iteration 3",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion postOrderTraversal iteration 4",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion postOrderTraversal iteration 5",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Not unwinding recursion postOrderTraversal iteration 6",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion postOrderTraversal iteration 5",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Not unwinding recursion postOrderTraversal iteration 6",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion postOrderTraversal iteration 4",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion postOrderTraversal iteration 5",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Not unwinding recursion postOrderTraversal iteration 6",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion postOrderTraversal iteration 5",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Not unwinding recursion postOrderTraversal iteration 6",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion postOrderTraversal iteration 3",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion postOrderTraversal iteration 4",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion postOrderTraversal iteration 5",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Not unwinding recursion postOrderTraversal iteration 6",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion postOrderTraversal iteration 5",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Not unwinding recursion postOrderTraversal iteration 6",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion postOrderTraversal iteration 4",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion postOrderTraversal iteration 5",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Not unwinding recursion postOrderTraversal iteration 6",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion postOrderTraversal iteration 5",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Not unwinding recursion postOrderTraversal iteration 6",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Runtime Symex: 0.0887556s",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "size of program expression: 4213 steps",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "simple slicing removed 0 assignments",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Generated 0 VCC(s), 0 remaining after simplification",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Runtime Postprocess Equation: 0.000301625s",
     "messageType": "STATUS-MESSAGE"
   },
   {
     "result": [
-      {
-        "description": "assertion (signed int)src->bal == (signed int)src_initial_balance - amount",
-        "property": "proof_harness.assertion.1",
-        "sourceLocation": {
-          "file": "Proof_Harness/traversal_with_harness.c",
-          "function": "proof_harness",
-          "line": "28",
-          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-        },
-        "status": "FAILURE",
-        "trace": [
-          {
-            "function": {
-              "displayName": "__CPROVER_initialize",
-              "identifier": "__CPROVER_initialize",
-              "sourceLocation": {
-                "file": "<built-in-additions>",
-                "line": "24",
-                "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-              }
-            },
-            "hidden": true,
-            "internal": true,
-            "stepType": "function-call",
-            "thread": 0
-          },
-          {
-            "assignmentType": "variable",
-            "hidden": true,
-            "internal": false,
-            "lhs": "__CPROVER_dead_object",
-            "mode": "C",
-            "sourceLocation": {
-              "file": "<built-in-additions>",
-              "line": "8",
-              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-            },
-            "stepType": "assignment",
-            "thread": 0,
-            "value": {
-              "data": "NULL",
-              "name": "pointer",
-              "type": "const void *"
-            }
-          },
-          {
-            "assignmentType": "variable",
-            "hidden": true,
-            "internal": false,
-            "lhs": "__CPROVER_deallocated",
-            "mode": "C",
-            "sourceLocation": {
-              "file": "<built-in-additions>",
-              "line": "7",
-              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-            },
-            "stepType": "assignment",
-            "thread": 0,
-            "value": {
-              "data": "NULL",
-              "name": "pointer",
-              "type": "const void *"
-            }
-          },
-          {
-            "assignmentType": "variable",
-            "hidden": true,
-            "internal": false,
-            "lhs": "__CPROVER_max_malloc_size",
-            "mode": "C",
-            "sourceLocation": {
-              "file": "<built-in-additions>",
-              "line": "12",
-              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-            },
-            "stepType": "assignment",
-            "thread": 0,
-            "value": {
-              "binary": "0000000010000000000000000000000000000000000000000000000000000000",
-              "data": "36028797018963968ul",
-              "name": "integer",
-              "type": "__CPROVER_size_t",
-              "width": 64
-            }
-          },
-          {
-            "assignmentType": "variable",
-            "hidden": true,
-            "internal": false,
-            "lhs": "__CPROVER_memory_leak",
-            "mode": "C",
-            "sourceLocation": {
-              "file": "<built-in-additions>",
-              "line": "9",
-              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-            },
-            "stepType": "assignment",
-            "thread": 0,
-            "value": {
-              "data": "NULL",
-              "name": "pointer",
-              "type": "const void *"
-            }
-          },
-          {
-            "assignmentType": "variable",
-            "hidden": true,
-            "internal": false,
-            "lhs": "__CPROVER_rounding_mode",
-            "mode": "C",
-            "sourceLocation": {
-              "file": "<built-in-additions>",
-              "line": "16",
-              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-            },
-            "stepType": "assignment",
-            "thread": 0,
-            "value": {
-              "binary": "00000000000000000000000000000000",
-              "data": "0",
-              "name": "integer",
-              "type": "signed int",
-              "width": 32
-            }
-          },
-          {
-            "function": {
-              "displayName": "__CPROVER_initialize",
-              "identifier": "__CPROVER_initialize",
-              "sourceLocation": {
-                "file": "<built-in-additions>",
-                "line": "24",
-                "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-              }
-            },
-            "hidden": true,
-            "internal": false,
-            "stepType": "function-return",
-            "thread": 0
-          },
-          {
-            "hidden": false,
-            "sourceLocation": {
-              "file": "Proof_Harness/traversal_with_harness.c",
-              "line": "13",
-              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-            },
-            "stepType": "location-only",
-            "thread": 0
-          },
-          {
-            "function": {
-              "displayName": "proof_harness",
-              "identifier": "proof_harness",
-              "sourceLocation": {
-                "file": "Proof_Harness/traversal_with_harness.c",
-                "line": "13",
-                "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-              }
-            },
-            "hidden": false,
-            "internal": false,
-            "sourceLocation": {
-              "file": "Proof_Harness/traversal_with_harness.c",
-              "line": "13",
-              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-            },
-            "stepType": "function-call",
-            "thread": 0
-          },
-          {
-            "assignmentType": "variable",
-            "hidden": false,
-            "internal": false,
-            "lhs": "src",
-            "mode": "C",
-            "sourceLocation": {
-              "file": "Proof_Harness/traversal_with_harness.c",
-              "function": "proof_harness",
-              "line": "14",
-              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-            },
-            "stepType": "assignment",
-            "thread": 0,
-            "value": {
-              "data": "((struct Account *)NULL)",
-              "name": "pointer",
-              "type": "struct Account *"
-            }
-          },
-          {
-            "assignmentType": "variable",
-            "hidden": false,
-            "internal": false,
-            "lhs": "dst",
-            "mode": "C",
-            "sourceLocation": {
-              "file": "Proof_Harness/traversal_with_harness.c",
-              "function": "proof_harness",
-              "line": "15",
-              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-            },
-            "stepType": "assignment",
-            "thread": 0,
-            "value": {
-              "data": "((struct Account *)NULL)",
-              "name": "pointer",
-              "type": "struct Account *"
-            }
-          },
-          {
-            "assignmentType": "variable",
-            "hidden": false,
-            "internal": false,
-            "lhs": "amount",
-            "mode": "C",
-            "sourceLocation": {
-              "file": "Proof_Harness/traversal_with_harness.c",
-              "function": "proof_harness",
-              "line": "16",
-              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-            },
-            "stepType": "assignment",
-            "thread": 0,
-            "value": {
-              "binary": "00000000000000010000000000000001",
-              "data": "65537",
-              "name": "integer",
-              "type": "signed int",
-              "width": 32
-            }
-          },
-          {
-            "hidden": false,
-            "sourceLocation": {
-              "file": "Proof_Harness/traversal_with_harness.c",
-              "function": "proof_harness",
-              "line": "17",
-              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-            },
-            "stepType": "location-only",
-            "thread": 0
-          },
-          {
-            "function": {
-              "displayName": "CPROVER_assume",
-              "identifier": "CPROVER_assume",
-              "sourceLocation": {
-                "file": "Proof_Harness/traversal_with_harness.c",
-                "function": "proof_harness",
-                "line": "17",
-                "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-              }
-            },
-            "hidden": false,
-            "internal": false,
-            "sourceLocation": {
-              "file": "Proof_Harness/traversal_with_harness.c",
-              "function": "proof_harness",
-              "line": "17",
-              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-            },
-            "stepType": "function-call",
-            "thread": 0
-          },
-          {
-            "function": {
-              "displayName": "CPROVER_assume",
-              "identifier": "CPROVER_assume",
-              "sourceLocation": {
-                "file": "Proof_Harness/traversal_with_harness.c",
-                "function": "proof_harness",
-                "line": "17",
-                "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-              }
-            },
-            "hidden": false,
-            "internal": false,
-            "sourceLocation": {
-              "file": "Proof_Harness/traversal_with_harness.c",
-              "function": "proof_harness",
-              "line": "17",
-              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-            },
-            "stepType": "function-return",
-            "thread": 0
-          },
-          {
-            "hidden": false,
-            "sourceLocation": {
-              "file": "Proof_Harness/traversal_with_harness.c",
-              "function": "proof_harness",
-              "line": "18",
-              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-            },
-            "stepType": "location-only",
-            "thread": 0
-          },
-          {
-            "function": {
-              "displayName": "CPROVER_assume",
-              "identifier": "CPROVER_assume",
-              "sourceLocation": {
-                "file": "Proof_Harness/traversal_with_harness.c",
-                "function": "proof_harness",
-                "line": "17",
-                "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-              }
-            },
-            "hidden": false,
-            "internal": false,
-            "sourceLocation": {
-              "file": "Proof_Harness/traversal_with_harness.c",
-              "function": "proof_harness",
-              "line": "18",
-              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-            },
-            "stepType": "function-call",
-            "thread": 0
-          },
-          {
-            "function": {
-              "displayName": "CPROVER_assume",
-              "identifier": "CPROVER_assume",
-              "sourceLocation": {
-                "file": "Proof_Harness/traversal_with_harness.c",
-                "function": "proof_harness",
-                "line": "17",
-                "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-              }
-            },
-            "hidden": false,
-            "internal": false,
-            "sourceLocation": {
-              "file": "Proof_Harness/traversal_with_harness.c",
-              "function": "proof_harness",
-              "line": "18",
-              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-            },
-            "stepType": "function-return",
-            "thread": 0
-          },
-          {
-            "hidden": false,
-            "sourceLocation": {
-              "file": "Proof_Harness/traversal_with_harness.c",
-              "function": "proof_harness",
-              "line": "19",
-              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-            },
-            "stepType": "location-only",
-            "thread": 0
-          },
-          {
-            "function": {
-              "displayName": "CPROVER_assume",
-              "identifier": "CPROVER_assume",
-              "sourceLocation": {
-                "file": "Proof_Harness/traversal_with_harness.c",
-                "function": "proof_harness",
-                "line": "17",
-                "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-              }
-            },
-            "hidden": false,
-            "internal": false,
-            "sourceLocation": {
-              "file": "Proof_Harness/traversal_with_harness.c",
-              "function": "proof_harness",
-              "line": "19",
-              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-            },
-            "stepType": "function-call",
-            "thread": 0
-          },
-          {
-            "function": {
-              "displayName": "CPROVER_assume",
-              "identifier": "CPROVER_assume",
-              "sourceLocation": {
-                "file": "Proof_Harness/traversal_with_harness.c",
-                "function": "proof_harness",
-                "line": "17",
-                "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-              }
-            },
-            "hidden": false,
-            "internal": false,
-            "sourceLocation": {
-              "file": "Proof_Harness/traversal_with_harness.c",
-              "function": "proof_harness",
-              "line": "19",
-              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-            },
-            "stepType": "function-return",
-            "thread": 0
-          },
-          {
-            "hidden": false,
-            "sourceLocation": {
-              "file": "Proof_Harness/traversal_with_harness.c",
-              "function": "proof_harness",
-              "line": "20",
-              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-            },
-            "stepType": "location-only",
-            "thread": 0
-          },
-          {
-            "function": {
-              "displayName": "CPROVER_assume",
-              "identifier": "CPROVER_assume",
-              "sourceLocation": {
-                "file": "Proof_Harness/traversal_with_harness.c",
-                "function": "proof_harness",
-                "line": "17",
-                "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-              }
-            },
-            "hidden": false,
-            "internal": false,
-            "sourceLocation": {
-              "file": "Proof_Harness/traversal_with_harness.c",
-              "function": "proof_harness",
-              "line": "20",
-              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-            },
-            "stepType": "function-call",
-            "thread": 0
-          },
-          {
-            "function": {
-              "displayName": "CPROVER_assume",
-              "identifier": "CPROVER_assume",
-              "sourceLocation": {
-                "file": "Proof_Harness/traversal_with_harness.c",
-                "function": "proof_harness",
-                "line": "17",
-                "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-              }
-            },
-            "hidden": false,
-            "internal": false,
-            "sourceLocation": {
-              "file": "Proof_Harness/traversal_with_harness.c",
-              "function": "proof_harness",
-              "line": "20",
-              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-            },
-            "stepType": "function-return",
-            "thread": 0
-          },
-          {
-            "assignmentType": "variable",
-            "hidden": true,
-            "internal": false,
-            "lhs": "src_initial_balance",
-            "mode": "C",
-            "sourceLocation": {
-              "file": "Proof_Harness/traversal_with_harness.c",
-              "function": "proof_harness",
-              "line": "23",
-              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-            },
-            "stepType": "assignment",
-            "thread": 0,
-            "value": {
-              "binary": "0000000000000000",
-              "data": "0",
-              "name": "integer",
-              "type": "unsigned short int",
-              "width": 16
-            }
-          },
-          {
-            "assignmentType": "variable",
-            "hidden": false,
-            "internal": false,
-            "lhs": "src_initial_balance",
-            "mode": "C",
-            "sourceLocation": {
-              "file": "Proof_Harness/traversal_with_harness.c",
-              "function": "proof_harness",
-              "line": "23",
-              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-            },
-            "stepType": "assignment",
-            "thread": 0,
-            "value": {
-              "binary": "0000000000000000",
-              "data": "0",
-              "name": "integer",
-              "type": "unsigned short int",
-              "width": 16
-            }
-          },
-          {
-            "assignmentType": "variable",
-            "hidden": true,
-            "internal": false,
-            "lhs": "dst_initial_balance",
-            "mode": "C",
-            "sourceLocation": {
-              "file": "Proof_Harness/traversal_with_harness.c",
-              "function": "proof_harness",
-              "line": "24",
-              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-            },
-            "stepType": "assignment",
-            "thread": 0,
-            "value": {
-              "binary": "0000000000000000",
-              "data": "0",
-              "name": "integer",
-              "type": "unsigned short int",
-              "width": 16
-            }
-          },
-          {
-            "assignmentType": "variable",
-            "hidden": false,
-            "internal": false,
-            "lhs": "dst_initial_balance",
-            "mode": "C",
-            "sourceLocation": {
-              "file": "Proof_Harness/traversal_with_harness.c",
-              "function": "proof_harness",
-              "line": "24",
-              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-            },
-            "stepType": "assignment",
-            "thread": 0,
-            "value": {
-              "binary": "0000000000000000",
-              "data": "0",
-              "name": "integer",
-              "type": "unsigned short int",
-              "width": 16
-            }
-          },
-          {
-            "hidden": false,
-            "sourceLocation": {
-              "file": "Proof_Harness/traversal_with_harness.c",
-              "function": "proof_harness",
-              "line": "25",
-              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-            },
-            "stepType": "location-only",
-            "thread": 0
-          },
-          {
-            "function": {
-              "displayName": "transfer",
-              "identifier": "transfer",
-              "sourceLocation": {
-                "file": "Proof_Harness/traversal_with_harness.c",
-                "line": "7",
-                "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-              }
-            },
-            "hidden": false,
-            "internal": false,
-            "sourceLocation": {
-              "file": "Proof_Harness/traversal_with_harness.c",
-              "function": "proof_harness",
-              "line": "25",
-              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-            },
-            "stepType": "function-call",
-            "thread": 0
-          },
-          {
-            "assignmentType": "actual-parameter",
-            "hidden": false,
-            "internal": false,
-            "lhs": "src",
-            "mode": "C",
-            "sourceLocation": {
-              "file": "Proof_Harness/traversal_with_harness.c",
-              "function": "proof_harness",
-              "line": "25",
-              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-            },
-            "stepType": "assignment",
-            "thread": 0,
-            "value": {
-              "data": "((struct Account *)NULL)",
-              "name": "pointer",
-              "type": "struct Account *"
-            }
-          },
-          {
-            "assignmentType": "actual-parameter",
-            "hidden": false,
-            "internal": false,
-            "lhs": "dst",
-            "mode": "C",
-            "sourceLocation": {
-              "file": "Proof_Harness/traversal_with_harness.c",
-              "function": "proof_harness",
-              "line": "25",
-              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-            },
-            "stepType": "assignment",
-            "thread": 0,
-            "value": {
-              "data": "((struct Account *)NULL)",
-              "name": "pointer",
-              "type": "struct Account *"
-            }
-          },
-          {
-            "assignmentType": "actual-parameter",
-            "hidden": false,
-            "internal": false,
-            "lhs": "amount",
-            "mode": "C",
-            "sourceLocation": {
-              "file": "Proof_Harness/traversal_with_harness.c",
-              "function": "proof_harness",
-              "line": "25",
-              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-            },
-            "stepType": "assignment",
-            "thread": 0,
-            "value": {
-              "binary": "0000000000000001",
-              "data": "1",
-              "name": "integer",
-              "type": "unsigned short int",
-              "width": 16
-            }
-          },
-          {
-            "assignmentType": "variable",
-            "hidden": true,
-            "internal": false,
-            "lhs": "de",
-            "mode": "C",
-            "sourceLocation": {
-              "file": "Proof_Harness/traversal_with_harness.c",
-              "function": "transfer",
-              "line": "8",
-              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-            },
-            "stepType": "assignment",
-            "thread": 0,
-            "value": {
-              "binary": "0000000000000000",
-              "data": "0",
-              "name": "integer",
-              "type": "unsigned short int",
-              "width": 16
-            }
-          },
-          {
-            "assignmentType": "variable",
-            "hidden": false,
-            "internal": false,
-            "lhs": "de",
-            "mode": "C",
-            "sourceLocation": {
-              "file": "Proof_Harness/traversal_with_harness.c",
-              "function": "transfer",
-              "line": "8",
-              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-            },
-            "stepType": "assignment",
-            "thread": 0,
-            "value": {
-              "binary": "0000000000000000",
-              "data": "0",
-              "name": "integer",
-              "type": "unsigned short int",
-              "width": 16
-            }
-          },
-          {
-            "assignmentType": "variable",
-            "hidden": false,
-            "internal": false,
-            "lhs": "src$object.bal",
-            "mode": "C",
-            "sourceLocation": {
-              "file": "Proof_Harness/traversal_with_harness.c",
-              "function": "transfer",
-              "line": "9",
-              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-            },
-            "stepType": "assignment",
-            "thread": 0,
-            "value": {
-              "binary": "1111111111111111",
-              "data": "65535",
-              "name": "integer",
-              "type": "unsigned short int",
-              "width": 16
-            }
-          },
-          {
-            "assignmentType": "variable",
-            "hidden": false,
-            "internal": false,
-            "lhs": "dst$object.bal",
-            "mode": "C",
-            "sourceLocation": {
-              "file": "Proof_Harness/traversal_with_harness.c",
-              "function": "transfer",
-              "line": "10",
-              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-            },
-            "stepType": "assignment",
-            "thread": 0,
-            "value": {
-              "binary": "0000000000000001",
-              "data": "1",
-              "name": "integer",
-              "type": "unsigned short int",
-              "width": 16
-            }
-          },
-          {
-            "function": {
-              "displayName": "transfer",
-              "identifier": "transfer",
-              "sourceLocation": {
-                "file": "Proof_Harness/traversal_with_harness.c",
-                "line": "7",
-                "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-              }
-            },
-            "hidden": false,
-            "internal": false,
-            "sourceLocation": {
-              "file": "Proof_Harness/traversal_with_harness.c",
-              "function": "transfer",
-              "line": "11",
-              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-            },
-            "stepType": "function-return",
-            "thread": 0
-          },
-          {
-            "hidden": false,
-            "internal": false,
-            "property": "proof_harness.assertion.1",
-            "reason": "assertion (signed int)src->bal == (signed int)src_initial_balance - amount",
-            "sourceLocation": {
-              "file": "Proof_Harness/traversal_with_harness.c",
-              "function": "proof_harness",
-              "line": "28",
-              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-            },
-            "stepType": "failure",
-            "thread": 0
-          }
-        ]
-      },
-      {
-        "description": "assertion (signed int)dst->bal == (signed int)dst_initial_balance + amount",
-        "property": "proof_harness.assertion.2",
-        "sourceLocation": {
-          "file": "Proof_Harness/traversal_with_harness.c",
-          "function": "proof_harness",
-          "line": "29",
-          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-        },
-        "status": "FAILURE",
-        "trace": [
-          {
-            "function": {
-              "displayName": "__CPROVER_initialize",
-              "identifier": "__CPROVER_initialize",
-              "sourceLocation": {
-                "file": "<built-in-additions>",
-                "line": "24",
-                "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-              }
-            },
-            "hidden": true,
-            "internal": true,
-            "stepType": "function-call",
-            "thread": 0
-          },
-          {
-            "assignmentType": "variable",
-            "hidden": true,
-            "internal": false,
-            "lhs": "__CPROVER_dead_object",
-            "mode": "C",
-            "sourceLocation": {
-              "file": "<built-in-additions>",
-              "line": "8",
-              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-            },
-            "stepType": "assignment",
-            "thread": 0,
-            "value": {
-              "data": "NULL",
-              "name": "pointer",
-              "type": "const void *"
-            }
-          },
-          {
-            "assignmentType": "variable",
-            "hidden": true,
-            "internal": false,
-            "lhs": "__CPROVER_deallocated",
-            "mode": "C",
-            "sourceLocation": {
-              "file": "<built-in-additions>",
-              "line": "7",
-              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-            },
-            "stepType": "assignment",
-            "thread": 0,
-            "value": {
-              "data": "NULL",
-              "name": "pointer",
-              "type": "const void *"
-            }
-          },
-          {
-            "assignmentType": "variable",
-            "hidden": true,
-            "internal": false,
-            "lhs": "__CPROVER_max_malloc_size",
-            "mode": "C",
-            "sourceLocation": {
-              "file": "<built-in-additions>",
-              "line": "12",
-              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-            },
-            "stepType": "assignment",
-            "thread": 0,
-            "value": {
-              "binary": "0000000010000000000000000000000000000000000000000000000000000000",
-              "data": "36028797018963968ul",
-              "name": "integer",
-              "type": "__CPROVER_size_t",
-              "width": 64
-            }
-          },
-          {
-            "assignmentType": "variable",
-            "hidden": true,
-            "internal": false,
-            "lhs": "__CPROVER_memory_leak",
-            "mode": "C",
-            "sourceLocation": {
-              "file": "<built-in-additions>",
-              "line": "9",
-              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-            },
-            "stepType": "assignment",
-            "thread": 0,
-            "value": {
-              "data": "NULL",
-              "name": "pointer",
-              "type": "const void *"
-            }
-          },
-          {
-            "assignmentType": "variable",
-            "hidden": true,
-            "internal": false,
-            "lhs": "__CPROVER_rounding_mode",
-            "mode": "C",
-            "sourceLocation": {
-              "file": "<built-in-additions>",
-              "line": "16",
-              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-            },
-            "stepType": "assignment",
-            "thread": 0,
-            "value": {
-              "binary": "00000000000000000000000000000000",
-              "data": "0",
-              "name": "integer",
-              "type": "signed int",
-              "width": 32
-            }
-          },
-          {
-            "function": {
-              "displayName": "__CPROVER_initialize",
-              "identifier": "__CPROVER_initialize",
-              "sourceLocation": {
-                "file": "<built-in-additions>",
-                "line": "24",
-                "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-              }
-            },
-            "hidden": true,
-            "internal": false,
-            "stepType": "function-return",
-            "thread": 0
-          },
-          {
-            "hidden": false,
-            "sourceLocation": {
-              "file": "Proof_Harness/traversal_with_harness.c",
-              "line": "13",
-              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-            },
-            "stepType": "location-only",
-            "thread": 0
-          },
-          {
-            "function": {
-              "displayName": "proof_harness",
-              "identifier": "proof_harness",
-              "sourceLocation": {
-                "file": "Proof_Harness/traversal_with_harness.c",
-                "line": "13",
-                "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-              }
-            },
-            "hidden": false,
-            "internal": false,
-            "sourceLocation": {
-              "file": "Proof_Harness/traversal_with_harness.c",
-              "line": "13",
-              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-            },
-            "stepType": "function-call",
-            "thread": 0
-          },
-          {
-            "assignmentType": "variable",
-            "hidden": false,
-            "internal": false,
-            "lhs": "src",
-            "mode": "C",
-            "sourceLocation": {
-              "file": "Proof_Harness/traversal_with_harness.c",
-              "function": "proof_harness",
-              "line": "14",
-              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-            },
-            "stepType": "assignment",
-            "thread": 0,
-            "value": {
-              "data": "((struct Account *)NULL)",
-              "name": "pointer",
-              "type": "struct Account *"
-            }
-          },
-          {
-            "assignmentType": "variable",
-            "hidden": false,
-            "internal": false,
-            "lhs": "dst",
-            "mode": "C",
-            "sourceLocation": {
-              "file": "Proof_Harness/traversal_with_harness.c",
-              "function": "proof_harness",
-              "line": "15",
-              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-            },
-            "stepType": "assignment",
-            "thread": 0,
-            "value": {
-              "data": "((struct Account *)NULL)",
-              "name": "pointer",
-              "type": "struct Account *"
-            }
-          },
-          {
-            "assignmentType": "variable",
-            "hidden": false,
-            "internal": false,
-            "lhs": "amount",
-            "mode": "C",
-            "sourceLocation": {
-              "file": "Proof_Harness/traversal_with_harness.c",
-              "function": "proof_harness",
-              "line": "16",
-              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-            },
-            "stepType": "assignment",
-            "thread": 0,
-            "value": {
-              "binary": "00000000000000010000000000000001",
-              "data": "65537",
-              "name": "integer",
-              "type": "signed int",
-              "width": 32
-            }
-          },
-          {
-            "hidden": false,
-            "sourceLocation": {
-              "file": "Proof_Harness/traversal_with_harness.c",
-              "function": "proof_harness",
-              "line": "17",
-              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-            },
-            "stepType": "location-only",
-            "thread": 0
-          },
-          {
-            "function": {
-              "displayName": "CPROVER_assume",
-              "identifier": "CPROVER_assume",
-              "sourceLocation": {
-                "file": "Proof_Harness/traversal_with_harness.c",
-                "function": "proof_harness",
-                "line": "17",
-                "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-              }
-            },
-            "hidden": false,
-            "internal": false,
-            "sourceLocation": {
-              "file": "Proof_Harness/traversal_with_harness.c",
-              "function": "proof_harness",
-              "line": "17",
-              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-            },
-            "stepType": "function-call",
-            "thread": 0
-          },
-          {
-            "function": {
-              "displayName": "CPROVER_assume",
-              "identifier": "CPROVER_assume",
-              "sourceLocation": {
-                "file": "Proof_Harness/traversal_with_harness.c",
-                "function": "proof_harness",
-                "line": "17",
-                "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-              }
-            },
-            "hidden": false,
-            "internal": false,
-            "sourceLocation": {
-              "file": "Proof_Harness/traversal_with_harness.c",
-              "function": "proof_harness",
-              "line": "17",
-              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-            },
-            "stepType": "function-return",
-            "thread": 0
-          },
-          {
-            "hidden": false,
-            "sourceLocation": {
-              "file": "Proof_Harness/traversal_with_harness.c",
-              "function": "proof_harness",
-              "line": "18",
-              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-            },
-            "stepType": "location-only",
-            "thread": 0
-          },
-          {
-            "function": {
-              "displayName": "CPROVER_assume",
-              "identifier": "CPROVER_assume",
-              "sourceLocation": {
-                "file": "Proof_Harness/traversal_with_harness.c",
-                "function": "proof_harness",
-                "line": "17",
-                "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-              }
-            },
-            "hidden": false,
-            "internal": false,
-            "sourceLocation": {
-              "file": "Proof_Harness/traversal_with_harness.c",
-              "function": "proof_harness",
-              "line": "18",
-              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-            },
-            "stepType": "function-call",
-            "thread": 0
-          },
-          {
-            "function": {
-              "displayName": "CPROVER_assume",
-              "identifier": "CPROVER_assume",
-              "sourceLocation": {
-                "file": "Proof_Harness/traversal_with_harness.c",
-                "function": "proof_harness",
-                "line": "17",
-                "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-              }
-            },
-            "hidden": false,
-            "internal": false,
-            "sourceLocation": {
-              "file": "Proof_Harness/traversal_with_harness.c",
-              "function": "proof_harness",
-              "line": "18",
-              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-            },
-            "stepType": "function-return",
-            "thread": 0
-          },
-          {
-            "hidden": false,
-            "sourceLocation": {
-              "file": "Proof_Harness/traversal_with_harness.c",
-              "function": "proof_harness",
-              "line": "19",
-              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-            },
-            "stepType": "location-only",
-            "thread": 0
-          },
-          {
-            "function": {
-              "displayName": "CPROVER_assume",
-              "identifier": "CPROVER_assume",
-              "sourceLocation": {
-                "file": "Proof_Harness/traversal_with_harness.c",
-                "function": "proof_harness",
-                "line": "17",
-                "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-              }
-            },
-            "hidden": false,
-            "internal": false,
-            "sourceLocation": {
-              "file": "Proof_Harness/traversal_with_harness.c",
-              "function": "proof_harness",
-              "line": "19",
-              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-            },
-            "stepType": "function-call",
-            "thread": 0
-          },
-          {
-            "function": {
-              "displayName": "CPROVER_assume",
-              "identifier": "CPROVER_assume",
-              "sourceLocation": {
-                "file": "Proof_Harness/traversal_with_harness.c",
-                "function": "proof_harness",
-                "line": "17",
-                "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-              }
-            },
-            "hidden": false,
-            "internal": false,
-            "sourceLocation": {
-              "file": "Proof_Harness/traversal_with_harness.c",
-              "function": "proof_harness",
-              "line": "19",
-              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-            },
-            "stepType": "function-return",
-            "thread": 0
-          },
-          {
-            "hidden": false,
-            "sourceLocation": {
-              "file": "Proof_Harness/traversal_with_harness.c",
-              "function": "proof_harness",
-              "line": "20",
-              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-            },
-            "stepType": "location-only",
-            "thread": 0
-          },
-          {
-            "function": {
-              "displayName": "CPROVER_assume",
-              "identifier": "CPROVER_assume",
-              "sourceLocation": {
-                "file": "Proof_Harness/traversal_with_harness.c",
-                "function": "proof_harness",
-                "line": "17",
-                "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-              }
-            },
-            "hidden": false,
-            "internal": false,
-            "sourceLocation": {
-              "file": "Proof_Harness/traversal_with_harness.c",
-              "function": "proof_harness",
-              "line": "20",
-              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-            },
-            "stepType": "function-call",
-            "thread": 0
-          },
-          {
-            "function": {
-              "displayName": "CPROVER_assume",
-              "identifier": "CPROVER_assume",
-              "sourceLocation": {
-                "file": "Proof_Harness/traversal_with_harness.c",
-                "function": "proof_harness",
-                "line": "17",
-                "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-              }
-            },
-            "hidden": false,
-            "internal": false,
-            "sourceLocation": {
-              "file": "Proof_Harness/traversal_with_harness.c",
-              "function": "proof_harness",
-              "line": "20",
-              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-            },
-            "stepType": "function-return",
-            "thread": 0
-          },
-          {
-            "assignmentType": "variable",
-            "hidden": true,
-            "internal": false,
-            "lhs": "src_initial_balance",
-            "mode": "C",
-            "sourceLocation": {
-              "file": "Proof_Harness/traversal_with_harness.c",
-              "function": "proof_harness",
-              "line": "23",
-              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-            },
-            "stepType": "assignment",
-            "thread": 0,
-            "value": {
-              "binary": "0000000000000000",
-              "data": "0",
-              "name": "integer",
-              "type": "unsigned short int",
-              "width": 16
-            }
-          },
-          {
-            "assignmentType": "variable",
-            "hidden": false,
-            "internal": false,
-            "lhs": "src_initial_balance",
-            "mode": "C",
-            "sourceLocation": {
-              "file": "Proof_Harness/traversal_with_harness.c",
-              "function": "proof_harness",
-              "line": "23",
-              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-            },
-            "stepType": "assignment",
-            "thread": 0,
-            "value": {
-              "binary": "0000000000000000",
-              "data": "0",
-              "name": "integer",
-              "type": "unsigned short int",
-              "width": 16
-            }
-          },
-          {
-            "assignmentType": "variable",
-            "hidden": true,
-            "internal": false,
-            "lhs": "dst_initial_balance",
-            "mode": "C",
-            "sourceLocation": {
-              "file": "Proof_Harness/traversal_with_harness.c",
-              "function": "proof_harness",
-              "line": "24",
-              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-            },
-            "stepType": "assignment",
-            "thread": 0,
-            "value": {
-              "binary": "0000000000000000",
-              "data": "0",
-              "name": "integer",
-              "type": "unsigned short int",
-              "width": 16
-            }
-          },
-          {
-            "assignmentType": "variable",
-            "hidden": false,
-            "internal": false,
-            "lhs": "dst_initial_balance",
-            "mode": "C",
-            "sourceLocation": {
-              "file": "Proof_Harness/traversal_with_harness.c",
-              "function": "proof_harness",
-              "line": "24",
-              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-            },
-            "stepType": "assignment",
-            "thread": 0,
-            "value": {
-              "binary": "0000000000000000",
-              "data": "0",
-              "name": "integer",
-              "type": "unsigned short int",
-              "width": 16
-            }
-          },
-          {
-            "hidden": false,
-            "sourceLocation": {
-              "file": "Proof_Harness/traversal_with_harness.c",
-              "function": "proof_harness",
-              "line": "25",
-              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-            },
-            "stepType": "location-only",
-            "thread": 0
-          },
-          {
-            "function": {
-              "displayName": "transfer",
-              "identifier": "transfer",
-              "sourceLocation": {
-                "file": "Proof_Harness/traversal_with_harness.c",
-                "line": "7",
-                "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-              }
-            },
-            "hidden": false,
-            "internal": false,
-            "sourceLocation": {
-              "file": "Proof_Harness/traversal_with_harness.c",
-              "function": "proof_harness",
-              "line": "25",
-              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-            },
-            "stepType": "function-call",
-            "thread": 0
-          },
-          {
-            "assignmentType": "actual-parameter",
-            "hidden": false,
-            "internal": false,
-            "lhs": "src",
-            "mode": "C",
-            "sourceLocation": {
-              "file": "Proof_Harness/traversal_with_harness.c",
-              "function": "proof_harness",
-              "line": "25",
-              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-            },
-            "stepType": "assignment",
-            "thread": 0,
-            "value": {
-              "data": "((struct Account *)NULL)",
-              "name": "pointer",
-              "type": "struct Account *"
-            }
-          },
-          {
-            "assignmentType": "actual-parameter",
-            "hidden": false,
-            "internal": false,
-            "lhs": "dst",
-            "mode": "C",
-            "sourceLocation": {
-              "file": "Proof_Harness/traversal_with_harness.c",
-              "function": "proof_harness",
-              "line": "25",
-              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-            },
-            "stepType": "assignment",
-            "thread": 0,
-            "value": {
-              "data": "((struct Account *)NULL)",
-              "name": "pointer",
-              "type": "struct Account *"
-            }
-          },
-          {
-            "assignmentType": "actual-parameter",
-            "hidden": false,
-            "internal": false,
-            "lhs": "amount",
-            "mode": "C",
-            "sourceLocation": {
-              "file": "Proof_Harness/traversal_with_harness.c",
-              "function": "proof_harness",
-              "line": "25",
-              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-            },
-            "stepType": "assignment",
-            "thread": 0,
-            "value": {
-              "binary": "0000000000000001",
-              "data": "1",
-              "name": "integer",
-              "type": "unsigned short int",
-              "width": 16
-            }
-          },
-          {
-            "assignmentType": "variable",
-            "hidden": true,
-            "internal": false,
-            "lhs": "de",
-            "mode": "C",
-            "sourceLocation": {
-              "file": "Proof_Harness/traversal_with_harness.c",
-              "function": "transfer",
-              "line": "8",
-              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-            },
-            "stepType": "assignment",
-            "thread": 0,
-            "value": {
-              "binary": "0000000000000000",
-              "data": "0",
-              "name": "integer",
-              "type": "unsigned short int",
-              "width": 16
-            }
-          },
-          {
-            "assignmentType": "variable",
-            "hidden": false,
-            "internal": false,
-            "lhs": "de",
-            "mode": "C",
-            "sourceLocation": {
-              "file": "Proof_Harness/traversal_with_harness.c",
-              "function": "transfer",
-              "line": "8",
-              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-            },
-            "stepType": "assignment",
-            "thread": 0,
-            "value": {
-              "binary": "0000000000000000",
-              "data": "0",
-              "name": "integer",
-              "type": "unsigned short int",
-              "width": 16
-            }
-          },
-          {
-            "assignmentType": "variable",
-            "hidden": false,
-            "internal": false,
-            "lhs": "src$object.bal",
-            "mode": "C",
-            "sourceLocation": {
-              "file": "Proof_Harness/traversal_with_harness.c",
-              "function": "transfer",
-              "line": "9",
-              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-            },
-            "stepType": "assignment",
-            "thread": 0,
-            "value": {
-              "binary": "1111111111111111",
-              "data": "65535",
-              "name": "integer",
-              "type": "unsigned short int",
-              "width": 16
-            }
-          },
-          {
-            "assignmentType": "variable",
-            "hidden": false,
-            "internal": false,
-            "lhs": "dst$object.bal",
-            "mode": "C",
-            "sourceLocation": {
-              "file": "Proof_Harness/traversal_with_harness.c",
-              "function": "transfer",
-              "line": "10",
-              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-            },
-            "stepType": "assignment",
-            "thread": 0,
-            "value": {
-              "binary": "0000000000000001",
-              "data": "1",
-              "name": "integer",
-              "type": "unsigned short int",
-              "width": 16
-            }
-          },
-          {
-            "function": {
-              "displayName": "transfer",
-              "identifier": "transfer",
-              "sourceLocation": {
-                "file": "Proof_Harness/traversal_with_harness.c",
-                "line": "7",
-                "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-              }
-            },
-            "hidden": false,
-            "internal": false,
-            "sourceLocation": {
-              "file": "Proof_Harness/traversal_with_harness.c",
-              "function": "transfer",
-              "line": "11",
-              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-            },
-            "stepType": "function-return",
-            "thread": 0
-          },
-          {
-            "hidden": false,
-            "internal": false,
-            "property": "proof_harness.assertion.1",
-            "reason": "assertion (signed int)src->bal == (signed int)src_initial_balance - amount",
-            "sourceLocation": {
-              "file": "Proof_Harness/traversal_with_harness.c",
-              "function": "proof_harness",
-              "line": "28",
-              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-            },
-            "stepType": "failure",
-            "thread": 0
-          },
-          {
-            "hidden": false,
-            "internal": false,
-            "property": "proof_harness.assertion.2",
-            "reason": "assertion (signed int)dst->bal == (signed int)dst_initial_balance + amount",
-            "sourceLocation": {
-              "file": "Proof_Harness/traversal_with_harness.c",
-              "function": "proof_harness",
-              "line": "29",
-              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-            },
-            "stepType": "failure",
-            "thread": 0
-          }
-        ]
-      }
     ]
   },
   {
-    "messageText": "VERIFICATION FAILED",
+    "messageText": "VERIFICATION SUCCESSFUL",
     "messageType": "STATUS-MESSAGE"
   },
   {
-    "cProverStatus": "failure"
+    "cProverStatus": "success"
   }
 ]
