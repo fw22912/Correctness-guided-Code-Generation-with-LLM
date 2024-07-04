@@ -1,30 +1,41 @@
-// Define the Account structure
-struct Account {
-    unsigned short bal;
+#include <stdio.h>
+    #include <assert.h>
+
+struct node{
+    struct node *leftNode;
+    int data;
+    struct node *rightNode;
 };
 
-// Function to transfer an amount from one account to another
-void transfer(struct Account *src, struct Account *dst, unsigned short amount) { 
-    unsigned short de = src->bal;
-    src->bal = de - amount;
-    dst->bal = dst->bal + amount;
+void inOrderTraversal(struct node *node){
+    if (node == NULL) return;
+    inOrderTraversal(node->leftNode);
+    printf("\t%d\t", node->data);
+    inOrderTraversal(node->rightNode);
 }
 
-void proof_harness() { 
-    struct Account *src;
-    struct Account *dst;
-    int amount;
-    CPROVER_assume(src->bal >= 0);
-    CPROVER_assume(dst->bal >= 0);
-    CPROVER_assume(amount > 0);
-    CPROVER_assume(src->bal >= amount);
+void preOrderTraversal(struct node *node){
+    if (node == NULL) return;
+    printf("\t%d\t", node->data);
+    preOrderTraversal(node->leftNode);
+    preOrderTraversal(node->rightNode);
+}
 
-    // Save the initial balances for verification
-    unsigned short src_initial_balance = src->bal;
-    unsigned short dst_initial_balance = dst->bal;
-    transfer(src, dst, amount);
+void postOrderTraversal(struct node *node){
+    if (node == NULL) return;
+    postOrderTraversal(node->leftNode);
+    postOrderTraversal(node->rightNode);
+    printf("\t%d\t", node->data);
+}
 
-    // Check that the new balances are the expected values after transfer
-    assert(src->bal == src_initial_balance - amount); 
-    assert(dst->bal == dst_initial_balance + amount); 
+void proof_harness(){
+    struct node *node;
+    CPROVER_assume(node != NULL);
+    inOrderTraversal(node);
+    preOrderTraversal(node);
+    postOrderTraversal(node);
+}
+
+int main(void){
+    return 0;
 }

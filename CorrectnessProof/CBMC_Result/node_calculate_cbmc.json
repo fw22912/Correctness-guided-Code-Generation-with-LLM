@@ -11,7 +11,7 @@
     "messageType": "STATUS-MESSAGE"
   },
   {
-    "messageText": "Parsing Proof_Harness/prompt_with_harness.c",
+    "messageText": "Parsing Proof_Harness/node_calculate_with_harness.c",
     "messageType": "STATUS-MESSAGE"
   },
   {
@@ -19,16 +19,16 @@
     "messageType": "STATUS-MESSAGE"
   },
   {
-    "messageText": "Type-checking prompt_with_harness",
+    "messageText": "Type-checking node_calculate_with_harness",
     "messageType": "STATUS-MESSAGE"
   },
   {
     "messageText": "function 'CPROVER_assume' is not declared",
     "messageType": "WARNING",
     "sourceLocation": {
-      "file": "Proof_Harness/prompt_with_harness.c",
+      "file": "Proof_Harness/node_calculate_with_harness.c",
       "function": "proof_harness",
-      "line": "31",
+      "line": "253",
       "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
     }
   },
@@ -61,89 +61,45 @@
     "messageType": "WARNING"
   },
   {
-    "messageText": "Runtime Symex: 0.0014675s",
+    "messageText": "Runtime Symex: 0.00220917s",
     "messageType": "STATUS-MESSAGE"
   },
   {
-    "messageText": "size of program expression: 58 steps",
+    "messageText": "size of program expression: 93 steps",
     "messageType": "STATUS-MESSAGE"
   },
   {
-    "messageText": "simple slicing removed 2 assignments",
+    "messageText": "simple slicing removed 0 assignments",
     "messageType": "STATUS-MESSAGE"
   },
   {
-    "messageText": "Generated 2 VCC(s), 2 remaining after simplification",
+    "messageText": "Generated 0 VCC(s), 0 remaining after simplification",
     "messageType": "STATUS-MESSAGE"
   },
   {
-    "messageText": "Runtime Postprocess Equation: 2.6375e-05s",
-    "messageType": "STATUS-MESSAGE"
-  },
-  {
-    "messageText": "Passing problem to propositional reduction",
-    "messageType": "STATUS-MESSAGE"
-  },
-  {
-    "messageText": "converting SSA",
-    "messageType": "STATUS-MESSAGE"
-  },
-  {
-    "messageText": "Runtime Convert SSA: 0.00226562s",
-    "messageType": "STATUS-MESSAGE"
-  },
-  {
-    "messageText": "Running propositional reduction",
-    "messageType": "STATUS-MESSAGE"
-  },
-  {
-    "messageText": "Post-processing",
-    "messageType": "STATUS-MESSAGE"
-  },
-  {
-    "messageText": "Runtime Post-process: 4.2583e-05s",
-    "messageType": "STATUS-MESSAGE"
-  },
-  {
-    "messageText": "Solving with MiniSAT 2.2.1 with simplifier",
-    "messageType": "STATUS-MESSAGE"
-  },
-  {
-    "messageText": "1074 variables, 3517 clauses",
-    "messageType": "STATUS-MESSAGE"
-  },
-  {
-    "messageText": "SAT checker: instance is UNSATISFIABLE",
-    "messageType": "STATUS-MESSAGE"
-  },
-  {
-    "messageText": "Runtime Solver: 0.0172347s",
-    "messageType": "STATUS-MESSAGE"
-  },
-  {
-    "messageText": "Runtime decision procedure: 0.0195578s",
+    "messageText": "Runtime Postprocess Equation: 2.7083e-05s",
     "messageType": "STATUS-MESSAGE"
   },
   {
     "result": [
       {
-        "description": "assertion source->data == initial_source_data - amount",
-        "property": "proof_harness.assertion.1",
+        "description": "max allocation size exceeded",
+        "property": "malloc.assertion.1",
         "sourceLocation": {
-          "file": "Proof_Harness/prompt_with_harness.c",
-          "function": "proof_harness",
-          "line": "42",
+          "file": "<builtin-library-malloc>",
+          "function": "malloc",
+          "line": "31",
           "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
         },
         "status": "SUCCESS"
       },
       {
-        "description": "assertion dest->data == initial_dest_data + amount",
-        "property": "proof_harness.assertion.2",
+        "description": "max allocation may fail",
+        "property": "malloc.assertion.2",
         "sourceLocation": {
-          "file": "Proof_Harness/prompt_with_harness.c",
-          "function": "proof_harness",
-          "line": "43",
+          "file": "<builtin-library-malloc>",
+          "function": "malloc",
+          "line": "36",
           "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
         },
         "status": "SUCCESS"
