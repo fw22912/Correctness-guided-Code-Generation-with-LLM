@@ -10,69 +10,53 @@ def create_prompt(file_content):
     query_code = file_content
 
     prompt = f"""
-# Preamble
-You are given a C program. We need to create a proof harness function.
+    # Preamble
+    You are given a C program. We need to create a proof harness function.
+    # Code generation example
+    Q: Write a method "void proof_harness_withdraw()" that tests method withdraw below for all possible inputs.
 
-# Code generation example
-Q: Write a method "void proof_harness_withdraw()" that tests method withdraw below for all possible inputs.
+    // Define the Account structure
+    struct Account {{
+        unsigned short bal;
+    }};
 
-// Define the Account structure
-struct Account {{
-    unsigned short bal;
-}};
+    // Function to withdraw an amount from an account
+    void withdraw(struct Account *account, unsigned short amount) {{ 
+        unsigned short de = account->bal;
+        account->bal = de - amount; 
+    }}
 
-// Function to withdraw an amount from an account
-void withdraw(struct Account *account, unsigned short amount) {{
-    unsigned short de = account->bal;
-    account->bal = de - amount;
-}}
+    A:
+    void proof_harness_withdraw() {{ 
+        struct Account *account;
+        int amount;
+        CPROVER_assume(account->bal >= 0);
+        CPROVER_assume(amount > 0);
+        CPROVER_assume(account->bal >= amount);
 
-A:
-struct Account {{
-    unsigned short bal;
-}};
+        // Save the initial balance for verification 
+        unsigned short initial_balance = account->bal;
+        withdraw(account, amount);
 
+        // Check that the new balance is the expected value after withdrawal
+        assert(account->bal == initial_balance - amount); 
+    }}
 
-void withdraw(struct Account *account, unsigned short amount) {{
-    unsigned short de = account->bal;
-    account->bal = de - amount;
-}}
+    # Instruction
+    Give me a proof harness code of the below C code.
 
-void proof_harness_withdraw() {{
-    struct Account *account = (struct Account *)malloc(sizeof(struct Account));
-    __CPROVER_assume(account != NULL);  // Ensure account is not NULL
+    # Query
+    Q: Write method "void proof_harness()" that tests method transfer below for all possible inputs.
+    {query_code}
 
-    unsigned short amount;
-
-    __CPROVER_assume(account->bal >= 0);
-    __CPROVER_assume(amount > 0);
-    __CPROVER_assume(account->bal >= amount);
-
-    unsigned short initial_balance = account->bal;
-
-    withdraw(account, amount);
-    assert(account->bal == initial_balance - amount);
-
-    free(account);
-}}
-
-
-# Instruction
-Give me a proof harness code of the below C code.
-
-# Query
-Q: Write method 'void proof_harness()' that tests the methods in the C program below for all possible inputs.
-
-{query_code}
-
-
-# Constraints
-Here are some constraints that you should respect:
-- Give me only the translated code, don’t add explanations or anything else.
-- Use only safe C.
-- Do not use custom generics. # fuzzer limitation
-- You're only allowed to modify the proof harness function.
-"""
+    # Constraints
+    Here are some constraints that you should respect:
+    - Give me only the translated code, don't add explanations or anything else. 
+    - Use only safe C.
+    - Do not use custom generics. # fuzzer limitation
+    - Do not remove any code from the original code you have received.
+    - Ensure that all libraries needed are declared.
+    """
 
     return prompt
 
