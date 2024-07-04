@@ -61,7 +61,7 @@ void proof_harness_withdraw() {{
 Give me a proof harness code of the below C code.
 
 # Query
-Q: Write method 'void proof_harness()' that tests the method {query_method} below for all possible inputs.
+Q: Write method 'void proof_harness()' that tests all the methods below for all possible inputs.
 
 {query_code}
 
