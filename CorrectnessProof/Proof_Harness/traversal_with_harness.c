@@ -4,27 +4,27 @@ struct Account {
 };
 
 // Function to transfer an amount from one account to another
-void transfer(struct Account *from, struct Account *to, unsigned short amount) {
-    unsigned short de = from->bal;
-    from->bal = de - amount;
-    to->bal += amount;
+void transfer(struct Account *src, struct Account *dst, unsigned short amount) { 
+    unsigned short de = src->bal;
+    src->bal = de - amount;
+    dst->bal = dst->bal + amount;
 }
 
-void proof_harness() {
-    struct Account *from;
-    struct Account *to;
+void proof_harness() { 
+    struct Account *src;
+    struct Account *dst;
     int amount;
-    CPROVER_assume(from->bal >= 0);
-    CPROVER_assume(to->bal >= 0);
+    CPROVER_assume(src->bal >= 0);
+    CPROVER_assume(dst->bal >= 0);
     CPROVER_assume(amount > 0);
-    CPROVER_assume(from->bal >= amount);
+    CPROVER_assume(src->bal >= amount);
 
     // Save the initial balances for verification
-    unsigned short initial_from_balance = from->bal;
-    unsigned short initial_to_balance = to->bal;
-    transfer(from, to, amount);
+    unsigned short src_initial_balance = src->bal;
+    unsigned short dst_initial_balance = dst->bal;
+    transfer(src, dst, amount);
 
     // Check that the new balances are the expected values after transfer
-    assert(from->bal == initial_from_balance - amount);
-    assert(to->bal == initial_to_balance + amount);
+    assert(src->bal == src_initial_balance - amount); 
+    assert(dst->bal == dst_initial_balance + amount); 
 }

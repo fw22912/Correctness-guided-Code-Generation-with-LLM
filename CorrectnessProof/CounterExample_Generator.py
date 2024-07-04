@@ -10,7 +10,6 @@ def create_prompt(initial_prompt, prev_output, counterexamples):
     Human:
     That is incorrect on the following inputs:
     #Counterexamples
-    //Enter counterexamples here.
     {counterexamples}
     """
 

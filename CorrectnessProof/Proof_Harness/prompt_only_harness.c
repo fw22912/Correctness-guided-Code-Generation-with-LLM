@@ -1,20 +1,11 @@
 void proof_harness() {
-    struct node *root;
-    struct node *src;
-    struct node *dest;
+    struct node *source = newNode(0);
+    struct node *dest = newNode(0);
     int data;
-    
-    CPROVER_assume(root != NULL);
-    CPROVER_assume(src != NULL);
-    CPROVER_assume(dest != NULL);
-    
-    // Save initial state for verification
-    struct node *original_root = root;
-    struct node *original_src = src;
-    struct node *original_dest = dest;
-    
-    // Perform the transfer operation
-    if (src != NULL && dest != NULL) {
-        if (src == dest) {
-            // Handle self-transfer
-        }
+    CPROVER_assume(source->data >= 0);
+    CPROVER_assume(dest->data >= 0);
+    data = source->data;
+    transfer(source, dest);
+    assert(dest->data == data);
+    assert(source->data == 0);
+}

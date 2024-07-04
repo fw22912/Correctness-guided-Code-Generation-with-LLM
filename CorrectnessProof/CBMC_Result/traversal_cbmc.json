@@ -71,7 +71,7 @@
     "messageType": "WARNING"
   },
   {
-    "messageText": "Runtime Symex: 0.00235383s",
+    "messageText": "Runtime Symex: 0.00180596s",
     "messageType": "STATUS-MESSAGE"
   },
   {
@@ -87,7 +87,7 @@
     "messageType": "STATUS-MESSAGE"
   },
   {
-    "messageText": "Runtime Postprocess Equation: 2.3333e-05s",
+    "messageText": "Runtime Postprocess Equation: 2.3292e-05s",
     "messageType": "STATUS-MESSAGE"
   },
   {
@@ -99,7 +99,7 @@
     "messageType": "STATUS-MESSAGE"
   },
   {
-    "messageText": "Runtime Convert SSA: 0.00154854s",
+    "messageText": "Runtime Convert SSA: 0.00114912s",
     "messageType": "STATUS-MESSAGE"
   },
   {
@@ -111,7 +111,7 @@
     "messageType": "STATUS-MESSAGE"
   },
   {
-    "messageText": "Runtime Post-process: 3.325e-05s",
+    "messageText": "Runtime Post-process: 2.0541e-05s",
     "messageType": "STATUS-MESSAGE"
   },
   {
@@ -127,11 +127,11 @@
     "messageType": "STATUS-MESSAGE"
   },
   {
-    "messageText": "Runtime Solver: 0.00101571s",
+    "messageText": "Runtime Solver: 0.000959958s",
     "messageType": "STATUS-MESSAGE"
   },
   {
-    "messageText": "Runtime decision procedure: 0.00261725s",
+    "messageText": "Runtime decision procedure: 0.00215908s",
     "messageType": "STATUS-MESSAGE"
   },
   {
@@ -141,7 +141,7 @@
   {
     "result": [
       {
-        "description": "assertion (signed int)from->bal == (signed int)initial_from_balance - amount",
+        "description": "assertion (signed int)src->bal == (signed int)src_initial_balance - amount",
         "property": "proof_harness.assertion.1",
         "sourceLocation": {
           "file": "Proof_Harness/traversal_with_harness.c",
@@ -314,7 +314,7 @@
             "assignmentType": "variable",
             "hidden": false,
             "internal": false,
-            "lhs": "from",
+            "lhs": "src",
             "mode": "C",
             "sourceLocation": {
               "file": "Proof_Harness/traversal_with_harness.c",
@@ -334,7 +334,7 @@
             "assignmentType": "variable",
             "hidden": false,
             "internal": false,
-            "lhs": "to",
+            "lhs": "dst",
             "mode": "C",
             "sourceLocation": {
               "file": "Proof_Harness/traversal_with_harness.c",
@@ -596,7 +596,7 @@
             "assignmentType": "variable",
             "hidden": true,
             "internal": false,
-            "lhs": "initial_from_balance",
+            "lhs": "src_initial_balance",
             "mode": "C",
             "sourceLocation": {
               "file": "Proof_Harness/traversal_with_harness.c",
@@ -618,7 +618,7 @@
             "assignmentType": "variable",
             "hidden": false,
             "internal": false,
-            "lhs": "initial_from_balance",
+            "lhs": "src_initial_balance",
             "mode": "C",
             "sourceLocation": {
               "file": "Proof_Harness/traversal_with_harness.c",
@@ -640,7 +640,7 @@
             "assignmentType": "variable",
             "hidden": true,
             "internal": false,
-            "lhs": "initial_to_balance",
+            "lhs": "dst_initial_balance",
             "mode": "C",
             "sourceLocation": {
               "file": "Proof_Harness/traversal_with_harness.c",
@@ -662,7 +662,7 @@
             "assignmentType": "variable",
             "hidden": false,
             "internal": false,
-            "lhs": "initial_to_balance",
+            "lhs": "dst_initial_balance",
             "mode": "C",
             "sourceLocation": {
               "file": "Proof_Harness/traversal_with_harness.c",
@@ -716,7 +716,7 @@
             "assignmentType": "actual-parameter",
             "hidden": false,
             "internal": false,
-            "lhs": "from",
+            "lhs": "src",
             "mode": "C",
             "sourceLocation": {
               "file": "Proof_Harness/traversal_with_harness.c",
@@ -736,7 +736,7 @@
             "assignmentType": "actual-parameter",
             "hidden": false,
             "internal": false,
-            "lhs": "to",
+            "lhs": "dst",
             "mode": "C",
             "sourceLocation": {
               "file": "Proof_Harness/traversal_with_harness.c",
@@ -822,7 +822,7 @@
             "assignmentType": "variable",
             "hidden": false,
             "internal": false,
-            "lhs": "from$object.bal",
+            "lhs": "src$object.bal",
             "mode": "C",
             "sourceLocation": {
               "file": "Proof_Harness/traversal_with_harness.c",
@@ -844,7 +844,7 @@
             "assignmentType": "variable",
             "hidden": false,
             "internal": false,
-            "lhs": "to$object.bal",
+            "lhs": "dst$object.bal",
             "mode": "C",
             "sourceLocation": {
               "file": "Proof_Harness/traversal_with_harness.c",
@@ -887,7 +887,7 @@
             "hidden": false,
             "internal": false,
             "property": "proof_harness.assertion.1",
-            "reason": "assertion (signed int)from->bal == (signed int)initial_from_balance - amount",
+            "reason": "assertion (signed int)src->bal == (signed int)src_initial_balance - amount",
             "sourceLocation": {
               "file": "Proof_Harness/traversal_with_harness.c",
               "function": "proof_harness",
@@ -900,7 +900,7 @@
         ]
       },
       {
-        "description": "assertion (signed int)to->bal == (signed int)initial_to_balance + amount",
+        "description": "assertion (signed int)dst->bal == (signed int)dst_initial_balance + amount",
         "property": "proof_harness.assertion.2",
         "sourceLocation": {
           "file": "Proof_Harness/traversal_with_harness.c",
@@ -1073,7 +1073,7 @@
             "assignmentType": "variable",
             "hidden": false,
             "internal": false,
-            "lhs": "from",
+            "lhs": "src",
             "mode": "C",
             "sourceLocation": {
               "file": "Proof_Harness/traversal_with_harness.c",
@@ -1093,7 +1093,7 @@
             "assignmentType": "variable",
             "hidden": false,
             "internal": false,
-            "lhs": "to",
+            "lhs": "dst",
             "mode": "C",
             "sourceLocation": {
               "file": "Proof_Harness/traversal_with_harness.c",
@@ -1355,7 +1355,7 @@
             "assignmentType": "variable",
             "hidden": true,
             "internal": false,
-            "lhs": "initial_from_balance",
+            "lhs": "src_initial_balance",
             "mode": "C",
             "sourceLocation": {
               "file": "Proof_Harness/traversal_with_harness.c",
@@ -1377,7 +1377,7 @@
             "assignmentType": "variable",
             "hidden": false,
             "internal": false,
-            "lhs": "initial_from_balance",
+            "lhs": "src_initial_balance",
             "mode": "C",
             "sourceLocation": {
               "file": "Proof_Harness/traversal_with_harness.c",
@@ -1399,7 +1399,7 @@
             "assignmentType": "variable",
             "hidden": true,
             "internal": false,
-            "lhs": "initial_to_balance",
+            "lhs": "dst_initial_balance",
             "mode": "C",
             "sourceLocation": {
               "file": "Proof_Harness/traversal_with_harness.c",
@@ -1421,7 +1421,7 @@
             "assignmentType": "variable",
             "hidden": false,
             "internal": false,
-            "lhs": "initial_to_balance",
+            "lhs": "dst_initial_balance",
             "mode": "C",
             "sourceLocation": {
               "file": "Proof_Harness/traversal_with_harness.c",
@@ -1475,7 +1475,7 @@
             "assignmentType": "actual-parameter",
             "hidden": false,
             "internal": false,
-            "lhs": "from",
+            "lhs": "src",
             "mode": "C",
             "sourceLocation": {
               "file": "Proof_Harness/traversal_with_harness.c",
@@ -1495,7 +1495,7 @@
             "assignmentType": "actual-parameter",
             "hidden": false,
             "internal": false,
-            "lhs": "to",
+            "lhs": "dst",
             "mode": "C",
             "sourceLocation": {
               "file": "Proof_Harness/traversal_with_harness.c",
@@ -1581,7 +1581,7 @@
             "assignmentType": "variable",
             "hidden": false,
             "internal": false,
-            "lhs": "from$object.bal",
+            "lhs": "src$object.bal",
             "mode": "C",
             "sourceLocation": {
               "file": "Proof_Harness/traversal_with_harness.c",
@@ -1603,7 +1603,7 @@
             "assignmentType": "variable",
             "hidden": false,
             "internal": false,
-            "lhs": "to$object.bal",
+            "lhs": "dst$object.bal",
             "mode": "C",
             "sourceLocation": {
               "file": "Proof_Harness/traversal_with_harness.c",
@@ -1646,7 +1646,7 @@
             "hidden": false,
             "internal": false,
             "property": "proof_harness.assertion.1",
-            "reason": "assertion (signed int)from->bal == (signed int)initial_from_balance - amount",
+            "reason": "assertion (signed int)src->bal == (signed int)src_initial_balance - amount",
             "sourceLocation": {
               "file": "Proof_Harness/traversal_with_harness.c",
               "function": "proof_harness",
@@ -1660,7 +1660,7 @@
             "hidden": false,
             "internal": false,
             "property": "proof_harness.assertion.2",
-            "reason": "assertion (signed int)to->bal == (signed int)initial_to_balance + amount",
+            "reason": "assertion (signed int)dst->bal == (signed int)dst_initial_balance + amount",
             "sourceLocation": {
               "file": "Proof_Harness/traversal_with_harness.c",
               "function": "proof_harness",

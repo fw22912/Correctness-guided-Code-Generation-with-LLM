@@ -55,6 +55,7 @@ def create_prompt(file_content):
     - Use only safe C.
     - Do not use custom generics. # fuzzer limitation
     - Do not remove any code from the original code you have received.
+    - Ensure that all libraries needed are declared.
     """
 
     return prompt
@@ -67,7 +68,6 @@ def main(file_path):
     print("Running Gemini...")
     file_content = read_c_file(file_path)
     prompt = create_prompt(file_content)
-    prompt = clean_code(prompt)
     print(prompt)
 
     return prompt
