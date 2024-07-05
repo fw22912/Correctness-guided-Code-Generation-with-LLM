@@ -3,6 +3,7 @@ import os
 import argparse
 import Prompt_Generator as pg
 import re
+import inspect
 
 base_dir = "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof/Proof_Harness"
 
@@ -10,25 +11,39 @@ base_dir = "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Cod
 def configure_genai(api_key):
     genai.configure(api_key=api_key)
 
+
 def generate_prompt(file_path):
     return pg.main(file_path)
+
 
 def generate_content(prompt):
     model = genai.GenerativeModel('gemini-1.5-flash')
     response = model.generate_content(prompt)
     return response.text
 
+
 def clean_code(response_text):
     cleaned_text = response_text.replace('```c', '').replace('```', '').strip()
     return cleaned_text
 
+
 def extract_harness(response_text):
-    # This regex should match the proof_harness function even if it spans multiple lines
-    harness_function = re.search(r'void\s+proof_harness\s*\(\s*\)\s*{[^}]*}', response_text, re.MULTILINE | re.DOTALL)
-    if harness_function:
-        return harness_function.group(0)
-    else:
-        raise ValueError("No proof_harness function found.")
+    harness_functions = re.findall(r'void\s+\w*proof_harness\w*\s*\(\s*\)\s*{[^}]*}', response_text, re.MULTILINE | re.DOTALL)
+    if harness_functions:
+        unique_harness_functions = list(set(harness_functions))  # removing duplicates
+        unique_harness_functions_with_newline = [func + '\n' + '\n' for func in unique_harness_functions]
+        return unique_harness_functions_with_newline
+    raise ValueError("No function containing 'proof_harness' in its name found.")
+
+
+# def extract_proof_harness_functions(module):
+#     # Get all functions in the module
+#     all_functions = inspect.getmembers(module, inspect.isfunction)
+#
+#     # Filter functions containing 'proof_harness' in their name
+#     proof_harness_functions = [func for name, func in all_functions if 'proof_harness' in name]
+#
+#     return proof_harness_functions
 
 
 def generate_file(cleaned_text, original_file_path):
@@ -40,32 +55,32 @@ def generate_file(cleaned_text, original_file_path):
         f.write(cleaned_text)
 
 
-def generate_harness_file(cleaned_text, original_file_path):
+def generate_harness_file(harness_functions, original_file_path):
     file_name = os.path.splitext(os.path.basename(original_file_path))[0]
     harness_file_name = os.path.join(base_dir, file_name + "_only_harness.c")
 
     os.makedirs(base_dir, exist_ok=True)
 
     with open(harness_file_name, 'w') as f:
-        f.write(cleaned_text)
+        for func in harness_functions:
+            f.write(func)
 
 
-def main(prompt, file_path):
+def main(prompt, file_path, method_list):
     configure_genai(api_key=os.environ['GENAI_API_KEY'])
     # prompt = generate_prompt(file_path)
     response_text = generate_content(prompt)
 
-    print("Response_text...")
-    print(response_text)
+    # print("Response_text...")
+    # print(response_text)
 
     # Extracting texts
     cleaned_text = clean_code(response_text)
     harness_function = extract_harness(response_text)
+    # print(harness_function)
 
     # Saving them into a file
     generate_file(cleaned_text, file_path)
     generate_harness_file(harness_function, file_path)
 
     return cleaned_text
-
-

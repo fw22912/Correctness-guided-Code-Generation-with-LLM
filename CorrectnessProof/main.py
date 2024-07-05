@@ -8,11 +8,11 @@ import CounterExample_Generator as counter_example_generator
 
 def main(file_path):
     file_name = os.path.splitext(os.path.basename(file_path))[0]
-    prompt = prompt_generator.main(file_path)
+    prompt, method_list = prompt_generator.main(file_path)
 
     while True:
         try:
-            response_text = Gemini.main(prompt, file_path)
+            response_text = Gemini.main(prompt, file_path, method_list)
             reiteration = cbmc_call.main(file_path)
 
             if reiteration == True:
