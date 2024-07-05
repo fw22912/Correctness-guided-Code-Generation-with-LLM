@@ -1,10 +1,11 @@
-void proof_harness_newNode(){
+void proof_harness_newNode() {
         int data;
         __CPROVER_assume(data >= 0);
         __CPROVER_assume(data <= 2147483647);
         struct node *node = newNode(data);
-        assert(node->leftNode == NULL);
+        assert(node != NULL);
         assert(node->data == data);
+        assert(node->leftNode == NULL);
         assert(node->rightNode == NULL);
         free(node);
     }

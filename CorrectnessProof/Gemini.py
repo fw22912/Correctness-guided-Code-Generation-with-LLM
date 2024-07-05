@@ -69,6 +69,7 @@ def generate_harness_file(harness_functions, original_file_path):
 def main(prompt, file_path, method_list):
     configure_genai(api_key=os.environ['GENAI_API_KEY'])
     # prompt = generate_prompt(file_path)
+    print("Running Gemini-Flask...")
     response_text = generate_content(prompt)
 
     # print("Response_text...")

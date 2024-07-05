@@ -97,11 +97,10 @@ def extract_method_name(file_content):
 
 
 def main(file_path):
-    print("Running Gemini...")
+    print("Reading files and generating prompts...")
     file_content = read_c_file(file_path)
     prompt = create_prompt(file_content)
     file_list = extract_method_name(file_content)
-    print(prompt)
 
     return prompt, file_list
 

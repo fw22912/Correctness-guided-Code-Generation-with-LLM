@@ -6,14 +6,18 @@ import Prompt_Generator as prompt_generator
 import CounterExample_Generator as counter_example_generator
 
 
+def generate_proof_harness(method_list):
+    return ["proof_harness_" + method for method in method_list]
+
 def main(file_path):
     file_name = os.path.splitext(os.path.basename(file_path))[0]
     prompt, method_list = prompt_generator.main(file_path)
+    harness_list = generate_proof_harness(method_list)
 
     while True:
         try:
             response_text = Gemini.main(prompt, file_path, method_list)
-            reiteration = cbmc_call.main(file_path)
+            reiteration = cbmc_call.main(file_path, harness_list)
 
             if reiteration == True:
                 print("Verification successful")
