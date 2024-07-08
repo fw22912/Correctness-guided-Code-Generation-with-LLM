@@ -11,6 +11,7 @@ def generate_proof_harness(method_list):
 
 def main(file_path):
     file_name = os.path.splitext(os.path.basename(file_path))[0]
+    print("\nFile name: " + file_name + ".c")
     prompt, method_list, file_content = prompt_generator.main(file_path)
     harness_list = generate_proof_harness(method_list)
 
