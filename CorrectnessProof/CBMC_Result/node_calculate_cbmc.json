@@ -47,7 +47,7 @@
     "messageType": "STATUS-MESSAGE"
   },
   {
-    "messageText": "Runtime Symex: 0.00207129s",
+    "messageText": "Runtime Symex: 0.00208921s",
     "messageType": "STATUS-MESSAGE"
   },
   {
@@ -63,7 +63,7 @@
     "messageType": "STATUS-MESSAGE"
   },
   {
-    "messageText": "Runtime Postprocess Equation: 2.9208e-05s",
+    "messageText": "Runtime Postprocess Equation: 2.4333e-05s",
     "messageType": "STATUS-MESSAGE"
   },
   {
@@ -75,7 +75,7 @@
     "messageType": "STATUS-MESSAGE"
   },
   {
-    "messageText": "Runtime Convert SSA: 0.000297666s",
+    "messageText": "Runtime Convert SSA: 0.000291416s",
     "messageType": "STATUS-MESSAGE"
   },
   {
@@ -87,7 +87,7 @@
     "messageType": "STATUS-MESSAGE"
   },
   {
-    "messageText": "Runtime Post-process: 1.3e-05s",
+    "messageText": "Runtime Post-process: 1.2416e-05s",
     "messageType": "STATUS-MESSAGE"
   },
   {
@@ -103,11 +103,11 @@
     "messageType": "STATUS-MESSAGE"
   },
   {
-    "messageText": "Runtime Solver: 4.3708e-05s",
+    "messageText": "Runtime Solver: 3.9875e-05s",
     "messageType": "STATUS-MESSAGE"
   },
   {
-    "messageText": "Runtime decision procedure: 0.000387791s",
+    "messageText": "Runtime decision procedure: 0.000373084s",
     "messageType": "STATUS-MESSAGE"
   },
   {
@@ -338,7 +338,7 @@
         "sourceLocation": {
           "file": "Proof_Harness/node_calculate_with_harness.c",
           "function": "proof_harness_create_node",
-          "line": "256",
+          "line": "254",
           "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
         },
         "status": "SUCCESS"
@@ -349,7 +349,7 @@
         "sourceLocation": {
           "file": "Proof_Harness/node_calculate_with_harness.c",
           "function": "proof_harness_create_node",
-          "line": "257",
+          "line": "255",
           "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
         },
         "status": "SUCCESS"
@@ -360,7 +360,7 @@
         "sourceLocation": {
           "file": "Proof_Harness/node_calculate_with_harness.c",
           "function": "proof_harness_create_node",
-          "line": "258",
+          "line": "256",
           "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
         },
         "status": "SUCCESS"
@@ -371,7 +371,7 @@
         "sourceLocation": {
           "file": "Proof_Harness/node_calculate_with_harness.c",
           "function": "proof_harness_create_node",
-          "line": "259",
+          "line": "257",
           "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
         },
         "status": "SUCCESS"
@@ -382,7 +382,7 @@
         "sourceLocation": {
           "file": "Proof_Harness/node_calculate_with_harness.c",
           "function": "proof_harness_create_node",
-          "line": "260",
+          "line": "258",
           "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
         },
         "status": "SUCCESS"
@@ -393,7 +393,7 @@
         "sourceLocation": {
           "file": "Proof_Harness/node_calculate_with_harness.c",
           "function": "proof_harness_create_node",
-          "line": "260",
+          "line": "258",
           "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
         },
         "status": "SUCCESS"
@@ -404,7 +404,7 @@
         "sourceLocation": {
           "file": "Proof_Harness/node_calculate_with_harness.c",
           "function": "proof_harness_create_node",
-          "line": "260",
+          "line": "258",
           "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
         },
         "status": "SUCCESS"
@@ -415,7 +415,7 @@
         "sourceLocation": {
           "file": "Proof_Harness/node_calculate_with_harness.c",
           "function": "proof_harness_create_node",
-          "line": "260",
+          "line": "258",
           "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
         },
         "status": "SUCCESS"
@@ -426,7 +426,7 @@
         "sourceLocation": {
           "file": "Proof_Harness/node_calculate_with_harness.c",
           "function": "proof_harness_create_node",
-          "line": "260",
+          "line": "258",
           "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
         },
         "status": "SUCCESS"
@@ -437,40 +437,51 @@
         "sourceLocation": {
           "file": "Proof_Harness/node_calculate_with_harness.c",
           "function": "proof_harness_create_node",
-          "line": "260",
+          "line": "258",
+          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "assertion root != NULL",
+        "property": "proof_harness_insert_bt.assertion.1",
+        "sourceLocation": {
+          "file": "Proof_Harness/node_calculate_with_harness.c",
+          "function": "proof_harness_insert_bt",
+          "line": "266",
           "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
         },
         "status": "SUCCESS"
       },
       {
         "description": "assertion root->data == data",
-        "property": "proof_harness_insert_bt.assertion.1",
+        "property": "proof_harness_insert_bt.assertion.2",
         "sourceLocation": {
           "file": "Proof_Harness/node_calculate_with_harness.c",
           "function": "proof_harness_insert_bt",
-          "line": "271",
+          "line": "267",
           "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
         },
         "status": "SUCCESS"
       },
       {
         "description": "assertion root->llink == NULL",
-        "property": "proof_harness_insert_bt.assertion.2",
+        "property": "proof_harness_insert_bt.assertion.3",
         "sourceLocation": {
           "file": "Proof_Harness/node_calculate_with_harness.c",
           "function": "proof_harness_insert_bt",
-          "line": "272",
+          "line": "268",
           "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
         },
         "status": "SUCCESS"
       },
       {
         "description": "assertion root->rlink == NULL",
-        "property": "proof_harness_insert_bt.assertion.3",
+        "property": "proof_harness_insert_bt.assertion.4",
         "sourceLocation": {
           "file": "Proof_Harness/node_calculate_with_harness.c",
           "function": "proof_harness_insert_bt",
-          "line": "273",
+          "line": "269",
           "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
         },
         "status": "SUCCESS"
@@ -481,7 +492,7 @@
         "sourceLocation": {
           "file": "Proof_Harness/node_calculate_with_harness.c",
           "function": "proof_harness_insert_bt",
-          "line": "275",
+          "line": "270",
           "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
         },
         "status": "SUCCESS"
@@ -492,7 +503,7 @@
         "sourceLocation": {
           "file": "Proof_Harness/node_calculate_with_harness.c",
           "function": "proof_harness_insert_bt",
-          "line": "275",
+          "line": "270",
           "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
         },
         "status": "SUCCESS"
@@ -503,7 +514,7 @@
         "sourceLocation": {
           "file": "Proof_Harness/node_calculate_with_harness.c",
           "function": "proof_harness_insert_bt",
-          "line": "275",
+          "line": "270",
           "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
         },
         "status": "SUCCESS"
@@ -514,7 +525,7 @@
         "sourceLocation": {
           "file": "Proof_Harness/node_calculate_with_harness.c",
           "function": "proof_harness_insert_bt",
-          "line": "275",
+          "line": "270",
           "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
         },
         "status": "SUCCESS"
@@ -525,7 +536,7 @@
         "sourceLocation": {
           "file": "Proof_Harness/node_calculate_with_harness.c",
           "function": "proof_harness_insert_bt",
-          "line": "275",
+          "line": "270",
           "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
         },
         "status": "SUCCESS"
@@ -536,7 +547,7 @@
         "sourceLocation": {
           "file": "Proof_Harness/node_calculate_with_harness.c",
           "function": "proof_harness_insert_bt",
-          "line": "275",
+          "line": "270",
           "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
         },
         "status": "SUCCESS"
@@ -547,7 +558,7 @@
         "sourceLocation": {
           "file": "Proof_Harness/node_calculate_with_harness.c",
           "function": "proof_harness_search",
-          "line": "289",
+          "line": "281",
           "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
         },
         "status": "SUCCESS"
@@ -558,7 +569,7 @@
         "sourceLocation": {
           "file": "Proof_Harness/node_calculate_with_harness.c",
           "function": "proof_harness_search",
-          "line": "289",
+          "line": "281",
           "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
         },
         "status": "SUCCESS"
@@ -569,7 +580,7 @@
         "sourceLocation": {
           "file": "Proof_Harness/node_calculate_with_harness.c",
           "function": "proof_harness_search",
-          "line": "289",
+          "line": "281",
           "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
         },
         "status": "SUCCESS"
@@ -580,7 +591,7 @@
         "sourceLocation": {
           "file": "Proof_Harness/node_calculate_with_harness.c",
           "function": "proof_harness_search",
-          "line": "289",
+          "line": "281",
           "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
         },
         "status": "SUCCESS"
@@ -591,7 +602,7 @@
         "sourceLocation": {
           "file": "Proof_Harness/node_calculate_with_harness.c",
           "function": "proof_harness_search",
-          "line": "289",
+          "line": "281",
           "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
         },
         "status": "SUCCESS"
@@ -602,7 +613,7 @@
         "sourceLocation": {
           "file": "Proof_Harness/node_calculate_with_harness.c",
           "function": "proof_harness_search",
-          "line": "289",
+          "line": "281",
           "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
         },
         "status": "SUCCESS"
@@ -613,7 +624,7 @@
         "sourceLocation": {
           "file": "Proof_Harness/node_calculate_with_harness.c",
           "function": "proof_harness_inorder_display",
-          "line": "300",
+          "line": "290",
           "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
         },
         "status": "SUCCESS"
@@ -624,7 +635,7 @@
         "sourceLocation": {
           "file": "Proof_Harness/node_calculate_with_harness.c",
           "function": "proof_harness_inorder_display",
-          "line": "300",
+          "line": "290",
           "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
         },
         "status": "SUCCESS"
@@ -635,7 +646,7 @@
         "sourceLocation": {
           "file": "Proof_Harness/node_calculate_with_harness.c",
           "function": "proof_harness_inorder_display",
-          "line": "300",
+          "line": "290",
           "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
         },
         "status": "SUCCESS"
@@ -646,7 +657,7 @@
         "sourceLocation": {
           "file": "Proof_Harness/node_calculate_with_harness.c",
           "function": "proof_harness_inorder_display",
-          "line": "300",
+          "line": "290",
           "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
         },
         "status": "SUCCESS"
@@ -657,7 +668,7 @@
         "sourceLocation": {
           "file": "Proof_Harness/node_calculate_with_harness.c",
           "function": "proof_harness_inorder_display",
-          "line": "300",
+          "line": "290",
           "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
         },
         "status": "SUCCESS"
@@ -668,7 +679,7 @@
         "sourceLocation": {
           "file": "Proof_Harness/node_calculate_with_harness.c",
           "function": "proof_harness_inorder_display",
-          "line": "300",
+          "line": "290",
           "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
         },
         "status": "SUCCESS"
@@ -679,7 +690,7 @@
         "sourceLocation": {
           "file": "Proof_Harness/node_calculate_with_harness.c",
           "function": "proof_harness_postorder_display",
-          "line": "311",
+          "line": "299",
           "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
         },
         "status": "SUCCESS"
@@ -690,7 +701,7 @@
         "sourceLocation": {
           "file": "Proof_Harness/node_calculate_with_harness.c",
           "function": "proof_harness_postorder_display",
-          "line": "311",
+          "line": "299",
           "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
         },
         "status": "SUCCESS"
@@ -701,7 +712,7 @@
         "sourceLocation": {
           "file": "Proof_Harness/node_calculate_with_harness.c",
           "function": "proof_harness_postorder_display",
-          "line": "311",
+          "line": "299",
           "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
         },
         "status": "SUCCESS"
@@ -712,7 +723,7 @@
         "sourceLocation": {
           "file": "Proof_Harness/node_calculate_with_harness.c",
           "function": "proof_harness_postorder_display",
-          "line": "311",
+          "line": "299",
           "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
         },
         "status": "SUCCESS"
@@ -723,7 +734,7 @@
         "sourceLocation": {
           "file": "Proof_Harness/node_calculate_with_harness.c",
           "function": "proof_harness_postorder_display",
-          "line": "311",
+          "line": "299",
           "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
         },
         "status": "SUCCESS"
@@ -734,7 +745,7 @@
         "sourceLocation": {
           "file": "Proof_Harness/node_calculate_with_harness.c",
           "function": "proof_harness_postorder_display",
-          "line": "311",
+          "line": "299",
           "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
         },
         "status": "SUCCESS"
@@ -745,7 +756,7 @@
         "sourceLocation": {
           "file": "Proof_Harness/node_calculate_with_harness.c",
           "function": "proof_harness_preorder_display",
-          "line": "322",
+          "line": "308",
           "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
         },
         "status": "SUCCESS"
@@ -756,7 +767,7 @@
         "sourceLocation": {
           "file": "Proof_Harness/node_calculate_with_harness.c",
           "function": "proof_harness_preorder_display",
-          "line": "322",
+          "line": "308",
           "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
         },
         "status": "SUCCESS"
@@ -767,7 +778,7 @@
         "sourceLocation": {
           "file": "Proof_Harness/node_calculate_with_harness.c",
           "function": "proof_harness_preorder_display",
-          "line": "322",
+          "line": "308",
           "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
         },
         "status": "SUCCESS"
@@ -778,7 +789,7 @@
         "sourceLocation": {
           "file": "Proof_Harness/node_calculate_with_harness.c",
           "function": "proof_harness_preorder_display",
-          "line": "322",
+          "line": "308",
           "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
         },
         "status": "SUCCESS"
@@ -789,7 +800,7 @@
         "sourceLocation": {
           "file": "Proof_Harness/node_calculate_with_harness.c",
           "function": "proof_harness_preorder_display",
-          "line": "322",
+          "line": "308",
           "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
         },
         "status": "SUCCESS"
@@ -800,7 +811,7 @@
         "sourceLocation": {
           "file": "Proof_Harness/node_calculate_with_harness.c",
           "function": "proof_harness_preorder_display",
-          "line": "322",
+          "line": "308",
           "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
         },
         "status": "SUCCESS"
@@ -811,7 +822,7 @@
         "sourceLocation": {
           "file": "Proof_Harness/node_calculate_with_harness.c",
           "function": "proof_harness_delete_bt",
-          "line": "336",
+          "line": "319",
           "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
         },
         "status": "SUCCESS"
@@ -822,7 +833,7 @@
         "sourceLocation": {
           "file": "Proof_Harness/node_calculate_with_harness.c",
           "function": "proof_harness_delete_bt",
-          "line": "336",
+          "line": "319",
           "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
         },
         "status": "SUCCESS"
@@ -833,7 +844,7 @@
         "sourceLocation": {
           "file": "Proof_Harness/node_calculate_with_harness.c",
           "function": "proof_harness_delete_bt",
-          "line": "336",
+          "line": "319",
           "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
         },
         "status": "SUCCESS"
@@ -844,7 +855,7 @@
         "sourceLocation": {
           "file": "Proof_Harness/node_calculate_with_harness.c",
           "function": "proof_harness_delete_bt",
-          "line": "336",
+          "line": "319",
           "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
         },
         "status": "SUCCESS"
@@ -855,7 +866,7 @@
         "sourceLocation": {
           "file": "Proof_Harness/node_calculate_with_harness.c",
           "function": "proof_harness_delete_bt",
-          "line": "336",
+          "line": "319",
           "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
         },
         "status": "SUCCESS"
@@ -866,7 +877,7 @@
         "sourceLocation": {
           "file": "Proof_Harness/node_calculate_with_harness.c",
           "function": "proof_harness_delete_bt",
-          "line": "336",
+          "line": "319",
           "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
         },
         "status": "SUCCESS"

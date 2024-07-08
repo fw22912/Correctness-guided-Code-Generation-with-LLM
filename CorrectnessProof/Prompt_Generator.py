@@ -102,6 +102,6 @@ def main(file_path):
     prompt = create_prompt(file_content)
     file_list = extract_method_name(file_content)
 
-    return prompt, file_list
+    return prompt, file_list, file_content
 
 

@@ -11,7 +11,7 @@ def generate_proof_harness(method_list):
 
 def main(file_path):
     file_name = os.path.splitext(os.path.basename(file_path))[0]
-    prompt, method_list = prompt_generator.main(file_path)
+    prompt, method_list, file_content = prompt_generator.main(file_path)
     harness_list = generate_proof_harness(method_list)
 
     while True:
@@ -25,7 +25,7 @@ def main(file_path):
             else:
                 print("Verification Failed. Retrying with a new prompt with counterexamples...")
                 counter_examples = None
-                prompt = counter_example_generator.create_prompt(prompt, response_text, counterexamples=counter_examples)
+                prompt = counter_example_generator.create_prompt(file_content, response_text, counterexamples=counter_examples)
                 print(f"New Prompt Generated:\n{prompt}")
         except Exception as e:
             print(f"An unexpected error occurred: {e}")
