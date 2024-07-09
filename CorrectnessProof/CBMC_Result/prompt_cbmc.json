@@ -47,7 +47,7 @@
     "messageType": "STATUS-MESSAGE"
   },
   {
-    "messageText": "Runtime Symex: 0.001955s",
+    "messageText": "Runtime Symex: 0.00207367s",
     "messageType": "STATUS-MESSAGE"
   },
   {
@@ -63,7 +63,7 @@
     "messageType": "STATUS-MESSAGE"
   },
   {
-    "messageText": "Runtime Postprocess Equation: 2.375e-05s",
+    "messageText": "Runtime Postprocess Equation: 2.6667e-05s",
     "messageType": "STATUS-MESSAGE"
   },
   {
@@ -75,7 +75,7 @@
     "messageType": "STATUS-MESSAGE"
   },
   {
-    "messageText": "Runtime Convert SSA: 0.000283584s",
+    "messageText": "Runtime Convert SSA: 0.000301958s",
     "messageType": "STATUS-MESSAGE"
   },
   {
@@ -87,7 +87,7 @@
     "messageType": "STATUS-MESSAGE"
   },
   {
-    "messageText": "Runtime Post-process: 1.2125e-05s",
+    "messageText": "Runtime Post-process: 1.2792e-05s",
     "messageType": "STATUS-MESSAGE"
   },
   {
@@ -103,11 +103,11 @@
     "messageType": "STATUS-MESSAGE"
   },
   {
-    "messageText": "Runtime Solver: 3.9542e-05s",
+    "messageText": "Runtime Solver: 4.1542e-05s",
     "messageType": "STATUS-MESSAGE"
   },
   {
-    "messageText": "Runtime decision procedure: 0.000363875s",
+    "messageText": "Runtime decision procedure: 0.000386208s",
     "messageType": "STATUS-MESSAGE"
   },
   {
@@ -135,7 +135,7 @@
         "status": "SUCCESS"
       },
       {
-        "description": "assertion node->data == data",
+        "description": "assertion node->leftNode == NULL",
         "property": "proof_harness_newNode.assertion.1",
         "sourceLocation": {
           "file": "Proof_Harness/prompt_with_harness.c",
@@ -146,7 +146,7 @@
         "status": "SUCCESS"
       },
       {
-        "description": "assertion node->leftNode == NULL",
+        "description": "assertion node->data == data",
         "property": "proof_harness_newNode.assertion.2",
         "sourceLocation": {
           "file": "Proof_Harness/prompt_with_harness.c",
