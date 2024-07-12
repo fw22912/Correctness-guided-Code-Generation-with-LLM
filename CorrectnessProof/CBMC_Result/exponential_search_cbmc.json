@@ -1,0 +1,570 @@
+[
+  {
+    "program": "CBMC 5.95.1 (cbmc-5.95.1)"
+  },
+  {
+    "messageText": "**** WARNING: Use --unwinding-assertions to obtain sound verification results",
+    "messageType": "WARNING"
+  },
+  {
+    "messageText": "CBMC version 5.95.1 (cbmc-5.95.1) 64-bit x86_64 macos",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Parsing Proof_Harness/exponential_search_with_harness.c",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Converting",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Type-checking exponential_search_with_harness",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "function 'malloc' is not declared",
+    "messageType": "WARNING",
+    "sourceLocation": {
+      "file": "Proof_Harness/exponential_search_with_harness.c",
+      "function": "proof_harness_exponential_search",
+      "line": "119",
+      "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+    }
+  },
+  {
+    "messageText": "function 'free' is not declared",
+    "messageType": "WARNING",
+    "sourceLocation": {
+      "file": "Proof_Harness/exponential_search_with_harness.c",
+      "function": "proof_harness_exponential_search",
+      "line": "129",
+      "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+    }
+  },
+  {
+    "messageText": "Generating GOTO Program",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Adding CPROVER library (x86_64)",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "warning: implicit function declaration \"malloc\"\nold definition in module exponential_search_with_harness file Proof_Harness/exponential_search_with_harness.c line 119 function proof_harness_exponential_search\nvoid * (void)\nnew definition in module <built-in-library> file <builtin-library-malloc> line 11\nvoid * (__CPROVER_size_t malloc_size)",
+    "messageType": "WARNING",
+    "sourceLocation": {
+      "file": "<builtin-library-malloc>",
+      "line": "11",
+      "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+    }
+  },
+  {
+    "messageText": "warning: implicit function declaration \"free\"\nold definition in module exponential_search_with_harness file Proof_Harness/exponential_search_with_harness.c line 129 function proof_harness_exponential_search\nsigned int (void)\nnew definition in module <built-in-library> file <builtin-library-free> line 14\nvoid (void *ptr)",
+    "messageType": "WARNING",
+    "sourceLocation": {
+      "file": "<builtin-library-free>",
+      "line": "14",
+      "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+    }
+  },
+  {
+    "messageText": "Removal of function pointers and virtual functions",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Generic Property Instrumentation",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Running with 8 object bits, 56 offset bits (default)",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Starting Bounded Model Checking",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding loop proof_harness_exponential_search.0 iteration 1 file Proof_Harness/exponential_search_with_harness.c line 121 function proof_harness_exponential_search thread 0",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding loop proof_harness_exponential_search.0 iteration 2 file Proof_Harness/exponential_search_with_harness.c line 121 function proof_harness_exponential_search thread 0",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Not unwinding loop proof_harness_exponential_search.0 iteration 3 file Proof_Harness/exponential_search_with_harness.c line 121 function proof_harness_exponential_search thread 0",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding loop exponential_search.0 iteration 1 file Proof_Harness/exponential_search_with_harness.c line 34 function exponential_search thread 0",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding loop exponential_search.0 iteration 2 file Proof_Harness/exponential_search_with_harness.c line 34 function exponential_search thread 0",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Not unwinding loop exponential_search.0 iteration 3 file Proof_Harness/exponential_search_with_harness.c line 34 function exponential_search thread 0",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion binary_search iteration 1",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion binary_search iteration 2",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion binary_search iteration 3",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Not unwinding recursion binary_search iteration 4",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Not unwinding recursion binary_search iteration 4",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion binary_search iteration 3",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Not unwinding recursion binary_search iteration 4",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Not unwinding recursion binary_search iteration 4",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion binary_search iteration 2",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion binary_search iteration 3",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Not unwinding recursion binary_search iteration 4",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Not unwinding recursion binary_search iteration 4",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion binary_search iteration 3",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Not unwinding recursion binary_search iteration 4",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Not unwinding recursion binary_search iteration 4",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion binary_search iteration 1",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion binary_search iteration 2",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion binary_search iteration 3",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Not unwinding recursion binary_search iteration 4",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Not unwinding recursion binary_search iteration 4",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion binary_search iteration 3",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Not unwinding recursion binary_search iteration 4",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Not unwinding recursion binary_search iteration 4",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion binary_search iteration 2",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion binary_search iteration 3",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Not unwinding recursion binary_search iteration 4",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Not unwinding recursion binary_search iteration 4",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion binary_search iteration 3",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Not unwinding recursion binary_search iteration 4",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Not unwinding recursion binary_search iteration 4",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Runtime Symex: 0.0148895s",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "size of program expression: 561 steps",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "simple slicing removed 30 assignments",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Generated 7 VCC(s), 1 remaining after simplification",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Runtime Postprocess Equation: 3.7625e-05s",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Passing problem to propositional reduction",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "converting SSA",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Runtime Convert SSA: 0.0174927s",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Running propositional reduction",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Post-processing",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Runtime Post-process: 0.0300354s",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Solving with MiniSAT 2.2.1 with simplifier",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "50935 variables, 196636 clauses",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "SAT checker: instance is UNSATISFIABLE",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Runtime Solver: 0.265069s",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Runtime decision procedure: 0.282616s",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "result": [
+      {
+        "description": "assertion exponential_search(arr_empty, 0, 10) == -1",
+        "property": "test.assertion.1",
+        "sourceLocation": {
+          "file": "Proof_Harness/exponential_search_with_harness.c",
+          "function": "test",
+          "line": "86",
+          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "assertion exponential_search(arr_found, 3, 10) == -1",
+        "property": "test.assertion.2",
+        "sourceLocation": {
+          "file": "Proof_Harness/exponential_search_with_harness.c",
+          "function": "test",
+          "line": "89",
+          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "assertion exponential_search(arr_found, 1, 1) == 0",
+        "property": "test.assertion.3",
+        "sourceLocation": {
+          "file": "Proof_Harness/exponential_search_with_harness.c",
+          "function": "test",
+          "line": "92",
+          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "assertion exponential_search(arr_first_2, 2, 1) == 0",
+        "property": "test.assertion.4",
+        "sourceLocation": {
+          "file": "Proof_Harness/exponential_search_with_harness.c",
+          "function": "test",
+          "line": "95",
+          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "assertion exponential_search(arr_last_2, 2, 2) == 1",
+        "property": "test.assertion.5",
+        "sourceLocation": {
+          "file": "Proof_Harness/exponential_search_with_harness.c",
+          "function": "test",
+          "line": "98",
+          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "assertion exponential_search(arr_first_n, 5, -1) == 0",
+        "property": "test.assertion.6",
+        "sourceLocation": {
+          "file": "Proof_Harness/exponential_search_with_harness.c",
+          "function": "test",
+          "line": "101",
+          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "assertion exponential_search(arr_last_n, 5, 8) == 4",
+        "property": "test.assertion.7",
+        "sourceLocation": {
+          "file": "Proof_Harness/exponential_search_with_harness.c",
+          "function": "test",
+          "line": "104",
+          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "assertion exponential_search(arr_middle, 5, 6) == 3",
+        "property": "test.assertion.8",
+        "sourceLocation": {
+          "file": "Proof_Harness/exponential_search_with_harness.c",
+          "function": "test",
+          "line": "107",
+          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "assertion arr[result] == n",
+        "property": "proof_harness_exponential_search.assertion.1",
+        "sourceLocation": {
+          "file": "Proof_Harness/exponential_search_with_harness.c",
+          "function": "proof_harness_exponential_search",
+          "line": "127",
+          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "free argument must be NULL or valid pointer",
+        "property": "proof_harness_exponential_search.precondition_instance.1",
+        "sourceLocation": {
+          "file": "Proof_Harness/exponential_search_with_harness.c",
+          "function": "proof_harness_exponential_search",
+          "line": "129",
+          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "free argument must be dynamic object",
+        "property": "proof_harness_exponential_search.precondition_instance.2",
+        "sourceLocation": {
+          "file": "Proof_Harness/exponential_search_with_harness.c",
+          "function": "proof_harness_exponential_search",
+          "line": "129",
+          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "free argument has offset zero",
+        "property": "proof_harness_exponential_search.precondition_instance.3",
+        "sourceLocation": {
+          "file": "Proof_Harness/exponential_search_with_harness.c",
+          "function": "proof_harness_exponential_search",
+          "line": "129",
+          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "double free",
+        "property": "proof_harness_exponential_search.precondition_instance.4",
+        "sourceLocation": {
+          "file": "Proof_Harness/exponential_search_with_harness.c",
+          "function": "proof_harness_exponential_search",
+          "line": "129",
+          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "free called for new[] object",
+        "property": "proof_harness_exponential_search.precondition_instance.5",
+        "sourceLocation": {
+          "file": "Proof_Harness/exponential_search_with_harness.c",
+          "function": "proof_harness_exponential_search",
+          "line": "129",
+          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "free called for stack-allocated object",
+        "property": "proof_harness_exponential_search.precondition_instance.6",
+        "sourceLocation": {
+          "file": "Proof_Harness/exponential_search_with_harness.c",
+          "function": "proof_harness_exponential_search",
+          "line": "129",
+          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "max allocation size exceeded",
+        "property": "malloc.assertion.1",
+        "sourceLocation": {
+          "file": "<builtin-library-malloc>",
+          "function": "malloc",
+          "line": "31",
+          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "max allocation may fail",
+        "property": "malloc.assertion.2",
+        "sourceLocation": {
+          "file": "<builtin-library-malloc>",
+          "function": "malloc",
+          "line": "36",
+          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "assertion arr[result - l_index] == n",
+        "property": "proof_harness_binary_search.assertion.1",
+        "sourceLocation": {
+          "file": "Proof_Harness/exponential_search_with_harness.c",
+          "function": "proof_harness_binary_search",
+          "line": "151",
+          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "free argument must be NULL or valid pointer",
+        "property": "proof_harness_binary_search.precondition_instance.1",
+        "sourceLocation": {
+          "file": "Proof_Harness/exponential_search_with_harness.c",
+          "function": "proof_harness_binary_search",
+          "line": "153",
+          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "free argument must be dynamic object",
+        "property": "proof_harness_binary_search.precondition_instance.2",
+        "sourceLocation": {
+          "file": "Proof_Harness/exponential_search_with_harness.c",
+          "function": "proof_harness_binary_search",
+          "line": "153",
+          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "free argument has offset zero",
+        "property": "proof_harness_binary_search.precondition_instance.3",
+        "sourceLocation": {
+          "file": "Proof_Harness/exponential_search_with_harness.c",
+          "function": "proof_harness_binary_search",
+          "line": "153",
+          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "double free",
+        "property": "proof_harness_binary_search.precondition_instance.4",
+        "sourceLocation": {
+          "file": "Proof_Harness/exponential_search_with_harness.c",
+          "function": "proof_harness_binary_search",
+          "line": "153",
+          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "free called for new[] object",
+        "property": "proof_harness_binary_search.precondition_instance.5",
+        "sourceLocation": {
+          "file": "Proof_Harness/exponential_search_with_harness.c",
+          "function": "proof_harness_binary_search",
+          "line": "153",
+          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "free called for stack-allocated object",
+        "property": "proof_harness_binary_search.precondition_instance.6",
+        "sourceLocation": {
+          "file": "Proof_Harness/exponential_search_with_harness.c",
+          "function": "proof_harness_binary_search",
+          "line": "153",
+          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+        },
+        "status": "SUCCESS"
+      }
+    ]
+  },
+  {
+    "messageText": "VERIFICATION SUCCESSFUL",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "cProverStatus": "success"
+  }
+]

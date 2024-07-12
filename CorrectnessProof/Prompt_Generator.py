@@ -11,9 +11,10 @@ def create_prompt(file_content):
     query_code = file_content
 
     prompt = f"""
-    # Preamble
+   # Preamble
     You are given a C program. We need to create a proof harness function.
-    # Code generation example
+    # Code generation example - You are given three examples.
+
     Q: Write a method "void proof_harness_withdraw()" that tests method withdraw below for all possible inputs.
 
     // Define the Account structure
@@ -70,7 +71,7 @@ def create_prompt(file_content):
     - Use only safe C.
     - Do not use custom generics. # fuzzer limitation
     - Do not remove any code from the original code you have received.
-    - Ensure that <assert.h> is declared when using assert. 
+    - Ensure that all libraries needed, including <assert.h>, are declared at the beginning of the code.
     """
 
     return prompt
@@ -89,7 +90,7 @@ def extract_method_name(file_content):
     for match in matches:
         # Extract the method name from the match
         method_name = re.search(r'\b[a-zA-Z_]\w*\s+\*?\b([a-zA-Z_]\w*)\s*\(', match).group(1)
-        if method_name != "main":
+        if method_name not in {"main", "if", "for", "while"}:
             method_names.append(method_name)
 
     # print(method_names)

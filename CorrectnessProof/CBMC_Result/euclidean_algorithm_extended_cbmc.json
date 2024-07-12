@@ -1,0 +1,3616 @@
+[
+  {
+    "program": "CBMC 5.95.1 (cbmc-5.95.1)"
+  },
+  {
+    "messageText": "**** WARNING: Use --unwinding-assertions to obtain sound verification results",
+    "messageType": "WARNING"
+  },
+  {
+    "messageText": "CBMC version 5.95.1 (cbmc-5.95.1) 64-bit x86_64 macos",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Parsing Proof_Harness/euclidean_algorithm_extended_with_harness.c",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Converting",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Type-checking euclidean_algorithm_extended_with_harness",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Generating GOTO Program",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Adding CPROVER library (x86_64)",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Removal of function pointers and virtual functions",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Generic Property Instrumentation",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Running with 8 object bits, 56 offset bits (default)",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Starting Bounded Model Checking",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "**** WARNING: no body for function div",
+    "messageType": "WARNING"
+  },
+  {
+    "messageText": "Unwinding loop extended_euclidean_algorithm.0 iteration 1 file Proof_Harness/euclidean_algorithm_extended_with_harness.c line 87 function extended_euclidean_algorithm thread 0",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding loop extended_euclidean_algorithm.0 iteration 2 file Proof_Harness/euclidean_algorithm_extended_with_harness.c line 87 function extended_euclidean_algorithm thread 0",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Not unwinding loop extended_euclidean_algorithm.0 iteration 3 file Proof_Harness/euclidean_algorithm_extended_with_harness.c line 87 function extended_euclidean_algorithm thread 0",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Runtime Symex: 0.00544354s",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "size of program expression: 241 steps",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "simple slicing removed 2 assignments",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Generated 3 VCC(s), 3 remaining after simplification",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Runtime Postprocess Equation: 2.7375e-05s",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Passing problem to propositional reduction",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "converting SSA",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Runtime Convert SSA: 0.0116435s",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Running propositional reduction",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Post-processing",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Runtime Post-process: 1.3583e-05s",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Solving with MiniSAT 2.2.1 with simplifier",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "12198 variables, 46665 clauses",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "SAT checker: instance is SATISFIABLE",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Runtime Solver: 0.0184493s",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Runtime decision procedure: 0.0301485s",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Building error trace",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Running propositional reduction",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Solving with MiniSAT 2.2.1 with simplifier",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "12198 variables, 11282 clauses",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "SAT checker: instance is SATISFIABLE",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Runtime Solver: 0.000334167s",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Runtime decision procedure: 0.00035275s",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Building error trace",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Running propositional reduction",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Solving with MiniSAT 2.2.1 with simplifier",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "12198 variables, 11281 clauses",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "SAT checker: instance is SATISFIABLE",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Runtime Solver: 0.00159208s",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Runtime decision procedure: 0.00161329s",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Building error trace",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "result": [
+      {
+        "description": "argument to abs must not be INT_MIN",
+        "property": "extended_euclidean_algorithm.precondition_instance.1",
+        "sourceLocation": {
+          "file": "Proof_Harness/euclidean_algorithm_extended_with_harness.c",
+          "function": "extended_euclidean_algorithm",
+          "line": "78",
+          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+        },
+        "status": "FAILURE",
+        "trace": [
+          {
+            "function": {
+              "displayName": "__CPROVER_initialize",
+              "identifier": "__CPROVER_initialize",
+              "sourceLocation": {
+                "file": "<built-in-additions>",
+                "line": "24",
+                "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+              }
+            },
+            "hidden": true,
+            "internal": true,
+            "stepType": "function-call",
+            "thread": 0
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": true,
+            "internal": false,
+            "lhs": "__CPROVER_dead_object",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "<built-in-additions>",
+              "line": "8",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "data": "NULL",
+              "name": "pointer",
+              "type": "const void *"
+            }
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": true,
+            "internal": false,
+            "lhs": "__CPROVER_deallocated",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "<built-in-additions>",
+              "line": "7",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "data": "NULL",
+              "name": "pointer",
+              "type": "const void *"
+            }
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": true,
+            "internal": false,
+            "lhs": "__CPROVER_max_malloc_size",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "<built-in-additions>",
+              "line": "12",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "binary": "0000000010000000000000000000000000000000000000000000000000000000",
+              "data": "36028797018963968ul",
+              "name": "integer",
+              "type": "__CPROVER_size_t",
+              "width": 64
+            }
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": true,
+            "internal": false,
+            "lhs": "__CPROVER_memory_leak",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "<built-in-additions>",
+              "line": "9",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "data": "NULL",
+              "name": "pointer",
+              "type": "const void *"
+            }
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": true,
+            "internal": false,
+            "lhs": "__CPROVER_rounding_mode",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "<built-in-additions>",
+              "line": "16",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "binary": "00000000000000000000000000000000",
+              "data": "0",
+              "name": "integer",
+              "type": "signed int",
+              "width": 32
+            }
+          },
+          {
+            "function": {
+              "displayName": "__CPROVER_initialize",
+              "identifier": "__CPROVER_initialize",
+              "sourceLocation": {
+                "file": "<built-in-additions>",
+                "line": "24",
+                "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+              }
+            },
+            "hidden": true,
+            "internal": false,
+            "stepType": "function-return",
+            "thread": 0
+          },
+          {
+            "hidden": false,
+            "sourceLocation": {
+              "file": "Proof_Harness/euclidean_algorithm_extended_with_harness.c",
+              "line": "156",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "location-only",
+            "thread": 0
+          },
+          {
+            "function": {
+              "displayName": "proof_harness_extended_euclidean_algorithm",
+              "identifier": "proof_harness_extended_euclidean_algorithm",
+              "sourceLocation": {
+                "file": "Proof_Harness/euclidean_algorithm_extended_with_harness.c",
+                "line": "156",
+                "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+              }
+            },
+            "hidden": false,
+            "internal": false,
+            "sourceLocation": {
+              "file": "Proof_Harness/euclidean_algorithm_extended_with_harness.c",
+              "line": "156",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "function-call",
+            "thread": 0
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": false,
+            "internal": false,
+            "lhs": "a",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "Proof_Harness/euclidean_algorithm_extended_with_harness.c",
+              "function": "proof_harness_extended_euclidean_algorithm",
+              "line": "157",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "binary": "10000000000000000000000000000000",
+              "data": "-2147483648",
+              "name": "integer",
+              "type": "signed int",
+              "width": 32
+            }
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": false,
+            "internal": false,
+            "lhs": "b",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "Proof_Harness/euclidean_algorithm_extended_with_harness.c",
+              "function": "proof_harness_extended_euclidean_algorithm",
+              "line": "158",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "binary": "11000000000000000000000000000000",
+              "data": "-1073741824",
+              "name": "integer",
+              "type": "signed int",
+              "width": 32
+            }
+          },
+          {
+            "hidden": false,
+            "sourceLocation": {
+              "file": "Proof_Harness/euclidean_algorithm_extended_with_harness.c",
+              "function": "proof_harness_extended_euclidean_algorithm",
+              "line": "159",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "location-only",
+            "thread": 0
+          },
+          {
+            "hidden": false,
+            "sourceLocation": {
+              "file": "Proof_Harness/euclidean_algorithm_extended_with_harness.c",
+              "function": "proof_harness_extended_euclidean_algorithm",
+              "line": "161",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "location-only",
+            "thread": 0
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": true,
+            "internal": false,
+            "lhs": "result",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "Proof_Harness/euclidean_algorithm_extended_with_harness.c",
+              "function": "proof_harness_extended_euclidean_algorithm",
+              "line": "164",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "members": [
+                {
+                  "name": "gcd",
+                  "value": {
+                    "binary": "00000000000000000000000000000000",
+                    "data": "0",
+                    "name": "integer",
+                    "type": "signed int",
+                    "width": 32
+                  }
+                },
+                {
+                  "name": "x",
+                  "value": {
+                    "binary": "00000000000000000000000000000000",
+                    "data": "0",
+                    "name": "integer",
+                    "type": "signed int",
+                    "width": 32
+                  }
+                },
+                {
+                  "name": "y",
+                  "value": {
+                    "binary": "00000000000000000000000000000000",
+                    "data": "0",
+                    "name": "integer",
+                    "type": "signed int",
+                    "width": 32
+                  }
+                }
+              ],
+              "name": "struct"
+            }
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": true,
+            "internal": false,
+            "lhs": "return_value_extended_euclidean_algorithm",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "Proof_Harness/euclidean_algorithm_extended_with_harness.c",
+              "function": "proof_harness_extended_euclidean_algorithm",
+              "line": "164",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "members": [
+                {
+                  "name": "gcd",
+                  "value": {
+                    "binary": "00000000000000000000000000000000",
+                    "data": "0",
+                    "name": "integer",
+                    "type": "signed int",
+                    "width": 32
+                  }
+                },
+                {
+                  "name": "x",
+                  "value": {
+                    "binary": "00000000000000000000000000000000",
+                    "data": "0",
+                    "name": "integer",
+                    "type": "signed int",
+                    "width": 32
+                  }
+                },
+                {
+                  "name": "y",
+                  "value": {
+                    "binary": "00000000000000000000000000000000",
+                    "data": "0",
+                    "name": "integer",
+                    "type": "signed int",
+                    "width": 32
+                  }
+                }
+              ],
+              "name": "struct"
+            }
+          },
+          {
+            "function": {
+              "displayName": "extended_euclidean_algorithm",
+              "identifier": "extended_euclidean_algorithm",
+              "sourceLocation": {
+                "file": "Proof_Harness/euclidean_algorithm_extended_with_harness.c",
+                "line": "69",
+                "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+              }
+            },
+            "hidden": false,
+            "internal": false,
+            "sourceLocation": {
+              "file": "Proof_Harness/euclidean_algorithm_extended_with_harness.c",
+              "function": "proof_harness_extended_euclidean_algorithm",
+              "line": "164",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "function-call",
+            "thread": 0
+          },
+          {
+            "assignmentType": "actual-parameter",
+            "hidden": false,
+            "internal": false,
+            "lhs": "a",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "Proof_Harness/euclidean_algorithm_extended_with_harness.c",
+              "function": "proof_harness_extended_euclidean_algorithm",
+              "line": "164",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "binary": "10000000000000000000000000000000",
+              "data": "-2147483648",
+              "name": "integer",
+              "type": "signed int",
+              "width": 32
+            }
+          },
+          {
+            "assignmentType": "actual-parameter",
+            "hidden": false,
+            "internal": false,
+            "lhs": "b",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "Proof_Harness/euclidean_algorithm_extended_with_harness.c",
+              "function": "proof_harness_extended_euclidean_algorithm",
+              "line": "164",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "binary": "11000000000000000000000000000000",
+              "data": "-1073741824",
+              "name": "integer",
+              "type": "signed int",
+              "width": 32
+            }
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": true,
+            "internal": false,
+            "lhs": "previous_remainder",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "Proof_Harness/euclidean_algorithm_extended_with_harness.c",
+              "function": "extended_euclidean_algorithm",
+              "line": "71",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "binary": "00000000000000000000000000000000",
+              "data": "0",
+              "name": "integer",
+              "type": "signed int",
+              "width": 32
+            }
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": false,
+            "internal": false,
+            "lhs": "previous_remainder",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "Proof_Harness/euclidean_algorithm_extended_with_harness.c",
+              "function": "extended_euclidean_algorithm",
+              "line": "71",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "binary": "00000000000000000000000000000001",
+              "data": "1",
+              "name": "integer",
+              "type": "signed int",
+              "width": 32
+            }
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": true,
+            "internal": false,
+            "lhs": "previous_x_values",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "Proof_Harness/euclidean_algorithm_extended_with_harness.c",
+              "function": "extended_euclidean_algorithm",
+              "line": "72",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "elements": [
+                {
+                  "index": 0,
+                  "value": {
+                    "binary": "00000000000000000000000000000000",
+                    "data": "0",
+                    "name": "integer",
+                    "type": "signed int",
+                    "width": 32
+                  }
+                },
+                {
+                  "index": 1,
+                  "value": {
+                    "binary": "00000000000000000000000000000000",
+                    "data": "0",
+                    "name": "integer",
+                    "type": "signed int",
+                    "width": 32
+                  }
+                }
+              ],
+              "name": "array"
+            }
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": false,
+            "internal": false,
+            "lhs": "previous_x_values",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "Proof_Harness/euclidean_algorithm_extended_with_harness.c",
+              "function": "extended_euclidean_algorithm",
+              "line": "72",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "elements": [
+                {
+                  "index": 0,
+                  "value": {
+                    "binary": "00000000000000000000000000000000",
+                    "data": "0",
+                    "name": "integer",
+                    "type": "signed int",
+                    "width": 32
+                  }
+                },
+                {
+                  "index": 1,
+                  "value": {
+                    "binary": "00000000000000000000000000000001",
+                    "data": "1",
+                    "name": "integer",
+                    "type": "signed int",
+                    "width": 32
+                  }
+                }
+              ],
+              "name": "array"
+            }
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": false,
+            "internal": false,
+            "lhs": "previous_x_values[0l]",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "Proof_Harness/euclidean_algorithm_extended_with_harness.c",
+              "function": "extended_euclidean_algorithm",
+              "line": "72",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "binary": "00000000000000000000000000000000",
+              "data": "0",
+              "name": "integer",
+              "type": "signed int",
+              "width": 32
+            }
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": false,
+            "internal": false,
+            "lhs": "previous_x_values[1l]",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "Proof_Harness/euclidean_algorithm_extended_with_harness.c",
+              "function": "extended_euclidean_algorithm",
+              "line": "72",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "binary": "00000000000000000000000000000001",
+              "data": "1",
+              "name": "integer",
+              "type": "signed int",
+              "width": 32
+            }
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": true,
+            "internal": false,
+            "lhs": "previous_y_values",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "Proof_Harness/euclidean_algorithm_extended_with_harness.c",
+              "function": "extended_euclidean_algorithm",
+              "line": "73",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "elements": [
+                {
+                  "index": 0,
+                  "value": {
+                    "binary": "00000000000000000000000000000000",
+                    "data": "0",
+                    "name": "integer",
+                    "type": "signed int",
+                    "width": 32
+                  }
+                },
+                {
+                  "index": 1,
+                  "value": {
+                    "binary": "00000000000000000000000000000000",
+                    "data": "0",
+                    "name": "integer",
+                    "type": "signed int",
+                    "width": 32
+                  }
+                }
+              ],
+              "name": "array"
+            }
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": false,
+            "internal": false,
+            "lhs": "previous_y_values",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "Proof_Harness/euclidean_algorithm_extended_with_harness.c",
+              "function": "extended_euclidean_algorithm",
+              "line": "73",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "elements": [
+                {
+                  "index": 0,
+                  "value": {
+                    "binary": "00000000000000000000000000000001",
+                    "data": "1",
+                    "name": "integer",
+                    "type": "signed int",
+                    "width": 32
+                  }
+                },
+                {
+                  "index": 1,
+                  "value": {
+                    "binary": "00000000000000000000000000000000",
+                    "data": "0",
+                    "name": "integer",
+                    "type": "signed int",
+                    "width": 32
+                  }
+                }
+              ],
+              "name": "array"
+            }
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": false,
+            "internal": false,
+            "lhs": "previous_y_values[0l]",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "Proof_Harness/euclidean_algorithm_extended_with_harness.c",
+              "function": "extended_euclidean_algorithm",
+              "line": "73",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "binary": "00000000000000000000000000000001",
+              "data": "1",
+              "name": "integer",
+              "type": "signed int",
+              "width": 32
+            }
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": false,
+            "internal": false,
+            "lhs": "previous_y_values[1l]",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "Proof_Harness/euclidean_algorithm_extended_with_harness.c",
+              "function": "extended_euclidean_algorithm",
+              "line": "73",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "binary": "00000000000000000000000000000000",
+              "data": "0",
+              "name": "integer",
+              "type": "signed int",
+              "width": 32
+            }
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": false,
+            "internal": false,
+            "lhs": "div_result",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "Proof_Harness/euclidean_algorithm_extended_with_harness.c",
+              "function": "extended_euclidean_algorithm",
+              "line": "74",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "members": [
+                {
+                  "name": "quot",
+                  "value": {
+                    "binary": "00000000000000000000000000000000",
+                    "data": "0",
+                    "name": "integer",
+                    "type": "signed int",
+                    "width": 32
+                  }
+                },
+                {
+                  "name": "rem",
+                  "value": {
+                    "binary": "00000000000000000000000000000000",
+                    "data": "0",
+                    "name": "integer",
+                    "type": "signed int",
+                    "width": 32
+                  }
+                }
+              ],
+              "name": "struct"
+            }
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": false,
+            "internal": false,
+            "lhs": "result",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "Proof_Harness/euclidean_algorithm_extended_with_harness.c",
+              "function": "extended_euclidean_algorithm",
+              "line": "75",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "members": [
+                {
+                  "name": "gcd",
+                  "value": {
+                    "binary": "00000000000000000000000000000000",
+                    "data": "0",
+                    "name": "integer",
+                    "type": "signed int",
+                    "width": 32
+                  }
+                },
+                {
+                  "name": "x",
+                  "value": {
+                    "binary": "00000000000000000000000000000000",
+                    "data": "0",
+                    "name": "integer",
+                    "type": "signed int",
+                    "width": 32
+                  }
+                },
+                {
+                  "name": "y",
+                  "value": {
+                    "binary": "00000000000000000000000000000000",
+                    "data": "0",
+                    "name": "integer",
+                    "type": "signed int",
+                    "width": 32
+                  }
+                }
+              ],
+              "name": "struct"
+            }
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": true,
+            "internal": false,
+            "lhs": "return_value_abs",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "Proof_Harness/euclidean_algorithm_extended_with_harness.c",
+              "function": "extended_euclidean_algorithm",
+              "line": "78",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "binary": "00000000000000000000000000000000",
+              "data": "0",
+              "name": "integer",
+              "type": "signed int",
+              "width": 32
+            }
+          },
+          {
+            "hidden": false,
+            "internal": false,
+            "property": "extended_euclidean_algorithm.precondition_instance.1",
+            "reason": "argument to abs must not be INT_MIN",
+            "sourceLocation": {
+              "file": "Proof_Harness/euclidean_algorithm_extended_with_harness.c",
+              "function": "extended_euclidean_algorithm",
+              "line": "78",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "failure",
+            "thread": 0
+          }
+        ]
+      },
+      {
+        "description": "argument to abs must not be INT_MIN",
+        "property": "extended_euclidean_algorithm.precondition_instance.2",
+        "sourceLocation": {
+          "file": "Proof_Harness/euclidean_algorithm_extended_with_harness.c",
+          "function": "extended_euclidean_algorithm",
+          "line": "78",
+          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+        },
+        "status": "FAILURE",
+        "trace": [
+          {
+            "function": {
+              "displayName": "__CPROVER_initialize",
+              "identifier": "__CPROVER_initialize",
+              "sourceLocation": {
+                "file": "<built-in-additions>",
+                "line": "24",
+                "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+              }
+            },
+            "hidden": true,
+            "internal": true,
+            "stepType": "function-call",
+            "thread": 0
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": true,
+            "internal": false,
+            "lhs": "__CPROVER_dead_object",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "<built-in-additions>",
+              "line": "8",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "data": "NULL",
+              "name": "pointer",
+              "type": "const void *"
+            }
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": true,
+            "internal": false,
+            "lhs": "__CPROVER_deallocated",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "<built-in-additions>",
+              "line": "7",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "data": "NULL",
+              "name": "pointer",
+              "type": "const void *"
+            }
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": true,
+            "internal": false,
+            "lhs": "__CPROVER_max_malloc_size",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "<built-in-additions>",
+              "line": "12",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "binary": "0000000010000000000000000000000000000000000000000000000000000000",
+              "data": "36028797018963968ul",
+              "name": "integer",
+              "type": "__CPROVER_size_t",
+              "width": 64
+            }
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": true,
+            "internal": false,
+            "lhs": "__CPROVER_memory_leak",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "<built-in-additions>",
+              "line": "9",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "data": "NULL",
+              "name": "pointer",
+              "type": "const void *"
+            }
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": true,
+            "internal": false,
+            "lhs": "__CPROVER_rounding_mode",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "<built-in-additions>",
+              "line": "16",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "binary": "00000000000000000000000000000000",
+              "data": "0",
+              "name": "integer",
+              "type": "signed int",
+              "width": 32
+            }
+          },
+          {
+            "function": {
+              "displayName": "__CPROVER_initialize",
+              "identifier": "__CPROVER_initialize",
+              "sourceLocation": {
+                "file": "<built-in-additions>",
+                "line": "24",
+                "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+              }
+            },
+            "hidden": true,
+            "internal": false,
+            "stepType": "function-return",
+            "thread": 0
+          },
+          {
+            "hidden": false,
+            "sourceLocation": {
+              "file": "Proof_Harness/euclidean_algorithm_extended_with_harness.c",
+              "line": "156",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "location-only",
+            "thread": 0
+          },
+          {
+            "function": {
+              "displayName": "proof_harness_extended_euclidean_algorithm",
+              "identifier": "proof_harness_extended_euclidean_algorithm",
+              "sourceLocation": {
+                "file": "Proof_Harness/euclidean_algorithm_extended_with_harness.c",
+                "line": "156",
+                "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+              }
+            },
+            "hidden": false,
+            "internal": false,
+            "sourceLocation": {
+              "file": "Proof_Harness/euclidean_algorithm_extended_with_harness.c",
+              "line": "156",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "function-call",
+            "thread": 0
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": false,
+            "internal": false,
+            "lhs": "a",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "Proof_Harness/euclidean_algorithm_extended_with_harness.c",
+              "function": "proof_harness_extended_euclidean_algorithm",
+              "line": "157",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "binary": "10000000000000000000000000000000",
+              "data": "-2147483648",
+              "name": "integer",
+              "type": "signed int",
+              "width": 32
+            }
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": false,
+            "internal": false,
+            "lhs": "b",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "Proof_Harness/euclidean_algorithm_extended_with_harness.c",
+              "function": "proof_harness_extended_euclidean_algorithm",
+              "line": "158",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "binary": "10000000000000000000000000000000",
+              "data": "-2147483648",
+              "name": "integer",
+              "type": "signed int",
+              "width": 32
+            }
+          },
+          {
+            "hidden": false,
+            "sourceLocation": {
+              "file": "Proof_Harness/euclidean_algorithm_extended_with_harness.c",
+              "function": "proof_harness_extended_euclidean_algorithm",
+              "line": "159",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "location-only",
+            "thread": 0
+          },
+          {
+            "hidden": false,
+            "sourceLocation": {
+              "file": "Proof_Harness/euclidean_algorithm_extended_with_harness.c",
+              "function": "proof_harness_extended_euclidean_algorithm",
+              "line": "161",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "location-only",
+            "thread": 0
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": true,
+            "internal": false,
+            "lhs": "result",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "Proof_Harness/euclidean_algorithm_extended_with_harness.c",
+              "function": "proof_harness_extended_euclidean_algorithm",
+              "line": "164",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "members": [
+                {
+                  "name": "gcd",
+                  "value": {
+                    "binary": "00000000000000000000000000000000",
+                    "data": "0",
+                    "name": "integer",
+                    "type": "signed int",
+                    "width": 32
+                  }
+                },
+                {
+                  "name": "x",
+                  "value": {
+                    "binary": "00000000000000000000000000000000",
+                    "data": "0",
+                    "name": "integer",
+                    "type": "signed int",
+                    "width": 32
+                  }
+                },
+                {
+                  "name": "y",
+                  "value": {
+                    "binary": "00000000000000000000000000000000",
+                    "data": "0",
+                    "name": "integer",
+                    "type": "signed int",
+                    "width": 32
+                  }
+                }
+              ],
+              "name": "struct"
+            }
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": true,
+            "internal": false,
+            "lhs": "return_value_extended_euclidean_algorithm",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "Proof_Harness/euclidean_algorithm_extended_with_harness.c",
+              "function": "proof_harness_extended_euclidean_algorithm",
+              "line": "164",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "members": [
+                {
+                  "name": "gcd",
+                  "value": {
+                    "binary": "00000000000000000000000000000000",
+                    "data": "0",
+                    "name": "integer",
+                    "type": "signed int",
+                    "width": 32
+                  }
+                },
+                {
+                  "name": "x",
+                  "value": {
+                    "binary": "00000000000000000000000000000000",
+                    "data": "0",
+                    "name": "integer",
+                    "type": "signed int",
+                    "width": 32
+                  }
+                },
+                {
+                  "name": "y",
+                  "value": {
+                    "binary": "00000000000000000000000000000000",
+                    "data": "0",
+                    "name": "integer",
+                    "type": "signed int",
+                    "width": 32
+                  }
+                }
+              ],
+              "name": "struct"
+            }
+          },
+          {
+            "function": {
+              "displayName": "extended_euclidean_algorithm",
+              "identifier": "extended_euclidean_algorithm",
+              "sourceLocation": {
+                "file": "Proof_Harness/euclidean_algorithm_extended_with_harness.c",
+                "line": "69",
+                "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+              }
+            },
+            "hidden": false,
+            "internal": false,
+            "sourceLocation": {
+              "file": "Proof_Harness/euclidean_algorithm_extended_with_harness.c",
+              "function": "proof_harness_extended_euclidean_algorithm",
+              "line": "164",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "function-call",
+            "thread": 0
+          },
+          {
+            "assignmentType": "actual-parameter",
+            "hidden": false,
+            "internal": false,
+            "lhs": "a",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "Proof_Harness/euclidean_algorithm_extended_with_harness.c",
+              "function": "proof_harness_extended_euclidean_algorithm",
+              "line": "164",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "binary": "10000000000000000000000000000000",
+              "data": "-2147483648",
+              "name": "integer",
+              "type": "signed int",
+              "width": 32
+            }
+          },
+          {
+            "assignmentType": "actual-parameter",
+            "hidden": false,
+            "internal": false,
+            "lhs": "b",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "Proof_Harness/euclidean_algorithm_extended_with_harness.c",
+              "function": "proof_harness_extended_euclidean_algorithm",
+              "line": "164",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "binary": "10000000000000000000000000000000",
+              "data": "-2147483648",
+              "name": "integer",
+              "type": "signed int",
+              "width": 32
+            }
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": true,
+            "internal": false,
+            "lhs": "previous_remainder",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "Proof_Harness/euclidean_algorithm_extended_with_harness.c",
+              "function": "extended_euclidean_algorithm",
+              "line": "71",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "binary": "00000000000000000000000000000000",
+              "data": "0",
+              "name": "integer",
+              "type": "signed int",
+              "width": 32
+            }
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": false,
+            "internal": false,
+            "lhs": "previous_remainder",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "Proof_Harness/euclidean_algorithm_extended_with_harness.c",
+              "function": "extended_euclidean_algorithm",
+              "line": "71",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "binary": "00000000000000000000000000000001",
+              "data": "1",
+              "name": "integer",
+              "type": "signed int",
+              "width": 32
+            }
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": true,
+            "internal": false,
+            "lhs": "previous_x_values",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "Proof_Harness/euclidean_algorithm_extended_with_harness.c",
+              "function": "extended_euclidean_algorithm",
+              "line": "72",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "elements": [
+                {
+                  "index": 0,
+                  "value": {
+                    "binary": "00000000000000000000000000000000",
+                    "data": "0",
+                    "name": "integer",
+                    "type": "signed int",
+                    "width": 32
+                  }
+                },
+                {
+                  "index": 1,
+                  "value": {
+                    "binary": "00000000000000000000000000000000",
+                    "data": "0",
+                    "name": "integer",
+                    "type": "signed int",
+                    "width": 32
+                  }
+                }
+              ],
+              "name": "array"
+            }
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": false,
+            "internal": false,
+            "lhs": "previous_x_values",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "Proof_Harness/euclidean_algorithm_extended_with_harness.c",
+              "function": "extended_euclidean_algorithm",
+              "line": "72",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "elements": [
+                {
+                  "index": 0,
+                  "value": {
+                    "binary": "00000000000000000000000000000000",
+                    "data": "0",
+                    "name": "integer",
+                    "type": "signed int",
+                    "width": 32
+                  }
+                },
+                {
+                  "index": 1,
+                  "value": {
+                    "binary": "00000000000000000000000000000001",
+                    "data": "1",
+                    "name": "integer",
+                    "type": "signed int",
+                    "width": 32
+                  }
+                }
+              ],
+              "name": "array"
+            }
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": false,
+            "internal": false,
+            "lhs": "previous_x_values[0l]",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "Proof_Harness/euclidean_algorithm_extended_with_harness.c",
+              "function": "extended_euclidean_algorithm",
+              "line": "72",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "binary": "00000000000000000000000000000000",
+              "data": "0",
+              "name": "integer",
+              "type": "signed int",
+              "width": 32
+            }
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": false,
+            "internal": false,
+            "lhs": "previous_x_values[1l]",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "Proof_Harness/euclidean_algorithm_extended_with_harness.c",
+              "function": "extended_euclidean_algorithm",
+              "line": "72",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "binary": "00000000000000000000000000000001",
+              "data": "1",
+              "name": "integer",
+              "type": "signed int",
+              "width": 32
+            }
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": true,
+            "internal": false,
+            "lhs": "previous_y_values",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "Proof_Harness/euclidean_algorithm_extended_with_harness.c",
+              "function": "extended_euclidean_algorithm",
+              "line": "73",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "elements": [
+                {
+                  "index": 0,
+                  "value": {
+                    "binary": "00000000000000000000000000000000",
+                    "data": "0",
+                    "name": "integer",
+                    "type": "signed int",
+                    "width": 32
+                  }
+                },
+                {
+                  "index": 1,
+                  "value": {
+                    "binary": "00000000000000000000000000000000",
+                    "data": "0",
+                    "name": "integer",
+                    "type": "signed int",
+                    "width": 32
+                  }
+                }
+              ],
+              "name": "array"
+            }
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": false,
+            "internal": false,
+            "lhs": "previous_y_values",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "Proof_Harness/euclidean_algorithm_extended_with_harness.c",
+              "function": "extended_euclidean_algorithm",
+              "line": "73",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "elements": [
+                {
+                  "index": 0,
+                  "value": {
+                    "binary": "00000000000000000000000000000001",
+                    "data": "1",
+                    "name": "integer",
+                    "type": "signed int",
+                    "width": 32
+                  }
+                },
+                {
+                  "index": 1,
+                  "value": {
+                    "binary": "00000000000000000000000000000000",
+                    "data": "0",
+                    "name": "integer",
+                    "type": "signed int",
+                    "width": 32
+                  }
+                }
+              ],
+              "name": "array"
+            }
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": false,
+            "internal": false,
+            "lhs": "previous_y_values[0l]",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "Proof_Harness/euclidean_algorithm_extended_with_harness.c",
+              "function": "extended_euclidean_algorithm",
+              "line": "73",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "binary": "00000000000000000000000000000001",
+              "data": "1",
+              "name": "integer",
+              "type": "signed int",
+              "width": 32
+            }
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": false,
+            "internal": false,
+            "lhs": "previous_y_values[1l]",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "Proof_Harness/euclidean_algorithm_extended_with_harness.c",
+              "function": "extended_euclidean_algorithm",
+              "line": "73",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "binary": "00000000000000000000000000000000",
+              "data": "0",
+              "name": "integer",
+              "type": "signed int",
+              "width": 32
+            }
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": false,
+            "internal": false,
+            "lhs": "div_result",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "Proof_Harness/euclidean_algorithm_extended_with_harness.c",
+              "function": "extended_euclidean_algorithm",
+              "line": "74",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "members": [
+                {
+                  "name": "quot",
+                  "value": {
+                    "binary": "00000000000000000000000000000000",
+                    "data": "0",
+                    "name": "integer",
+                    "type": "signed int",
+                    "width": 32
+                  }
+                },
+                {
+                  "name": "rem",
+                  "value": {
+                    "binary": "00000000000000000000000000000000",
+                    "data": "0",
+                    "name": "integer",
+                    "type": "signed int",
+                    "width": 32
+                  }
+                }
+              ],
+              "name": "struct"
+            }
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": false,
+            "internal": false,
+            "lhs": "result",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "Proof_Harness/euclidean_algorithm_extended_with_harness.c",
+              "function": "extended_euclidean_algorithm",
+              "line": "75",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "members": [
+                {
+                  "name": "gcd",
+                  "value": {
+                    "binary": "00000000000000000000000000000000",
+                    "data": "0",
+                    "name": "integer",
+                    "type": "signed int",
+                    "width": 32
+                  }
+                },
+                {
+                  "name": "x",
+                  "value": {
+                    "binary": "00000000000000000000000000000000",
+                    "data": "0",
+                    "name": "integer",
+                    "type": "signed int",
+                    "width": 32
+                  }
+                },
+                {
+                  "name": "y",
+                  "value": {
+                    "binary": "00000000000000000000000000000000",
+                    "data": "0",
+                    "name": "integer",
+                    "type": "signed int",
+                    "width": 32
+                  }
+                }
+              ],
+              "name": "struct"
+            }
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": true,
+            "internal": false,
+            "lhs": "return_value_abs",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "Proof_Harness/euclidean_algorithm_extended_with_harness.c",
+              "function": "extended_euclidean_algorithm",
+              "line": "78",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "binary": "00000000000000000000000000000000",
+              "data": "0",
+              "name": "integer",
+              "type": "signed int",
+              "width": 32
+            }
+          },
+          {
+            "hidden": false,
+            "internal": false,
+            "property": "extended_euclidean_algorithm.precondition_instance.1",
+            "reason": "argument to abs must not be INT_MIN",
+            "sourceLocation": {
+              "file": "Proof_Harness/euclidean_algorithm_extended_with_harness.c",
+              "function": "extended_euclidean_algorithm",
+              "line": "78",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "failure",
+            "thread": 0
+          },
+          {
+            "hidden": false,
+            "sourceLocation": {
+              "file": "Proof_Harness/euclidean_algorithm_extended_with_harness.c",
+              "function": "extended_euclidean_algorithm",
+              "line": "78",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "location-only",
+            "thread": 0
+          },
+          {
+            "function": {
+              "displayName": "abs",
+              "identifier": "abs",
+              "sourceLocation": {
+                "file": "<builtin-library-abs>",
+                "line": "9",
+                "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+              }
+            },
+            "hidden": false,
+            "internal": false,
+            "sourceLocation": {
+              "file": "Proof_Harness/euclidean_algorithm_extended_with_harness.c",
+              "function": "extended_euclidean_algorithm",
+              "line": "78",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "function-call",
+            "thread": 0
+          },
+          {
+            "assignmentType": "actual-parameter",
+            "hidden": false,
+            "internal": false,
+            "lhs": "i",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "Proof_Harness/euclidean_algorithm_extended_with_harness.c",
+              "function": "extended_euclidean_algorithm",
+              "line": "78",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "binary": "10000000000000000000000000000000",
+              "data": "-2147483648",
+              "name": "integer",
+              "type": "signed int",
+              "width": 32
+            }
+          },
+          {
+            "hidden": false,
+            "sourceLocation": {
+              "file": "<builtin-library-abs>",
+              "function": "abs",
+              "line": "13",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "location-only",
+            "thread": 0
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": false,
+            "internal": false,
+            "lhs": "goto_symex$$return_value$$abs",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "<builtin-library-abs>",
+              "function": "abs",
+              "line": "14",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "binary": "10000000000000000000000000000000",
+              "data": "-2147483648",
+              "name": "integer",
+              "type": "signed int",
+              "width": 32
+            }
+          },
+          {
+            "function": {
+              "displayName": "abs",
+              "identifier": "abs",
+              "sourceLocation": {
+                "file": "<builtin-library-abs>",
+                "line": "9",
+                "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+              }
+            },
+            "hidden": false,
+            "internal": false,
+            "sourceLocation": {
+              "file": "<builtin-library-abs>",
+              "function": "abs",
+              "line": "15",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "function-return",
+            "thread": 0
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": false,
+            "internal": false,
+            "lhs": "return_value_abs",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "Proof_Harness/euclidean_algorithm_extended_with_harness.c",
+              "function": "extended_euclidean_algorithm",
+              "line": "78",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "binary": "10000000000000000000000000000000",
+              "data": "-2147483648",
+              "name": "integer",
+              "type": "signed int",
+              "width": 32
+            }
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": true,
+            "internal": false,
+            "lhs": "return_value_abs$0",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "Proof_Harness/euclidean_algorithm_extended_with_harness.c",
+              "function": "extended_euclidean_algorithm",
+              "line": "78",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "binary": "00000000000000000000000000000000",
+              "data": "0",
+              "name": "integer",
+              "type": "signed int",
+              "width": 32
+            }
+          },
+          {
+            "hidden": false,
+            "internal": false,
+            "property": "extended_euclidean_algorithm.precondition_instance.2",
+            "reason": "argument to abs must not be INT_MIN",
+            "sourceLocation": {
+              "file": "Proof_Harness/euclidean_algorithm_extended_with_harness.c",
+              "function": "extended_euclidean_algorithm",
+              "line": "78",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "failure",
+            "thread": 0
+          }
+        ]
+      },
+      {
+        "description": "assertion result.gcd == gcd",
+        "property": "single_test.assertion.1",
+        "sourceLocation": {
+          "file": "Proof_Harness/euclidean_algorithm_extended_with_harness.c",
+          "function": "single_test",
+          "line": "126",
+          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "assertion result.x == x",
+        "property": "single_test.assertion.2",
+        "sourceLocation": {
+          "file": "Proof_Harness/euclidean_algorithm_extended_with_harness.c",
+          "function": "single_test",
+          "line": "127",
+          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "assertion result.y == y",
+        "property": "single_test.assertion.3",
+        "sourceLocation": {
+          "file": "Proof_Harness/euclidean_algorithm_extended_with_harness.c",
+          "function": "single_test",
+          "line": "128",
+          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "assertion a * x + b * y == gcd",
+        "property": "proof_harness_extended_euclidean_algorithm.assertion.1",
+        "sourceLocation": {
+          "file": "Proof_Harness/euclidean_algorithm_extended_with_harness.c",
+          "function": "proof_harness_extended_euclidean_algorithm",
+          "line": "169",
+          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+        },
+        "status": "FAILURE",
+        "trace": [
+          {
+            "function": {
+              "displayName": "__CPROVER_initialize",
+              "identifier": "__CPROVER_initialize",
+              "sourceLocation": {
+                "file": "<built-in-additions>",
+                "line": "24",
+                "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+              }
+            },
+            "hidden": true,
+            "internal": true,
+            "stepType": "function-call",
+            "thread": 0
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": true,
+            "internal": false,
+            "lhs": "__CPROVER_dead_object",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "<built-in-additions>",
+              "line": "8",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "data": "NULL",
+              "name": "pointer",
+              "type": "const void *"
+            }
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": true,
+            "internal": false,
+            "lhs": "__CPROVER_deallocated",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "<built-in-additions>",
+              "line": "7",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "data": "NULL",
+              "name": "pointer",
+              "type": "const void *"
+            }
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": true,
+            "internal": false,
+            "lhs": "__CPROVER_max_malloc_size",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "<built-in-additions>",
+              "line": "12",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "binary": "0000000010000000000000000000000000000000000000000000000000000000",
+              "data": "36028797018963968ul",
+              "name": "integer",
+              "type": "__CPROVER_size_t",
+              "width": 64
+            }
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": true,
+            "internal": false,
+            "lhs": "__CPROVER_memory_leak",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "<built-in-additions>",
+              "line": "9",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "data": "NULL",
+              "name": "pointer",
+              "type": "const void *"
+            }
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": true,
+            "internal": false,
+            "lhs": "__CPROVER_rounding_mode",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "<built-in-additions>",
+              "line": "16",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "binary": "00000000000000000000000000000000",
+              "data": "0",
+              "name": "integer",
+              "type": "signed int",
+              "width": 32
+            }
+          },
+          {
+            "function": {
+              "displayName": "__CPROVER_initialize",
+              "identifier": "__CPROVER_initialize",
+              "sourceLocation": {
+                "file": "<built-in-additions>",
+                "line": "24",
+                "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+              }
+            },
+            "hidden": true,
+            "internal": false,
+            "stepType": "function-return",
+            "thread": 0
+          },
+          {
+            "hidden": false,
+            "sourceLocation": {
+              "file": "Proof_Harness/euclidean_algorithm_extended_with_harness.c",
+              "line": "156",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "location-only",
+            "thread": 0
+          },
+          {
+            "function": {
+              "displayName": "proof_harness_extended_euclidean_algorithm",
+              "identifier": "proof_harness_extended_euclidean_algorithm",
+              "sourceLocation": {
+                "file": "Proof_Harness/euclidean_algorithm_extended_with_harness.c",
+                "line": "156",
+                "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+              }
+            },
+            "hidden": false,
+            "internal": false,
+            "sourceLocation": {
+              "file": "Proof_Harness/euclidean_algorithm_extended_with_harness.c",
+              "line": "156",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "function-call",
+            "thread": 0
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": false,
+            "internal": false,
+            "lhs": "a",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "Proof_Harness/euclidean_algorithm_extended_with_harness.c",
+              "function": "proof_harness_extended_euclidean_algorithm",
+              "line": "157",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "binary": "00000000000000000000000000000000",
+              "data": "0",
+              "name": "integer",
+              "type": "signed int",
+              "width": 32
+            }
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": false,
+            "internal": false,
+            "lhs": "b",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "Proof_Harness/euclidean_algorithm_extended_with_harness.c",
+              "function": "proof_harness_extended_euclidean_algorithm",
+              "line": "158",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "binary": "00000000000000000000000000000000",
+              "data": "0",
+              "name": "integer",
+              "type": "signed int",
+              "width": 32
+            }
+          },
+          {
+            "hidden": false,
+            "sourceLocation": {
+              "file": "Proof_Harness/euclidean_algorithm_extended_with_harness.c",
+              "function": "proof_harness_extended_euclidean_algorithm",
+              "line": "159",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "location-only",
+            "thread": 0
+          },
+          {
+            "hidden": false,
+            "sourceLocation": {
+              "file": "Proof_Harness/euclidean_algorithm_extended_with_harness.c",
+              "function": "proof_harness_extended_euclidean_algorithm",
+              "line": "161",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "location-only",
+            "thread": 0
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": true,
+            "internal": false,
+            "lhs": "result",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "Proof_Harness/euclidean_algorithm_extended_with_harness.c",
+              "function": "proof_harness_extended_euclidean_algorithm",
+              "line": "164",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "members": [
+                {
+                  "name": "gcd",
+                  "value": {
+                    "binary": "00000000000000000000000000000000",
+                    "data": "0",
+                    "name": "integer",
+                    "type": "signed int",
+                    "width": 32
+                  }
+                },
+                {
+                  "name": "x",
+                  "value": {
+                    "binary": "00000000000000000000000000000000",
+                    "data": "0",
+                    "name": "integer",
+                    "type": "signed int",
+                    "width": 32
+                  }
+                },
+                {
+                  "name": "y",
+                  "value": {
+                    "binary": "00000000000000000000000000000000",
+                    "data": "0",
+                    "name": "integer",
+                    "type": "signed int",
+                    "width": 32
+                  }
+                }
+              ],
+              "name": "struct"
+            }
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": true,
+            "internal": false,
+            "lhs": "return_value_extended_euclidean_algorithm",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "Proof_Harness/euclidean_algorithm_extended_with_harness.c",
+              "function": "proof_harness_extended_euclidean_algorithm",
+              "line": "164",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "members": [
+                {
+                  "name": "gcd",
+                  "value": {
+                    "binary": "00000000000000000000000000000000",
+                    "data": "0",
+                    "name": "integer",
+                    "type": "signed int",
+                    "width": 32
+                  }
+                },
+                {
+                  "name": "x",
+                  "value": {
+                    "binary": "00000000000000000000000000000000",
+                    "data": "0",
+                    "name": "integer",
+                    "type": "signed int",
+                    "width": 32
+                  }
+                },
+                {
+                  "name": "y",
+                  "value": {
+                    "binary": "00000000000000000000000000000000",
+                    "data": "0",
+                    "name": "integer",
+                    "type": "signed int",
+                    "width": 32
+                  }
+                }
+              ],
+              "name": "struct"
+            }
+          },
+          {
+            "function": {
+              "displayName": "extended_euclidean_algorithm",
+              "identifier": "extended_euclidean_algorithm",
+              "sourceLocation": {
+                "file": "Proof_Harness/euclidean_algorithm_extended_with_harness.c",
+                "line": "69",
+                "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+              }
+            },
+            "hidden": false,
+            "internal": false,
+            "sourceLocation": {
+              "file": "Proof_Harness/euclidean_algorithm_extended_with_harness.c",
+              "function": "proof_harness_extended_euclidean_algorithm",
+              "line": "164",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "function-call",
+            "thread": 0
+          },
+          {
+            "assignmentType": "actual-parameter",
+            "hidden": false,
+            "internal": false,
+            "lhs": "a",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "Proof_Harness/euclidean_algorithm_extended_with_harness.c",
+              "function": "proof_harness_extended_euclidean_algorithm",
+              "line": "164",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "binary": "00000000000000000000000000000000",
+              "data": "0",
+              "name": "integer",
+              "type": "signed int",
+              "width": 32
+            }
+          },
+          {
+            "assignmentType": "actual-parameter",
+            "hidden": false,
+            "internal": false,
+            "lhs": "b",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "Proof_Harness/euclidean_algorithm_extended_with_harness.c",
+              "function": "proof_harness_extended_euclidean_algorithm",
+              "line": "164",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "binary": "00000000000000000000000000000000",
+              "data": "0",
+              "name": "integer",
+              "type": "signed int",
+              "width": 32
+            }
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": true,
+            "internal": false,
+            "lhs": "previous_remainder",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "Proof_Harness/euclidean_algorithm_extended_with_harness.c",
+              "function": "extended_euclidean_algorithm",
+              "line": "71",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "binary": "00000000000000000000000000000000",
+              "data": "0",
+              "name": "integer",
+              "type": "signed int",
+              "width": 32
+            }
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": false,
+            "internal": false,
+            "lhs": "previous_remainder",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "Proof_Harness/euclidean_algorithm_extended_with_harness.c",
+              "function": "extended_euclidean_algorithm",
+              "line": "71",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "binary": "00000000000000000000000000000001",
+              "data": "1",
+              "name": "integer",
+              "type": "signed int",
+              "width": 32
+            }
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": true,
+            "internal": false,
+            "lhs": "previous_x_values",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "Proof_Harness/euclidean_algorithm_extended_with_harness.c",
+              "function": "extended_euclidean_algorithm",
+              "line": "72",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "elements": [
+                {
+                  "index": 0,
+                  "value": {
+                    "binary": "00000000000000000000000000000000",
+                    "data": "0",
+                    "name": "integer",
+                    "type": "signed int",
+                    "width": 32
+                  }
+                },
+                {
+                  "index": 1,
+                  "value": {
+                    "binary": "00000000000000000000000000000000",
+                    "data": "0",
+                    "name": "integer",
+                    "type": "signed int",
+                    "width": 32
+                  }
+                }
+              ],
+              "name": "array"
+            }
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": false,
+            "internal": false,
+            "lhs": "previous_x_values",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "Proof_Harness/euclidean_algorithm_extended_with_harness.c",
+              "function": "extended_euclidean_algorithm",
+              "line": "72",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "elements": [
+                {
+                  "index": 0,
+                  "value": {
+                    "binary": "00000000000000000000000000000000",
+                    "data": "0",
+                    "name": "integer",
+                    "type": "signed int",
+                    "width": 32
+                  }
+                },
+                {
+                  "index": 1,
+                  "value": {
+                    "binary": "00000000000000000000000000000001",
+                    "data": "1",
+                    "name": "integer",
+                    "type": "signed int",
+                    "width": 32
+                  }
+                }
+              ],
+              "name": "array"
+            }
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": false,
+            "internal": false,
+            "lhs": "previous_x_values[0l]",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "Proof_Harness/euclidean_algorithm_extended_with_harness.c",
+              "function": "extended_euclidean_algorithm",
+              "line": "72",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "binary": "00000000000000000000000000000000",
+              "data": "0",
+              "name": "integer",
+              "type": "signed int",
+              "width": 32
+            }
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": false,
+            "internal": false,
+            "lhs": "previous_x_values[1l]",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "Proof_Harness/euclidean_algorithm_extended_with_harness.c",
+              "function": "extended_euclidean_algorithm",
+              "line": "72",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "binary": "00000000000000000000000000000001",
+              "data": "1",
+              "name": "integer",
+              "type": "signed int",
+              "width": 32
+            }
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": true,
+            "internal": false,
+            "lhs": "previous_y_values",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "Proof_Harness/euclidean_algorithm_extended_with_harness.c",
+              "function": "extended_euclidean_algorithm",
+              "line": "73",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "elements": [
+                {
+                  "index": 0,
+                  "value": {
+                    "binary": "00000000000000000000000000000000",
+                    "data": "0",
+                    "name": "integer",
+                    "type": "signed int",
+                    "width": 32
+                  }
+                },
+                {
+                  "index": 1,
+                  "value": {
+                    "binary": "00000000000000000000000000000000",
+                    "data": "0",
+                    "name": "integer",
+                    "type": "signed int",
+                    "width": 32
+                  }
+                }
+              ],
+              "name": "array"
+            }
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": false,
+            "internal": false,
+            "lhs": "previous_y_values",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "Proof_Harness/euclidean_algorithm_extended_with_harness.c",
+              "function": "extended_euclidean_algorithm",
+              "line": "73",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "elements": [
+                {
+                  "index": 0,
+                  "value": {
+                    "binary": "00000000000000000000000000000001",
+                    "data": "1",
+                    "name": "integer",
+                    "type": "signed int",
+                    "width": 32
+                  }
+                },
+                {
+                  "index": 1,
+                  "value": {
+                    "binary": "00000000000000000000000000000000",
+                    "data": "0",
+                    "name": "integer",
+                    "type": "signed int",
+                    "width": 32
+                  }
+                }
+              ],
+              "name": "array"
+            }
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": false,
+            "internal": false,
+            "lhs": "previous_y_values[0l]",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "Proof_Harness/euclidean_algorithm_extended_with_harness.c",
+              "function": "extended_euclidean_algorithm",
+              "line": "73",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "binary": "00000000000000000000000000000001",
+              "data": "1",
+              "name": "integer",
+              "type": "signed int",
+              "width": 32
+            }
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": false,
+            "internal": false,
+            "lhs": "previous_y_values[1l]",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "Proof_Harness/euclidean_algorithm_extended_with_harness.c",
+              "function": "extended_euclidean_algorithm",
+              "line": "73",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "binary": "00000000000000000000000000000000",
+              "data": "0",
+              "name": "integer",
+              "type": "signed int",
+              "width": 32
+            }
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": false,
+            "internal": false,
+            "lhs": "div_result",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "Proof_Harness/euclidean_algorithm_extended_with_harness.c",
+              "function": "extended_euclidean_algorithm",
+              "line": "74",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "members": [
+                {
+                  "name": "quot",
+                  "value": {
+                    "binary": "00000000000000000000000000000000",
+                    "data": "0",
+                    "name": "integer",
+                    "type": "signed int",
+                    "width": 32
+                  }
+                },
+                {
+                  "name": "rem",
+                  "value": {
+                    "binary": "00000000000000000000000000000000",
+                    "data": "0",
+                    "name": "integer",
+                    "type": "signed int",
+                    "width": 32
+                  }
+                }
+              ],
+              "name": "struct"
+            }
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": false,
+            "internal": false,
+            "lhs": "result",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "Proof_Harness/euclidean_algorithm_extended_with_harness.c",
+              "function": "extended_euclidean_algorithm",
+              "line": "75",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "members": [
+                {
+                  "name": "gcd",
+                  "value": {
+                    "binary": "00000000000000000000000000000000",
+                    "data": "0",
+                    "name": "integer",
+                    "type": "signed int",
+                    "width": 32
+                  }
+                },
+                {
+                  "name": "x",
+                  "value": {
+                    "binary": "00000000000000000000000000000000",
+                    "data": "0",
+                    "name": "integer",
+                    "type": "signed int",
+                    "width": 32
+                  }
+                },
+                {
+                  "name": "y",
+                  "value": {
+                    "binary": "00000000000000000000000000000000",
+                    "data": "0",
+                    "name": "integer",
+                    "type": "signed int",
+                    "width": 32
+                  }
+                }
+              ],
+              "name": "struct"
+            }
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": true,
+            "internal": false,
+            "lhs": "return_value_abs",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "Proof_Harness/euclidean_algorithm_extended_with_harness.c",
+              "function": "extended_euclidean_algorithm",
+              "line": "78",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "binary": "00000000000000000000000000000000",
+              "data": "0",
+              "name": "integer",
+              "type": "signed int",
+              "width": 32
+            }
+          },
+          {
+            "hidden": false,
+            "sourceLocation": {
+              "file": "Proof_Harness/euclidean_algorithm_extended_with_harness.c",
+              "function": "extended_euclidean_algorithm",
+              "line": "78",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "location-only",
+            "thread": 0
+          },
+          {
+            "function": {
+              "displayName": "abs",
+              "identifier": "abs",
+              "sourceLocation": {
+                "file": "<builtin-library-abs>",
+                "line": "9",
+                "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+              }
+            },
+            "hidden": false,
+            "internal": false,
+            "sourceLocation": {
+              "file": "Proof_Harness/euclidean_algorithm_extended_with_harness.c",
+              "function": "extended_euclidean_algorithm",
+              "line": "78",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "function-call",
+            "thread": 0
+          },
+          {
+            "assignmentType": "actual-parameter",
+            "hidden": false,
+            "internal": false,
+            "lhs": "i",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "Proof_Harness/euclidean_algorithm_extended_with_harness.c",
+              "function": "extended_euclidean_algorithm",
+              "line": "78",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "binary": "00000000000000000000000000000000",
+              "data": "0",
+              "name": "integer",
+              "type": "signed int",
+              "width": 32
+            }
+          },
+          {
+            "hidden": false,
+            "sourceLocation": {
+              "file": "<builtin-library-abs>",
+              "function": "abs",
+              "line": "13",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "location-only",
+            "thread": 0
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": false,
+            "internal": false,
+            "lhs": "goto_symex$$return_value$$abs",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "<builtin-library-abs>",
+              "function": "abs",
+              "line": "14",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "binary": "00000000000000000000000000000000",
+              "data": "0",
+              "name": "integer",
+              "type": "signed int",
+              "width": 32
+            }
+          },
+          {
+            "function": {
+              "displayName": "abs",
+              "identifier": "abs",
+              "sourceLocation": {
+                "file": "<builtin-library-abs>",
+                "line": "9",
+                "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+              }
+            },
+            "hidden": false,
+            "internal": false,
+            "sourceLocation": {
+              "file": "<builtin-library-abs>",
+              "function": "abs",
+              "line": "15",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "function-return",
+            "thread": 0
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": false,
+            "internal": false,
+            "lhs": "return_value_abs",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "Proof_Harness/euclidean_algorithm_extended_with_harness.c",
+              "function": "extended_euclidean_algorithm",
+              "line": "78",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "binary": "00000000000000000000000000000000",
+              "data": "0",
+              "name": "integer",
+              "type": "signed int",
+              "width": 32
+            }
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": true,
+            "internal": false,
+            "lhs": "return_value_abs$0",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "Proof_Harness/euclidean_algorithm_extended_with_harness.c",
+              "function": "extended_euclidean_algorithm",
+              "line": "78",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "binary": "00000000000000000000000000000000",
+              "data": "0",
+              "name": "integer",
+              "type": "signed int",
+              "width": 32
+            }
+          },
+          {
+            "hidden": false,
+            "sourceLocation": {
+              "file": "Proof_Harness/euclidean_algorithm_extended_with_harness.c",
+              "function": "extended_euclidean_algorithm",
+              "line": "78",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "location-only",
+            "thread": 0
+          },
+          {
+            "function": {
+              "displayName": "abs",
+              "identifier": "abs",
+              "sourceLocation": {
+                "file": "<builtin-library-abs>",
+                "line": "9",
+                "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+              }
+            },
+            "hidden": false,
+            "internal": false,
+            "sourceLocation": {
+              "file": "Proof_Harness/euclidean_algorithm_extended_with_harness.c",
+              "function": "extended_euclidean_algorithm",
+              "line": "78",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "function-call",
+            "thread": 0
+          },
+          {
+            "assignmentType": "actual-parameter",
+            "hidden": false,
+            "internal": false,
+            "lhs": "i",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "Proof_Harness/euclidean_algorithm_extended_with_harness.c",
+              "function": "extended_euclidean_algorithm",
+              "line": "78",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "binary": "00000000000000000000000000000000",
+              "data": "0",
+              "name": "integer",
+              "type": "signed int",
+              "width": 32
+            }
+          },
+          {
+            "hidden": false,
+            "sourceLocation": {
+              "file": "<builtin-library-abs>",
+              "function": "abs",
+              "line": "13",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "location-only",
+            "thread": 0
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": false,
+            "internal": false,
+            "lhs": "goto_symex$$return_value$$abs",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "<builtin-library-abs>",
+              "function": "abs",
+              "line": "14",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "binary": "00000000000000000000000000000000",
+              "data": "0",
+              "name": "integer",
+              "type": "signed int",
+              "width": 32
+            }
+          },
+          {
+            "function": {
+              "displayName": "abs",
+              "identifier": "abs",
+              "sourceLocation": {
+                "file": "<builtin-library-abs>",
+                "line": "9",
+                "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+              }
+            },
+            "hidden": false,
+            "internal": false,
+            "sourceLocation": {
+              "file": "<builtin-library-abs>",
+              "function": "abs",
+              "line": "15",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "function-return",
+            "thread": 0
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": false,
+            "internal": false,
+            "lhs": "return_value_abs$0",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "Proof_Harness/euclidean_algorithm_extended_with_harness.c",
+              "function": "extended_euclidean_algorithm",
+              "line": "78",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "binary": "00000000000000000000000000000000",
+              "data": "0",
+              "name": "integer",
+              "type": "signed int",
+              "width": 32
+            }
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": false,
+            "internal": false,
+            "lhs": "div_result.rem",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "Proof_Harness/euclidean_algorithm_extended_with_harness.c",
+              "function": "extended_euclidean_algorithm",
+              "line": "85",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "binary": "00000000000000000000000000000000",
+              "data": "0",
+              "name": "integer",
+              "type": "signed int",
+              "width": 32
+            }
+          },
+          {
+            "hidden": false,
+            "sourceLocation": {
+              "file": "Proof_Harness/euclidean_algorithm_extended_with_harness.c",
+              "function": "extended_euclidean_algorithm",
+              "line": "87",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "loop-head",
+            "thread": 0
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": false,
+            "internal": false,
+            "lhs": "result.gcd",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "Proof_Harness/euclidean_algorithm_extended_with_harness.c",
+              "function": "extended_euclidean_algorithm",
+              "line": "100",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "binary": "00000000000000000000000000000001",
+              "data": "1",
+              "name": "integer",
+              "type": "signed int",
+              "width": 32
+            }
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": false,
+            "internal": false,
+            "lhs": "result.x",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "Proof_Harness/euclidean_algorithm_extended_with_harness.c",
+              "function": "extended_euclidean_algorithm",
+              "line": "101",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "binary": "00000000000000000000000000000001",
+              "data": "1",
+              "name": "integer",
+              "type": "signed int",
+              "width": 32
+            }
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": false,
+            "internal": false,
+            "lhs": "result.y",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "Proof_Harness/euclidean_algorithm_extended_with_harness.c",
+              "function": "extended_euclidean_algorithm",
+              "line": "102",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "binary": "00000000000000000000000000000000",
+              "data": "0",
+              "name": "integer",
+              "type": "signed int",
+              "width": 32
+            }
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": false,
+            "internal": false,
+            "lhs": "goto_symex$$return_value$$extended_euclidean_algorithm.gcd",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "Proof_Harness/euclidean_algorithm_extended_with_harness.c",
+              "function": "extended_euclidean_algorithm",
+              "line": "104",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "binary": "00000000000000000000000000000001",
+              "data": "1",
+              "name": "integer",
+              "type": "signed int",
+              "width": 32
+            }
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": false,
+            "internal": false,
+            "lhs": "goto_symex$$return_value$$extended_euclidean_algorithm.x",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "Proof_Harness/euclidean_algorithm_extended_with_harness.c",
+              "function": "extended_euclidean_algorithm",
+              "line": "104",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "binary": "00000000000000000000000000000001",
+              "data": "1",
+              "name": "integer",
+              "type": "signed int",
+              "width": 32
+            }
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": false,
+            "internal": false,
+            "lhs": "goto_symex$$return_value$$extended_euclidean_algorithm.y",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "Proof_Harness/euclidean_algorithm_extended_with_harness.c",
+              "function": "extended_euclidean_algorithm",
+              "line": "104",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "binary": "00000000000000000000000000000000",
+              "data": "0",
+              "name": "integer",
+              "type": "signed int",
+              "width": 32
+            }
+          },
+          {
+            "function": {
+              "displayName": "extended_euclidean_algorithm",
+              "identifier": "extended_euclidean_algorithm",
+              "sourceLocation": {
+                "file": "Proof_Harness/euclidean_algorithm_extended_with_harness.c",
+                "line": "69",
+                "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+              }
+            },
+            "hidden": false,
+            "internal": false,
+            "sourceLocation": {
+              "file": "Proof_Harness/euclidean_algorithm_extended_with_harness.c",
+              "function": "extended_euclidean_algorithm",
+              "line": "105",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "function-return",
+            "thread": 0
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": false,
+            "internal": false,
+            "lhs": "return_value_extended_euclidean_algorithm.gcd",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "Proof_Harness/euclidean_algorithm_extended_with_harness.c",
+              "function": "proof_harness_extended_euclidean_algorithm",
+              "line": "164",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "binary": "00000000000000000000000000000001",
+              "data": "1",
+              "name": "integer",
+              "type": "signed int",
+              "width": 32
+            }
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": false,
+            "internal": false,
+            "lhs": "return_value_extended_euclidean_algorithm.x",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "Proof_Harness/euclidean_algorithm_extended_with_harness.c",
+              "function": "proof_harness_extended_euclidean_algorithm",
+              "line": "164",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "binary": "00000000000000000000000000000001",
+              "data": "1",
+              "name": "integer",
+              "type": "signed int",
+              "width": 32
+            }
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": false,
+            "internal": false,
+            "lhs": "return_value_extended_euclidean_algorithm.y",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "Proof_Harness/euclidean_algorithm_extended_with_harness.c",
+              "function": "proof_harness_extended_euclidean_algorithm",
+              "line": "164",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "binary": "00000000000000000000000000000000",
+              "data": "0",
+              "name": "integer",
+              "type": "signed int",
+              "width": 32
+            }
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": false,
+            "internal": false,
+            "lhs": "result.gcd",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "Proof_Harness/euclidean_algorithm_extended_with_harness.c",
+              "function": "proof_harness_extended_euclidean_algorithm",
+              "line": "164",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "binary": "00000000000000000000000000000001",
+              "data": "1",
+              "name": "integer",
+              "type": "signed int",
+              "width": 32
+            }
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": false,
+            "internal": false,
+            "lhs": "result.x",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "Proof_Harness/euclidean_algorithm_extended_with_harness.c",
+              "function": "proof_harness_extended_euclidean_algorithm",
+              "line": "164",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "binary": "00000000000000000000000000000001",
+              "data": "1",
+              "name": "integer",
+              "type": "signed int",
+              "width": 32
+            }
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": false,
+            "internal": false,
+            "lhs": "result.y",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "Proof_Harness/euclidean_algorithm_extended_with_harness.c",
+              "function": "proof_harness_extended_euclidean_algorithm",
+              "line": "164",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "binary": "00000000000000000000000000000000",
+              "data": "0",
+              "name": "integer",
+              "type": "signed int",
+              "width": 32
+            }
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": true,
+            "internal": false,
+            "lhs": "gcd",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "Proof_Harness/euclidean_algorithm_extended_with_harness.c",
+              "function": "proof_harness_extended_euclidean_algorithm",
+              "line": "166",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "binary": "00000000000000000000000000000000",
+              "data": "0",
+              "name": "integer",
+              "type": "signed int",
+              "width": 32
+            }
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": false,
+            "internal": false,
+            "lhs": "gcd",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "Proof_Harness/euclidean_algorithm_extended_with_harness.c",
+              "function": "proof_harness_extended_euclidean_algorithm",
+              "line": "166",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "binary": "00000000000000000000000000000001",
+              "data": "1",
+              "name": "integer",
+              "type": "signed int",
+              "width": 32
+            }
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": true,
+            "internal": false,
+            "lhs": "x",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "Proof_Harness/euclidean_algorithm_extended_with_harness.c",
+              "function": "proof_harness_extended_euclidean_algorithm",
+              "line": "167",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "binary": "00000000000000000000000000000000",
+              "data": "0",
+              "name": "integer",
+              "type": "signed int",
+              "width": 32
+            }
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": false,
+            "internal": false,
+            "lhs": "x",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "Proof_Harness/euclidean_algorithm_extended_with_harness.c",
+              "function": "proof_harness_extended_euclidean_algorithm",
+              "line": "167",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "binary": "00000000000000000000000000000001",
+              "data": "1",
+              "name": "integer",
+              "type": "signed int",
+              "width": 32
+            }
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": true,
+            "internal": false,
+            "lhs": "y",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "Proof_Harness/euclidean_algorithm_extended_with_harness.c",
+              "function": "proof_harness_extended_euclidean_algorithm",
+              "line": "168",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "binary": "00000000000000000000000000000000",
+              "data": "0",
+              "name": "integer",
+              "type": "signed int",
+              "width": 32
+            }
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": false,
+            "internal": false,
+            "lhs": "y",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "Proof_Harness/euclidean_algorithm_extended_with_harness.c",
+              "function": "proof_harness_extended_euclidean_algorithm",
+              "line": "168",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "binary": "00000000000000000000000000000000",
+              "data": "0",
+              "name": "integer",
+              "type": "signed int",
+              "width": 32
+            }
+          },
+          {
+            "hidden": false,
+            "internal": false,
+            "property": "proof_harness_extended_euclidean_algorithm.assertion.1",
+            "reason": "assertion a * x + b * y == gcd",
+            "sourceLocation": {
+              "file": "Proof_Harness/euclidean_algorithm_extended_with_harness.c",
+              "function": "proof_harness_extended_euclidean_algorithm",
+              "line": "169",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "failure",
+            "thread": 0
+          }
+        ]
+      },
+      {
+        "description": "assertion arr[0] == newval",
+        "property": "proof_harness_xy_push.assertion.1",
+        "sourceLocation": {
+          "file": "Proof_Harness/euclidean_algorithm_extended_with_harness.c",
+          "function": "proof_harness_xy_push",
+          "line": "179",
+          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "assertion prev[0] == prev[1] - (prev[0] * quotient)",
+        "property": "proof_harness_calculate_next_xy.assertion.1",
+        "sourceLocation": {
+          "file": "Proof_Harness/euclidean_algorithm_extended_with_harness.c",
+          "function": "proof_harness_calculate_next_xy",
+          "line": "193",
+          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+        },
+        "status": "SUCCESS"
+      }
+    ]
+  },
+  {
+    "messageText": "VERIFICATION FAILED",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "cProverStatus": "failure"
+  }
+]

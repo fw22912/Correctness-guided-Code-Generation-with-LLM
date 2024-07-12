@@ -48,16 +48,13 @@ def create_prompt(file_content, prev_output, counterexamples):
     }}
     
     Q: You are given the original C code file, previous output, and the counter examples. Your job is to improve the 
-    incorrect methods only based on the provided counter exmaples.
+    incorrect methods only based on the provided counter examples.
     
     #Original C code:
-    
     {file_content}
-    
     
     #Assistant's previous response:
     {prev_output}
-    
     
     That is incorrect on the following inputs:
     #Counterexamples
@@ -69,7 +66,7 @@ def create_prompt(file_content, prev_output, counterexamples):
     - Use only safe C.
     - Do not use custom generics. # fuzzer limitation
     - Do not remove any code from the original code you have received.
-    - Ensure that <assert.h> is declared when using assert. 
+    - Ensure that all libraries needed, including <assert.h>, are declared at the beginning of the code.
     """
 
     return prompt

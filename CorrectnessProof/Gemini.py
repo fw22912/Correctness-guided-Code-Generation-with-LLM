@@ -36,16 +36,6 @@ def extract_harness(response_text):
     raise ValueError("No function containing 'proof_harness' in its name found.")
 
 
-# def extract_proof_harness_functions(module):
-#     # Get all functions in the module
-#     all_functions = inspect.getmembers(module, inspect.isfunction)
-#
-#     # Filter functions containing 'proof_harness' in their name
-#     proof_harness_functions = [func for name, func in all_functions if 'proof_harness' in name]
-#
-#     return proof_harness_functions
-
-
 def generate_file(cleaned_text, original_file_path):
     file_name = os.path.splitext(os.path.basename(original_file_path))[0]
     harness_file_name = os.path.join(base_dir, file_name + "_with_harness.c")
@@ -72,15 +62,9 @@ def main(prompt, file_path, method_list):
     print("Running Gemini-Flask...")
     response_text = generate_content(prompt)
 
-    # print("Response_text...")
-    # print(response_text)
-
-    # Extracting texts
     cleaned_text = clean_code(response_text)
     harness_function = extract_harness(response_text)
-    # print(harness_function)
 
-    # Saving them into a file
     generate_file(cleaned_text, file_path)
     generate_harness_file(harness_function, file_path)
 

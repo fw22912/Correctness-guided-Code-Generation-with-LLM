@@ -7,6 +7,16 @@ import CounterExample_Generator as counter_example_generator
 import time
 import tracemalloc
 import pandas as pd
+import re
+
+
+def extract_harness_name(file_content):
+    function_pattern = re.compile(r'\b[a-zA-Z_]\w*\s+\*?\b(proof_harness\w*)\s*\([^)]*\)\s*\{')
+    matches = function_pattern.findall(file_content)
+
+    method_names = [match for match in matches if match not in {"main", "if", "for", "while"}]
+
+    return method_names
 
 
 def generate_proof_harness(method_list):
@@ -24,6 +34,7 @@ def run_benchmark(file_path):
     tracemalloc.start()
     success = False
     iterations = 0
+    cnt = 0
 
     while True:
         try:
@@ -35,12 +46,16 @@ def run_benchmark(file_path):
                 print("Verification successful")
                 success = True
                 break
+            elif cnt > 1:
+                print("Verification failed. Moving on to the next example...\n")
+                break
             else:
                 print("Verification Failed. Retrying with a new prompt with counterexamples...")
-                counter_examples = None
-                prompt = counter_example_generator.create_prompt(file_content, response_text,
-                                                                 counterexamples=counter_examples)
-                print(f"New Prompt Generated:\n{prompt}")
+                # counter_examples = None
+                # prompt = counter_example_generator.create_prompt(file_content, response_text, counterexamples=counter_examples)
+                # print(f"New Prompt Generated:\n{prompt}")
+                cnt += 1
+
         except Exception as e:
             print(f"An unexpected error occurred: {e}")
             break
