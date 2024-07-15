@@ -35,7 +35,15 @@ def main(file_path):
             harness_list = extract_harness_name(response_text)
             print("harness list: ", harness_list)
             # print("Response Text:  \n", response_text)
+            reason, trace = cbmc_call.main(file_path,harness_list)
+            print(reason, trace)
 
+
+        except Exception as e:
+            print(f"An unexpected error occurred: \n{e}")
+            break
+
+'''
             reiteration = cbmc_call.main(file_path, harness_list)
 
             if reiteration:
@@ -50,9 +58,8 @@ def main(file_path):
                 # counter_examples = None
                 # prompt = counter_example_generator.create_prompt(file_content, response_text, counterexamples=counter_examples)
                 # print(f"New Prompt Generated:\n{prompt}")
-        except Exception as e:
-            print(f"An unexpected error occurred: \n{e}")
-            break
+'''
+
 
 
 if __name__ == "__main__":

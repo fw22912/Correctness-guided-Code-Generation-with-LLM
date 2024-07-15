@@ -1,21 +1,13 @@
 [
   {
-    "program": "CBMC 5.95.1 (cbmc-5.95.1)"
+    "program": "CBMC 6.0.1 (cbmc-6.0.1)"
   },
   {
     "messageText": "**** WARNING: Use --unwinding-assertions to obtain sound verification results",
     "messageType": "WARNING"
   },
   {
-    "messageText": "CBMC version 5.95.1 (cbmc-5.95.1) 64-bit x86_64 macos",
-    "messageType": "STATUS-MESSAGE"
-  },
-  {
-    "messageText": "Parsing Proof_Harness/armstrong_number_with_harness.c",
-    "messageType": "STATUS-MESSAGE"
-  },
-  {
-    "messageText": "Converting",
+    "messageText": "CBMC version 6.0.1 (cbmc-6.0.1) 64-bit x86_64 macos",
     "messageType": "STATUS-MESSAGE"
   },
   {
@@ -895,11 +887,11 @@
     "messageType": "STATUS-MESSAGE"
   },
   {
-    "messageText": "Runtime Symex: 0.0296603s",
+    "messageText": "Runtime Symex: 0.125428s",
     "messageType": "STATUS-MESSAGE"
   },
   {
-    "messageText": "size of program expression: 1637 steps",
+    "messageText": "size of program expression: 1636 steps",
     "messageType": "STATUS-MESSAGE"
   },
   {
@@ -911,7 +903,7 @@
     "messageType": "STATUS-MESSAGE"
   },
   {
-    "messageText": "Runtime Postprocess Equation: 8.2042e-05s",
+    "messageText": "Runtime Postprocess Equation: 0.00015422s",
     "messageType": "STATUS-MESSAGE"
   },
   {

@@ -4,6 +4,7 @@ import os
 import Gemini as gemini
 import argparse
 import CounterExample_Generator as cg
+import cbmc_parsing
 
 
 def run_cbmc(file_path, harness_method_list):
@@ -15,16 +16,20 @@ def run_cbmc(file_path, harness_method_list):
     harness_file_name = original_file_name + "_with_harness.c"
     cbmc_output_file = os.path.join(output_path, original_file_name + "_cbmc.json")
 
-    harness_command = " ".join([f"--function {method}" for method in harness_method_list])
-
+    #harness_command = " ".join([f"--function {method}" for method in harness_method_list])
+    method = harness_method_list[0]
+    harness_command = " ".join([f"--function {method}" ])
     # print("Command: " + harness_command)
-    print(f'cbmc Proof_Harness/{harness_file_name} {harness_command} --unwind 3 --trace --json-ui')
+    #this bit calls the files in one go
+    print(f'cbmc Proof_Harness/{harness_file_name} {harness_command} --no-standard-checks --no-malloc-may-fail --verbosity 8 --unwind 3 --trace --json-ui')
 
-    with open(cbmc_output_file, 'w+') as file:
-        subprocess.run(f'cbmc Proof_Harness/{harness_file_name} {harness_command} --unwind 3 --trace --json-ui',
-                       shell=True, stdout=file)
+    cbmc_output_str = subprocess.check_output(f'cbmc Proof_Harness/{harness_file_name} {harness_command} --no-standard-checks --no-malloc-may-fail --verbosity 8 --unwind 3 --trace --json-ui', shell=True, text=True)
 
-    return cbmc_output_file
+    #with open(cbmc_output_file, 'w+') as file:
+     #   subprocess.run(f'cbmc Proof_Harness/{harness_file_name} {harness_command} --no-standard-checks --no-malloc-may-fail --verbosity 8 --unwind 3 --trace --json-ui',
+      #                 shell=True, stdout=file)
+
+    return cbmc_output_str
 
 
 
@@ -55,6 +60,11 @@ def main(file_path, harness_method_list):
     file_name = os.path.splitext(os.path.basename(file_path))[0]
     # gemini.main(file_path)
     print("Running CBMC...")
-    run_cbmc(file_path, harness_method_list)
-    reiteration = cbmc_verification_status(file_name)
-    return reiteration
+    cbmc_output = run_cbmc(file_path, harness_method_list)
+    with open(file_path + '_with_harness', 'r') as file:
+        total_code_with_harnesses = file.read
+
+
+    reason, trace = cbmc_parsing.main(cbmc_output, total_code_with_harnesses, harness_method_list[0])
+    #reiteration = cbmc_verification_status(file_name)
+    return reason , trace
