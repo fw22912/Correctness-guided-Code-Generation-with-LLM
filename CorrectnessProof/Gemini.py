@@ -5,7 +5,7 @@ import Prompt_Generator as pg
 import re
 import inspect
 
-base_dir = "/Users/osc/Documents/GitHub Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof/Proof_Harness"
+base_dir = "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof/Proof_Harness"
 
 
 def configure_genai(api_key):
@@ -38,7 +38,6 @@ def extract_harness(response_text):
 
 def generate_file(cleaned_text, original_file_path):
     file_name = os.path.splitext(os.path.basename(original_file_path))[0]
-    print('here')
     harness_file_name = os.path.join(base_dir, file_name + "_with_harness.c")
 
     os.makedirs(base_dir, exist_ok=True)
