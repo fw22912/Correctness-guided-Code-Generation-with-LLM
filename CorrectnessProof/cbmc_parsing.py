@@ -158,10 +158,11 @@ def main(cbmc_output, total_code_with_harnesses, method_list):
     for entry in data:
         message = entry.get("messageText", "")
         if "syntax error" in message:
-            print('A syntax error was found on line '+ entry['sourceLocation']['line'])
-            return entry
+            syntax = ['syntax']
+            print('A syntax error was found on line ' + entry['sourceLocation']['line'])
+            return syntax.append(entry['sourceLocation']['line'])
         if 'result' in entry:
-
+            counter_examples = ['result']
             #cbmc_result = data #json data
             #print(cbmc_result)
             #print(total_code_with_harnesses)
@@ -188,6 +189,7 @@ def main(cbmc_output, total_code_with_harnesses, method_list):
                         'description'] + '\' failed under the following counter example: ')
                     for key, value in example['counter_example'].items():
                         print(key +' has input value ' + value['data'])
+                        counter_examples.append([key,value['data']])
                     #print(list((example['counter_example']).keys())[0])
 
                     #print(json.dumps(example, indent = 2))
@@ -197,7 +199,7 @@ def main(cbmc_output, total_code_with_harnesses, method_list):
              #these are the input variables found in a contradiction for the assertion
             #print('the counter examples and their values are:')
             #print(values_from_trace)
-            return values_from_trace
+            return counter_examples
 
 
 #main(cbmc_output, total_code_with_harnesses, method_list)  #returns the syntax msg or trae msg

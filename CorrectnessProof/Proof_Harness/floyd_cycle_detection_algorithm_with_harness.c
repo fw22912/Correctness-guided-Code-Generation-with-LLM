@@ -1,7 +1,8 @@
 #include <assert.h>   /// for assert
 #include <inttypes.h> /// for uint32_t
 #include <stdio.h>    /// for IO operations
-#include <stdlib.h>   /// for malloc
+#include <stdlib.h>  // for malloc
+#include <stdbool.h> // for bool
 
 /**
  * @file
@@ -74,21 +75,29 @@ int main()
 
 void proof_harness_duplicateNumber() {
     size_t n;
-    uint32_t *in_arr;
     __CPROVER_assume(n > 1);
-    in_arr = (uint32_t *) malloc(n * sizeof(uint32_t));
+    uint32_t *in_arr = (uint32_t *)malloc(sizeof(uint32_t) * n);
     __CPROVER_assume(in_arr != NULL);
-    for (size_t i = 0; i < n; ++i) {
+
+    for (size_t i = 0; i < n; i++) {
         __CPROVER_assume(in_arr[i] >= 1 && in_arr[i] <= n);
     }
-    uint32_t result = duplicateNumber(in_arr, n);
-    if (result != -1) {
-        __CPROVER_assert(in_arr[result] == result, "The returned value is not a duplicate");
-        for (size_t i = 0; i < n; ++i) {
-            if (i != result) {
-                __CPROVER_assert(in_arr[i] != result, "There are more than one duplicates");
+
+    bool has_duplicate = false;
+    for (size_t i = 0; i < n; i++) {
+        for (size_t j = i + 1; j < n; j++) {
+            if (in_arr[i] == in_arr[j]) {
+                has_duplicate = true;
+                break;
             }
         }
+        if (has_duplicate) {
+            break;
+        }
     }
+
+    uint32_t expected_result = has_duplicate ? in_arr[0] : -1;
+    uint32_t result = duplicateNumber(in_arr, n);
+    assert(result == expected_result);
     free(in_arr);
 }

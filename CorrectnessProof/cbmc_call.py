@@ -47,7 +47,7 @@ def cbmc_verification_status(file_name):
     # return True
 
 
-def create_couter_example_prompt(original_code, prev_output, counter_examples):
+def create_counter_example_prompt(original_code, prev_output, counter_examples):
     counter_prompt = cg.main(original_code, prev_output, counter_examples)
     return counter_prompt
 
@@ -67,7 +67,7 @@ def main(file_path, harness_method_list): #expects the original file path and ha
 
     method_list = [item.replace('proof_harness_', '') for item in harness_method_list]
     #print(method_list)
-    cbmc_parsing.main(cbmc_output, total_code_with_harnesses, method_list)
+    parse = cbmc_parsing.main(cbmc_output, total_code_with_harnesses, method_list)
 
     reiteration = cbmc_verification_status(file_name)
-    return reiteration
+    return reiteration, parse

@@ -36,8 +36,8 @@ def main(file_path):
             print("harness list: ", harness_list)
             # print("Response Text:  \n", response_text)
 
-            reiteration = cbmc_call.main(file_path, harness_list)
-
+            reiteration, parse = cbmc_call.main(file_path, harness_list)
+            print(parse) #parse[0] is either 'syntax' or 'result',
             if reiteration:
                 print("Verification successful\n")
                 break
