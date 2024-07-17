@@ -1,0 +1,140 @@
+[
+  {
+    "program": "CBMC 6.0.1 (cbmc-6.0.1)"
+  },
+  {
+    "messageText": "**** WARNING: Use --unwinding-assertions to obtain sound verification results",
+    "messageType": "WARNING"
+  },
+  {
+    "messageText": "CBMC version 6.0.1 (cbmc-6.0.1) 64-bit x86_64 macos",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Type-checking mul_add_with_harness",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "function 'rand' is not declared",
+    "messageType": "WARNING",
+    "sourceLocation": {
+      "file": "Proof_Harness/mul_add_with_harness.c",
+      "function": "proof_harness_add",
+      "line": "19",
+      "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+    }
+  },
+  {
+    "messageText": "Generating GOTO Program",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Adding CPROVER library (x86_64)",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Removal of function pointers and virtual functions",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Generic Property Instrumentation",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Running with 8 object bits, 56 offset bits (default)",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Starting Bounded Model Checking",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Runtime Symex: 0.00100368s",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "size of program expression: 46 steps",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "simple slicing removed 2 assignments",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Generated 1 VCC(s), 1 remaining after simplification",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Runtime Postprocess Equation: 3.2932e-05s",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Passing problem to propositional reduction",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "converting SSA",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Runtime Convert SSA: 0.000631365s",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Running propositional reduction",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Runtime Post-process: 6.108e-06s",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "578 variables, 1285 clauses",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "SAT checker: instance is UNSATISFIABLE",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Runtime Solver: 0.00310414s",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Runtime decision procedure: 0.00380297s",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "result": [
+      {
+        "description": "assertion result == a + b",
+        "property": "proof_harness_add.assertion.1",
+        "sourceLocation": {
+          "file": "Proof_Harness/mul_add_with_harness.c",
+          "function": "proof_harness_add",
+          "line": "22",
+          "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "assertion result == a * b",
+        "property": "proof_harness_multiply.assertion.1",
+        "sourceLocation": {
+          "file": "Proof_Harness/mul_add_with_harness.c",
+          "function": "proof_harness_multiply",
+          "line": "33",
+          "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+        },
+        "status": "SUCCESS"
+      }
+    ]
+  },
+  {
+    "messageText": "VERIFICATION SUCCESSFUL",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "cProverStatus": "success"
+  }
+]

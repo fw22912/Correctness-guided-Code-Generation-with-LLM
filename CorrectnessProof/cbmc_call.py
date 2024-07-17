@@ -4,6 +4,7 @@ import os
 import Gemini as gemini
 import argparse
 import CounterExample_Generator as cg
+import cbmc_parsing
 
 
 def run_cbmc(file_path, harness_method_list):
@@ -16,12 +17,12 @@ def run_cbmc(file_path, harness_method_list):
     cbmc_output_file = os.path.join(output_path, original_file_name + "_cbmc.json")
 
     harness_command = " ".join([f"--function {method}" for method in harness_method_list])
-
+    #harness_command =  " ".join([f"--function {harness_method_list[0]}"]) ###for now just do first, for loop later?
     # print("Command: " + harness_command)
-    print(f'cbmc Proof_Harness/{harness_file_name} {harness_command} --unwind 3 --trace --json-ui')
+    print(f'cbmc Proof_Harness/{harness_file_name} {harness_command} --no-standard-checks --no-malloc-may-fail --verbosity 8 --unwind 3 --trace --json-ui')
 
     with open(cbmc_output_file, 'w+') as file:
-        subprocess.run(f'cbmc Proof_Harness/{harness_file_name} {harness_command} --unwind 3 --trace --json-ui',
+        subprocess.run(f'cbmc Proof_Harness/{harness_file_name} {harness_command} --no-standard-checks --no-malloc-may-fail --verbosity 8 --unwind 3 --trace --json-ui',
                        shell=True, stdout=file)
 
     return cbmc_output_file
@@ -51,10 +52,22 @@ def create_couter_example_prompt(original_code, prev_output, counter_examples):
     return counter_prompt
 
 
-def main(file_path, harness_method_list):
+def main(file_path, harness_method_list): #expects the original file path and harness method list
     file_name = os.path.splitext(os.path.basename(file_path))[0]
     # gemini.main(file_path)
+
+    with open("Proof_Harness/"+file_name + '_with_harness.c') as f:
+        total_code_with_harnesses = f.read()
+
     print("Running CBMC...")
-    run_cbmc(file_path, harness_method_list)
+    code_with_harness_file_name = run_cbmc(file_path, harness_method_list)
+    with open(code_with_harness_file_name,'r') as f:
+        cbmc_output = f.read()
+    #print(total_code_with_harnesses)
+
+    method_list = [item.replace('proof_harness_', '') for item in harness_method_list]
+    #print(method_list)
+    cbmc_parsing.main(cbmc_output, total_code_with_harnesses, method_list)
+
     reiteration = cbmc_verification_status(file_name)
     return reiteration

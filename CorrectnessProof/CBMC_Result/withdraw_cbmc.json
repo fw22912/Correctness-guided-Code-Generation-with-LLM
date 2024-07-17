@@ -11,7 +11,7 @@
     "messageType": "STATUS-MESSAGE"
   },
   {
-    "messageText": "Type-checking prompt_with_harness",
+    "messageText": "Type-checking withdraw_with_harness",
     "messageType": "STATUS-MESSAGE"
   },
   {
@@ -39,11 +39,11 @@
     "messageType": "STATUS-MESSAGE"
   },
   {
-    "messageText": "Runtime Symex: 0.00437119s",
+    "messageText": "Runtime Symex: 0.00642289s",
     "messageType": "STATUS-MESSAGE"
   },
   {
-    "messageText": "size of program expression: 102 steps",
+    "messageText": "size of program expression: 94 steps",
     "messageType": "STATUS-MESSAGE"
   },
   {
@@ -51,11 +51,11 @@
     "messageType": "STATUS-MESSAGE"
   },
   {
-    "messageText": "Generated 10 VCC(s), 1 remaining after simplification",
+    "messageText": "Generated 7 VCC(s), 1 remaining after simplification",
     "messageType": "STATUS-MESSAGE"
   },
   {
-    "messageText": "Runtime Postprocess Equation: 3.8634e-05s",
+    "messageText": "Runtime Postprocess Equation: 3.8352e-05s",
     "messageType": "STATUS-MESSAGE"
   },
   {
@@ -67,7 +67,7 @@
     "messageType": "STATUS-MESSAGE"
   },
   {
-    "messageText": "Runtime Convert SSA: 0.00036834s",
+    "messageText": "Runtime Convert SSA: 0.00112849s",
     "messageType": "STATUS-MESSAGE"
   },
   {
@@ -75,23 +75,23 @@
     "messageType": "STATUS-MESSAGE"
   },
   {
-    "messageText": "Runtime Post-process: 6.181e-06s",
+    "messageText": "Runtime Post-process: 8.212e-06s",
     "messageType": "STATUS-MESSAGE"
   },
   {
-    "messageText": "679 variables, 127 clauses",
+    "messageText": "677 variables, 1078 clauses",
     "messageType": "STATUS-MESSAGE"
   },
   {
-    "messageText": "SAT checker inconsistent: instance is UNSATISFIABLE",
+    "messageText": "SAT checker: instance is UNSATISFIABLE",
     "messageType": "STATUS-MESSAGE"
   },
   {
-    "messageText": "Runtime Solver: 4.1843e-05s",
+    "messageText": "Runtime Solver: 0.00368748s",
     "messageType": "STATUS-MESSAGE"
   },
   {
-    "messageText": "Runtime decision procedure: 0.000478824s",
+    "messageText": "Runtime decision procedure: 0.0048961s",
     "messageType": "STATUS-MESSAGE"
   },
   {
@@ -119,111 +119,78 @@
         "status": "SUCCESS"
       },
       {
-        "description": "assertion node != NULL",
-        "property": "proof_harness_newNode.assertion.1",
+        "description": "assertion account->bal == initial_balance - amount",
+        "property": "proof_harness_withdraw.assertion.1",
         "sourceLocation": {
-          "file": "Proof_Harness/prompt_with_harness.c",
-          "function": "proof_harness_newNode",
+          "file": "Proof_Harness/withdraw_with_harness.c",
+          "function": "proof_harness_withdraw",
           "line": "27",
           "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
         },
         "status": "SUCCESS"
       },
       {
-        "description": "assertion node->leftNode == NULL",
-        "property": "proof_harness_newNode.assertion.2",
+        "description": "free argument must be NULL or valid pointer",
+        "property": "proof_harness_withdraw.precondition_instance.1",
         "sourceLocation": {
-          "file": "Proof_Harness/prompt_with_harness.c",
-          "function": "proof_harness_newNode",
-          "line": "28",
-          "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-        },
-        "status": "SUCCESS"
-      },
-      {
-        "description": "assertion node->data == data",
-        "property": "proof_harness_newNode.assertion.3",
-        "sourceLocation": {
-          "file": "Proof_Harness/prompt_with_harness.c",
-          "function": "proof_harness_newNode",
+          "file": "Proof_Harness/withdraw_with_harness.c",
+          "function": "proof_harness_withdraw",
           "line": "29",
           "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
         },
         "status": "SUCCESS"
       },
       {
-        "description": "assertion node->rightNode == NULL",
-        "property": "proof_harness_newNode.assertion.4",
-        "sourceLocation": {
-          "file": "Proof_Harness/prompt_with_harness.c",
-          "function": "proof_harness_newNode",
-          "line": "30",
-          "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-        },
-        "status": "SUCCESS"
-      },
-      {
-        "description": "free argument must be NULL or valid pointer",
-        "property": "proof_harness_newNode.precondition_instance.1",
-        "sourceLocation": {
-          "file": "Proof_Harness/prompt_with_harness.c",
-          "function": "proof_harness_newNode",
-          "line": "31",
-          "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-        },
-        "status": "SUCCESS"
-      },
-      {
         "description": "free argument must be dynamic object",
-        "property": "proof_harness_newNode.precondition_instance.2",
+        "property": "proof_harness_withdraw.precondition_instance.2",
         "sourceLocation": {
-          "file": "Proof_Harness/prompt_with_harness.c",
-          "function": "proof_harness_newNode",
-          "line": "31",
+          "file": "Proof_Harness/withdraw_with_harness.c",
+          "function": "proof_harness_withdraw",
+          "line": "29",
           "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
         },
         "status": "SUCCESS"
       },
       {
         "description": "free argument has offset zero",
-        "property": "proof_harness_newNode.precondition_instance.3",
+        "property": "proof_harness_withdraw.precondition_instance.3",
         "sourceLocation": {
-          "file": "Proof_Harness/prompt_with_harness.c",
-          "function": "proof_harness_newNode",
-          "line": "31",
+          "file": "Proof_Harness/withdraw_with_harness.c",
+          "function": "proof_harness_withdraw",
+          "line": "29",
           "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
         },
         "status": "SUCCESS"
       },
       {
         "description": "double free",
-        "property": "proof_harness_newNode.precondition_instance.4",
+        "property": "proof_harness_withdraw.precondition_instance.4",
         "sourceLocation": {
-          "file": "Proof_Harness/prompt_with_harness.c",
-          "function": "proof_harness_newNode",
-          "line": "31",
+          "file": "Proof_Harness/withdraw_with_harness.c",
+          "function": "proof_harness_withdraw",
+          "line": "29",
           "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
         },
         "status": "SUCCESS"
       },
       {
         "description": "free called for new[] object",
-        "property": "proof_harness_newNode.precondition_instance.5",
+        "property": "proof_harness_withdraw.precondition_instance.5",
         "sourceLocation": {
-          "file": "Proof_Harness/prompt_with_harness.c",
-          "function": "proof_harness_newNode",
-          "line": "31",
+          "file": "Proof_Harness/withdraw_with_harness.c",
+          "function": "proof_harness_withdraw",
+          "line": "29",
           "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
         },
         "status": "SUCCESS"
       },
       {
         "description": "free called for stack-allocated object",
-        "property": "proof_harness_newNode.precondition_instance.6",
+        "property": "proof_harness_withdraw.precondition_instance.6",
         "sourceLocation": {
-          "file": "Proof_Harness/prompt_with_harness.c",
-          "function": "proof_harness_newNode",
-          "line": "31",
+          "file": "Proof_Harness/withdraw_with_harness.c",
+          "function": "proof_harness_withdraw",
+          "line": "29",
           "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
         },
         "status": "SUCCESS"

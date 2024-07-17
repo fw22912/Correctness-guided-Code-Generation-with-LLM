@@ -1,0 +1,325 @@
+[
+  {
+    "program": "CBMC 6.0.1 (cbmc-6.0.1)"
+  },
+  {
+    "messageText": "**** WARNING: Use --unwinding-assertions to obtain sound verification results",
+    "messageType": "WARNING"
+  },
+  {
+    "messageText": "CBMC version 6.0.1 (cbmc-6.0.1) 64-bit x86_64 macos",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Type-checking gcd_with_harness",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Generating GOTO Program",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Adding CPROVER library (x86_64)",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Removal of function pointers and virtual functions",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Generic Property Instrumentation",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Running with 8 object bits, 56 offset bits (default)",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Starting Bounded Model Checking",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion GCD iteration 1",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion GCD iteration 1",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion GCD iteration 1",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion GCD iteration 1",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion GCD iteration 2",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion GCD iteration 1",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion GCD iteration 1",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion GCD iteration 1",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion GCD iteration 2",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion GCD iteration 1",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion GCD iteration 2",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion GCD iteration 1",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion GCD iteration 1",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion GCD iteration 2",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion GCD iteration 1",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion GCD iteration 2",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion GCD iteration 3",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion GCD iteration 1",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion GCD iteration 2",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion GCD iteration 3",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion GCD iteration 1",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion GCD iteration 2",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Runtime Symex: 0.0101669s",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "size of program expression: 411 steps",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "simple slicing removed 0 assignments",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Generated 15 VCC(s), 0 remaining after simplification",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Runtime Postprocess Equation: 5.2591e-05s",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "result": [
+      {
+        "description": "assertion GCD(x, y) == expected_result",
+        "property": "proof_harness_GCD.assertion.1",
+        "sourceLocation": {
+          "file": "Proof_Harness/gcd_with_harness.c",
+          "function": "proof_harness_GCD",
+          "line": "28",
+          "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "assertion GCD(x, y) == expected_result",
+        "property": "proof_harness_GCD.assertion.2",
+        "sourceLocation": {
+          "file": "Proof_Harness/gcd_with_harness.c",
+          "function": "proof_harness_GCD",
+          "line": "33",
+          "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "assertion GCD(x, y) == expected_result",
+        "property": "proof_harness_GCD.assertion.3",
+        "sourceLocation": {
+          "file": "Proof_Harness/gcd_with_harness.c",
+          "function": "proof_harness_GCD",
+          "line": "38",
+          "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "assertion GCD(x, y) == expected_result",
+        "property": "proof_harness_GCD.assertion.4",
+        "sourceLocation": {
+          "file": "Proof_Harness/gcd_with_harness.c",
+          "function": "proof_harness_GCD",
+          "line": "43",
+          "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "assertion GCD(x, y) == expected_result",
+        "property": "proof_harness_GCD.assertion.5",
+        "sourceLocation": {
+          "file": "Proof_Harness/gcd_with_harness.c",
+          "function": "proof_harness_GCD",
+          "line": "48",
+          "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "assertion GCD(x, y) == expected_result",
+        "property": "proof_harness_GCD.assertion.6",
+        "sourceLocation": {
+          "file": "Proof_Harness/gcd_with_harness.c",
+          "function": "proof_harness_GCD",
+          "line": "53",
+          "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "assertion GCD(x, y) == expected_result",
+        "property": "proof_harness_GCD.assertion.7",
+        "sourceLocation": {
+          "file": "Proof_Harness/gcd_with_harness.c",
+          "function": "proof_harness_GCD",
+          "line": "58",
+          "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "assertion GCD(x, y) == expected_result",
+        "property": "proof_harness_GCD.assertion.8",
+        "sourceLocation": {
+          "file": "Proof_Harness/gcd_with_harness.c",
+          "function": "proof_harness_GCD",
+          "line": "63",
+          "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "assertion GCD(x, y) == expected_result",
+        "property": "proof_harness_GCD.assertion.9",
+        "sourceLocation": {
+          "file": "Proof_Harness/gcd_with_harness.c",
+          "function": "proof_harness_GCD",
+          "line": "68",
+          "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "assertion GCD(x, y) == expected_result",
+        "property": "proof_harness_GCD.assertion.10",
+        "sourceLocation": {
+          "file": "Proof_Harness/gcd_with_harness.c",
+          "function": "proof_harness_GCD",
+          "line": "73",
+          "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "assertion GCD(x, y) == expected_result",
+        "property": "proof_harness_GCD.assertion.11",
+        "sourceLocation": {
+          "file": "Proof_Harness/gcd_with_harness.c",
+          "function": "proof_harness_GCD",
+          "line": "78",
+          "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "assertion GCD(x, y) == expected_result",
+        "property": "proof_harness_GCD.assertion.12",
+        "sourceLocation": {
+          "file": "Proof_Harness/gcd_with_harness.c",
+          "function": "proof_harness_GCD",
+          "line": "83",
+          "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "assertion GCD(x, y) == expected_result",
+        "property": "proof_harness_GCD.assertion.13",
+        "sourceLocation": {
+          "file": "Proof_Harness/gcd_with_harness.c",
+          "function": "proof_harness_GCD",
+          "line": "88",
+          "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "assertion GCD(x, y) == expected_result",
+        "property": "proof_harness_GCD.assertion.14",
+        "sourceLocation": {
+          "file": "Proof_Harness/gcd_with_harness.c",
+          "function": "proof_harness_GCD",
+          "line": "93",
+          "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "assertion GCD(x, y) == expected_result",
+        "property": "proof_harness_GCD.assertion.15",
+        "sourceLocation": {
+          "file": "Proof_Harness/gcd_with_harness.c",
+          "function": "proof_harness_GCD",
+          "line": "98",
+          "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+        },
+        "status": "SUCCESS"
+      }
+    ]
+  },
+  {
+    "messageText": "VERIFICATION SUCCESSFUL",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "cProverStatus": "success"
+  }
+]

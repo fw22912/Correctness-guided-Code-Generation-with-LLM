@@ -1,21 +1,13 @@
 [
   {
-    "program": "CBMC 5.95.1 (cbmc-5.95.1)"
+    "program": "CBMC 6.0.1 (cbmc-6.0.1)"
   },
   {
     "messageText": "**** WARNING: Use --unwinding-assertions to obtain sound verification results",
     "messageType": "WARNING"
   },
   {
-    "messageText": "CBMC version 5.95.1 (cbmc-5.95.1) 64-bit x86_64 macos",
-    "messageType": "STATUS-MESSAGE"
-  },
-  {
-    "messageText": "Parsing Proof_Harness/traversal_with_harness.c",
-    "messageType": "STATUS-MESSAGE"
-  },
-  {
-    "messageText": "Converting",
+    "messageText": "CBMC version 6.0.1 (cbmc-6.0.1) 64-bit x86_64 macos",
     "messageType": "STATUS-MESSAGE"
   },
   {
@@ -29,7 +21,7 @@
       "file": "Proof_Harness/traversal_with_harness.c",
       "function": "proof_harness_inOrderTraversal",
       "line": "36",
-      "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+      "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
     }
   },
   {
@@ -38,8 +30,8 @@
     "sourceLocation": {
       "file": "Proof_Harness/traversal_with_harness.c",
       "function": "proof_harness_inOrderTraversal",
-      "line": "60",
-      "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+      "line": "42",
+      "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
     }
   },
   {
@@ -51,21 +43,21 @@
     "messageType": "STATUS-MESSAGE"
   },
   {
-    "messageText": "warning: implicit function declaration \"malloc\"\nold definition in module traversal_with_harness file Proof_Harness/traversal_with_harness.c line 36 function proof_harness_inOrderTraversal\nvoid * (void)\nnew definition in module <built-in-library> file <builtin-library-malloc> line 11\nvoid * (__CPROVER_size_t malloc_size)",
-    "messageType": "WARNING",
-    "sourceLocation": {
-      "file": "<builtin-library-malloc>",
-      "line": "11",
-      "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-    }
-  },
-  {
-    "messageText": "warning: implicit function declaration \"free\"\nold definition in module traversal_with_harness file Proof_Harness/traversal_with_harness.c line 60 function proof_harness_inOrderTraversal\nsigned int (void)\nnew definition in module <built-in-library> file <builtin-library-free> line 14\nvoid (void *ptr)",
+    "messageText": "implicit function declaration 'free'\nold definition in module traversal_with_harness file Proof_Harness/traversal_with_harness.c line 42 function proof_harness_inOrderTraversal\nsigned int (void)\nnew definition in module <built-in-library> file <builtin-library-free> line 14\nvoid (void *ptr)",
     "messageType": "WARNING",
     "sourceLocation": {
       "file": "<builtin-library-free>",
       "line": "14",
-      "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+      "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+    }
+  },
+  {
+    "messageText": "implicit function declaration 'malloc'\nold definition in module traversal_with_harness file Proof_Harness/traversal_with_harness.c line 36 function proof_harness_inOrderTraversal\nvoid * (void)\nnew definition in module <built-in-library> file <builtin-library-malloc> line 11\nvoid * (__CPROVER_size_t malloc_size)",
+    "messageType": "WARNING",
+    "sourceLocation": {
+      "file": "<builtin-library-malloc>",
+      "line": "11",
+      "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
     }
   },
   {
@@ -85,123 +77,31 @@
     "messageType": "STATUS-MESSAGE"
   },
   {
-    "messageText": "Unwinding recursion postOrderTraversal iteration 1",
+    "messageText": "Unwinding recursion inOrderTraversal iteration 1",
     "messageType": "STATUS-MESSAGE"
   },
   {
-    "messageText": "Unwinding recursion postOrderTraversal iteration 2",
+    "messageText": "Unwinding recursion inOrderTraversal iteration 1",
     "messageType": "STATUS-MESSAGE"
   },
   {
-    "messageText": "Unwinding recursion postOrderTraversal iteration 3",
+    "messageText": "Runtime Symex: 0.00728902s",
     "messageType": "STATUS-MESSAGE"
   },
   {
-    "messageText": "Unwinding recursion postOrderTraversal iteration 3",
+    "messageText": "size of program expression: 120 steps",
     "messageType": "STATUS-MESSAGE"
   },
   {
-    "messageText": "Unwinding recursion postOrderTraversal iteration 2",
+    "messageText": "simple slicing removed 0 assignments",
     "messageType": "STATUS-MESSAGE"
   },
   {
-    "messageText": "Unwinding recursion postOrderTraversal iteration 3",
+    "messageText": "Generated 6 VCC(s), 0 remaining after simplification",
     "messageType": "STATUS-MESSAGE"
   },
   {
-    "messageText": "Unwinding recursion postOrderTraversal iteration 3",
-    "messageType": "STATUS-MESSAGE"
-  },
-  {
-    "messageText": "Unwinding recursion postOrderTraversal iteration 1",
-    "messageType": "STATUS-MESSAGE"
-  },
-  {
-    "messageText": "Unwinding recursion postOrderTraversal iteration 2",
-    "messageType": "STATUS-MESSAGE"
-  },
-  {
-    "messageText": "Unwinding recursion postOrderTraversal iteration 3",
-    "messageType": "STATUS-MESSAGE"
-  },
-  {
-    "messageText": "Unwinding recursion postOrderTraversal iteration 3",
-    "messageType": "STATUS-MESSAGE"
-  },
-  {
-    "messageText": "Unwinding recursion postOrderTraversal iteration 2",
-    "messageType": "STATUS-MESSAGE"
-  },
-  {
-    "messageText": "Unwinding recursion postOrderTraversal iteration 3",
-    "messageType": "STATUS-MESSAGE"
-  },
-  {
-    "messageText": "Unwinding recursion postOrderTraversal iteration 3",
-    "messageType": "STATUS-MESSAGE"
-  },
-  {
-    "messageText": "Runtime Symex: 0.0151728s",
-    "messageType": "STATUS-MESSAGE"
-  },
-  {
-    "messageText": "size of program expression: 678 steps",
-    "messageType": "STATUS-MESSAGE"
-  },
-  {
-    "messageText": "simple slicing removed 29 assignments",
-    "messageType": "STATUS-MESSAGE"
-  },
-  {
-    "messageText": "Generated 42 VCC(s), 12 remaining after simplification",
-    "messageType": "STATUS-MESSAGE"
-  },
-  {
-    "messageText": "Runtime Postprocess Equation: 4.4e-05s",
-    "messageType": "STATUS-MESSAGE"
-  },
-  {
-    "messageText": "Passing problem to propositional reduction",
-    "messageType": "STATUS-MESSAGE"
-  },
-  {
-    "messageText": "converting SSA",
-    "messageType": "STATUS-MESSAGE"
-  },
-  {
-    "messageText": "Runtime Convert SSA: 0.00269525s",
-    "messageType": "STATUS-MESSAGE"
-  },
-  {
-    "messageText": "Running propositional reduction",
-    "messageType": "STATUS-MESSAGE"
-  },
-  {
-    "messageText": "Post-processing",
-    "messageType": "STATUS-MESSAGE"
-  },
-  {
-    "messageText": "Runtime Post-process: 1.2416e-05s",
-    "messageType": "STATUS-MESSAGE"
-  },
-  {
-    "messageText": "Solving with MiniSAT 2.2.1 with simplifier",
-    "messageType": "STATUS-MESSAGE"
-  },
-  {
-    "messageText": "6160 variables, 2880 clauses",
-    "messageType": "STATUS-MESSAGE"
-  },
-  {
-    "messageText": "SAT checker: instance is UNSATISFIABLE",
-    "messageType": "STATUS-MESSAGE"
-  },
-  {
-    "messageText": "Runtime Solver: 0.00109817s",
-    "messageType": "STATUS-MESSAGE"
-  },
-  {
-    "messageText": "Runtime decision procedure: 0.00385388s",
+    "messageText": "Runtime Postprocess Equation: 0.000105061s",
     "messageType": "STATUS-MESSAGE"
   },
   {
@@ -212,8 +112,8 @@
         "sourceLocation": {
           "file": "Proof_Harness/traversal_with_harness.c",
           "function": "proof_harness_inOrderTraversal",
-          "line": "60",
-          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+          "line": "42",
+          "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
         },
         "status": "SUCCESS"
       },
@@ -223,8 +123,8 @@
         "sourceLocation": {
           "file": "Proof_Harness/traversal_with_harness.c",
           "function": "proof_harness_inOrderTraversal",
-          "line": "60",
-          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+          "line": "42",
+          "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
         },
         "status": "SUCCESS"
       },
@@ -234,8 +134,8 @@
         "sourceLocation": {
           "file": "Proof_Harness/traversal_with_harness.c",
           "function": "proof_harness_inOrderTraversal",
-          "line": "60",
-          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+          "line": "42",
+          "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
         },
         "status": "SUCCESS"
       },
@@ -245,8 +145,8 @@
         "sourceLocation": {
           "file": "Proof_Harness/traversal_with_harness.c",
           "function": "proof_harness_inOrderTraversal",
-          "line": "60",
-          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+          "line": "42",
+          "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
         },
         "status": "SUCCESS"
       },
@@ -256,8 +156,8 @@
         "sourceLocation": {
           "file": "Proof_Harness/traversal_with_harness.c",
           "function": "proof_harness_inOrderTraversal",
-          "line": "60",
-          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+          "line": "42",
+          "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
         },
         "status": "SUCCESS"
       },
@@ -267,404 +167,8 @@
         "sourceLocation": {
           "file": "Proof_Harness/traversal_with_harness.c",
           "function": "proof_harness_inOrderTraversal",
-          "line": "60",
-          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-        },
-        "status": "SUCCESS"
-      },
-      {
-        "description": "free argument must be NULL or valid pointer",
-        "property": "proof_harness_inOrderTraversal.precondition_instance.7",
-        "sourceLocation": {
-          "file": "Proof_Harness/traversal_with_harness.c",
-          "function": "proof_harness_inOrderTraversal",
-          "line": "61",
-          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-        },
-        "status": "SUCCESS"
-      },
-      {
-        "description": "free argument must be dynamic object",
-        "property": "proof_harness_inOrderTraversal.precondition_instance.8",
-        "sourceLocation": {
-          "file": "Proof_Harness/traversal_with_harness.c",
-          "function": "proof_harness_inOrderTraversal",
-          "line": "61",
-          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-        },
-        "status": "SUCCESS"
-      },
-      {
-        "description": "free argument has offset zero",
-        "property": "proof_harness_inOrderTraversal.precondition_instance.9",
-        "sourceLocation": {
-          "file": "Proof_Harness/traversal_with_harness.c",
-          "function": "proof_harness_inOrderTraversal",
-          "line": "61",
-          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-        },
-        "status": "SUCCESS"
-      },
-      {
-        "description": "double free",
-        "property": "proof_harness_inOrderTraversal.precondition_instance.10",
-        "sourceLocation": {
-          "file": "Proof_Harness/traversal_with_harness.c",
-          "function": "proof_harness_inOrderTraversal",
-          "line": "61",
-          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-        },
-        "status": "SUCCESS"
-      },
-      {
-        "description": "free called for new[] object",
-        "property": "proof_harness_inOrderTraversal.precondition_instance.11",
-        "sourceLocation": {
-          "file": "Proof_Harness/traversal_with_harness.c",
-          "function": "proof_harness_inOrderTraversal",
-          "line": "61",
-          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-        },
-        "status": "SUCCESS"
-      },
-      {
-        "description": "free called for stack-allocated object",
-        "property": "proof_harness_inOrderTraversal.precondition_instance.12",
-        "sourceLocation": {
-          "file": "Proof_Harness/traversal_with_harness.c",
-          "function": "proof_harness_inOrderTraversal",
-          "line": "61",
-          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-        },
-        "status": "SUCCESS"
-      },
-      {
-        "description": "free argument must be NULL or valid pointer",
-        "property": "proof_harness_inOrderTraversal.precondition_instance.13",
-        "sourceLocation": {
-          "file": "Proof_Harness/traversal_with_harness.c",
-          "function": "proof_harness_inOrderTraversal",
-          "line": "62",
-          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-        },
-        "status": "SUCCESS"
-      },
-      {
-        "description": "free argument must be dynamic object",
-        "property": "proof_harness_inOrderTraversal.precondition_instance.14",
-        "sourceLocation": {
-          "file": "Proof_Harness/traversal_with_harness.c",
-          "function": "proof_harness_inOrderTraversal",
-          "line": "62",
-          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-        },
-        "status": "SUCCESS"
-      },
-      {
-        "description": "free argument has offset zero",
-        "property": "proof_harness_inOrderTraversal.precondition_instance.15",
-        "sourceLocation": {
-          "file": "Proof_Harness/traversal_with_harness.c",
-          "function": "proof_harness_inOrderTraversal",
-          "line": "62",
-          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-        },
-        "status": "SUCCESS"
-      },
-      {
-        "description": "double free",
-        "property": "proof_harness_inOrderTraversal.precondition_instance.16",
-        "sourceLocation": {
-          "file": "Proof_Harness/traversal_with_harness.c",
-          "function": "proof_harness_inOrderTraversal",
-          "line": "62",
-          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-        },
-        "status": "SUCCESS"
-      },
-      {
-        "description": "free called for new[] object",
-        "property": "proof_harness_inOrderTraversal.precondition_instance.17",
-        "sourceLocation": {
-          "file": "Proof_Harness/traversal_with_harness.c",
-          "function": "proof_harness_inOrderTraversal",
-          "line": "62",
-          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-        },
-        "status": "SUCCESS"
-      },
-      {
-        "description": "free called for stack-allocated object",
-        "property": "proof_harness_inOrderTraversal.precondition_instance.18",
-        "sourceLocation": {
-          "file": "Proof_Harness/traversal_with_harness.c",
-          "function": "proof_harness_inOrderTraversal",
-          "line": "62",
-          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-        },
-        "status": "SUCCESS"
-      },
-      {
-        "description": "free argument must be NULL or valid pointer",
-        "property": "proof_harness_inOrderTraversal.precondition_instance.19",
-        "sourceLocation": {
-          "file": "Proof_Harness/traversal_with_harness.c",
-          "function": "proof_harness_inOrderTraversal",
-          "line": "63",
-          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-        },
-        "status": "SUCCESS"
-      },
-      {
-        "description": "free argument must be dynamic object",
-        "property": "proof_harness_inOrderTraversal.precondition_instance.20",
-        "sourceLocation": {
-          "file": "Proof_Harness/traversal_with_harness.c",
-          "function": "proof_harness_inOrderTraversal",
-          "line": "63",
-          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-        },
-        "status": "SUCCESS"
-      },
-      {
-        "description": "free argument has offset zero",
-        "property": "proof_harness_inOrderTraversal.precondition_instance.21",
-        "sourceLocation": {
-          "file": "Proof_Harness/traversal_with_harness.c",
-          "function": "proof_harness_inOrderTraversal",
-          "line": "63",
-          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-        },
-        "status": "SUCCESS"
-      },
-      {
-        "description": "double free",
-        "property": "proof_harness_inOrderTraversal.precondition_instance.22",
-        "sourceLocation": {
-          "file": "Proof_Harness/traversal_with_harness.c",
-          "function": "proof_harness_inOrderTraversal",
-          "line": "63",
-          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-        },
-        "status": "SUCCESS"
-      },
-      {
-        "description": "free called for new[] object",
-        "property": "proof_harness_inOrderTraversal.precondition_instance.23",
-        "sourceLocation": {
-          "file": "Proof_Harness/traversal_with_harness.c",
-          "function": "proof_harness_inOrderTraversal",
-          "line": "63",
-          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-        },
-        "status": "SUCCESS"
-      },
-      {
-        "description": "free called for stack-allocated object",
-        "property": "proof_harness_inOrderTraversal.precondition_instance.24",
-        "sourceLocation": {
-          "file": "Proof_Harness/traversal_with_harness.c",
-          "function": "proof_harness_inOrderTraversal",
-          "line": "63",
-          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-        },
-        "status": "SUCCESS"
-      },
-      {
-        "description": "free argument must be NULL or valid pointer",
-        "property": "proof_harness_inOrderTraversal.precondition_instance.25",
-        "sourceLocation": {
-          "file": "Proof_Harness/traversal_with_harness.c",
-          "function": "proof_harness_inOrderTraversal",
-          "line": "64",
-          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-        },
-        "status": "SUCCESS"
-      },
-      {
-        "description": "free argument must be dynamic object",
-        "property": "proof_harness_inOrderTraversal.precondition_instance.26",
-        "sourceLocation": {
-          "file": "Proof_Harness/traversal_with_harness.c",
-          "function": "proof_harness_inOrderTraversal",
-          "line": "64",
-          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-        },
-        "status": "SUCCESS"
-      },
-      {
-        "description": "free argument has offset zero",
-        "property": "proof_harness_inOrderTraversal.precondition_instance.27",
-        "sourceLocation": {
-          "file": "Proof_Harness/traversal_with_harness.c",
-          "function": "proof_harness_inOrderTraversal",
-          "line": "64",
-          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-        },
-        "status": "SUCCESS"
-      },
-      {
-        "description": "double free",
-        "property": "proof_harness_inOrderTraversal.precondition_instance.28",
-        "sourceLocation": {
-          "file": "Proof_Harness/traversal_with_harness.c",
-          "function": "proof_harness_inOrderTraversal",
-          "line": "64",
-          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-        },
-        "status": "SUCCESS"
-      },
-      {
-        "description": "free called for new[] object",
-        "property": "proof_harness_inOrderTraversal.precondition_instance.29",
-        "sourceLocation": {
-          "file": "Proof_Harness/traversal_with_harness.c",
-          "function": "proof_harness_inOrderTraversal",
-          "line": "64",
-          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-        },
-        "status": "SUCCESS"
-      },
-      {
-        "description": "free called for stack-allocated object",
-        "property": "proof_harness_inOrderTraversal.precondition_instance.30",
-        "sourceLocation": {
-          "file": "Proof_Harness/traversal_with_harness.c",
-          "function": "proof_harness_inOrderTraversal",
-          "line": "64",
-          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-        },
-        "status": "SUCCESS"
-      },
-      {
-        "description": "free argument must be NULL or valid pointer",
-        "property": "proof_harness_inOrderTraversal.precondition_instance.31",
-        "sourceLocation": {
-          "file": "Proof_Harness/traversal_with_harness.c",
-          "function": "proof_harness_inOrderTraversal",
-          "line": "65",
-          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-        },
-        "status": "SUCCESS"
-      },
-      {
-        "description": "free argument must be dynamic object",
-        "property": "proof_harness_inOrderTraversal.precondition_instance.32",
-        "sourceLocation": {
-          "file": "Proof_Harness/traversal_with_harness.c",
-          "function": "proof_harness_inOrderTraversal",
-          "line": "65",
-          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-        },
-        "status": "SUCCESS"
-      },
-      {
-        "description": "free argument has offset zero",
-        "property": "proof_harness_inOrderTraversal.precondition_instance.33",
-        "sourceLocation": {
-          "file": "Proof_Harness/traversal_with_harness.c",
-          "function": "proof_harness_inOrderTraversal",
-          "line": "65",
-          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-        },
-        "status": "SUCCESS"
-      },
-      {
-        "description": "double free",
-        "property": "proof_harness_inOrderTraversal.precondition_instance.34",
-        "sourceLocation": {
-          "file": "Proof_Harness/traversal_with_harness.c",
-          "function": "proof_harness_inOrderTraversal",
-          "line": "65",
-          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-        },
-        "status": "SUCCESS"
-      },
-      {
-        "description": "free called for new[] object",
-        "property": "proof_harness_inOrderTraversal.precondition_instance.35",
-        "sourceLocation": {
-          "file": "Proof_Harness/traversal_with_harness.c",
-          "function": "proof_harness_inOrderTraversal",
-          "line": "65",
-          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-        },
-        "status": "SUCCESS"
-      },
-      {
-        "description": "free called for stack-allocated object",
-        "property": "proof_harness_inOrderTraversal.precondition_instance.36",
-        "sourceLocation": {
-          "file": "Proof_Harness/traversal_with_harness.c",
-          "function": "proof_harness_inOrderTraversal",
-          "line": "65",
-          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-        },
-        "status": "SUCCESS"
-      },
-      {
-        "description": "free argument must be NULL or valid pointer",
-        "property": "proof_harness_inOrderTraversal.precondition_instance.37",
-        "sourceLocation": {
-          "file": "Proof_Harness/traversal_with_harness.c",
-          "function": "proof_harness_inOrderTraversal",
-          "line": "66",
-          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-        },
-        "status": "SUCCESS"
-      },
-      {
-        "description": "free argument must be dynamic object",
-        "property": "proof_harness_inOrderTraversal.precondition_instance.38",
-        "sourceLocation": {
-          "file": "Proof_Harness/traversal_with_harness.c",
-          "function": "proof_harness_inOrderTraversal",
-          "line": "66",
-          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-        },
-        "status": "SUCCESS"
-      },
-      {
-        "description": "free argument has offset zero",
-        "property": "proof_harness_inOrderTraversal.precondition_instance.39",
-        "sourceLocation": {
-          "file": "Proof_Harness/traversal_with_harness.c",
-          "function": "proof_harness_inOrderTraversal",
-          "line": "66",
-          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-        },
-        "status": "SUCCESS"
-      },
-      {
-        "description": "double free",
-        "property": "proof_harness_inOrderTraversal.precondition_instance.40",
-        "sourceLocation": {
-          "file": "Proof_Harness/traversal_with_harness.c",
-          "function": "proof_harness_inOrderTraversal",
-          "line": "66",
-          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-        },
-        "status": "SUCCESS"
-      },
-      {
-        "description": "free called for new[] object",
-        "property": "proof_harness_inOrderTraversal.precondition_instance.41",
-        "sourceLocation": {
-          "file": "Proof_Harness/traversal_with_harness.c",
-          "function": "proof_harness_inOrderTraversal",
-          "line": "66",
-          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-        },
-        "status": "SUCCESS"
-      },
-      {
-        "description": "free called for stack-allocated object",
-        "property": "proof_harness_inOrderTraversal.precondition_instance.42",
-        "sourceLocation": {
-          "file": "Proof_Harness/traversal_with_harness.c",
-          "function": "proof_harness_inOrderTraversal",
-          "line": "66",
-          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+          "line": "42",
+          "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
         },
         "status": "SUCCESS"
       },
@@ -675,7 +179,7 @@
           "file": "<builtin-library-malloc>",
           "function": "malloc",
           "line": "31",
-          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+          "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
         },
         "status": "SUCCESS"
       },
@@ -686,7 +190,7 @@
           "file": "<builtin-library-malloc>",
           "function": "malloc",
           "line": "36",
-          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+          "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
         },
         "status": "SUCCESS"
       },
@@ -696,8 +200,8 @@
         "sourceLocation": {
           "file": "Proof_Harness/traversal_with_harness.c",
           "function": "proof_harness_preOrderTraversal",
-          "line": "94",
-          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+          "line": "52",
+          "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
         },
         "status": "SUCCESS"
       },
@@ -707,8 +211,8 @@
         "sourceLocation": {
           "file": "Proof_Harness/traversal_with_harness.c",
           "function": "proof_harness_preOrderTraversal",
-          "line": "94",
-          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+          "line": "52",
+          "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
         },
         "status": "SUCCESS"
       },
@@ -718,8 +222,8 @@
         "sourceLocation": {
           "file": "Proof_Harness/traversal_with_harness.c",
           "function": "proof_harness_preOrderTraversal",
-          "line": "94",
-          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+          "line": "52",
+          "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
         },
         "status": "SUCCESS"
       },
@@ -729,8 +233,8 @@
         "sourceLocation": {
           "file": "Proof_Harness/traversal_with_harness.c",
           "function": "proof_harness_preOrderTraversal",
-          "line": "94",
-          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+          "line": "52",
+          "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
         },
         "status": "SUCCESS"
       },
@@ -740,8 +244,8 @@
         "sourceLocation": {
           "file": "Proof_Harness/traversal_with_harness.c",
           "function": "proof_harness_preOrderTraversal",
-          "line": "94",
-          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+          "line": "52",
+          "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
         },
         "status": "SUCCESS"
       },
@@ -751,404 +255,8 @@
         "sourceLocation": {
           "file": "Proof_Harness/traversal_with_harness.c",
           "function": "proof_harness_preOrderTraversal",
-          "line": "94",
-          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-        },
-        "status": "SUCCESS"
-      },
-      {
-        "description": "free argument must be NULL or valid pointer",
-        "property": "proof_harness_preOrderTraversal.precondition_instance.7",
-        "sourceLocation": {
-          "file": "Proof_Harness/traversal_with_harness.c",
-          "function": "proof_harness_preOrderTraversal",
-          "line": "95",
-          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-        },
-        "status": "SUCCESS"
-      },
-      {
-        "description": "free argument must be dynamic object",
-        "property": "proof_harness_preOrderTraversal.precondition_instance.8",
-        "sourceLocation": {
-          "file": "Proof_Harness/traversal_with_harness.c",
-          "function": "proof_harness_preOrderTraversal",
-          "line": "95",
-          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-        },
-        "status": "SUCCESS"
-      },
-      {
-        "description": "free argument has offset zero",
-        "property": "proof_harness_preOrderTraversal.precondition_instance.9",
-        "sourceLocation": {
-          "file": "Proof_Harness/traversal_with_harness.c",
-          "function": "proof_harness_preOrderTraversal",
-          "line": "95",
-          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-        },
-        "status": "SUCCESS"
-      },
-      {
-        "description": "double free",
-        "property": "proof_harness_preOrderTraversal.precondition_instance.10",
-        "sourceLocation": {
-          "file": "Proof_Harness/traversal_with_harness.c",
-          "function": "proof_harness_preOrderTraversal",
-          "line": "95",
-          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-        },
-        "status": "SUCCESS"
-      },
-      {
-        "description": "free called for new[] object",
-        "property": "proof_harness_preOrderTraversal.precondition_instance.11",
-        "sourceLocation": {
-          "file": "Proof_Harness/traversal_with_harness.c",
-          "function": "proof_harness_preOrderTraversal",
-          "line": "95",
-          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-        },
-        "status": "SUCCESS"
-      },
-      {
-        "description": "free called for stack-allocated object",
-        "property": "proof_harness_preOrderTraversal.precondition_instance.12",
-        "sourceLocation": {
-          "file": "Proof_Harness/traversal_with_harness.c",
-          "function": "proof_harness_preOrderTraversal",
-          "line": "95",
-          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-        },
-        "status": "SUCCESS"
-      },
-      {
-        "description": "free argument must be NULL or valid pointer",
-        "property": "proof_harness_preOrderTraversal.precondition_instance.13",
-        "sourceLocation": {
-          "file": "Proof_Harness/traversal_with_harness.c",
-          "function": "proof_harness_preOrderTraversal",
-          "line": "96",
-          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-        },
-        "status": "SUCCESS"
-      },
-      {
-        "description": "free argument must be dynamic object",
-        "property": "proof_harness_preOrderTraversal.precondition_instance.14",
-        "sourceLocation": {
-          "file": "Proof_Harness/traversal_with_harness.c",
-          "function": "proof_harness_preOrderTraversal",
-          "line": "96",
-          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-        },
-        "status": "SUCCESS"
-      },
-      {
-        "description": "free argument has offset zero",
-        "property": "proof_harness_preOrderTraversal.precondition_instance.15",
-        "sourceLocation": {
-          "file": "Proof_Harness/traversal_with_harness.c",
-          "function": "proof_harness_preOrderTraversal",
-          "line": "96",
-          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-        },
-        "status": "SUCCESS"
-      },
-      {
-        "description": "double free",
-        "property": "proof_harness_preOrderTraversal.precondition_instance.16",
-        "sourceLocation": {
-          "file": "Proof_Harness/traversal_with_harness.c",
-          "function": "proof_harness_preOrderTraversal",
-          "line": "96",
-          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-        },
-        "status": "SUCCESS"
-      },
-      {
-        "description": "free called for new[] object",
-        "property": "proof_harness_preOrderTraversal.precondition_instance.17",
-        "sourceLocation": {
-          "file": "Proof_Harness/traversal_with_harness.c",
-          "function": "proof_harness_preOrderTraversal",
-          "line": "96",
-          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-        },
-        "status": "SUCCESS"
-      },
-      {
-        "description": "free called for stack-allocated object",
-        "property": "proof_harness_preOrderTraversal.precondition_instance.18",
-        "sourceLocation": {
-          "file": "Proof_Harness/traversal_with_harness.c",
-          "function": "proof_harness_preOrderTraversal",
-          "line": "96",
-          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-        },
-        "status": "SUCCESS"
-      },
-      {
-        "description": "free argument must be NULL or valid pointer",
-        "property": "proof_harness_preOrderTraversal.precondition_instance.19",
-        "sourceLocation": {
-          "file": "Proof_Harness/traversal_with_harness.c",
-          "function": "proof_harness_preOrderTraversal",
-          "line": "97",
-          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-        },
-        "status": "SUCCESS"
-      },
-      {
-        "description": "free argument must be dynamic object",
-        "property": "proof_harness_preOrderTraversal.precondition_instance.20",
-        "sourceLocation": {
-          "file": "Proof_Harness/traversal_with_harness.c",
-          "function": "proof_harness_preOrderTraversal",
-          "line": "97",
-          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-        },
-        "status": "SUCCESS"
-      },
-      {
-        "description": "free argument has offset zero",
-        "property": "proof_harness_preOrderTraversal.precondition_instance.21",
-        "sourceLocation": {
-          "file": "Proof_Harness/traversal_with_harness.c",
-          "function": "proof_harness_preOrderTraversal",
-          "line": "97",
-          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-        },
-        "status": "SUCCESS"
-      },
-      {
-        "description": "double free",
-        "property": "proof_harness_preOrderTraversal.precondition_instance.22",
-        "sourceLocation": {
-          "file": "Proof_Harness/traversal_with_harness.c",
-          "function": "proof_harness_preOrderTraversal",
-          "line": "97",
-          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-        },
-        "status": "SUCCESS"
-      },
-      {
-        "description": "free called for new[] object",
-        "property": "proof_harness_preOrderTraversal.precondition_instance.23",
-        "sourceLocation": {
-          "file": "Proof_Harness/traversal_with_harness.c",
-          "function": "proof_harness_preOrderTraversal",
-          "line": "97",
-          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-        },
-        "status": "SUCCESS"
-      },
-      {
-        "description": "free called for stack-allocated object",
-        "property": "proof_harness_preOrderTraversal.precondition_instance.24",
-        "sourceLocation": {
-          "file": "Proof_Harness/traversal_with_harness.c",
-          "function": "proof_harness_preOrderTraversal",
-          "line": "97",
-          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-        },
-        "status": "SUCCESS"
-      },
-      {
-        "description": "free argument must be NULL or valid pointer",
-        "property": "proof_harness_preOrderTraversal.precondition_instance.25",
-        "sourceLocation": {
-          "file": "Proof_Harness/traversal_with_harness.c",
-          "function": "proof_harness_preOrderTraversal",
-          "line": "98",
-          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-        },
-        "status": "SUCCESS"
-      },
-      {
-        "description": "free argument must be dynamic object",
-        "property": "proof_harness_preOrderTraversal.precondition_instance.26",
-        "sourceLocation": {
-          "file": "Proof_Harness/traversal_with_harness.c",
-          "function": "proof_harness_preOrderTraversal",
-          "line": "98",
-          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-        },
-        "status": "SUCCESS"
-      },
-      {
-        "description": "free argument has offset zero",
-        "property": "proof_harness_preOrderTraversal.precondition_instance.27",
-        "sourceLocation": {
-          "file": "Proof_Harness/traversal_with_harness.c",
-          "function": "proof_harness_preOrderTraversal",
-          "line": "98",
-          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-        },
-        "status": "SUCCESS"
-      },
-      {
-        "description": "double free",
-        "property": "proof_harness_preOrderTraversal.precondition_instance.28",
-        "sourceLocation": {
-          "file": "Proof_Harness/traversal_with_harness.c",
-          "function": "proof_harness_preOrderTraversal",
-          "line": "98",
-          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-        },
-        "status": "SUCCESS"
-      },
-      {
-        "description": "free called for new[] object",
-        "property": "proof_harness_preOrderTraversal.precondition_instance.29",
-        "sourceLocation": {
-          "file": "Proof_Harness/traversal_with_harness.c",
-          "function": "proof_harness_preOrderTraversal",
-          "line": "98",
-          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-        },
-        "status": "SUCCESS"
-      },
-      {
-        "description": "free called for stack-allocated object",
-        "property": "proof_harness_preOrderTraversal.precondition_instance.30",
-        "sourceLocation": {
-          "file": "Proof_Harness/traversal_with_harness.c",
-          "function": "proof_harness_preOrderTraversal",
-          "line": "98",
-          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-        },
-        "status": "SUCCESS"
-      },
-      {
-        "description": "free argument must be NULL or valid pointer",
-        "property": "proof_harness_preOrderTraversal.precondition_instance.31",
-        "sourceLocation": {
-          "file": "Proof_Harness/traversal_with_harness.c",
-          "function": "proof_harness_preOrderTraversal",
-          "line": "99",
-          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-        },
-        "status": "SUCCESS"
-      },
-      {
-        "description": "free argument must be dynamic object",
-        "property": "proof_harness_preOrderTraversal.precondition_instance.32",
-        "sourceLocation": {
-          "file": "Proof_Harness/traversal_with_harness.c",
-          "function": "proof_harness_preOrderTraversal",
-          "line": "99",
-          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-        },
-        "status": "SUCCESS"
-      },
-      {
-        "description": "free argument has offset zero",
-        "property": "proof_harness_preOrderTraversal.precondition_instance.33",
-        "sourceLocation": {
-          "file": "Proof_Harness/traversal_with_harness.c",
-          "function": "proof_harness_preOrderTraversal",
-          "line": "99",
-          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-        },
-        "status": "SUCCESS"
-      },
-      {
-        "description": "double free",
-        "property": "proof_harness_preOrderTraversal.precondition_instance.34",
-        "sourceLocation": {
-          "file": "Proof_Harness/traversal_with_harness.c",
-          "function": "proof_harness_preOrderTraversal",
-          "line": "99",
-          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-        },
-        "status": "SUCCESS"
-      },
-      {
-        "description": "free called for new[] object",
-        "property": "proof_harness_preOrderTraversal.precondition_instance.35",
-        "sourceLocation": {
-          "file": "Proof_Harness/traversal_with_harness.c",
-          "function": "proof_harness_preOrderTraversal",
-          "line": "99",
-          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-        },
-        "status": "SUCCESS"
-      },
-      {
-        "description": "free called for stack-allocated object",
-        "property": "proof_harness_preOrderTraversal.precondition_instance.36",
-        "sourceLocation": {
-          "file": "Proof_Harness/traversal_with_harness.c",
-          "function": "proof_harness_preOrderTraversal",
-          "line": "99",
-          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-        },
-        "status": "SUCCESS"
-      },
-      {
-        "description": "free argument must be NULL or valid pointer",
-        "property": "proof_harness_preOrderTraversal.precondition_instance.37",
-        "sourceLocation": {
-          "file": "Proof_Harness/traversal_with_harness.c",
-          "function": "proof_harness_preOrderTraversal",
-          "line": "100",
-          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-        },
-        "status": "SUCCESS"
-      },
-      {
-        "description": "free argument must be dynamic object",
-        "property": "proof_harness_preOrderTraversal.precondition_instance.38",
-        "sourceLocation": {
-          "file": "Proof_Harness/traversal_with_harness.c",
-          "function": "proof_harness_preOrderTraversal",
-          "line": "100",
-          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-        },
-        "status": "SUCCESS"
-      },
-      {
-        "description": "free argument has offset zero",
-        "property": "proof_harness_preOrderTraversal.precondition_instance.39",
-        "sourceLocation": {
-          "file": "Proof_Harness/traversal_with_harness.c",
-          "function": "proof_harness_preOrderTraversal",
-          "line": "100",
-          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-        },
-        "status": "SUCCESS"
-      },
-      {
-        "description": "double free",
-        "property": "proof_harness_preOrderTraversal.precondition_instance.40",
-        "sourceLocation": {
-          "file": "Proof_Harness/traversal_with_harness.c",
-          "function": "proof_harness_preOrderTraversal",
-          "line": "100",
-          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-        },
-        "status": "SUCCESS"
-      },
-      {
-        "description": "free called for new[] object",
-        "property": "proof_harness_preOrderTraversal.precondition_instance.41",
-        "sourceLocation": {
-          "file": "Proof_Harness/traversal_with_harness.c",
-          "function": "proof_harness_preOrderTraversal",
-          "line": "100",
-          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-        },
-        "status": "SUCCESS"
-      },
-      {
-        "description": "free called for stack-allocated object",
-        "property": "proof_harness_preOrderTraversal.precondition_instance.42",
-        "sourceLocation": {
-          "file": "Proof_Harness/traversal_with_harness.c",
-          "function": "proof_harness_preOrderTraversal",
-          "line": "100",
-          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+          "line": "52",
+          "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
         },
         "status": "SUCCESS"
       },
@@ -1158,8 +266,8 @@
         "sourceLocation": {
           "file": "Proof_Harness/traversal_with_harness.c",
           "function": "proof_harness_postOrderTraversal",
-          "line": "128",
-          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+          "line": "62",
+          "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
         },
         "status": "SUCCESS"
       },
@@ -1169,8 +277,8 @@
         "sourceLocation": {
           "file": "Proof_Harness/traversal_with_harness.c",
           "function": "proof_harness_postOrderTraversal",
-          "line": "128",
-          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+          "line": "62",
+          "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
         },
         "status": "SUCCESS"
       },
@@ -1180,8 +288,8 @@
         "sourceLocation": {
           "file": "Proof_Harness/traversal_with_harness.c",
           "function": "proof_harness_postOrderTraversal",
-          "line": "128",
-          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+          "line": "62",
+          "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
         },
         "status": "SUCCESS"
       },
@@ -1191,8 +299,8 @@
         "sourceLocation": {
           "file": "Proof_Harness/traversal_with_harness.c",
           "function": "proof_harness_postOrderTraversal",
-          "line": "128",
-          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+          "line": "62",
+          "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
         },
         "status": "SUCCESS"
       },
@@ -1202,8 +310,8 @@
         "sourceLocation": {
           "file": "Proof_Harness/traversal_with_harness.c",
           "function": "proof_harness_postOrderTraversal",
-          "line": "128",
-          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+          "line": "62",
+          "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
         },
         "status": "SUCCESS"
       },
@@ -1213,404 +321,8 @@
         "sourceLocation": {
           "file": "Proof_Harness/traversal_with_harness.c",
           "function": "proof_harness_postOrderTraversal",
-          "line": "128",
-          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-        },
-        "status": "SUCCESS"
-      },
-      {
-        "description": "free argument must be NULL or valid pointer",
-        "property": "proof_harness_postOrderTraversal.precondition_instance.7",
-        "sourceLocation": {
-          "file": "Proof_Harness/traversal_with_harness.c",
-          "function": "proof_harness_postOrderTraversal",
-          "line": "129",
-          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-        },
-        "status": "SUCCESS"
-      },
-      {
-        "description": "free argument must be dynamic object",
-        "property": "proof_harness_postOrderTraversal.precondition_instance.8",
-        "sourceLocation": {
-          "file": "Proof_Harness/traversal_with_harness.c",
-          "function": "proof_harness_postOrderTraversal",
-          "line": "129",
-          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-        },
-        "status": "SUCCESS"
-      },
-      {
-        "description": "free argument has offset zero",
-        "property": "proof_harness_postOrderTraversal.precondition_instance.9",
-        "sourceLocation": {
-          "file": "Proof_Harness/traversal_with_harness.c",
-          "function": "proof_harness_postOrderTraversal",
-          "line": "129",
-          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-        },
-        "status": "SUCCESS"
-      },
-      {
-        "description": "double free",
-        "property": "proof_harness_postOrderTraversal.precondition_instance.10",
-        "sourceLocation": {
-          "file": "Proof_Harness/traversal_with_harness.c",
-          "function": "proof_harness_postOrderTraversal",
-          "line": "129",
-          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-        },
-        "status": "SUCCESS"
-      },
-      {
-        "description": "free called for new[] object",
-        "property": "proof_harness_postOrderTraversal.precondition_instance.11",
-        "sourceLocation": {
-          "file": "Proof_Harness/traversal_with_harness.c",
-          "function": "proof_harness_postOrderTraversal",
-          "line": "129",
-          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-        },
-        "status": "SUCCESS"
-      },
-      {
-        "description": "free called for stack-allocated object",
-        "property": "proof_harness_postOrderTraversal.precondition_instance.12",
-        "sourceLocation": {
-          "file": "Proof_Harness/traversal_with_harness.c",
-          "function": "proof_harness_postOrderTraversal",
-          "line": "129",
-          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-        },
-        "status": "SUCCESS"
-      },
-      {
-        "description": "free argument must be NULL or valid pointer",
-        "property": "proof_harness_postOrderTraversal.precondition_instance.13",
-        "sourceLocation": {
-          "file": "Proof_Harness/traversal_with_harness.c",
-          "function": "proof_harness_postOrderTraversal",
-          "line": "130",
-          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-        },
-        "status": "SUCCESS"
-      },
-      {
-        "description": "free argument must be dynamic object",
-        "property": "proof_harness_postOrderTraversal.precondition_instance.14",
-        "sourceLocation": {
-          "file": "Proof_Harness/traversal_with_harness.c",
-          "function": "proof_harness_postOrderTraversal",
-          "line": "130",
-          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-        },
-        "status": "SUCCESS"
-      },
-      {
-        "description": "free argument has offset zero",
-        "property": "proof_harness_postOrderTraversal.precondition_instance.15",
-        "sourceLocation": {
-          "file": "Proof_Harness/traversal_with_harness.c",
-          "function": "proof_harness_postOrderTraversal",
-          "line": "130",
-          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-        },
-        "status": "SUCCESS"
-      },
-      {
-        "description": "double free",
-        "property": "proof_harness_postOrderTraversal.precondition_instance.16",
-        "sourceLocation": {
-          "file": "Proof_Harness/traversal_with_harness.c",
-          "function": "proof_harness_postOrderTraversal",
-          "line": "130",
-          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-        },
-        "status": "SUCCESS"
-      },
-      {
-        "description": "free called for new[] object",
-        "property": "proof_harness_postOrderTraversal.precondition_instance.17",
-        "sourceLocation": {
-          "file": "Proof_Harness/traversal_with_harness.c",
-          "function": "proof_harness_postOrderTraversal",
-          "line": "130",
-          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-        },
-        "status": "SUCCESS"
-      },
-      {
-        "description": "free called for stack-allocated object",
-        "property": "proof_harness_postOrderTraversal.precondition_instance.18",
-        "sourceLocation": {
-          "file": "Proof_Harness/traversal_with_harness.c",
-          "function": "proof_harness_postOrderTraversal",
-          "line": "130",
-          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-        },
-        "status": "SUCCESS"
-      },
-      {
-        "description": "free argument must be NULL or valid pointer",
-        "property": "proof_harness_postOrderTraversal.precondition_instance.19",
-        "sourceLocation": {
-          "file": "Proof_Harness/traversal_with_harness.c",
-          "function": "proof_harness_postOrderTraversal",
-          "line": "131",
-          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-        },
-        "status": "SUCCESS"
-      },
-      {
-        "description": "free argument must be dynamic object",
-        "property": "proof_harness_postOrderTraversal.precondition_instance.20",
-        "sourceLocation": {
-          "file": "Proof_Harness/traversal_with_harness.c",
-          "function": "proof_harness_postOrderTraversal",
-          "line": "131",
-          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-        },
-        "status": "SUCCESS"
-      },
-      {
-        "description": "free argument has offset zero",
-        "property": "proof_harness_postOrderTraversal.precondition_instance.21",
-        "sourceLocation": {
-          "file": "Proof_Harness/traversal_with_harness.c",
-          "function": "proof_harness_postOrderTraversal",
-          "line": "131",
-          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-        },
-        "status": "SUCCESS"
-      },
-      {
-        "description": "double free",
-        "property": "proof_harness_postOrderTraversal.precondition_instance.22",
-        "sourceLocation": {
-          "file": "Proof_Harness/traversal_with_harness.c",
-          "function": "proof_harness_postOrderTraversal",
-          "line": "131",
-          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-        },
-        "status": "SUCCESS"
-      },
-      {
-        "description": "free called for new[] object",
-        "property": "proof_harness_postOrderTraversal.precondition_instance.23",
-        "sourceLocation": {
-          "file": "Proof_Harness/traversal_with_harness.c",
-          "function": "proof_harness_postOrderTraversal",
-          "line": "131",
-          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-        },
-        "status": "SUCCESS"
-      },
-      {
-        "description": "free called for stack-allocated object",
-        "property": "proof_harness_postOrderTraversal.precondition_instance.24",
-        "sourceLocation": {
-          "file": "Proof_Harness/traversal_with_harness.c",
-          "function": "proof_harness_postOrderTraversal",
-          "line": "131",
-          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-        },
-        "status": "SUCCESS"
-      },
-      {
-        "description": "free argument must be NULL or valid pointer",
-        "property": "proof_harness_postOrderTraversal.precondition_instance.25",
-        "sourceLocation": {
-          "file": "Proof_Harness/traversal_with_harness.c",
-          "function": "proof_harness_postOrderTraversal",
-          "line": "132",
-          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-        },
-        "status": "SUCCESS"
-      },
-      {
-        "description": "free argument must be dynamic object",
-        "property": "proof_harness_postOrderTraversal.precondition_instance.26",
-        "sourceLocation": {
-          "file": "Proof_Harness/traversal_with_harness.c",
-          "function": "proof_harness_postOrderTraversal",
-          "line": "132",
-          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-        },
-        "status": "SUCCESS"
-      },
-      {
-        "description": "free argument has offset zero",
-        "property": "proof_harness_postOrderTraversal.precondition_instance.27",
-        "sourceLocation": {
-          "file": "Proof_Harness/traversal_with_harness.c",
-          "function": "proof_harness_postOrderTraversal",
-          "line": "132",
-          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-        },
-        "status": "SUCCESS"
-      },
-      {
-        "description": "double free",
-        "property": "proof_harness_postOrderTraversal.precondition_instance.28",
-        "sourceLocation": {
-          "file": "Proof_Harness/traversal_with_harness.c",
-          "function": "proof_harness_postOrderTraversal",
-          "line": "132",
-          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-        },
-        "status": "SUCCESS"
-      },
-      {
-        "description": "free called for new[] object",
-        "property": "proof_harness_postOrderTraversal.precondition_instance.29",
-        "sourceLocation": {
-          "file": "Proof_Harness/traversal_with_harness.c",
-          "function": "proof_harness_postOrderTraversal",
-          "line": "132",
-          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-        },
-        "status": "SUCCESS"
-      },
-      {
-        "description": "free called for stack-allocated object",
-        "property": "proof_harness_postOrderTraversal.precondition_instance.30",
-        "sourceLocation": {
-          "file": "Proof_Harness/traversal_with_harness.c",
-          "function": "proof_harness_postOrderTraversal",
-          "line": "132",
-          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-        },
-        "status": "SUCCESS"
-      },
-      {
-        "description": "free argument must be NULL or valid pointer",
-        "property": "proof_harness_postOrderTraversal.precondition_instance.31",
-        "sourceLocation": {
-          "file": "Proof_Harness/traversal_with_harness.c",
-          "function": "proof_harness_postOrderTraversal",
-          "line": "133",
-          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-        },
-        "status": "SUCCESS"
-      },
-      {
-        "description": "free argument must be dynamic object",
-        "property": "proof_harness_postOrderTraversal.precondition_instance.32",
-        "sourceLocation": {
-          "file": "Proof_Harness/traversal_with_harness.c",
-          "function": "proof_harness_postOrderTraversal",
-          "line": "133",
-          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-        },
-        "status": "SUCCESS"
-      },
-      {
-        "description": "free argument has offset zero",
-        "property": "proof_harness_postOrderTraversal.precondition_instance.33",
-        "sourceLocation": {
-          "file": "Proof_Harness/traversal_with_harness.c",
-          "function": "proof_harness_postOrderTraversal",
-          "line": "133",
-          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-        },
-        "status": "SUCCESS"
-      },
-      {
-        "description": "double free",
-        "property": "proof_harness_postOrderTraversal.precondition_instance.34",
-        "sourceLocation": {
-          "file": "Proof_Harness/traversal_with_harness.c",
-          "function": "proof_harness_postOrderTraversal",
-          "line": "133",
-          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-        },
-        "status": "SUCCESS"
-      },
-      {
-        "description": "free called for new[] object",
-        "property": "proof_harness_postOrderTraversal.precondition_instance.35",
-        "sourceLocation": {
-          "file": "Proof_Harness/traversal_with_harness.c",
-          "function": "proof_harness_postOrderTraversal",
-          "line": "133",
-          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-        },
-        "status": "SUCCESS"
-      },
-      {
-        "description": "free called for stack-allocated object",
-        "property": "proof_harness_postOrderTraversal.precondition_instance.36",
-        "sourceLocation": {
-          "file": "Proof_Harness/traversal_with_harness.c",
-          "function": "proof_harness_postOrderTraversal",
-          "line": "133",
-          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-        },
-        "status": "SUCCESS"
-      },
-      {
-        "description": "free argument must be NULL or valid pointer",
-        "property": "proof_harness_postOrderTraversal.precondition_instance.37",
-        "sourceLocation": {
-          "file": "Proof_Harness/traversal_with_harness.c",
-          "function": "proof_harness_postOrderTraversal",
-          "line": "134",
-          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-        },
-        "status": "SUCCESS"
-      },
-      {
-        "description": "free argument must be dynamic object",
-        "property": "proof_harness_postOrderTraversal.precondition_instance.38",
-        "sourceLocation": {
-          "file": "Proof_Harness/traversal_with_harness.c",
-          "function": "proof_harness_postOrderTraversal",
-          "line": "134",
-          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-        },
-        "status": "SUCCESS"
-      },
-      {
-        "description": "free argument has offset zero",
-        "property": "proof_harness_postOrderTraversal.precondition_instance.39",
-        "sourceLocation": {
-          "file": "Proof_Harness/traversal_with_harness.c",
-          "function": "proof_harness_postOrderTraversal",
-          "line": "134",
-          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-        },
-        "status": "SUCCESS"
-      },
-      {
-        "description": "double free",
-        "property": "proof_harness_postOrderTraversal.precondition_instance.40",
-        "sourceLocation": {
-          "file": "Proof_Harness/traversal_with_harness.c",
-          "function": "proof_harness_postOrderTraversal",
-          "line": "134",
-          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-        },
-        "status": "SUCCESS"
-      },
-      {
-        "description": "free called for new[] object",
-        "property": "proof_harness_postOrderTraversal.precondition_instance.41",
-        "sourceLocation": {
-          "file": "Proof_Harness/traversal_with_harness.c",
-          "function": "proof_harness_postOrderTraversal",
-          "line": "134",
-          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-        },
-        "status": "SUCCESS"
-      },
-      {
-        "description": "free called for stack-allocated object",
-        "property": "proof_harness_postOrderTraversal.precondition_instance.42",
-        "sourceLocation": {
-          "file": "Proof_Harness/traversal_with_harness.c",
-          "function": "proof_harness_postOrderTraversal",
-          "line": "134",
-          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+          "line": "62",
+          "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
         },
         "status": "SUCCESS"
       }
