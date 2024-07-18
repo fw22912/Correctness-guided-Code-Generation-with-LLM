@@ -149,9 +149,7 @@ def parse_syntax_error(data):
 
     return None
 def main(cbmc_output, total_code_with_harnesses, method_list):
-    #assuming cbmc_output is a json string
-    #total_code_with_harness also string
-    #method also a string
+
 
     data = json.loads(cbmc_output) #converts string into json data
 
@@ -159,47 +157,144 @@ def main(cbmc_output, total_code_with_harnesses, method_list):
         message = entry.get("messageText", "")
         if "syntax error" in message:
             syntax = ['syntax']
-            print('A syntax error was found on line ' + entry['sourceLocation']['line'])
-            return syntax.append(entry['sourceLocation']['line'])
+            line = entry['sourceLocation']['line']
+            function = entry['sourceLocation']['function']
+            print('A syntax error was found on line ' + line + ' in function \'' + function + '\'')
+            syntax_location = [line,function]
+            syntax.append(syntax_location)
+            print(syntax)
+            #print(entry)
+
+            return syntax
+
         if 'result' in entry:
             counter_examples = ['result']
-            #cbmc_result = data #json data
-            #print(cbmc_result)
-            #print(total_code_with_harnesses)
+
             str_of_proof_harness = extract_harnesses(total_code_with_harnesses, method_list) #str of proof harnesses c code relevant to correct method
             #print(str_of_proof_harness)
             input_list = []
             for method in method_list:
-                #print(method)
+
                 var = extract_variables(str_of_proof_harness, method)
-                #print(var)
                 input_list = list(set(input_list + var)) #the input variables across all functions that we want to parse from the trace
             values_from_trace = (extract_variable_values(data, input_list))
 
-            #print(values_from_trace)
             for example in values_from_trace:
-                #print(json.dumps(example, indent = 2))
+
                 if example["status"] == "SUCCESS":
-                    #print()
+
                     print('On line ' + example['sourceLocation']['line'] + ', the test for \''+ example['description'] + '\' passed all tests successfully')
 
                 elif example['status'] == 'FAILURE':
-                    #print()
+
                     print('On line ' + example['sourceLocation']['line'] + ', the test for \'' + example[
                         'description'] + '\' failed under the following counter example: ')
                     for key, value in example['counter_example'].items():
-                        print(key +' has input value ' + value['data'])
-                        counter_examples.append([key,value['data']])
-                    #print(list((example['counter_example']).keys())[0])
+                        line = example['sourceLocation']['line']
+                        function = example['sourceLocation']['function']
+                        data = value['data']
+                        binary = value['binary']
+                        print(key +' has input value ' + data, 'or', binary ,'in binary, on line', line, 'in function', function)
+                        #print(example)
+                        counter_examples.append({'name' : key, 'binary' : binary, 'line' : line, 'function' : function})
+                        print(counter_examples)
+                        print(example)
 
-                    #print(json.dumps(example, indent = 2))
-                    #print('no success')
-            #print('the list of input variables is:')
-            #print(input_list) #list of total variable names
-             #these are the input variables found in a contradiction for the assertion
-            #print('the counter examples and their values are:')
-            #print(values_from_trace)
             return counter_examples
 
 
-#main(cbmc_output, total_code_with_harnesses, method_list)  #returns the syntax msg or trae msg
+cbmc_output = '''
+[
+  {
+    "program": "CBMC 6.0.1 (cbmc-6.0.1)"
+  },
+  {
+    "messageText": "**** WARNING: Use --unwinding-assertions to obtain sound verification results",
+    "messageType": "WARNING"
+  },
+  {
+    "messageText": "CBMC version 6.0.1 (cbmc-6.0.1) 64-bit x86_64 macos",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "syntax error before '}'",
+    "messageType": "ERROR",
+    "sourceLocation": {
+      "file": "mul_add.c",
+      "function": "harness_multiply",
+      "line": "55",
+      "workingDirectory": "/Users/osc/Desktop/test_c"
+    }
+  },
+  {
+    "messageText": "PARSING ERROR",
+    "messageType": "ERROR"
+  }
+]'''
+
+total_code_with_harnesses = '''
+#include <assert.h>
+#include <limits.h>
+
+// Method 1: Add two integers
+int add(int a, int b) {
+    return a + b;
+}
+
+// Method 2: Multiply two integers
+int multiply(int a, int b) {
+    return a * b;
+}
+
+// Proof harness for the add method
+void harness_add() {
+    int a = 0;
+    int b = 0;
+
+    // Using CBMC's nondeterministic input generation
+    __CPROVER_assume(a >= INT_MIN && a <= INT_MAX);
+    __CPROVER_assume(b >= INT_MIN && b <= INT_MAX);
+
+    int result = add(a, b);
+
+    // Check for overflow
+    if (a > 0 && b > 0) {
+        assert(result >= a); // No overflow should happen
+    }
+    if (a < 0 && b < 0) {
+        //assert(result <= a); // No overflow should happen
+    }
+
+    // Deliberate assertion failure to demonstrate CBMC detecting it
+    //assert(result != a + b); // This will always fail
+    //assert(0 != 0);
+}
+
+// Proof harness for the multiply method with a deliberate assertion failure
+void harness_multiply() {
+    int a = 0;
+    int b = 0;
+
+    
+    // Using CBMC's nondeterministic input generation
+    __CPROVER_assume(a >= INT_MIN && a <= INT_MAX);
+    __CPROVER_assume(b >= INT_MIN && b <= INT_MAX);
+
+    int result = multiply(a, b)
+
+   
+
+    // Deliberate assertion failure to demonstrate CBMC detecting it
+    //assert(result != a * b); // This will always fail
+    //assert(2 == 10);
+}
+
+void harness_combined() {
+    harness_add();
+    harness_multiply();
+    
+}'''
+
+method_list = ['add','multiply']
+
+#(main(cbmc_output, total_code_with_harnesses, method_list))  #returns the syntax msg or trae msg

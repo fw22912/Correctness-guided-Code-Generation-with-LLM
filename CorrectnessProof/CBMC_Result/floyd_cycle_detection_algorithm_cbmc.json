@@ -39,99 +39,63 @@
     "messageType": "STATUS-MESSAGE"
   },
   {
-    "messageText": "Unwinding loop proof_harness_duplicateNumber.0 iteration 1 file Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c line 82 function proof_harness_duplicateNumber thread 0",
+    "messageText": "Unwinding loop proof_harness_duplicateNumber.0 iteration 1 file Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c line 80 function proof_harness_duplicateNumber thread 0",
     "messageType": "STATUS-MESSAGE"
   },
   {
-    "messageText": "Unwinding loop proof_harness_duplicateNumber.0 iteration 2 file Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c line 82 function proof_harness_duplicateNumber thread 0",
+    "messageText": "Unwinding loop proof_harness_duplicateNumber.0 iteration 2 file Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c line 80 function proof_harness_duplicateNumber thread 0",
     "messageType": "STATUS-MESSAGE"
   },
   {
-    "messageText": "Not unwinding loop proof_harness_duplicateNumber.0 iteration 3 file Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c line 82 function proof_harness_duplicateNumber thread 0",
+    "messageText": "Not unwinding loop proof_harness_duplicateNumber.0 iteration 3 file Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c line 80 function proof_harness_duplicateNumber thread 0",
     "messageType": "STATUS-MESSAGE"
   },
   {
-    "messageText": "Unwinding loop proof_harness_duplicateNumber.1 iteration 1 file Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c line 88 function proof_harness_duplicateNumber thread 0",
+    "messageText": "Unwinding loop duplicateNumber.0 iteration 1 file Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c line 41 function duplicateNumber thread 0",
     "messageType": "STATUS-MESSAGE"
   },
   {
-    "messageText": "Unwinding loop proof_harness_duplicateNumber.1 iteration 2 file Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c line 88 function proof_harness_duplicateNumber thread 0",
+    "messageText": "Unwinding loop duplicateNumber.0 iteration 2 file Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c line 41 function duplicateNumber thread 0",
     "messageType": "STATUS-MESSAGE"
   },
   {
-    "messageText": "Not unwinding loop proof_harness_duplicateNumber.1 iteration 3 file Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c line 88 function proof_harness_duplicateNumber thread 0",
+    "messageText": "Not unwinding loop duplicateNumber.0 iteration 3 file Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c line 41 function duplicateNumber thread 0",
     "messageType": "STATUS-MESSAGE"
   },
   {
-    "messageText": "Unwinding loop proof_harness_duplicateNumber.2 iteration 1 file Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c line 87 function proof_harness_duplicateNumber thread 0",
+    "messageText": "Unwinding loop duplicateNumber.1 iteration 1 file Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c line 43 function duplicateNumber thread 0",
     "messageType": "STATUS-MESSAGE"
   },
   {
-    "messageText": "Unwinding loop proof_harness_duplicateNumber.1 iteration 1 file Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c line 88 function proof_harness_duplicateNumber thread 0",
+    "messageText": "Unwinding loop duplicateNumber.1 iteration 2 file Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c line 43 function duplicateNumber thread 0",
     "messageType": "STATUS-MESSAGE"
   },
   {
-    "messageText": "Unwinding loop proof_harness_duplicateNumber.1 iteration 2 file Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c line 88 function proof_harness_duplicateNumber thread 0",
+    "messageText": "Not unwinding loop duplicateNumber.1 iteration 3 file Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c line 43 function duplicateNumber thread 0",
     "messageType": "STATUS-MESSAGE"
   },
   {
-    "messageText": "Not unwinding loop proof_harness_duplicateNumber.1 iteration 3 file Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c line 88 function proof_harness_duplicateNumber thread 0",
+    "messageText": "Unwinding loop proof_harness_duplicateNumber.1 iteration 1 file Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c line 87 function proof_harness_duplicateNumber thread 0",
     "messageType": "STATUS-MESSAGE"
   },
   {
-    "messageText": "Unwinding loop proof_harness_duplicateNumber.2 iteration 2 file Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c line 87 function proof_harness_duplicateNumber thread 0",
+    "messageText": "Unwinding loop proof_harness_duplicateNumber.1 iteration 2 file Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c line 87 function proof_harness_duplicateNumber thread 0",
     "messageType": "STATUS-MESSAGE"
   },
   {
-    "messageText": "Unwinding loop proof_harness_duplicateNumber.1 iteration 1 file Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c line 88 function proof_harness_duplicateNumber thread 0",
+    "messageText": "Not unwinding loop proof_harness_duplicateNumber.1 iteration 3 file Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c line 87 function proof_harness_duplicateNumber thread 0",
     "messageType": "STATUS-MESSAGE"
   },
   {
-    "messageText": "Unwinding loop proof_harness_duplicateNumber.1 iteration 2 file Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c line 88 function proof_harness_duplicateNumber thread 0",
+    "messageText": "Runtime Symex: 0.00777018s",
     "messageType": "STATUS-MESSAGE"
   },
   {
-    "messageText": "Not unwinding loop proof_harness_duplicateNumber.1 iteration 3 file Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c line 88 function proof_harness_duplicateNumber thread 0",
+    "messageText": "size of program expression: 193 steps",
     "messageType": "STATUS-MESSAGE"
   },
   {
-    "messageText": "Not unwinding loop proof_harness_duplicateNumber.2 iteration 3 file Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c line 87 function proof_harness_duplicateNumber thread 0",
-    "messageType": "STATUS-MESSAGE"
-  },
-  {
-    "messageText": "Unwinding loop duplicateNumber.0 iteration 1 file Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c line 42 function duplicateNumber thread 0",
-    "messageType": "STATUS-MESSAGE"
-  },
-  {
-    "messageText": "Unwinding loop duplicateNumber.0 iteration 2 file Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c line 42 function duplicateNumber thread 0",
-    "messageType": "STATUS-MESSAGE"
-  },
-  {
-    "messageText": "Not unwinding loop duplicateNumber.0 iteration 3 file Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c line 42 function duplicateNumber thread 0",
-    "messageType": "STATUS-MESSAGE"
-  },
-  {
-    "messageText": "Unwinding loop duplicateNumber.1 iteration 1 file Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c line 44 function duplicateNumber thread 0",
-    "messageType": "STATUS-MESSAGE"
-  },
-  {
-    "messageText": "Unwinding loop duplicateNumber.1 iteration 2 file Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c line 44 function duplicateNumber thread 0",
-    "messageType": "STATUS-MESSAGE"
-  },
-  {
-    "messageText": "Not unwinding loop duplicateNumber.1 iteration 3 file Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c line 44 function duplicateNumber thread 0",
-    "messageType": "STATUS-MESSAGE"
-  },
-  {
-    "messageText": "Runtime Symex: 0.0120721s",
-    "messageType": "STATUS-MESSAGE"
-  },
-  {
-    "messageText": "size of program expression: 299 steps",
-    "messageType": "STATUS-MESSAGE"
-  },
-  {
-    "messageText": "simple slicing removed 29 assignments",
+    "messageText": "simple slicing removed 30 assignments",
     "messageType": "STATUS-MESSAGE"
   },
   {
@@ -139,7 +103,7 @@
     "messageType": "STATUS-MESSAGE"
   },
   {
-    "messageText": "Runtime Postprocess Equation: 4.2111e-05s",
+    "messageText": "Runtime Postprocess Equation: 5.5289e-05s",
     "messageType": "STATUS-MESSAGE"
   },
   {
@@ -151,7 +115,7 @@
     "messageType": "STATUS-MESSAGE"
   },
   {
-    "messageText": "Runtime Convert SSA: 0.00338389s",
+    "messageText": "Runtime Convert SSA: 0.00241587s",
     "messageType": "STATUS-MESSAGE"
   },
   {
@@ -159,11 +123,11 @@
     "messageType": "STATUS-MESSAGE"
   },
   {
-    "messageText": "Runtime Post-process: 0.0315211s",
+    "messageText": "Runtime Post-process: 0.0240664s",
     "messageType": "STATUS-MESSAGE"
   },
   {
-    "messageText": "21574 variables, 93257 clauses",
+    "messageText": "17464 variables, 74593 clauses",
     "messageType": "STATUS-MESSAGE"
   },
   {
@@ -171,11 +135,11 @@
     "messageType": "STATUS-MESSAGE"
   },
   {
-    "messageText": "Runtime Solver: 0.117339s",
+    "messageText": "Runtime Solver: 0.0825657s",
     "messageType": "STATUS-MESSAGE"
   },
   {
-    "messageText": "Runtime decision procedure: 0.12081s",
+    "messageText": "Runtime decision procedure: 0.0850719s",
     "messageType": "STATUS-MESSAGE"
   },
   {
@@ -212,18 +176,18 @@
         "sourceLocation": {
           "file": "Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c",
           "function": "test",
-          "line": "62",
+          "line": "61",
           "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
         },
         "status": "SUCCESS"
       },
       {
-        "description": "assertion result == expected_result",
+        "description": "assertion count == 2",
         "property": "proof_harness_duplicateNumber.assertion.1",
         "sourceLocation": {
           "file": "Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c",
           "function": "proof_harness_duplicateNumber",
-          "line": "101",
+          "line": "92",
           "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
         },
         "status": "FAILURE",
@@ -433,7 +397,7 @@
             "hidden": false,
             "sourceLocation": {
               "file": "Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c",
-              "line": "76",
+              "line": "75",
               "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
             },
             "stepType": "location-only",
@@ -445,7 +409,7 @@
               "identifier": "proof_harness_duplicateNumber",
               "sourceLocation": {
                 "file": "Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c",
-                "line": "76",
+                "line": "75",
                 "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
               }
             },
@@ -453,7 +417,7 @@
             "internal": false,
             "sourceLocation": {
               "file": "Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c",
-              "line": "76",
+              "line": "75",
               "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
             },
             "stepType": "function-call",
@@ -468,7 +432,7 @@
             "sourceLocation": {
               "file": "Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c",
               "function": "proof_harness_duplicateNumber",
-              "line": "77",
+              "line": "76",
               "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
             },
             "stepType": "assignment",
@@ -486,7 +450,7 @@
             "sourceLocation": {
               "file": "Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c",
               "function": "proof_harness_duplicateNumber",
-              "line": "78",
+              "line": "77",
               "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
             },
             "stepType": "location-only",
@@ -501,7 +465,7 @@
             "sourceLocation": {
               "file": "Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c",
               "function": "proof_harness_duplicateNumber",
-              "line": "79",
+              "line": "78",
               "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
             },
             "stepType": "assignment",
@@ -521,7 +485,7 @@
             "sourceLocation": {
               "file": "Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c",
               "function": "proof_harness_duplicateNumber",
-              "line": "79",
+              "line": "78",
               "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
             },
             "stepType": "assignment",
@@ -547,7 +511,7 @@
             "sourceLocation": {
               "file": "Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c",
               "function": "proof_harness_duplicateNumber",
-              "line": "79",
+              "line": "78",
               "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
             },
             "stepType": "function-call",
@@ -562,7 +526,7 @@
             "sourceLocation": {
               "file": "Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c",
               "function": "proof_harness_duplicateNumber",
-              "line": "79",
+              "line": "78",
               "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
             },
             "stepType": "assignment",
@@ -678,8 +642,8 @@
                 {
                   "index": 0,
                   "value": {
-                    "binary": "00000000000000000000000000000010",
-                    "data": "2u",
+                    "binary": "00000000000000000000000000000001",
+                    "data": "1u",
                     "name": "integer",
                     "type": "uint32_t",
                     "width": 32
@@ -688,8 +652,8 @@
                 {
                   "index": 1,
                   "value": {
-                    "binary": "00000000000000000000000000000001",
-                    "data": "1u",
+                    "binary": "00000000000000000000000000000010",
+                    "data": "2u",
                     "name": "integer",
                     "type": "uint32_t",
                     "width": 32
@@ -989,7 +953,7 @@
             "sourceLocation": {
               "file": "Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c",
               "function": "proof_harness_duplicateNumber",
-              "line": "79",
+              "line": "78",
               "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
             },
             "stepType": "assignment",
@@ -1009,7 +973,7 @@
             "sourceLocation": {
               "file": "Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c",
               "function": "proof_harness_duplicateNumber",
-              "line": "79",
+              "line": "78",
               "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
             },
             "stepType": "assignment",
@@ -1029,7 +993,7 @@
             "sourceLocation": {
               "file": "Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c",
               "function": "proof_harness_duplicateNumber",
-              "line": "82",
+              "line": "80",
               "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
             },
             "stepType": "assignment",
@@ -1051,7 +1015,7 @@
             "sourceLocation": {
               "file": "Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c",
               "function": "proof_harness_duplicateNumber",
-              "line": "82",
+              "line": "80",
               "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
             },
             "stepType": "assignment",
@@ -1069,7 +1033,7 @@
             "sourceLocation": {
               "file": "Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c",
               "function": "proof_harness_duplicateNumber",
-              "line": "82",
+              "line": "80",
               "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
             },
             "stepType": "loop-head",
@@ -1080,7 +1044,7 @@
             "sourceLocation": {
               "file": "Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c",
               "function": "proof_harness_duplicateNumber",
-              "line": "83",
+              "line": "81",
               "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
             },
             "stepType": "location-only",
@@ -1095,7 +1059,7 @@
             "sourceLocation": {
               "file": "Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c",
               "function": "proof_harness_duplicateNumber",
-              "line": "82",
+              "line": "80",
               "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
             },
             "stepType": "assignment",
@@ -1113,7 +1077,7 @@
             "sourceLocation": {
               "file": "Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c",
               "function": "proof_harness_duplicateNumber",
-              "line": "82",
+              "line": "80",
               "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
             },
             "stepType": "loop-head",
@@ -1124,7 +1088,7 @@
             "sourceLocation": {
               "file": "Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c",
               "function": "proof_harness_duplicateNumber",
-              "line": "83",
+              "line": "81",
               "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
             },
             "stepType": "location-only",
@@ -1139,7 +1103,7 @@
             "sourceLocation": {
               "file": "Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c",
               "function": "proof_harness_duplicateNumber",
-              "line": "82",
+              "line": "80",
               "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
             },
             "stepType": "assignment",
@@ -1157,396 +1121,11 @@
             "sourceLocation": {
               "file": "Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c",
               "function": "proof_harness_duplicateNumber",
-              "line": "82",
+              "line": "80",
               "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
             },
             "stepType": "loop-head",
             "thread": 0
-          },
-          {
-            "assignmentType": "variable",
-            "hidden": true,
-            "internal": false,
-            "lhs": "has_duplicate",
-            "mode": "C",
-            "sourceLocation": {
-              "file": "Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c",
-              "function": "proof_harness_duplicateNumber",
-              "line": "86",
-              "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-            },
-            "stepType": "assignment",
-            "thread": 0,
-            "value": {
-              "binary": "00000000",
-              "data": "FALSE",
-              "name": "integer",
-              "type": "_Bool",
-              "width": 8
-            }
-          },
-          {
-            "assignmentType": "variable",
-            "hidden": false,
-            "internal": false,
-            "lhs": "has_duplicate",
-            "mode": "C",
-            "sourceLocation": {
-              "file": "Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c",
-              "function": "proof_harness_duplicateNumber",
-              "line": "86",
-              "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-            },
-            "stepType": "assignment",
-            "thread": 0,
-            "value": {
-              "binary": "00000000",
-              "data": "FALSE",
-              "name": "integer",
-              "type": "_Bool",
-              "width": 8
-            }
-          },
-          {
-            "assignmentType": "variable",
-            "hidden": true,
-            "internal": false,
-            "lhs": "i",
-            "mode": "C",
-            "sourceLocation": {
-              "file": "Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c",
-              "function": "proof_harness_duplicateNumber",
-              "line": "87",
-              "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-            },
-            "stepType": "assignment",
-            "thread": 0,
-            "value": {
-              "binary": "0000000000000000000000000000000000000000000000000000000000000000",
-              "data": "0ul",
-              "name": "integer",
-              "type": "__CPROVER_size_t",
-              "width": 64
-            }
-          },
-          {
-            "assignmentType": "variable",
-            "hidden": false,
-            "internal": false,
-            "lhs": "i",
-            "mode": "C",
-            "sourceLocation": {
-              "file": "Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c",
-              "function": "proof_harness_duplicateNumber",
-              "line": "87",
-              "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-            },
-            "stepType": "assignment",
-            "thread": 0,
-            "value": {
-              "binary": "0000000000000000000000000000000000000000000000000000000000000000",
-              "data": "0ul",
-              "name": "integer",
-              "type": "__CPROVER_size_t",
-              "width": 64
-            }
-          },
-          {
-            "hidden": false,
-            "sourceLocation": {
-              "file": "Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c",
-              "function": "proof_harness_duplicateNumber",
-              "line": "87",
-              "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-            },
-            "stepType": "loop-head",
-            "thread": 0
-          },
-          {
-            "assignmentType": "variable",
-            "hidden": true,
-            "internal": false,
-            "lhs": "j",
-            "mode": "C",
-            "sourceLocation": {
-              "file": "Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c",
-              "function": "proof_harness_duplicateNumber",
-              "line": "88",
-              "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-            },
-            "stepType": "assignment",
-            "thread": 0,
-            "value": {
-              "binary": "0000000000000000000000000000000000000000000000000000000000000000",
-              "data": "0ul",
-              "name": "integer",
-              "type": "__CPROVER_size_t",
-              "width": 64
-            }
-          },
-          {
-            "assignmentType": "variable",
-            "hidden": false,
-            "internal": false,
-            "lhs": "j",
-            "mode": "C",
-            "sourceLocation": {
-              "file": "Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c",
-              "function": "proof_harness_duplicateNumber",
-              "line": "88",
-              "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-            },
-            "stepType": "assignment",
-            "thread": 0,
-            "value": {
-              "binary": "0000000000000000000000000000000000000000000000000000000000000001",
-              "data": "1ul",
-              "name": "integer",
-              "type": "__CPROVER_size_t",
-              "width": 64
-            }
-          },
-          {
-            "hidden": false,
-            "sourceLocation": {
-              "file": "Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c",
-              "function": "proof_harness_duplicateNumber",
-              "line": "88",
-              "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-            },
-            "stepType": "loop-head",
-            "thread": 0
-          },
-          {
-            "hidden": false,
-            "sourceLocation": {
-              "file": "Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c",
-              "function": "proof_harness_duplicateNumber",
-              "line": "89",
-              "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-            },
-            "stepType": "location-only",
-            "thread": 0
-          },
-          {
-            "assignmentType": "variable",
-            "hidden": false,
-            "internal": false,
-            "lhs": "j",
-            "mode": "C",
-            "sourceLocation": {
-              "file": "Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c",
-              "function": "proof_harness_duplicateNumber",
-              "line": "88",
-              "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-            },
-            "stepType": "assignment",
-            "thread": 0,
-            "value": {
-              "binary": "0000000000000000000000000000000000000000000000000000000000000010",
-              "data": "2ul",
-              "name": "integer",
-              "type": "__CPROVER_size_t",
-              "width": 64
-            }
-          },
-          {
-            "hidden": false,
-            "sourceLocation": {
-              "file": "Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c",
-              "function": "proof_harness_duplicateNumber",
-              "line": "88",
-              "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-            },
-            "stepType": "loop-head",
-            "thread": 0
-          },
-          {
-            "hidden": false,
-            "sourceLocation": {
-              "file": "Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c",
-              "function": "proof_harness_duplicateNumber",
-              "line": "94",
-              "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-            },
-            "stepType": "location-only",
-            "thread": 0
-          },
-          {
-            "assignmentType": "variable",
-            "hidden": false,
-            "internal": false,
-            "lhs": "i",
-            "mode": "C",
-            "sourceLocation": {
-              "file": "Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c",
-              "function": "proof_harness_duplicateNumber",
-              "line": "87",
-              "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-            },
-            "stepType": "assignment",
-            "thread": 0,
-            "value": {
-              "binary": "0000000000000000000000000000000000000000000000000000000000000001",
-              "data": "1ul",
-              "name": "integer",
-              "type": "__CPROVER_size_t",
-              "width": 64
-            }
-          },
-          {
-            "hidden": false,
-            "sourceLocation": {
-              "file": "Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c",
-              "function": "proof_harness_duplicateNumber",
-              "line": "87",
-              "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-            },
-            "stepType": "loop-head",
-            "thread": 0
-          },
-          {
-            "assignmentType": "variable",
-            "hidden": true,
-            "internal": false,
-            "lhs": "j",
-            "mode": "C",
-            "sourceLocation": {
-              "file": "Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c",
-              "function": "proof_harness_duplicateNumber",
-              "line": "88",
-              "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-            },
-            "stepType": "assignment",
-            "thread": 0,
-            "value": {
-              "binary": "0000000000000000000000000000000000000000000000000000000000000000",
-              "data": "0ul",
-              "name": "integer",
-              "type": "__CPROVER_size_t",
-              "width": 64
-            }
-          },
-          {
-            "assignmentType": "variable",
-            "hidden": false,
-            "internal": false,
-            "lhs": "j",
-            "mode": "C",
-            "sourceLocation": {
-              "file": "Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c",
-              "function": "proof_harness_duplicateNumber",
-              "line": "88",
-              "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-            },
-            "stepType": "assignment",
-            "thread": 0,
-            "value": {
-              "binary": "0000000000000000000000000000000000000000000000000000000000000010",
-              "data": "2ul",
-              "name": "integer",
-              "type": "__CPROVER_size_t",
-              "width": 64
-            }
-          },
-          {
-            "hidden": false,
-            "sourceLocation": {
-              "file": "Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c",
-              "function": "proof_harness_duplicateNumber",
-              "line": "88",
-              "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-            },
-            "stepType": "loop-head",
-            "thread": 0
-          },
-          {
-            "hidden": false,
-            "sourceLocation": {
-              "file": "Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c",
-              "function": "proof_harness_duplicateNumber",
-              "line": "94",
-              "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-            },
-            "stepType": "location-only",
-            "thread": 0
-          },
-          {
-            "assignmentType": "variable",
-            "hidden": false,
-            "internal": false,
-            "lhs": "i",
-            "mode": "C",
-            "sourceLocation": {
-              "file": "Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c",
-              "function": "proof_harness_duplicateNumber",
-              "line": "87",
-              "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-            },
-            "stepType": "assignment",
-            "thread": 0,
-            "value": {
-              "binary": "0000000000000000000000000000000000000000000000000000000000000010",
-              "data": "2ul",
-              "name": "integer",
-              "type": "__CPROVER_size_t",
-              "width": 64
-            }
-          },
-          {
-            "hidden": false,
-            "sourceLocation": {
-              "file": "Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c",
-              "function": "proof_harness_duplicateNumber",
-              "line": "87",
-              "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-            },
-            "stepType": "loop-head",
-            "thread": 0
-          },
-          {
-            "assignmentType": "variable",
-            "hidden": true,
-            "internal": false,
-            "lhs": "expected_result",
-            "mode": "C",
-            "sourceLocation": {
-              "file": "Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c",
-              "function": "proof_harness_duplicateNumber",
-              "line": "99",
-              "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-            },
-            "stepType": "assignment",
-            "thread": 0,
-            "value": {
-              "binary": "00000000000000000000000000000000",
-              "data": "0u",
-              "name": "integer",
-              "type": "uint32_t",
-              "width": 32
-            }
-          },
-          {
-            "assignmentType": "variable",
-            "hidden": false,
-            "internal": true,
-            "lhs": "expected_result",
-            "mode": "C",
-            "sourceLocation": {
-              "file": "Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c",
-              "function": "proof_harness_duplicateNumber",
-              "line": "99",
-              "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-            },
-            "stepType": "assignment",
-            "thread": 0,
-            "value": {
-              "binary": "11111111111111111111111111111111",
-              "data": "4294967295u",
-              "name": "integer",
-              "type": "uint32_t",
-              "width": 32
-            }
           },
           {
             "assignmentType": "variable",
@@ -1557,7 +1136,7 @@
             "sourceLocation": {
               "file": "Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c",
               "function": "proof_harness_duplicateNumber",
-              "line": "100",
+              "line": "83",
               "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
             },
             "stepType": "assignment",
@@ -1579,7 +1158,7 @@
             "sourceLocation": {
               "file": "Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c",
               "function": "proof_harness_duplicateNumber",
-              "line": "100",
+              "line": "83",
               "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
             },
             "stepType": "assignment",
@@ -1598,7 +1177,7 @@
               "identifier": "duplicateNumber",
               "sourceLocation": {
                 "file": "Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c",
-                "line": "31",
+                "line": "30",
                 "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
               }
             },
@@ -1607,7 +1186,7 @@
             "sourceLocation": {
               "file": "Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c",
               "function": "proof_harness_duplicateNumber",
-              "line": "100",
+              "line": "83",
               "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
             },
             "stepType": "function-call",
@@ -1622,7 +1201,7 @@
             "sourceLocation": {
               "file": "Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c",
               "function": "proof_harness_duplicateNumber",
-              "line": "100",
+              "line": "83",
               "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
             },
             "stepType": "assignment",
@@ -1642,7 +1221,7 @@
             "sourceLocation": {
               "file": "Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c",
               "function": "proof_harness_duplicateNumber",
-              "line": "100",
+              "line": "83",
               "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
             },
             "stepType": "assignment",
@@ -1660,7 +1239,7 @@
             "sourceLocation": {
               "file": "Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c",
               "function": "duplicateNumber",
-              "line": "33",
+              "line": "32",
               "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
             },
             "stepType": "location-only",
@@ -1675,7 +1254,7 @@
             "sourceLocation": {
               "file": "Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c",
               "function": "duplicateNumber",
-              "line": "36",
+              "line": "35",
               "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
             },
             "stepType": "assignment",
@@ -1697,14 +1276,14 @@
             "sourceLocation": {
               "file": "Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c",
               "function": "duplicateNumber",
-              "line": "36",
+              "line": "35",
               "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
             },
             "stepType": "assignment",
             "thread": 0,
             "value": {
-              "binary": "00000000000000000000000000000010",
-              "data": "2u",
+              "binary": "00000000000000000000000000000001",
+              "data": "1u",
               "name": "integer",
               "type": "uint32_t",
               "width": 32
@@ -1719,7 +1298,7 @@
             "sourceLocation": {
               "file": "Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c",
               "function": "duplicateNumber",
-              "line": "38",
+              "line": "37",
               "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
             },
             "stepType": "assignment",
@@ -1741,7 +1320,29 @@
             "sourceLocation": {
               "file": "Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c",
               "function": "duplicateNumber",
-              "line": "38",
+              "line": "37",
+              "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "binary": "00000000000000000000000000000001",
+              "data": "1u",
+              "name": "integer",
+              "type": "uint32_t",
+              "width": 32
+            }
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": false,
+            "internal": true,
+            "lhs": "tortoise",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c",
+              "function": "duplicateNumber",
+              "line": "39",
               "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
             },
             "stepType": "assignment",
@@ -1758,7 +1359,7 @@
             "assignmentType": "variable",
             "hidden": false,
             "internal": true,
-            "lhs": "tortoise",
+            "lhs": "hare",
             "mode": "C",
             "sourceLocation": {
               "file": "Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c",
@@ -1769,41 +1370,19 @@
             "stepType": "assignment",
             "thread": 0,
             "value": {
-              "binary": "11111111111111111111111111111111",
-              "data": "4294967295u",
+              "binary": "00000000000000000000000000000010",
+              "data": "2u",
               "name": "integer",
               "type": "uint32_t",
               "width": 32
             }
           },
           {
-            "assignmentType": "variable",
             "hidden": false,
-            "internal": true,
-            "lhs": "hare",
-            "mode": "C",
             "sourceLocation": {
               "file": "Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c",
               "function": "duplicateNumber",
               "line": "41",
-              "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-            },
-            "stepType": "assignment",
-            "thread": 0,
-            "value": {
-              "binary": "01110100000000000000111111111110",
-              "data": "1946161150u",
-              "name": "integer",
-              "type": "uint32_t",
-              "width": 32
-            }
-          },
-          {
-            "hidden": false,
-            "sourceLocation": {
-              "file": "Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c",
-              "function": "duplicateNumber",
-              "line": "42",
               "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
             },
             "stepType": "location-only",
@@ -1818,64 +1397,64 @@
             "sourceLocation": {
               "file": "Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c",
               "function": "duplicateNumber",
-              "line": "40",
-              "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-            },
-            "stepType": "assignment",
-            "thread": 0,
-            "value": {
-              "binary": "01110100000000000000111111111110",
-              "data": "1946161150u",
-              "name": "integer",
-              "type": "uint32_t",
-              "width": 32
-            }
-          },
-          {
-            "assignmentType": "variable",
-            "hidden": false,
-            "internal": true,
-            "lhs": "hare",
-            "mode": "C",
-            "sourceLocation": {
-              "file": "Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c",
-              "function": "duplicateNumber",
-              "line": "41",
-              "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-            },
-            "stepType": "assignment",
-            "thread": 0,
-            "value": {
-              "binary": "01110100000000000000111111111110",
-              "data": "1946161150u",
-              "name": "integer",
-              "type": "uint32_t",
-              "width": 32
-            }
-          },
-          {
-            "hidden": false,
-            "sourceLocation": {
-              "file": "Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c",
-              "function": "duplicateNumber",
               "line": "42",
               "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
             },
-            "stepType": "location-only",
-            "thread": 0
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "binary": "00000000000000000000000000000001",
+              "data": "1u",
+              "name": "integer",
+              "type": "uint32_t",
+              "width": 32
+            }
           },
           {
-            "assignmentType": "variable",
             "hidden": false,
-            "internal": true,
-            "lhs": "tortoise",
-            "mode": "C",
             "sourceLocation": {
               "file": "Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c",
               "function": "duplicateNumber",
               "line": "43",
               "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
             },
+            "stepType": "loop-head",
+            "thread": 0
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": false,
+            "internal": true,
+            "lhs": "tortoise",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c",
+              "function": "duplicateNumber",
+              "line": "44",
+              "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "binary": "00000000000000000000000000000010",
+              "data": "2u",
+              "name": "integer",
+              "type": "uint32_t",
+              "width": 32
+            }
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": false,
+            "internal": true,
+            "lhs": "hare",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c",
+              "function": "duplicateNumber",
+              "line": "45",
+              "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
             "stepType": "assignment",
             "thread": 0,
             "value": {
@@ -1891,62 +1470,7 @@
             "sourceLocation": {
               "file": "Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c",
               "function": "duplicateNumber",
-              "line": "44",
-              "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-            },
-            "stepType": "loop-head",
-            "thread": 0
-          },
-          {
-            "assignmentType": "variable",
-            "hidden": false,
-            "internal": true,
-            "lhs": "tortoise",
-            "mode": "C",
-            "sourceLocation": {
-              "file": "Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c",
-              "function": "duplicateNumber",
-              "line": "45",
-              "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-            },
-            "stepType": "assignment",
-            "thread": 0,
-            "value": {
-              "binary": "11111111111111111111111111111111",
-              "data": "4294967295u",
-              "name": "integer",
-              "type": "uint32_t",
-              "width": 32
-            }
-          },
-          {
-            "assignmentType": "variable",
-            "hidden": false,
-            "internal": true,
-            "lhs": "hare",
-            "mode": "C",
-            "sourceLocation": {
-              "file": "Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c",
-              "function": "duplicateNumber",
-              "line": "46",
-              "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-            },
-            "stepType": "assignment",
-            "thread": 0,
-            "value": {
-              "binary": "01110100001000000000111111111110",
-              "data": "1948258302u",
-              "name": "integer",
-              "type": "uint32_t",
-              "width": 32
-            }
-          },
-          {
-            "hidden": false,
-            "sourceLocation": {
-              "file": "Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c",
-              "function": "duplicateNumber",
-              "line": "44",
+              "line": "43",
               "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
             },
             "stepType": "location-only",
@@ -1957,73 +1481,7 @@
             "sourceLocation": {
               "file": "Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c",
               "function": "duplicateNumber",
-              "line": "44",
-              "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-            },
-            "stepType": "loop-head",
-            "thread": 0
-          },
-          {
-            "assignmentType": "variable",
-            "hidden": false,
-            "internal": true,
-            "lhs": "tortoise",
-            "mode": "C",
-            "sourceLocation": {
-              "file": "Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c",
-              "function": "duplicateNumber",
-              "line": "45",
-              "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-            },
-            "stepType": "assignment",
-            "thread": 0,
-            "value": {
-              "binary": "01110100000000000000111111111110",
-              "data": "1946161150u",
-              "name": "integer",
-              "type": "uint32_t",
-              "width": 32
-            }
-          },
-          {
-            "assignmentType": "variable",
-            "hidden": false,
-            "internal": true,
-            "lhs": "hare",
-            "mode": "C",
-            "sourceLocation": {
-              "file": "Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c",
-              "function": "duplicateNumber",
-              "line": "46",
-              "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-            },
-            "stepType": "assignment",
-            "thread": 0,
-            "value": {
-              "binary": "01110100000000000000111111111110",
-              "data": "1946161150u",
-              "name": "integer",
-              "type": "uint32_t",
-              "width": 32
-            }
-          },
-          {
-            "hidden": false,
-            "sourceLocation": {
-              "file": "Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c",
-              "function": "duplicateNumber",
-              "line": "44",
-              "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-            },
-            "stepType": "location-only",
-            "thread": 0
-          },
-          {
-            "hidden": false,
-            "sourceLocation": {
-              "file": "Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c",
-              "function": "duplicateNumber",
-              "line": "44",
+              "line": "43",
               "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
             },
             "stepType": "loop-head",
@@ -2038,14 +1496,14 @@
             "sourceLocation": {
               "file": "Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c",
               "function": "duplicateNumber",
-              "line": "48",
+              "line": "47",
               "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
             },
             "stepType": "assignment",
             "thread": 0,
             "value": {
-              "binary": "01110100000000000000111111111110",
-              "data": "1946161150u",
+              "binary": "00000000000000000000000000000010",
+              "data": "2u",
               "name": "integer",
               "type": "uint32_t",
               "width": 32
@@ -2057,7 +1515,7 @@
               "identifier": "duplicateNumber",
               "sourceLocation": {
                 "file": "Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c",
-                "line": "31",
+                "line": "30",
                 "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
               }
             },
@@ -2066,7 +1524,7 @@
             "sourceLocation": {
               "file": "Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c",
               "function": "duplicateNumber",
-              "line": "49",
+              "line": "48",
               "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
             },
             "stepType": "function-return",
@@ -2081,14 +1539,14 @@
             "sourceLocation": {
               "file": "Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c",
               "function": "proof_harness_duplicateNumber",
-              "line": "100",
+              "line": "83",
               "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
             },
             "stepType": "assignment",
             "thread": 0,
             "value": {
-              "binary": "01110100000000000000111111111110",
-              "data": "1946161150u",
+              "binary": "00000000000000000000000000000010",
+              "data": "2u",
               "name": "integer",
               "type": "uint32_t",
               "width": 32
@@ -2103,14 +1561,14 @@
             "sourceLocation": {
               "file": "Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c",
               "function": "proof_harness_duplicateNumber",
-              "line": "100",
+              "line": "83",
               "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
             },
             "stepType": "assignment",
             "thread": 0,
             "value": {
-              "binary": "01110100000000000000111111111110",
-              "data": "1946161150u",
+              "binary": "00000000000000000000000000000010",
+              "data": "2u",
               "name": "integer",
               "type": "uint32_t",
               "width": 32
@@ -2118,13 +1576,233 @@
           },
           {
             "hidden": false,
-            "internal": false,
-            "property": "proof_harness_duplicateNumber.assertion.1",
-            "reason": "assertion result == expected_result",
             "sourceLocation": {
               "file": "Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c",
               "function": "proof_harness_duplicateNumber",
-              "line": "101",
+              "line": "84",
+              "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "location-only",
+            "thread": 0
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": true,
+            "internal": false,
+            "lhs": "count",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c",
+              "function": "proof_harness_duplicateNumber",
+              "line": "86",
+              "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "binary": "0000000000000000000000000000000000000000000000000000000000000000",
+              "data": "0ul",
+              "name": "integer",
+              "type": "__CPROVER_size_t",
+              "width": 64
+            }
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": false,
+            "internal": false,
+            "lhs": "count",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c",
+              "function": "proof_harness_duplicateNumber",
+              "line": "86",
+              "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "binary": "0000000000000000000000000000000000000000000000000000000000000000",
+              "data": "0ul",
+              "name": "integer",
+              "type": "__CPROVER_size_t",
+              "width": 64
+            }
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": true,
+            "internal": false,
+            "lhs": "i",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c",
+              "function": "proof_harness_duplicateNumber",
+              "line": "87",
+              "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "binary": "0000000000000000000000000000000000000000000000000000000000000000",
+              "data": "0ul",
+              "name": "integer",
+              "type": "__CPROVER_size_t",
+              "width": 64
+            }
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": false,
+            "internal": false,
+            "lhs": "i",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c",
+              "function": "proof_harness_duplicateNumber",
+              "line": "87",
+              "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "binary": "0000000000000000000000000000000000000000000000000000000000000000",
+              "data": "0ul",
+              "name": "integer",
+              "type": "__CPROVER_size_t",
+              "width": 64
+            }
+          },
+          {
+            "hidden": false,
+            "sourceLocation": {
+              "file": "Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c",
+              "function": "proof_harness_duplicateNumber",
+              "line": "87",
+              "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "loop-head",
+            "thread": 0
+          },
+          {
+            "hidden": false,
+            "sourceLocation": {
+              "file": "Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c",
+              "function": "proof_harness_duplicateNumber",
+              "line": "88",
+              "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "location-only",
+            "thread": 0
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": false,
+            "internal": false,
+            "lhs": "i",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c",
+              "function": "proof_harness_duplicateNumber",
+              "line": "87",
+              "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "binary": "0000000000000000000000000000000000000000000000000000000000000001",
+              "data": "1ul",
+              "name": "integer",
+              "type": "__CPROVER_size_t",
+              "width": 64
+            }
+          },
+          {
+            "hidden": false,
+            "sourceLocation": {
+              "file": "Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c",
+              "function": "proof_harness_duplicateNumber",
+              "line": "87",
+              "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "loop-head",
+            "thread": 0
+          },
+          {
+            "hidden": false,
+            "sourceLocation": {
+              "file": "Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c",
+              "function": "proof_harness_duplicateNumber",
+              "line": "88",
+              "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "location-only",
+            "thread": 0
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": false,
+            "internal": false,
+            "lhs": "count",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c",
+              "function": "proof_harness_duplicateNumber",
+              "line": "89",
+              "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "binary": "0000000000000000000000000000000000000000000000000000000000000001",
+              "data": "1ul",
+              "name": "integer",
+              "type": "__CPROVER_size_t",
+              "width": 64
+            }
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": false,
+            "internal": false,
+            "lhs": "i",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c",
+              "function": "proof_harness_duplicateNumber",
+              "line": "87",
+              "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "binary": "0000000000000000000000000000000000000000000000000000000000000010",
+              "data": "2ul",
+              "name": "integer",
+              "type": "__CPROVER_size_t",
+              "width": 64
+            }
+          },
+          {
+            "hidden": false,
+            "sourceLocation": {
+              "file": "Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c",
+              "function": "proof_harness_duplicateNumber",
+              "line": "87",
+              "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "loop-head",
+            "thread": 0
+          },
+          {
+            "hidden": false,
+            "internal": false,
+            "property": "proof_harness_duplicateNumber.assertion.1",
+            "reason": "assertion count == 2",
+            "sourceLocation": {
+              "file": "Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c",
+              "function": "proof_harness_duplicateNumber",
+              "line": "92",
               "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
             },
             "stepType": "failure",
@@ -2138,7 +1816,7 @@
         "sourceLocation": {
           "file": "Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c",
           "function": "proof_harness_duplicateNumber",
-          "line": "102",
+          "line": "94",
           "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
         },
         "status": "SUCCESS"
@@ -2149,7 +1827,7 @@
         "sourceLocation": {
           "file": "Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c",
           "function": "proof_harness_duplicateNumber",
-          "line": "102",
+          "line": "94",
           "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
         },
         "status": "SUCCESS"
@@ -2160,7 +1838,7 @@
         "sourceLocation": {
           "file": "Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c",
           "function": "proof_harness_duplicateNumber",
-          "line": "102",
+          "line": "94",
           "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
         },
         "status": "SUCCESS"
@@ -2171,7 +1849,7 @@
         "sourceLocation": {
           "file": "Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c",
           "function": "proof_harness_duplicateNumber",
-          "line": "102",
+          "line": "94",
           "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
         },
         "status": "SUCCESS"
@@ -2182,7 +1860,7 @@
         "sourceLocation": {
           "file": "Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c",
           "function": "proof_harness_duplicateNumber",
-          "line": "102",
+          "line": "94",
           "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
         },
         "status": "SUCCESS"
@@ -2193,7 +1871,7 @@
         "sourceLocation": {
           "file": "Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c",
           "function": "proof_harness_duplicateNumber",
-          "line": "102",
+          "line": "94",
           "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
         },
         "status": "SUCCESS"
