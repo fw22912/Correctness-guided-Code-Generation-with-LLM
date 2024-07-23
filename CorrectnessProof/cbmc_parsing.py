@@ -203,98 +203,98 @@ def main(cbmc_output, total_code_with_harnesses, method_list):
             return counter_examples
 
 
-cbmc_output = '''
-[
-  {
-    "program": "CBMC 6.0.1 (cbmc-6.0.1)"
-  },
-  {
-    "messageText": "**** WARNING: Use --unwinding-assertions to obtain sound verification results",
-    "messageType": "WARNING"
-  },
-  {
-    "messageText": "CBMC version 6.0.1 (cbmc-6.0.1) 64-bit x86_64 macos",
-    "messageType": "STATUS-MESSAGE"
-  },
-  {
-    "messageText": "syntax error before '}'",
-    "messageType": "ERROR",
-    "sourceLocation": {
-      "file": "mul_add.c",
-      "function": "harness_multiply",
-      "line": "55",
-      "workingDirectory": "/Users/osc/Desktop/test_c"
-    }
-  },
-  {
-    "messageText": "PARSING ERROR",
-    "messageType": "ERROR"
-  }
-]'''
-
-total_code_with_harnesses = '''
-#include <assert.h>
-#include <limits.h>
-
-// Method 1: Add two integers
-int add(int a, int b) {
-    return a + b;
-}
-
-// Method 2: Multiply two integers
-int multiply(int a, int b) {
-    return a * b;
-}
-
-// Proof harness for the add method
-void harness_add() {
-    int a = 0;
-    int b = 0;
-
-    // Using CBMC's nondeterministic input generation
-    __CPROVER_assume(a >= INT_MIN && a <= INT_MAX);
-    __CPROVER_assume(b >= INT_MIN && b <= INT_MAX);
-
-    int result = add(a, b);
-
-    // Check for overflow
-    if (a > 0 && b > 0) {
-        assert(result >= a); // No overflow should happen
-    }
-    if (a < 0 && b < 0) {
-        //assert(result <= a); // No overflow should happen
-    }
-
-    // Deliberate assertion failure to demonstrate CBMC detecting it
-    //assert(result != a + b); // This will always fail
-    //assert(0 != 0);
-}
-
-// Proof harness for the multiply method with a deliberate assertion failure
-void harness_multiply() {
-    int a = 0;
-    int b = 0;
-
-    
-    // Using CBMC's nondeterministic input generation
-    __CPROVER_assume(a >= INT_MIN && a <= INT_MAX);
-    __CPROVER_assume(b >= INT_MIN && b <= INT_MAX);
-
-    int result = multiply(a, b)
-
-   
-
-    // Deliberate assertion failure to demonstrate CBMC detecting it
-    //assert(result != a * b); // This will always fail
-    //assert(2 == 10);
-}
-
-void harness_combined() {
-    harness_add();
-    harness_multiply();
-    
-}'''
-
-method_list = ['add','multiply']
+# cbmc_output = '''
+# [
+#   {
+#     "program": "CBMC 6.0.1 (cbmc-6.0.1)"
+#   },
+#   {
+#     "messageText": "**** WARNING: Use --unwinding-assertions to obtain sound verification results",
+#     "messageType": "WARNING"
+#   },
+#   {
+#     "messageText": "CBMC version 6.0.1 (cbmc-6.0.1) 64-bit x86_64 macos",
+#     "messageType": "STATUS-MESSAGE"
+#   },
+#   {
+#     "messageText": "syntax error before '}'",
+#     "messageType": "ERROR",
+#     "sourceLocation": {
+#       "file": "mul_add.c",
+#       "function": "harness_multiply",
+#       "line": "55",
+#       "workingDirectory": "/Users/osc/Desktop/test_c"
+#     }
+#   },
+#   {
+#     "messageText": "PARSING ERROR",
+#     "messageType": "ERROR"
+#   }
+# ]'''
+#
+# total_code_with_harnesses = '''
+# #include <assert.h>
+# #include <limits.h>
+#
+# // Method 1: Add two integers
+# int add(int a, int b) {
+#     return a + b;
+# }
+#
+# // Method 2: Multiply two integers
+# int multiply(int a, int b) {
+#     return a * b;
+# }
+#
+# // Proof harness for the add method
+# void harness_add() {
+#     int a = 0;
+#     int b = 0;
+#
+#     // Using CBMC's nondeterministic input generation
+#     __CPROVER_assume(a >= INT_MIN && a <= INT_MAX);
+#     __CPROVER_assume(b >= INT_MIN && b <= INT_MAX);
+#
+#     int result = add(a, b);
+#
+#     // Check for overflow
+#     if (a > 0 && b > 0) {
+#         assert(result >= a); // No overflow should happen
+#     }
+#     if (a < 0 && b < 0) {
+#         //assert(result <= a); // No overflow should happen
+#     }
+#
+#     // Deliberate assertion failure to demonstrate CBMC detecting it
+#     //assert(result != a + b); // This will always fail
+#     //assert(0 != 0);
+# }
+#
+# // Proof harness for the multiply method with a deliberate assertion failure
+# void harness_multiply() {
+#     int a = 0;
+#     int b = 0;
+#
+#
+#     // Using CBMC's nondeterministic input generation
+#     __CPROVER_assume(a >= INT_MIN && a <= INT_MAX);
+#     __CPROVER_assume(b >= INT_MIN && b <= INT_MAX);
+#
+#     int result = multiply(a, b)
+#
+#
+#
+#     // Deliberate assertion failure to demonstrate CBMC detecting it
+#     //assert(result != a * b); // This will always fail
+#     //assert(2 == 10);
+# }
+#
+# void harness_combined() {
+#     harness_add();
+#     harness_multiply();
+#
+# }'''
+#
+# method_list = ['add','multiply']
 
 #(main(cbmc_output, total_code_with_harnesses, method_list))  #returns the syntax msg or trae msg

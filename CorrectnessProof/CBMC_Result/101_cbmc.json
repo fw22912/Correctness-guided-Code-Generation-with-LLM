@@ -1,0 +1,27 @@
+[
+  {
+    "program": "CBMC 6.0.1 (cbmc-6.0.1)"
+  },
+  {
+    "messageText": "**** WARNING: Use --unwinding-assertions to obtain sound verification results",
+    "messageType": "WARNING"
+  },
+  {
+    "messageText": "CBMC version 6.0.1 (cbmc-6.0.1) 64-bit arm64 macos",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "syntax error before 'checkSymmetric'",
+    "messageType": "ERROR",
+    "sourceLocation": {
+      "file": "Proof_Harness/101_with_harness.c",
+      "function": "bool",
+      "line": "13",
+      "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+    }
+  },
+  {
+    "messageText": "PARSING ERROR",
+    "messageType": "ERROR"
+  }
+]

@@ -5,7 +5,7 @@ import Prompt_Generator as pg
 import re
 import inspect
 
-base_dir = "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof/Proof_Harness"
+base_dir = "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof/Proof_Harness"
 
 
 def configure_genai(api_key):

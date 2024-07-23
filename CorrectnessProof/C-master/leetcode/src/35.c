@@ -15,16 +15,16 @@ int searchInsert(int *nums, int numsSize, int target)
 }
 
 /* Recursive version */
-int searchInsert(int *nums, int numsSize, int target)
-{
-    int idx = numsSize - 1;
-    if (numsSize > 0)
-    {
-        if (target > nums[idx])
-        {
-            return numsSize;
-        }
-        return searchInsert(nums, numsSize - 1, target);
-    }
-    return 0;
-}
+//int searchInsert(int *nums, int numsSize, int target)
+//{
+//    int idx = numsSize - 1;
+//    if (numsSize > 0)
+//    {
+//        if (target > nums[idx])
+//        {
+//            return numsSize;
+//        }
+//        return searchInsert(nums, numsSize - 1, target);
+//    }
+//    return 0;
+//}

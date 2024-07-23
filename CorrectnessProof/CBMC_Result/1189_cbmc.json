@@ -1,0 +1,339 @@
+[
+  {
+    "program": "CBMC 6.0.1 (cbmc-6.0.1)"
+  },
+  {
+    "messageText": "**** WARNING: Use --unwinding-assertions to obtain sound verification results",
+    "messageType": "WARNING"
+  },
+  {
+    "messageText": "CBMC version 6.0.1 (cbmc-6.0.1) 64-bit arm64 macos",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Type-checking 1189_with_harness",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Generating GOTO Program",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Adding CPROVER library (arm64)",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Removal of function pointers and virtual functions",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Generic Property Instrumentation",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Running with 8 object bits, 56 offset bits (default)",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Starting Bounded Model Checking",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding loop strlen.0 iteration 1 file <builtin-library-strlen> line 18 function strlen thread 0",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding loop strlen.0 iteration 2 file <builtin-library-strlen> line 18 function strlen thread 0",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Not unwinding loop strlen.0 iteration 3 file <builtin-library-strlen> line 18 function strlen thread 0",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding loop maxNumberOfBalloons.0 iteration 1 file Proof_Harness/1189_with_harness.c line 17 function maxNumberOfBalloons thread 0",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding loop maxNumberOfBalloons.0 iteration 2 file Proof_Harness/1189_with_harness.c line 17 function maxNumberOfBalloons thread 0",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Not unwinding loop maxNumberOfBalloons.0 iteration 3 file Proof_Harness/1189_with_harness.c line 17 function maxNumberOfBalloons thread 0",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding loop maxNumberOfBalloons.1 iteration 1 file Proof_Harness/1189_with_harness.c line 48 function maxNumberOfBalloons thread 0",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding loop maxNumberOfBalloons.1 iteration 2 file Proof_Harness/1189_with_harness.c line 48 function maxNumberOfBalloons thread 0",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Not unwinding loop maxNumberOfBalloons.1 iteration 3 file Proof_Harness/1189_with_harness.c line 48 function maxNumberOfBalloons thread 0",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Runtime Symex: 0.0043145s",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "size of program expression: 247 steps",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "simple slicing removed 0 assignments",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Generated 0 VCC(s), 0 remaining after simplification",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Runtime Postprocess Equation: 2.4875e-05s",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "result": [
+      {
+        "description": "free argument must be NULL or valid pointer",
+        "property": "main.precondition_instance.1",
+        "sourceLocation": {
+          "file": "Proof_Harness/1189_with_harness.c",
+          "function": "main",
+          "line": "76",
+          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "free argument must be dynamic object",
+        "property": "main.precondition_instance.2",
+        "sourceLocation": {
+          "file": "Proof_Harness/1189_with_harness.c",
+          "function": "main",
+          "line": "76",
+          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "free argument has offset zero",
+        "property": "main.precondition_instance.3",
+        "sourceLocation": {
+          "file": "Proof_Harness/1189_with_harness.c",
+          "function": "main",
+          "line": "76",
+          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "double free",
+        "property": "main.precondition_instance.4",
+        "sourceLocation": {
+          "file": "Proof_Harness/1189_with_harness.c",
+          "function": "main",
+          "line": "76",
+          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "free called for new[] object",
+        "property": "main.precondition_instance.5",
+        "sourceLocation": {
+          "file": "Proof_Harness/1189_with_harness.c",
+          "function": "main",
+          "line": "76",
+          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "free called for stack-allocated object",
+        "property": "main.precondition_instance.6",
+        "sourceLocation": {
+          "file": "Proof_Harness/1189_with_harness.c",
+          "function": "main",
+          "line": "76",
+          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "max allocation size exceeded",
+        "property": "malloc.assertion.1",
+        "sourceLocation": {
+          "file": "<builtin-library-malloc>",
+          "function": "malloc",
+          "line": "31",
+          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "max allocation may fail",
+        "property": "malloc.assertion.2",
+        "sourceLocation": {
+          "file": "<builtin-library-malloc>",
+          "function": "malloc",
+          "line": "36",
+          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "assertion result == expected_result",
+        "property": "proof_harness_maxNumberOfBalloons.assertion.1",
+        "sourceLocation": {
+          "file": "Proof_Harness/1189_with_harness.c",
+          "function": "proof_harness_maxNumberOfBalloons",
+          "line": "65",
+          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "free argument must be NULL or valid pointer",
+        "property": "proof_harness_maxNumberOfBalloons.precondition_instance.1",
+        "sourceLocation": {
+          "file": "Proof_Harness/1189_with_harness.c",
+          "function": "proof_harness_maxNumberOfBalloons",
+          "line": "66",
+          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "free argument must be dynamic object",
+        "property": "proof_harness_maxNumberOfBalloons.precondition_instance.2",
+        "sourceLocation": {
+          "file": "Proof_Harness/1189_with_harness.c",
+          "function": "proof_harness_maxNumberOfBalloons",
+          "line": "66",
+          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "free argument has offset zero",
+        "property": "proof_harness_maxNumberOfBalloons.precondition_instance.3",
+        "sourceLocation": {
+          "file": "Proof_Harness/1189_with_harness.c",
+          "function": "proof_harness_maxNumberOfBalloons",
+          "line": "66",
+          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "double free",
+        "property": "proof_harness_maxNumberOfBalloons.precondition_instance.4",
+        "sourceLocation": {
+          "file": "Proof_Harness/1189_with_harness.c",
+          "function": "proof_harness_maxNumberOfBalloons",
+          "line": "66",
+          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "free called for new[] object",
+        "property": "proof_harness_maxNumberOfBalloons.precondition_instance.5",
+        "sourceLocation": {
+          "file": "Proof_Harness/1189_with_harness.c",
+          "function": "proof_harness_maxNumberOfBalloons",
+          "line": "66",
+          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "free called for stack-allocated object",
+        "property": "proof_harness_maxNumberOfBalloons.precondition_instance.6",
+        "sourceLocation": {
+          "file": "Proof_Harness/1189_with_harness.c",
+          "function": "proof_harness_maxNumberOfBalloons",
+          "line": "66",
+          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "free argument must be NULL or valid pointer",
+        "property": "proof_harness_main.precondition_instance.1",
+        "sourceLocation": {
+          "file": "Proof_Harness/1189_with_harness.c",
+          "function": "proof_harness_main",
+          "line": "87",
+          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "free argument must be dynamic object",
+        "property": "proof_harness_main.precondition_instance.2",
+        "sourceLocation": {
+          "file": "Proof_Harness/1189_with_harness.c",
+          "function": "proof_harness_main",
+          "line": "87",
+          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "free argument has offset zero",
+        "property": "proof_harness_main.precondition_instance.3",
+        "sourceLocation": {
+          "file": "Proof_Harness/1189_with_harness.c",
+          "function": "proof_harness_main",
+          "line": "87",
+          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "double free",
+        "property": "proof_harness_main.precondition_instance.4",
+        "sourceLocation": {
+          "file": "Proof_Harness/1189_with_harness.c",
+          "function": "proof_harness_main",
+          "line": "87",
+          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "free called for new[] object",
+        "property": "proof_harness_main.precondition_instance.5",
+        "sourceLocation": {
+          "file": "Proof_Harness/1189_with_harness.c",
+          "function": "proof_harness_main",
+          "line": "87",
+          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "free called for stack-allocated object",
+        "property": "proof_harness_main.precondition_instance.6",
+        "sourceLocation": {
+          "file": "Proof_Harness/1189_with_harness.c",
+          "function": "proof_harness_main",
+          "line": "87",
+          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+        },
+        "status": "SUCCESS"
+      }
+    ]
+  },
+  {
+    "messageText": "VERIFICATION SUCCESSFUL",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "cProverStatus": "success"
+  }
+]

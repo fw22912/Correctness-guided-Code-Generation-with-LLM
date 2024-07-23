@@ -1,12 +1,2 @@
-file_name,success,iterations,execution_time,memory_used
-binary_search,True,1,12.092134714126587,576479
-exponential_search,True,3,119.46730089187622,431376
-fibonacci_search,True,1,8.697681903839111,98763
-floyd_cycle_detection_algorithm,False,3,30.12236499786377,447101
-interpolation_search,True,1,8.05120587348938,97043
-jump_search,True,2,20.59599494934082,420188
-linear_search,True,2,13.125449895858765,247355
-modified_binary_search,True,1,13.47010087966919,110778
-other_binary_search,True,1,5.845104694366455,93892
-sentinel_linear_search,True,1,9.72560429573059,97511
-ternary_search,True,1,10.381957054138184,94969
+file_name,success,iterations,execution_time,memory_used,LoC,number_of_functions
+traversal,True,1,7.86486029624939,563609,32,3

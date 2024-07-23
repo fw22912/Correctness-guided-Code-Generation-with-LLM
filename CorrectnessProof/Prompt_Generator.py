@@ -2,19 +2,20 @@ import os
 import argparse
 import re
 
+
 def read_c_file(file_path):
     with open(file_path, 'r') as file:
         content = file.read()
     return content
 
+
 def create_prompt(file_content):
     query_code = file_content
 
     prompt = f"""
-   # Preamble
+     # Preamble
     You are given a C program. We need to create a proof harness function.
-    # Code generation example - You are given three examples.
-
+    # Code generation example
     Q: Write a method "void proof_harness_withdraw()" that tests method withdraw below for all possible inputs.
 
     // Define the Account structure
@@ -28,7 +29,10 @@ def create_prompt(file_content):
         account->bal = de - amount; 
     }}
 
-    A:
+    A: You first identify which functions there are. In this case, we have a single function called 'withdraw'. Since 
+    withdraw is a function that needs to be tested, we create a proof_harness_withdraw function for this purpose and 
+    implement to test the correctness of the function 'withdraw'.
+    
     struct Account {{
     unsigned short bal;
         }};
@@ -56,14 +60,18 @@ def create_prompt(file_content):
     
         free(account);
     }}
-
+    
 
     # Instruction
     Give me a proof harness code of the below C code.
 
     # Query
-    Q: Write method "void proof_harness_{{function_name}}()" that tests every methods below for all possible inputs.
+    Q: Write method "void proof_harness_{{function_name}}()" that tests every methods including 'main()' 
+    below for all possible inputs. Then write a method "void combined_proof_harness()" that calls every other proof 
+    harness methods generated.
+    
     {query_code}
+
 
     # Constraints
     Here are some constraints that you should respect:
@@ -75,6 +83,7 @@ def create_prompt(file_content):
     """
 
     return prompt
+
 
 def clean_code(response_text):
     cleaned_text = response_text.replace('```c', '').replace('```', '').strip()
@@ -104,5 +113,3 @@ def main(file_path):
     file_list = extract_method_name(file_content)
 
     return prompt, file_list, file_content
-
-

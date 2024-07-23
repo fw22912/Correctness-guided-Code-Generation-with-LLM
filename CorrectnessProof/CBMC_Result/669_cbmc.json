@@ -1,0 +1,31 @@
+[
+  {
+    "program": "CBMC 6.0.1 (cbmc-6.0.1)"
+  },
+  {
+    "messageText": "**** WARNING: Use --unwinding-assertions to obtain sound verification results",
+    "messageType": "WARNING"
+  },
+  {
+    "messageText": "CBMC version 6.0.1 (cbmc-6.0.1) 64-bit arm64 macos",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Type-checking 669_with_harness",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "member operator got incomplete struct_tag type on left hand side",
+    "messageType": "ERROR",
+    "sourceLocation": {
+      "file": "Proof_Harness/669_with_harness.c",
+      "function": "trimBST",
+      "line": "22",
+      "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+    }
+  },
+  {
+    "messageText": "CONVERSION ERROR",
+    "messageType": "ERROR"
+  }
+]

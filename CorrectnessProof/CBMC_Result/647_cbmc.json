@@ -1,0 +1,3171 @@
+[
+  {
+    "program": "CBMC 6.0.1 (cbmc-6.0.1)"
+  },
+  {
+    "messageText": "**** WARNING: Use --unwinding-assertions to obtain sound verification results",
+    "messageType": "WARNING"
+  },
+  {
+    "messageText": "CBMC version 6.0.1 (cbmc-6.0.1) 64-bit arm64 macos",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Type-checking 647_with_harness",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "function 'countPalin' is not declared",
+    "messageType": "WARNING",
+    "sourceLocation": {
+      "file": "Proof_Harness/647_with_harness.c",
+      "function": "countSubstrings",
+      "line": "16",
+      "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+    }
+  },
+  {
+    "messageText": "function '__CPROVER_nondet_int' is not declared",
+    "messageType": "WARNING",
+    "sourceLocation": {
+      "file": "Proof_Harness/647_with_harness.c",
+      "function": "proof_harness_countPalin",
+      "line": "33",
+      "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+    }
+  },
+  {
+    "messageText": "Generating GOTO Program",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Adding CPROVER library (arm64)",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Removal of function pointers and virtual functions",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Generic Property Instrumentation",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Running with 8 object bits, 56 offset bits (default)",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Starting Bounded Model Checking",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion countPalin iteration 1",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion countPalin iteration 2",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion countPalin iteration 3",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Not unwinding recursion countPalin iteration 4",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion countPalin iteration 1",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion countPalin iteration 2",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion countPalin iteration 3",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Not unwinding recursion countPalin iteration 4",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding loop strlen.0 iteration 1 file <builtin-library-strlen> line 18 function strlen thread 0",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding loop strlen.0 iteration 2 file <builtin-library-strlen> line 18 function strlen thread 0",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Not unwinding loop strlen.0 iteration 3 file <builtin-library-strlen> line 18 function strlen thread 0",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding loop proof_harness_countSubstrings.0 iteration 1 file Proof_Harness/647_with_harness.c line 53 function proof_harness_countSubstrings thread 0",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion countPalin iteration 1",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion countPalin iteration 1",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding loop proof_harness_countSubstrings.0 iteration 2 file Proof_Harness/647_with_harness.c line 53 function proof_harness_countSubstrings thread 0",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion countPalin iteration 1",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion countPalin iteration 2",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion countPalin iteration 1",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion countPalin iteration 2",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Not unwinding loop proof_harness_countSubstrings.0 iteration 3 file Proof_Harness/647_with_harness.c line 53 function proof_harness_countSubstrings thread 0",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding loop strlen.0 iteration 1 file <builtin-library-strlen> line 18 function strlen thread 0",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding loop strlen.0 iteration 2 file <builtin-library-strlen> line 18 function strlen thread 0",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Not unwinding loop strlen.0 iteration 3 file <builtin-library-strlen> line 18 function strlen thread 0",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding loop countSubstrings.0 iteration 1 file Proof_Harness/647_with_harness.c line 12 function countSubstrings thread 0",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion countPalin iteration 1",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion countPalin iteration 1",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding loop countSubstrings.0 iteration 2 file Proof_Harness/647_with_harness.c line 12 function countSubstrings thread 0",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion countPalin iteration 1",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion countPalin iteration 2",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion countPalin iteration 1",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion countPalin iteration 2",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Not unwinding loop countSubstrings.0 iteration 3 file Proof_Harness/647_with_harness.c line 12 function countSubstrings thread 0",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding loop strlen.0 iteration 1 file <builtin-library-strlen> line 18 function strlen thread 0",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding loop strlen.0 iteration 2 file <builtin-library-strlen> line 18 function strlen thread 0",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Not unwinding loop strlen.0 iteration 3 file <builtin-library-strlen> line 18 function strlen thread 0",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding loop countSubstrings.0 iteration 1 file Proof_Harness/647_with_harness.c line 12 function countSubstrings thread 0",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion countPalin iteration 1",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion countPalin iteration 1",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding loop countSubstrings.0 iteration 2 file Proof_Harness/647_with_harness.c line 12 function countSubstrings thread 0",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion countPalin iteration 1",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion countPalin iteration 2",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion countPalin iteration 1",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion countPalin iteration 2",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Not unwinding loop countSubstrings.0 iteration 3 file Proof_Harness/647_with_harness.c line 12 function countSubstrings thread 0",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding loop strlen.0 iteration 1 file <builtin-library-strlen> line 18 function strlen thread 0",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding loop strlen.0 iteration 2 file <builtin-library-strlen> line 18 function strlen thread 0",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Not unwinding loop strlen.0 iteration 3 file <builtin-library-strlen> line 18 function strlen thread 0",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding loop countSubstrings.0 iteration 1 file Proof_Harness/647_with_harness.c line 12 function countSubstrings thread 0",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion countPalin iteration 1",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion countPalin iteration 1",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding loop countSubstrings.0 iteration 2 file Proof_Harness/647_with_harness.c line 12 function countSubstrings thread 0",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion countPalin iteration 1",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion countPalin iteration 2",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion countPalin iteration 1",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding recursion countPalin iteration 2",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Not unwinding loop countSubstrings.0 iteration 3 file Proof_Harness/647_with_harness.c line 12 function countSubstrings thread 0",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Runtime Symex: 0.0274406s",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "size of program expression: 1452 steps",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "simple slicing removed 30 assignments",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Generated 21 VCC(s), 7 remaining after simplification",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Runtime Postprocess Equation: 9.4583e-05s",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Passing problem to propositional reduction",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "converting SSA",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Runtime Convert SSA: 0.0285765s",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Running propositional reduction",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Runtime Post-process: 1.75e-06s",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "41409 variables, 157813 clauses",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "SAT checker: instance is SATISFIABLE",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Runtime Solver: 0.0791563s",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Runtime decision procedure: 0.107809s",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Building error trace",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Running propositional reduction",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "41410 variables, 94721 clauses",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "SAT checker inconsistent: instance is UNSATISFIABLE",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Runtime Solver: 1.3375e-05s",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Runtime decision procedure: 3.4334e-05s",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "result": [
+      {
+        "description": "max allocation size exceeded",
+        "property": "malloc.assertion.1",
+        "sourceLocation": {
+          "file": "<builtin-library-malloc>",
+          "function": "malloc",
+          "line": "31",
+          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "max allocation may fail",
+        "property": "malloc.assertion.2",
+        "sourceLocation": {
+          "file": "<builtin-library-malloc>",
+          "function": "malloc",
+          "line": "36",
+          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "assertion ret_actual == ret_expected",
+        "property": "proof_harness_countPalin.assertion.1",
+        "sourceLocation": {
+          "file": "Proof_Harness/647_with_harness.c",
+          "function": "proof_harness_countPalin",
+          "line": "43",
+          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+        },
+        "status": "FAILURE",
+        "trace": [
+          {
+            "hidden": false,
+            "sourceLocation": {
+              "file": "<built-in-additions>",
+              "line": "24",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "location-only",
+            "thread": 0
+          },
+          {
+            "function": {
+              "displayName": "__CPROVER_initialize",
+              "identifier": "__CPROVER_initialize",
+              "sourceLocation": {
+                "file": "<built-in-additions>",
+                "line": "24",
+                "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+              }
+            },
+            "hidden": true,
+            "internal": false,
+            "sourceLocation": {
+              "file": "<built-in-additions>",
+              "line": "24",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "function-call",
+            "thread": 0
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": true,
+            "internal": false,
+            "lhs": "__CPROVER_alloca_object",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "<builtin-library-free>",
+              "line": "7",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "data": "NULL",
+              "name": "pointer",
+              "type": "const void *"
+            }
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": true,
+            "internal": false,
+            "lhs": "__CPROVER_dead_object",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "<built-in-additions>",
+              "line": "8",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "data": "NULL",
+              "name": "pointer",
+              "type": "const void *"
+            }
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": true,
+            "internal": false,
+            "lhs": "__CPROVER_deallocated",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "<built-in-additions>",
+              "line": "7",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "data": "NULL",
+              "name": "pointer",
+              "type": "const void *"
+            }
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": true,
+            "internal": false,
+            "lhs": "__CPROVER_malloc_is_new_array",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "<builtin-library-malloc>",
+              "line": "6",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "binary": "0",
+              "data": false,
+              "name": "boolean"
+            }
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": true,
+            "internal": false,
+            "lhs": "__CPROVER_max_malloc_size",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "<built-in-additions>",
+              "line": "12",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "binary": "0000000010000000000000000000000000000000000000000000000000000000",
+              "data": "36028797018963968ul",
+              "name": "integer",
+              "type": "__CPROVER_size_t",
+              "width": 64
+            }
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": true,
+            "internal": false,
+            "lhs": "__CPROVER_memory_leak",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "<built-in-additions>",
+              "line": "9",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "data": "NULL",
+              "name": "pointer",
+              "type": "const void *"
+            }
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": true,
+            "internal": false,
+            "lhs": "__CPROVER_new_object",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "<builtin-library-free>",
+              "line": "9",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "data": "NULL",
+              "name": "pointer",
+              "type": "const void *"
+            }
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": true,
+            "internal": false,
+            "lhs": "__CPROVER_rounding_mode",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "<built-in-additions>",
+              "line": "16",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "binary": "00000000000000000000000000000000",
+              "data": "0",
+              "name": "integer",
+              "type": "signed int",
+              "width": 32
+            }
+          },
+          {
+            "function": {
+              "displayName": "__CPROVER_initialize",
+              "identifier": "__CPROVER_initialize",
+              "sourceLocation": {
+                "file": "<built-in-additions>",
+                "line": "24",
+                "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+              }
+            },
+            "hidden": true,
+            "internal": false,
+            "stepType": "function-return",
+            "thread": 0
+          },
+          {
+            "hidden": false,
+            "sourceLocation": {
+              "file": "Proof_Harness/647_with_harness.c",
+              "line": "75",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "location-only",
+            "thread": 0
+          },
+          {
+            "function": {
+              "displayName": "combined_proof_harness",
+              "identifier": "combined_proof_harness",
+              "sourceLocation": {
+                "file": "Proof_Harness/647_with_harness.c",
+                "line": "75",
+                "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+              }
+            },
+            "hidden": false,
+            "internal": false,
+            "sourceLocation": {
+              "file": "Proof_Harness/647_with_harness.c",
+              "line": "75",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "function-call",
+            "thread": 0
+          },
+          {
+            "hidden": false,
+            "sourceLocation": {
+              "file": "Proof_Harness/647_with_harness.c",
+              "function": "combined_proof_harness",
+              "line": "76",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "location-only",
+            "thread": 0
+          },
+          {
+            "function": {
+              "displayName": "proof_harness_countPalin",
+              "identifier": "proof_harness_countPalin",
+              "sourceLocation": {
+                "file": "Proof_Harness/647_with_harness.c",
+                "line": "30",
+                "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+              }
+            },
+            "hidden": false,
+            "internal": false,
+            "sourceLocation": {
+              "file": "Proof_Harness/647_with_harness.c",
+              "function": "combined_proof_harness",
+              "line": "76",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "function-call",
+            "thread": 0
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": true,
+            "internal": false,
+            "lhs": "s",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "Proof_Harness/647_with_harness.c",
+              "function": "proof_harness_countPalin",
+              "line": "31",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "data": "((char *)NULL)",
+              "name": "pointer",
+              "type": "char *"
+            }
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": true,
+            "internal": false,
+            "lhs": "return_value_malloc",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "Proof_Harness/647_with_harness.c",
+              "function": "proof_harness_countPalin",
+              "line": "31",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "data": "NULL",
+              "name": "pointer",
+              "type": "const void *"
+            }
+          },
+          {
+            "function": {
+              "displayName": "malloc",
+              "identifier": "malloc",
+              "sourceLocation": {
+                "file": "<builtin-library-malloc>",
+                "line": "11",
+                "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+              }
+            },
+            "hidden": false,
+            "internal": false,
+            "sourceLocation": {
+              "file": "Proof_Harness/647_with_harness.c",
+              "function": "proof_harness_countPalin",
+              "line": "31",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "function-call",
+            "thread": 0
+          },
+          {
+            "assignmentType": "actual-parameter",
+            "hidden": false,
+            "internal": false,
+            "lhs": "malloc_size",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "Proof_Harness/647_with_harness.c",
+              "function": "proof_harness_countPalin",
+              "line": "31",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "binary": "0000000000000000000000000000000000000000000000000000000001100100",
+              "data": "sizeof(char) * 100ul /*100ul*/ ",
+              "name": "integer",
+              "type": "__CPROVER_size_t",
+              "width": 64
+            }
+          },
+          {
+            "hidden": false,
+            "sourceLocation": {
+              "file": "<builtin-library-malloc>",
+              "function": "malloc",
+              "line": "17",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "location-only",
+            "thread": 0
+          },
+          {
+            "hidden": false,
+            "sourceLocation": {
+              "file": "<builtin-library-malloc>",
+              "function": "malloc",
+              "line": "27",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "location-only",
+            "thread": 0
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": false,
+            "internal": false,
+            "lhs": "malloc_res",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "<builtin-library-malloc>",
+              "function": "malloc",
+              "line": "42",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "data": "NULL",
+              "name": "pointer",
+              "type": "const void *"
+            }
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": true,
+            "internal": false,
+            "lhs": "malloc_value",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "<builtin-library-malloc>",
+              "function": "malloc",
+              "line": "43",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "data": "NULL",
+              "name": "pointer",
+              "type": "const void *"
+            }
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": false,
+            "internal": true,
+            "lhs": "dynamic_object",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "<builtin-library-malloc>",
+              "function": "malloc",
+              "line": "43",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "elements": [
+                {
+                  "index": 0,
+                  "value": {
+                    "binary": "00000000",
+                    "data": "0",
+                    "name": "integer",
+                    "type": "char",
+                    "width": 8
+                  }
+                },
+                {
+                  "index": 1,
+                  "value": {
+                    "binary": "10000000",
+                    "data": "-128",
+                    "name": "integer",
+                    "type": "char",
+                    "width": 8
+                  }
+                },
+                {
+                  "index": 2,
+                  "value": {
+                    "binary": "00000000",
+                    "data": "0",
+                    "name": "integer",
+                    "type": "char",
+                    "width": 8
+                  }
+                },
+                {
+                  "index": 3,
+                  "value": {
+                    "binary": "00000000",
+                    "data": "0",
+                    "name": "integer",
+                    "type": "char",
+                    "width": 8
+                  }
+                },
+                {
+                  "index": 4,
+                  "value": {
+                    "binary": "00000000",
+                    "data": "0",
+                    "name": "integer",
+                    "type": "char",
+                    "width": 8
+                  }
+                },
+                {
+                  "index": 5,
+                  "value": {
+                    "binary": "00000000",
+                    "data": "0",
+                    "name": "integer",
+                    "type": "char",
+                    "width": 8
+                  }
+                },
+                {
+                  "index": 6,
+                  "value": {
+                    "binary": "00000000",
+                    "data": "0",
+                    "name": "integer",
+                    "type": "char",
+                    "width": 8
+                  }
+                },
+                {
+                  "index": 7,
+                  "value": {
+                    "binary": "00000000",
+                    "data": "0",
+                    "name": "integer",
+                    "type": "char",
+                    "width": 8
+                  }
+                },
+                {
+                  "index": 8,
+                  "value": {
+                    "binary": "00000000",
+                    "data": "0",
+                    "name": "integer",
+                    "type": "char",
+                    "width": 8
+                  }
+                },
+                {
+                  "index": 9,
+                  "value": {
+                    "binary": "00000000",
+                    "data": "0",
+                    "name": "integer",
+                    "type": "char",
+                    "width": 8
+                  }
+                },
+                {
+                  "index": 10,
+                  "value": {
+                    "binary": "00000000",
+                    "data": "0",
+                    "name": "integer",
+                    "type": "char",
+                    "width": 8
+                  }
+                },
+                {
+                  "index": 11,
+                  "value": {
+                    "binary": "00000000",
+                    "data": "0",
+                    "name": "integer",
+                    "type": "char",
+                    "width": 8
+                  }
+                },
+                {
+                  "index": 12,
+                  "value": {
+                    "binary": "00000000",
+                    "data": "0",
+                    "name": "integer",
+                    "type": "char",
+                    "width": 8
+                  }
+                },
+                {
+                  "index": 13,
+                  "value": {
+                    "binary": "00000000",
+                    "data": "0",
+                    "name": "integer",
+                    "type": "char",
+                    "width": 8
+                  }
+                },
+                {
+                  "index": 14,
+                  "value": {
+                    "binary": "00000000",
+                    "data": "0",
+                    "name": "integer",
+                    "type": "char",
+                    "width": 8
+                  }
+                },
+                {
+                  "index": 15,
+                  "value": {
+                    "binary": "00000000",
+                    "data": "0",
+                    "name": "integer",
+                    "type": "char",
+                    "width": 8
+                  }
+                },
+                {
+                  "index": 16,
+                  "value": {
+                    "binary": "00000000",
+                    "data": "0",
+                    "name": "integer",
+                    "type": "char",
+                    "width": 8
+                  }
+                },
+                {
+                  "index": 17,
+                  "value": {
+                    "binary": "00000000",
+                    "data": "0",
+                    "name": "integer",
+                    "type": "char",
+                    "width": 8
+                  }
+                },
+                {
+                  "index": 18,
+                  "value": {
+                    "binary": "00000000",
+                    "data": "0",
+                    "name": "integer",
+                    "type": "char",
+                    "width": 8
+                  }
+                },
+                {
+                  "index": 19,
+                  "value": {
+                    "binary": "00000000",
+                    "data": "0",
+                    "name": "integer",
+                    "type": "char",
+                    "width": 8
+                  }
+                },
+                {
+                  "index": 20,
+                  "value": {
+                    "binary": "00000000",
+                    "data": "0",
+                    "name": "integer",
+                    "type": "char",
+                    "width": 8
+                  }
+                },
+                {
+                  "index": 21,
+                  "value": {
+                    "binary": "00000000",
+                    "data": "0",
+                    "name": "integer",
+                    "type": "char",
+                    "width": 8
+                  }
+                },
+                {
+                  "index": 22,
+                  "value": {
+                    "binary": "00000000",
+                    "data": "0",
+                    "name": "integer",
+                    "type": "char",
+                    "width": 8
+                  }
+                },
+                {
+                  "index": 23,
+                  "value": {
+                    "binary": "00000000",
+                    "data": "0",
+                    "name": "integer",
+                    "type": "char",
+                    "width": 8
+                  }
+                },
+                {
+                  "index": 24,
+                  "value": {
+                    "binary": "00000000",
+                    "data": "0",
+                    "name": "integer",
+                    "type": "char",
+                    "width": 8
+                  }
+                },
+                {
+                  "index": 25,
+                  "value": {
+                    "binary": "00000000",
+                    "data": "0",
+                    "name": "integer",
+                    "type": "char",
+                    "width": 8
+                  }
+                },
+                {
+                  "index": 26,
+                  "value": {
+                    "binary": "00000000",
+                    "data": "0",
+                    "name": "integer",
+                    "type": "char",
+                    "width": 8
+                  }
+                },
+                {
+                  "index": 27,
+                  "value": {
+                    "binary": "00000000",
+                    "data": "0",
+                    "name": "integer",
+                    "type": "char",
+                    "width": 8
+                  }
+                },
+                {
+                  "index": 28,
+                  "value": {
+                    "binary": "00000000",
+                    "data": "0",
+                    "name": "integer",
+                    "type": "char",
+                    "width": 8
+                  }
+                },
+                {
+                  "index": 29,
+                  "value": {
+                    "binary": "00000000",
+                    "data": "0",
+                    "name": "integer",
+                    "type": "char",
+                    "width": 8
+                  }
+                },
+                {
+                  "index": 30,
+                  "value": {
+                    "binary": "00000000",
+                    "data": "0",
+                    "name": "integer",
+                    "type": "char",
+                    "width": 8
+                  }
+                },
+                {
+                  "index": 31,
+                  "value": {
+                    "binary": "00000000",
+                    "data": "0",
+                    "name": "integer",
+                    "type": "char",
+                    "width": 8
+                  }
+                },
+                {
+                  "index": 32,
+                  "value": {
+                    "binary": "00000000",
+                    "data": "0",
+                    "name": "integer",
+                    "type": "char",
+                    "width": 8
+                  }
+                },
+                {
+                  "index": 33,
+                  "value": {
+                    "binary": "00000000",
+                    "data": "0",
+                    "name": "integer",
+                    "type": "char",
+                    "width": 8
+                  }
+                },
+                {
+                  "index": 34,
+                  "value": {
+                    "binary": "00000000",
+                    "data": "0",
+                    "name": "integer",
+                    "type": "char",
+                    "width": 8
+                  }
+                },
+                {
+                  "index": 35,
+                  "value": {
+                    "binary": "00000000",
+                    "data": "0",
+                    "name": "integer",
+                    "type": "char",
+                    "width": 8
+                  }
+                },
+                {
+                  "index": 36,
+                  "value": {
+                    "binary": "00000000",
+                    "data": "0",
+                    "name": "integer",
+                    "type": "char",
+                    "width": 8
+                  }
+                },
+                {
+                  "index": 37,
+                  "value": {
+                    "binary": "00000000",
+                    "data": "0",
+                    "name": "integer",
+                    "type": "char",
+                    "width": 8
+                  }
+                },
+                {
+                  "index": 38,
+                  "value": {
+                    "binary": "00000000",
+                    "data": "0",
+                    "name": "integer",
+                    "type": "char",
+                    "width": 8
+                  }
+                },
+                {
+                  "index": 39,
+                  "value": {
+                    "binary": "00000000",
+                    "data": "0",
+                    "name": "integer",
+                    "type": "char",
+                    "width": 8
+                  }
+                },
+                {
+                  "index": 40,
+                  "value": {
+                    "binary": "00000000",
+                    "data": "0",
+                    "name": "integer",
+                    "type": "char",
+                    "width": 8
+                  }
+                },
+                {
+                  "index": 41,
+                  "value": {
+                    "binary": "00000000",
+                    "data": "0",
+                    "name": "integer",
+                    "type": "char",
+                    "width": 8
+                  }
+                },
+                {
+                  "index": 42,
+                  "value": {
+                    "binary": "00000000",
+                    "data": "0",
+                    "name": "integer",
+                    "type": "char",
+                    "width": 8
+                  }
+                },
+                {
+                  "index": 43,
+                  "value": {
+                    "binary": "00000000",
+                    "data": "0",
+                    "name": "integer",
+                    "type": "char",
+                    "width": 8
+                  }
+                },
+                {
+                  "index": 44,
+                  "value": {
+                    "binary": "00000000",
+                    "data": "0",
+                    "name": "integer",
+                    "type": "char",
+                    "width": 8
+                  }
+                },
+                {
+                  "index": 45,
+                  "value": {
+                    "binary": "00000000",
+                    "data": "0",
+                    "name": "integer",
+                    "type": "char",
+                    "width": 8
+                  }
+                },
+                {
+                  "index": 46,
+                  "value": {
+                    "binary": "00000000",
+                    "data": "0",
+                    "name": "integer",
+                    "type": "char",
+                    "width": 8
+                  }
+                },
+                {
+                  "index": 47,
+                  "value": {
+                    "binary": "00000000",
+                    "data": "0",
+                    "name": "integer",
+                    "type": "char",
+                    "width": 8
+                  }
+                },
+                {
+                  "index": 48,
+                  "value": {
+                    "binary": "00000000",
+                    "data": "0",
+                    "name": "integer",
+                    "type": "char",
+                    "width": 8
+                  }
+                },
+                {
+                  "index": 49,
+                  "value": {
+                    "binary": "00000000",
+                    "data": "0",
+                    "name": "integer",
+                    "type": "char",
+                    "width": 8
+                  }
+                },
+                {
+                  "index": 50,
+                  "value": {
+                    "binary": "00000000",
+                    "data": "0",
+                    "name": "integer",
+                    "type": "char",
+                    "width": 8
+                  }
+                },
+                {
+                  "index": 51,
+                  "value": {
+                    "binary": "00000000",
+                    "data": "0",
+                    "name": "integer",
+                    "type": "char",
+                    "width": 8
+                  }
+                },
+                {
+                  "index": 52,
+                  "value": {
+                    "binary": "00000000",
+                    "data": "0",
+                    "name": "integer",
+                    "type": "char",
+                    "width": 8
+                  }
+                },
+                {
+                  "index": 53,
+                  "value": {
+                    "binary": "00000000",
+                    "data": "0",
+                    "name": "integer",
+                    "type": "char",
+                    "width": 8
+                  }
+                },
+                {
+                  "index": 54,
+                  "value": {
+                    "binary": "00000000",
+                    "data": "0",
+                    "name": "integer",
+                    "type": "char",
+                    "width": 8
+                  }
+                },
+                {
+                  "index": 55,
+                  "value": {
+                    "binary": "00000000",
+                    "data": "0",
+                    "name": "integer",
+                    "type": "char",
+                    "width": 8
+                  }
+                },
+                {
+                  "index": 56,
+                  "value": {
+                    "binary": "00000000",
+                    "data": "0",
+                    "name": "integer",
+                    "type": "char",
+                    "width": 8
+                  }
+                },
+                {
+                  "index": 57,
+                  "value": {
+                    "binary": "00000000",
+                    "data": "0",
+                    "name": "integer",
+                    "type": "char",
+                    "width": 8
+                  }
+                },
+                {
+                  "index": 58,
+                  "value": {
+                    "binary": "00000000",
+                    "data": "0",
+                    "name": "integer",
+                    "type": "char",
+                    "width": 8
+                  }
+                },
+                {
+                  "index": 59,
+                  "value": {
+                    "binary": "00000000",
+                    "data": "0",
+                    "name": "integer",
+                    "type": "char",
+                    "width": 8
+                  }
+                },
+                {
+                  "index": 60,
+                  "value": {
+                    "binary": "00000000",
+                    "data": "0",
+                    "name": "integer",
+                    "type": "char",
+                    "width": 8
+                  }
+                },
+                {
+                  "index": 61,
+                  "value": {
+                    "binary": "00000000",
+                    "data": "0",
+                    "name": "integer",
+                    "type": "char",
+                    "width": 8
+                  }
+                },
+                {
+                  "index": 62,
+                  "value": {
+                    "binary": "00000000",
+                    "data": "0",
+                    "name": "integer",
+                    "type": "char",
+                    "width": 8
+                  }
+                },
+                {
+                  "index": 63,
+                  "value": {
+                    "binary": "00000000",
+                    "data": "0",
+                    "name": "integer",
+                    "type": "char",
+                    "width": 8
+                  }
+                },
+                {
+                  "index": 64,
+                  "value": {
+                    "binary": "00000000",
+                    "data": "0",
+                    "name": "integer",
+                    "type": "char",
+                    "width": 8
+                  }
+                },
+                {
+                  "index": 65,
+                  "value": {
+                    "binary": "00000000",
+                    "data": "0",
+                    "name": "integer",
+                    "type": "char",
+                    "width": 8
+                  }
+                },
+                {
+                  "index": 66,
+                  "value": {
+                    "binary": "00000000",
+                    "data": "0",
+                    "name": "integer",
+                    "type": "char",
+                    "width": 8
+                  }
+                },
+                {
+                  "index": 67,
+                  "value": {
+                    "binary": "00000000",
+                    "data": "0",
+                    "name": "integer",
+                    "type": "char",
+                    "width": 8
+                  }
+                },
+                {
+                  "index": 68,
+                  "value": {
+                    "binary": "00000000",
+                    "data": "0",
+                    "name": "integer",
+                    "type": "char",
+                    "width": 8
+                  }
+                },
+                {
+                  "index": 69,
+                  "value": {
+                    "binary": "00000000",
+                    "data": "0",
+                    "name": "integer",
+                    "type": "char",
+                    "width": 8
+                  }
+                },
+                {
+                  "index": 70,
+                  "value": {
+                    "binary": "00000000",
+                    "data": "0",
+                    "name": "integer",
+                    "type": "char",
+                    "width": 8
+                  }
+                },
+                {
+                  "index": 71,
+                  "value": {
+                    "binary": "00000000",
+                    "data": "0",
+                    "name": "integer",
+                    "type": "char",
+                    "width": 8
+                  }
+                },
+                {
+                  "index": 72,
+                  "value": {
+                    "binary": "00000000",
+                    "data": "0",
+                    "name": "integer",
+                    "type": "char",
+                    "width": 8
+                  }
+                },
+                {
+                  "index": 73,
+                  "value": {
+                    "binary": "00000000",
+                    "data": "0",
+                    "name": "integer",
+                    "type": "char",
+                    "width": 8
+                  }
+                },
+                {
+                  "index": 74,
+                  "value": {
+                    "binary": "00000000",
+                    "data": "0",
+                    "name": "integer",
+                    "type": "char",
+                    "width": 8
+                  }
+                },
+                {
+                  "index": 75,
+                  "value": {
+                    "binary": "00000000",
+                    "data": "0",
+                    "name": "integer",
+                    "type": "char",
+                    "width": 8
+                  }
+                },
+                {
+                  "index": 76,
+                  "value": {
+                    "binary": "00000000",
+                    "data": "0",
+                    "name": "integer",
+                    "type": "char",
+                    "width": 8
+                  }
+                },
+                {
+                  "index": 77,
+                  "value": {
+                    "binary": "00000000",
+                    "data": "0",
+                    "name": "integer",
+                    "type": "char",
+                    "width": 8
+                  }
+                },
+                {
+                  "index": 78,
+                  "value": {
+                    "binary": "00000000",
+                    "data": "0",
+                    "name": "integer",
+                    "type": "char",
+                    "width": 8
+                  }
+                },
+                {
+                  "index": 79,
+                  "value": {
+                    "binary": "00000000",
+                    "data": "0",
+                    "name": "integer",
+                    "type": "char",
+                    "width": 8
+                  }
+                },
+                {
+                  "index": 80,
+                  "value": {
+                    "binary": "00000000",
+                    "data": "0",
+                    "name": "integer",
+                    "type": "char",
+                    "width": 8
+                  }
+                },
+                {
+                  "index": 81,
+                  "value": {
+                    "binary": "00000000",
+                    "data": "0",
+                    "name": "integer",
+                    "type": "char",
+                    "width": 8
+                  }
+                },
+                {
+                  "index": 82,
+                  "value": {
+                    "binary": "00000000",
+                    "data": "0",
+                    "name": "integer",
+                    "type": "char",
+                    "width": 8
+                  }
+                },
+                {
+                  "index": 83,
+                  "value": {
+                    "binary": "00000000",
+                    "data": "0",
+                    "name": "integer",
+                    "type": "char",
+                    "width": 8
+                  }
+                },
+                {
+                  "index": 84,
+                  "value": {
+                    "binary": "00000000",
+                    "data": "0",
+                    "name": "integer",
+                    "type": "char",
+                    "width": 8
+                  }
+                },
+                {
+                  "index": 85,
+                  "value": {
+                    "binary": "00000000",
+                    "data": "0",
+                    "name": "integer",
+                    "type": "char",
+                    "width": 8
+                  }
+                },
+                {
+                  "index": 86,
+                  "value": {
+                    "binary": "00000000",
+                    "data": "0",
+                    "name": "integer",
+                    "type": "char",
+                    "width": 8
+                  }
+                },
+                {
+                  "index": 87,
+                  "value": {
+                    "binary": "00000000",
+                    "data": "0",
+                    "name": "integer",
+                    "type": "char",
+                    "width": 8
+                  }
+                },
+                {
+                  "index": 88,
+                  "value": {
+                    "binary": "00000000",
+                    "data": "0",
+                    "name": "integer",
+                    "type": "char",
+                    "width": 8
+                  }
+                },
+                {
+                  "index": 89,
+                  "value": {
+                    "binary": "00000000",
+                    "data": "0",
+                    "name": "integer",
+                    "type": "char",
+                    "width": 8
+                  }
+                },
+                {
+                  "index": 90,
+                  "value": {
+                    "binary": "00000000",
+                    "data": "0",
+                    "name": "integer",
+                    "type": "char",
+                    "width": 8
+                  }
+                },
+                {
+                  "index": 91,
+                  "value": {
+                    "binary": "00000000",
+                    "data": "0",
+                    "name": "integer",
+                    "type": "char",
+                    "width": 8
+                  }
+                },
+                {
+                  "index": 92,
+                  "value": {
+                    "binary": "00000000",
+                    "data": "0",
+                    "name": "integer",
+                    "type": "char",
+                    "width": 8
+                  }
+                },
+                {
+                  "index": 93,
+                  "value": {
+                    "binary": "00000000",
+                    "data": "0",
+                    "name": "integer",
+                    "type": "char",
+                    "width": 8
+                  }
+                },
+                {
+                  "index": 94,
+                  "value": {
+                    "binary": "00000000",
+                    "data": "0",
+                    "name": "integer",
+                    "type": "char",
+                    "width": 8
+                  }
+                },
+                {
+                  "index": 95,
+                  "value": {
+                    "binary": "00000000",
+                    "data": "0",
+                    "name": "integer",
+                    "type": "char",
+                    "width": 8
+                  }
+                },
+                {
+                  "index": 96,
+                  "value": {
+                    "binary": "00000000",
+                    "data": "0",
+                    "name": "integer",
+                    "type": "char",
+                    "width": 8
+                  }
+                },
+                {
+                  "index": 97,
+                  "value": {
+                    "binary": "00000000",
+                    "data": "0",
+                    "name": "integer",
+                    "type": "char",
+                    "width": 8
+                  }
+                },
+                {
+                  "index": 98,
+                  "value": {
+                    "binary": "00000000",
+                    "data": "0",
+                    "name": "integer",
+                    "type": "char",
+                    "width": 8
+                  }
+                },
+                {
+                  "index": 99,
+                  "value": {
+                    "binary": "00000000",
+                    "data": "0",
+                    "name": "integer",
+                    "type": "char",
+                    "width": 8
+                  }
+                }
+              ],
+              "name": "array"
+            }
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": false,
+            "internal": true,
+            "lhs": "malloc_value",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "<builtin-library-malloc>",
+              "function": "malloc",
+              "line": "43",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "data": "dynamic_object",
+              "name": "pointer",
+              "type": "const void *"
+            }
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": false,
+            "internal": true,
+            "lhs": "malloc_res",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "<builtin-library-malloc>",
+              "function": "malloc",
+              "line": "43",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "data": "dynamic_object",
+              "name": "pointer",
+              "type": "const void *"
+            }
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": true,
+            "internal": false,
+            "lhs": "record_malloc",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "<builtin-library-malloc>",
+              "function": "malloc",
+              "line": "46",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "binary": "0",
+              "data": false,
+              "name": "boolean"
+            }
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": true,
+            "internal": false,
+            "lhs": "return_value___VERIFIER_nondet___CPROVER_bool$1",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "<builtin-library-malloc>",
+              "function": "malloc",
+              "line": "46",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "binary": "0",
+              "data": false,
+              "name": "boolean"
+            }
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": false,
+            "internal": false,
+            "lhs": "return_value___VERIFIER_nondet___CPROVER_bool$1",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "<builtin-library-malloc>",
+              "function": "malloc",
+              "line": "46",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "binary": "0",
+              "data": false,
+              "name": "boolean"
+            }
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": false,
+            "internal": false,
+            "lhs": "record_malloc",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "<builtin-library-malloc>",
+              "function": "malloc",
+              "line": "46",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "binary": "0",
+              "data": false,
+              "name": "boolean"
+            }
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": false,
+            "internal": false,
+            "lhs": "__CPROVER_malloc_is_new_array",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "<builtin-library-malloc>",
+              "function": "malloc",
+              "line": "47",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "binary": "0",
+              "data": false,
+              "name": "boolean"
+            }
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": true,
+            "internal": false,
+            "lhs": "record_may_leak",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "<builtin-library-malloc>",
+              "function": "malloc",
+              "line": "51",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "binary": "0",
+              "data": false,
+              "name": "boolean"
+            }
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": true,
+            "internal": false,
+            "lhs": "return_value___VERIFIER_nondet___CPROVER_bool$2",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "<builtin-library-malloc>",
+              "function": "malloc",
+              "line": "51",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "binary": "0",
+              "data": false,
+              "name": "boolean"
+            }
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": false,
+            "internal": false,
+            "lhs": "return_value___VERIFIER_nondet___CPROVER_bool$2",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "<builtin-library-malloc>",
+              "function": "malloc",
+              "line": "51",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "binary": "0",
+              "data": false,
+              "name": "boolean"
+            }
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": false,
+            "internal": false,
+            "lhs": "record_may_leak",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "<builtin-library-malloc>",
+              "function": "malloc",
+              "line": "51",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "binary": "0",
+              "data": false,
+              "name": "boolean"
+            }
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": false,
+            "internal": true,
+            "lhs": "__CPROVER_memory_leak",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "<builtin-library-malloc>",
+              "function": "malloc",
+              "line": "52",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "data": "NULL",
+              "name": "pointer",
+              "type": "const void *"
+            }
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": false,
+            "internal": true,
+            "lhs": "goto_symex$$return_value$$malloc",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "<builtin-library-malloc>",
+              "function": "malloc",
+              "line": "58",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "data": "dynamic_object",
+              "name": "pointer",
+              "type": "const void *"
+            }
+          },
+          {
+            "function": {
+              "displayName": "malloc",
+              "identifier": "malloc",
+              "sourceLocation": {
+                "file": "<builtin-library-malloc>",
+                "line": "11",
+                "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+              }
+            },
+            "hidden": false,
+            "internal": false,
+            "sourceLocation": {
+              "file": "<builtin-library-malloc>",
+              "function": "malloc",
+              "line": "59",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "function-return",
+            "thread": 0
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": false,
+            "internal": true,
+            "lhs": "return_value_malloc",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "Proof_Harness/647_with_harness.c",
+              "function": "proof_harness_countPalin",
+              "line": "31",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "data": "dynamic_object",
+              "name": "pointer",
+              "type": "const void *"
+            }
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": false,
+            "internal": true,
+            "lhs": "s",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "Proof_Harness/647_with_harness.c",
+              "function": "proof_harness_countPalin",
+              "line": "31",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "data": "dynamic_object",
+              "name": "pointer",
+              "type": "char *"
+            }
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": true,
+            "internal": false,
+            "lhs": "head",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "Proof_Harness/647_with_harness.c",
+              "function": "proof_harness_countPalin",
+              "line": "33",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "binary": "00000000000000000000000000000000",
+              "data": "0",
+              "name": "integer",
+              "type": "signed int",
+              "width": 32
+            }
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": true,
+            "internal": false,
+            "lhs": "return_value___CPROVER_nondet_int",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "Proof_Harness/647_with_harness.c",
+              "function": "proof_harness_countPalin",
+              "line": "33",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "binary": "00000000000000000000000000000000",
+              "data": "0",
+              "name": "integer",
+              "type": "signed int",
+              "width": 32
+            }
+          },
+          {
+            "function": {
+              "displayName": "__CPROVER_nondet_int",
+              "identifier": "__CPROVER_nondet_int",
+              "sourceLocation": {
+                "file": "Proof_Harness/647_with_harness.c",
+                "function": "proof_harness_countPalin",
+                "line": "33",
+                "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+              }
+            },
+            "hidden": false,
+            "internal": false,
+            "sourceLocation": {
+              "file": "Proof_Harness/647_with_harness.c",
+              "function": "proof_harness_countPalin",
+              "line": "33",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "function-call",
+            "thread": 0
+          },
+          {
+            "function": {
+              "displayName": "__CPROVER_nondet_int",
+              "identifier": "__CPROVER_nondet_int",
+              "sourceLocation": {
+                "file": "Proof_Harness/647_with_harness.c",
+                "function": "proof_harness_countPalin",
+                "line": "33",
+                "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+              }
+            },
+            "hidden": false,
+            "internal": false,
+            "sourceLocation": {
+              "file": "Proof_Harness/647_with_harness.c",
+              "function": "proof_harness_countPalin",
+              "line": "33",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "function-return",
+            "thread": 0
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": false,
+            "internal": false,
+            "lhs": "return_value___CPROVER_nondet_int",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "Proof_Harness/647_with_harness.c",
+              "function": "proof_harness_countPalin",
+              "line": "33",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "binary": "00000000000000000000000000000011",
+              "data": "3",
+              "name": "integer",
+              "type": "signed int",
+              "width": 32
+            }
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": false,
+            "internal": false,
+            "lhs": "head",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "Proof_Harness/647_with_harness.c",
+              "function": "proof_harness_countPalin",
+              "line": "33",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "binary": "00000000000000000000000000000011",
+              "data": "3",
+              "name": "integer",
+              "type": "signed int",
+              "width": 32
+            }
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": true,
+            "internal": false,
+            "lhs": "tail",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "Proof_Harness/647_with_harness.c",
+              "function": "proof_harness_countPalin",
+              "line": "34",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "binary": "00000000000000000000000000000000",
+              "data": "0",
+              "name": "integer",
+              "type": "signed int",
+              "width": 32
+            }
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": true,
+            "internal": false,
+            "lhs": "return_value___CPROVER_nondet_int$0",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "Proof_Harness/647_with_harness.c",
+              "function": "proof_harness_countPalin",
+              "line": "34",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "binary": "00000000000000000000000000000000",
+              "data": "0",
+              "name": "integer",
+              "type": "signed int",
+              "width": 32
+            }
+          },
+          {
+            "function": {
+              "displayName": "__CPROVER_nondet_int",
+              "identifier": "__CPROVER_nondet_int",
+              "sourceLocation": {
+                "file": "Proof_Harness/647_with_harness.c",
+                "function": "proof_harness_countPalin",
+                "line": "33",
+                "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+              }
+            },
+            "hidden": false,
+            "internal": false,
+            "sourceLocation": {
+              "file": "Proof_Harness/647_with_harness.c",
+              "function": "proof_harness_countPalin",
+              "line": "34",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "function-call",
+            "thread": 0
+          },
+          {
+            "function": {
+              "displayName": "__CPROVER_nondet_int",
+              "identifier": "__CPROVER_nondet_int",
+              "sourceLocation": {
+                "file": "Proof_Harness/647_with_harness.c",
+                "function": "proof_harness_countPalin",
+                "line": "33",
+                "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+              }
+            },
+            "hidden": false,
+            "internal": false,
+            "sourceLocation": {
+              "file": "Proof_Harness/647_with_harness.c",
+              "function": "proof_harness_countPalin",
+              "line": "34",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "function-return",
+            "thread": 0
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": false,
+            "internal": false,
+            "lhs": "return_value___CPROVER_nondet_int$0",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "Proof_Harness/647_with_harness.c",
+              "function": "proof_harness_countPalin",
+              "line": "34",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "binary": "01111111111111111111111111111110",
+              "data": "2147483646",
+              "name": "integer",
+              "type": "signed int",
+              "width": 32
+            }
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": false,
+            "internal": false,
+            "lhs": "tail",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "Proof_Harness/647_with_harness.c",
+              "function": "proof_harness_countPalin",
+              "line": "34",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "binary": "01111111111111111111111111111110",
+              "data": "2147483646",
+              "name": "integer",
+              "type": "signed int",
+              "width": 32
+            }
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": true,
+            "internal": false,
+            "lhs": "len",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "Proof_Harness/647_with_harness.c",
+              "function": "proof_harness_countPalin",
+              "line": "35",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "binary": "00000000000000000000000000000000",
+              "data": "0",
+              "name": "integer",
+              "type": "signed int",
+              "width": 32
+            }
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": true,
+            "internal": false,
+            "lhs": "return_value___CPROVER_nondet_int$1",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "Proof_Harness/647_with_harness.c",
+              "function": "proof_harness_countPalin",
+              "line": "35",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "binary": "00000000000000000000000000000000",
+              "data": "0",
+              "name": "integer",
+              "type": "signed int",
+              "width": 32
+            }
+          },
+          {
+            "function": {
+              "displayName": "__CPROVER_nondet_int",
+              "identifier": "__CPROVER_nondet_int",
+              "sourceLocation": {
+                "file": "Proof_Harness/647_with_harness.c",
+                "function": "proof_harness_countPalin",
+                "line": "33",
+                "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+              }
+            },
+            "hidden": false,
+            "internal": false,
+            "sourceLocation": {
+              "file": "Proof_Harness/647_with_harness.c",
+              "function": "proof_harness_countPalin",
+              "line": "35",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "function-call",
+            "thread": 0
+          },
+          {
+            "function": {
+              "displayName": "__CPROVER_nondet_int",
+              "identifier": "__CPROVER_nondet_int",
+              "sourceLocation": {
+                "file": "Proof_Harness/647_with_harness.c",
+                "function": "proof_harness_countPalin",
+                "line": "33",
+                "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+              }
+            },
+            "hidden": false,
+            "internal": false,
+            "sourceLocation": {
+              "file": "Proof_Harness/647_with_harness.c",
+              "function": "proof_harness_countPalin",
+              "line": "35",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "function-return",
+            "thread": 0
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": false,
+            "internal": false,
+            "lhs": "return_value___CPROVER_nondet_int$1",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "Proof_Harness/647_with_harness.c",
+              "function": "proof_harness_countPalin",
+              "line": "35",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "binary": "01111111111111111111111111111111",
+              "data": "2147483647",
+              "name": "integer",
+              "type": "signed int",
+              "width": 32
+            }
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": false,
+            "internal": false,
+            "lhs": "len",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "Proof_Harness/647_with_harness.c",
+              "function": "proof_harness_countPalin",
+              "line": "35",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "binary": "01111111111111111111111111111111",
+              "data": "2147483647",
+              "name": "integer",
+              "type": "signed int",
+              "width": 32
+            }
+          },
+          {
+            "hidden": false,
+            "sourceLocation": {
+              "file": "Proof_Harness/647_with_harness.c",
+              "function": "proof_harness_countPalin",
+              "line": "36",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "location-only",
+            "thread": 0
+          },
+          {
+            "hidden": false,
+            "sourceLocation": {
+              "file": "Proof_Harness/647_with_harness.c",
+              "function": "proof_harness_countPalin",
+              "line": "37",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "location-only",
+            "thread": 0
+          },
+          {
+            "hidden": false,
+            "sourceLocation": {
+              "file": "Proof_Harness/647_with_harness.c",
+              "function": "proof_harness_countPalin",
+              "line": "38",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "location-only",
+            "thread": 0
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": true,
+            "internal": false,
+            "lhs": "ret_expected",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "Proof_Harness/647_with_harness.c",
+              "function": "proof_harness_countPalin",
+              "line": "39",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "binary": "00000000000000000000000000000000",
+              "data": "0",
+              "name": "integer",
+              "type": "signed int",
+              "width": 32
+            }
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": false,
+            "internal": true,
+            "lhs": "ret_expected",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "Proof_Harness/647_with_harness.c",
+              "function": "proof_harness_countPalin",
+              "line": "39",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "binary": "00000000000000000000000000000001",
+              "data": "1",
+              "name": "integer",
+              "type": "signed int",
+              "width": 32
+            }
+          },
+          {
+            "hidden": false,
+            "sourceLocation": {
+              "file": "Proof_Harness/647_with_harness.c",
+              "function": "proof_harness_countPalin",
+              "line": "40",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "location-only",
+            "thread": 0
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": true,
+            "internal": false,
+            "lhs": "ret_actual",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "Proof_Harness/647_with_harness.c",
+              "function": "proof_harness_countPalin",
+              "line": "42",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "binary": "00000000000000000000000000000000",
+              "data": "0",
+              "name": "integer",
+              "type": "signed int",
+              "width": 32
+            }
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": true,
+            "internal": false,
+            "lhs": "return_value_countPalin$0",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "Proof_Harness/647_with_harness.c",
+              "function": "proof_harness_countPalin",
+              "line": "42",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "binary": "00000000000000000000000000000000",
+              "data": "0",
+              "name": "integer",
+              "type": "signed int",
+              "width": 32
+            }
+          },
+          {
+            "function": {
+              "displayName": "countPalin",
+              "identifier": "countPalin",
+              "sourceLocation": {
+                "file": "Proof_Harness/647_with_harness.c",
+                "line": "22",
+                "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+              }
+            },
+            "hidden": false,
+            "internal": false,
+            "sourceLocation": {
+              "file": "Proof_Harness/647_with_harness.c",
+              "function": "proof_harness_countPalin",
+              "line": "42",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "function-call",
+            "thread": 0
+          },
+          {
+            "assignmentType": "actual-parameter",
+            "hidden": false,
+            "internal": true,
+            "lhs": "s",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "Proof_Harness/647_with_harness.c",
+              "function": "proof_harness_countPalin",
+              "line": "42",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "data": "dynamic_object",
+              "name": "pointer",
+              "type": "char *"
+            }
+          },
+          {
+            "assignmentType": "actual-parameter",
+            "hidden": false,
+            "internal": false,
+            "lhs": "head",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "Proof_Harness/647_with_harness.c",
+              "function": "proof_harness_countPalin",
+              "line": "42",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "binary": "00000000000000000000000000000011",
+              "data": "3",
+              "name": "integer",
+              "type": "signed int",
+              "width": 32
+            }
+          },
+          {
+            "assignmentType": "actual-parameter",
+            "hidden": false,
+            "internal": false,
+            "lhs": "tail",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "Proof_Harness/647_with_harness.c",
+              "function": "proof_harness_countPalin",
+              "line": "42",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "binary": "01111111111111111111111111111110",
+              "data": "2147483646",
+              "name": "integer",
+              "type": "signed int",
+              "width": 32
+            }
+          },
+          {
+            "assignmentType": "actual-parameter",
+            "hidden": false,
+            "internal": false,
+            "lhs": "len",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "Proof_Harness/647_with_harness.c",
+              "function": "proof_harness_countPalin",
+              "line": "42",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "binary": "01111111111111111111111111111111",
+              "data": "2147483647",
+              "name": "integer",
+              "type": "signed int",
+              "width": 32
+            }
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": true,
+            "internal": false,
+            "lhs": "ret",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "Proof_Harness/647_with_harness.c",
+              "function": "countPalin",
+              "line": "24",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "binary": "00000000000000000000000000000000",
+              "data": "0",
+              "name": "integer",
+              "type": "signed int",
+              "width": 32
+            }
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": false,
+            "internal": true,
+            "lhs": "ret",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "Proof_Harness/647_with_harness.c",
+              "function": "countPalin",
+              "line": "24",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "binary": "00000000000000000000000000000000",
+              "data": "0",
+              "name": "integer",
+              "type": "signed int",
+              "width": 32
+            }
+          },
+          {
+            "hidden": false,
+            "sourceLocation": {
+              "file": "Proof_Harness/647_with_harness.c",
+              "function": "countPalin",
+              "line": "25",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "location-only",
+            "thread": 0
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": false,
+            "internal": false,
+            "lhs": "goto_symex$$return_value$$countPalin",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "Proof_Harness/647_with_harness.c",
+              "function": "countPalin",
+              "line": "27",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "binary": "00000000000000000000000000000000",
+              "data": "0",
+              "name": "integer",
+              "type": "signed int",
+              "width": 32
+            }
+          },
+          {
+            "function": {
+              "displayName": "countPalin",
+              "identifier": "countPalin",
+              "sourceLocation": {
+                "file": "Proof_Harness/647_with_harness.c",
+                "line": "22",
+                "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+              }
+            },
+            "hidden": false,
+            "internal": false,
+            "sourceLocation": {
+              "file": "Proof_Harness/647_with_harness.c",
+              "function": "countPalin",
+              "line": "28",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "function-return",
+            "thread": 0
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": false,
+            "internal": false,
+            "lhs": "return_value_countPalin$0",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "Proof_Harness/647_with_harness.c",
+              "function": "proof_harness_countPalin",
+              "line": "42",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "binary": "00000000000000000000000000000000",
+              "data": "0",
+              "name": "integer",
+              "type": "signed int",
+              "width": 32
+            }
+          },
+          {
+            "assignmentType": "variable",
+            "hidden": false,
+            "internal": false,
+            "lhs": "ret_actual",
+            "mode": "C",
+            "sourceLocation": {
+              "file": "Proof_Harness/647_with_harness.c",
+              "function": "proof_harness_countPalin",
+              "line": "42",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "assignment",
+            "thread": 0,
+            "value": {
+              "binary": "00000000000000000000000000000000",
+              "data": "0",
+              "name": "integer",
+              "type": "signed int",
+              "width": 32
+            }
+          },
+          {
+            "hidden": false,
+            "internal": false,
+            "property": "proof_harness_countPalin.assertion.1",
+            "reason": "assertion ret_actual == ret_expected",
+            "sourceLocation": {
+              "file": "Proof_Harness/647_with_harness.c",
+              "function": "proof_harness_countPalin",
+              "line": "43",
+              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+            },
+            "stepType": "failure",
+            "thread": 0
+          }
+        ]
+      },
+      {
+        "description": "free argument must be NULL or valid pointer",
+        "property": "proof_harness_countPalin.precondition_instance.1",
+        "sourceLocation": {
+          "file": "Proof_Harness/647_with_harness.c",
+          "function": "proof_harness_countPalin",
+          "line": "44",
+          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "free argument must be dynamic object",
+        "property": "proof_harness_countPalin.precondition_instance.2",
+        "sourceLocation": {
+          "file": "Proof_Harness/647_with_harness.c",
+          "function": "proof_harness_countPalin",
+          "line": "44",
+          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "free argument has offset zero",
+        "property": "proof_harness_countPalin.precondition_instance.3",
+        "sourceLocation": {
+          "file": "Proof_Harness/647_with_harness.c",
+          "function": "proof_harness_countPalin",
+          "line": "44",
+          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "double free",
+        "property": "proof_harness_countPalin.precondition_instance.4",
+        "sourceLocation": {
+          "file": "Proof_Harness/647_with_harness.c",
+          "function": "proof_harness_countPalin",
+          "line": "44",
+          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "free called for new[] object",
+        "property": "proof_harness_countPalin.precondition_instance.5",
+        "sourceLocation": {
+          "file": "Proof_Harness/647_with_harness.c",
+          "function": "proof_harness_countPalin",
+          "line": "44",
+          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "free called for stack-allocated object",
+        "property": "proof_harness_countPalin.precondition_instance.6",
+        "sourceLocation": {
+          "file": "Proof_Harness/647_with_harness.c",
+          "function": "proof_harness_countPalin",
+          "line": "44",
+          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "assertion count_actual == count_expected",
+        "property": "proof_harness_countSubstrings.assertion.1",
+        "sourceLocation": {
+          "file": "Proof_Harness/647_with_harness.c",
+          "function": "proof_harness_countSubstrings",
+          "line": "62",
+          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "free argument must be NULL or valid pointer",
+        "property": "proof_harness_countSubstrings.precondition_instance.1",
+        "sourceLocation": {
+          "file": "Proof_Harness/647_with_harness.c",
+          "function": "proof_harness_countSubstrings",
+          "line": "63",
+          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "free argument must be dynamic object",
+        "property": "proof_harness_countSubstrings.precondition_instance.2",
+        "sourceLocation": {
+          "file": "Proof_Harness/647_with_harness.c",
+          "function": "proof_harness_countSubstrings",
+          "line": "63",
+          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "free argument has offset zero",
+        "property": "proof_harness_countSubstrings.precondition_instance.3",
+        "sourceLocation": {
+          "file": "Proof_Harness/647_with_harness.c",
+          "function": "proof_harness_countSubstrings",
+          "line": "63",
+          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "double free",
+        "property": "proof_harness_countSubstrings.precondition_instance.4",
+        "sourceLocation": {
+          "file": "Proof_Harness/647_with_harness.c",
+          "function": "proof_harness_countSubstrings",
+          "line": "63",
+          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "free called for new[] object",
+        "property": "proof_harness_countSubstrings.precondition_instance.5",
+        "sourceLocation": {
+          "file": "Proof_Harness/647_with_harness.c",
+          "function": "proof_harness_countSubstrings",
+          "line": "63",
+          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "free called for stack-allocated object",
+        "property": "proof_harness_countSubstrings.precondition_instance.6",
+        "sourceLocation": {
+          "file": "Proof_Harness/647_with_harness.c",
+          "function": "proof_harness_countSubstrings",
+          "line": "63",
+          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "assertion count_actual == count_expected",
+        "property": "proof_harness_main.assertion.1",
+        "sourceLocation": {
+          "file": "Proof_Harness/647_with_harness.c",
+          "function": "proof_harness_main",
+          "line": "71",
+          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "free argument must be NULL or valid pointer",
+        "property": "proof_harness_main.precondition_instance.1",
+        "sourceLocation": {
+          "file": "Proof_Harness/647_with_harness.c",
+          "function": "proof_harness_main",
+          "line": "72",
+          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "free argument must be dynamic object",
+        "property": "proof_harness_main.precondition_instance.2",
+        "sourceLocation": {
+          "file": "Proof_Harness/647_with_harness.c",
+          "function": "proof_harness_main",
+          "line": "72",
+          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "free argument has offset zero",
+        "property": "proof_harness_main.precondition_instance.3",
+        "sourceLocation": {
+          "file": "Proof_Harness/647_with_harness.c",
+          "function": "proof_harness_main",
+          "line": "72",
+          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "double free",
+        "property": "proof_harness_main.precondition_instance.4",
+        "sourceLocation": {
+          "file": "Proof_Harness/647_with_harness.c",
+          "function": "proof_harness_main",
+          "line": "72",
+          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "free called for new[] object",
+        "property": "proof_harness_main.precondition_instance.5",
+        "sourceLocation": {
+          "file": "Proof_Harness/647_with_harness.c",
+          "function": "proof_harness_main",
+          "line": "72",
+          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "free called for stack-allocated object",
+        "property": "proof_harness_main.precondition_instance.6",
+        "sourceLocation": {
+          "file": "Proof_Harness/647_with_harness.c",
+          "function": "proof_harness_main",
+          "line": "72",
+          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+        },
+        "status": "SUCCESS"
+      }
+    ]
+  },
+  {
+    "messageText": "VERIFICATION FAILED",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "cProverStatus": "failure"
+  }
+]

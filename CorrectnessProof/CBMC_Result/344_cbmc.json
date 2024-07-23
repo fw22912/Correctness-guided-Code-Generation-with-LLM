@@ -1,0 +1,374 @@
+[
+  {
+    "program": "CBMC 6.0.1 (cbmc-6.0.1)"
+  },
+  {
+    "messageText": "**** WARNING: Use --unwinding-assertions to obtain sound verification results",
+    "messageType": "WARNING"
+  },
+  {
+    "messageText": "CBMC version 6.0.1 (cbmc-6.0.1) 64-bit arm64 macos",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Type-checking 344_with_harness",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "function '__CPROVER_nondet_int' is not declared",
+    "messageType": "WARNING",
+    "sourceLocation": {
+      "file": "Proof_Harness/344_with_harness.c",
+      "function": "proof_harness_reverseString",
+      "line": "24",
+      "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+    }
+  },
+  {
+    "messageText": "Generating GOTO Program",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Adding CPROVER library (arm64)",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Removal of function pointers and virtual functions",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Generic Property Instrumentation",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Running with 8 object bits, 56 offset bits (default)",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Starting Bounded Model Checking",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding loop proof_harness_reverseString.0 iteration 1 file Proof_Harness/344_with_harness.c line 23 function proof_harness_reverseString thread 0",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding loop proof_harness_reverseString.0 iteration 2 file Proof_Harness/344_with_harness.c line 23 function proof_harness_reverseString thread 0",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Not unwinding loop proof_harness_reverseString.0 iteration 3 file Proof_Harness/344_with_harness.c line 23 function proof_harness_reverseString thread 0",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding loop reverseString.0 iteration 1 file Proof_Harness/344_with_harness.c line 8 function reverseString thread 0",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding loop reverseString.0 iteration 2 file Proof_Harness/344_with_harness.c line 8 function reverseString thread 0",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Not unwinding loop reverseString.0 iteration 3 file Proof_Harness/344_with_harness.c line 8 function reverseString thread 0",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding loop proof_harness_reverseString.1 iteration 1 file Proof_Harness/344_with_harness.c line 33 function proof_harness_reverseString thread 0",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Unwinding loop proof_harness_reverseString.1 iteration 2 file Proof_Harness/344_with_harness.c line 33 function proof_harness_reverseString thread 0",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Not unwinding loop proof_harness_reverseString.1 iteration 3 file Proof_Harness/344_with_harness.c line 33 function proof_harness_reverseString thread 0",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Runtime Symex: 0.00614s",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "size of program expression: 280 steps",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "simple slicing removed 30 assignments",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Generated 22 VCC(s), 11 remaining after simplification",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Runtime Postprocess Equation: 1.9583e-05s",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Passing problem to propositional reduction",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "converting SSA",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Runtime Convert SSA: 0.00217783s",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Running propositional reduction",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Runtime Post-process: 0.0146768s",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "24359 variables, 85065 clauses",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "SAT checker: instance is UNSATISFIABLE",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Runtime Solver: 0.0544135s",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "messageText": "Runtime decision procedure: 0.0566429s",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "result": [
+      {
+        "description": "max allocation size exceeded",
+        "property": "malloc.assertion.1",
+        "sourceLocation": {
+          "file": "<builtin-library-malloc>",
+          "function": "malloc",
+          "line": "31",
+          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "max allocation may fail",
+        "property": "malloc.assertion.2",
+        "sourceLocation": {
+          "file": "<builtin-library-malloc>",
+          "function": "malloc",
+          "line": "36",
+          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "memcpy src/dst overlap",
+        "property": "proof_harness_reverseString.precondition_instance.1",
+        "sourceLocation": {
+          "file": "Proof_Harness/344_with_harness.c",
+          "function": "proof_harness_reverseString",
+          "line": "29",
+          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "memcpy source region readable",
+        "property": "proof_harness_reverseString.precondition_instance.2",
+        "sourceLocation": {
+          "file": "Proof_Harness/344_with_harness.c",
+          "function": "proof_harness_reverseString",
+          "line": "29",
+          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "memcpy destination region writeable",
+        "property": "proof_harness_reverseString.precondition_instance.3",
+        "sourceLocation": {
+          "file": "Proof_Harness/344_with_harness.c",
+          "function": "proof_harness_reverseString",
+          "line": "29",
+          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "assertion s[i] == s_copy[sSize - i - 1]",
+        "property": "proof_harness_reverseString.assertion.1",
+        "sourceLocation": {
+          "file": "Proof_Harness/344_with_harness.c",
+          "function": "proof_harness_reverseString",
+          "line": "34",
+          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "assertion s[sSize - i - 1] == s_copy[i]",
+        "property": "proof_harness_reverseString.assertion.2",
+        "sourceLocation": {
+          "file": "Proof_Harness/344_with_harness.c",
+          "function": "proof_harness_reverseString",
+          "line": "35",
+          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "assertion s[sSize / 2] == s_copy[sSize / 2]",
+        "property": "proof_harness_reverseString.assertion.3",
+        "sourceLocation": {
+          "file": "Proof_Harness/344_with_harness.c",
+          "function": "proof_harness_reverseString",
+          "line": "39",
+          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "free argument must be NULL or valid pointer",
+        "property": "proof_harness_reverseString.precondition_instance.4",
+        "sourceLocation": {
+          "file": "Proof_Harness/344_with_harness.c",
+          "function": "proof_harness_reverseString",
+          "line": "41",
+          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "free argument must be dynamic object",
+        "property": "proof_harness_reverseString.precondition_instance.5",
+        "sourceLocation": {
+          "file": "Proof_Harness/344_with_harness.c",
+          "function": "proof_harness_reverseString",
+          "line": "41",
+          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "free argument has offset zero",
+        "property": "proof_harness_reverseString.precondition_instance.6",
+        "sourceLocation": {
+          "file": "Proof_Harness/344_with_harness.c",
+          "function": "proof_harness_reverseString",
+          "line": "41",
+          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "double free",
+        "property": "proof_harness_reverseString.precondition_instance.7",
+        "sourceLocation": {
+          "file": "Proof_Harness/344_with_harness.c",
+          "function": "proof_harness_reverseString",
+          "line": "41",
+          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "free called for new[] object",
+        "property": "proof_harness_reverseString.precondition_instance.8",
+        "sourceLocation": {
+          "file": "Proof_Harness/344_with_harness.c",
+          "function": "proof_harness_reverseString",
+          "line": "41",
+          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "free called for stack-allocated object",
+        "property": "proof_harness_reverseString.precondition_instance.9",
+        "sourceLocation": {
+          "file": "Proof_Harness/344_with_harness.c",
+          "function": "proof_harness_reverseString",
+          "line": "41",
+          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "free argument must be NULL or valid pointer",
+        "property": "proof_harness_reverseString.precondition_instance.10",
+        "sourceLocation": {
+          "file": "Proof_Harness/344_with_harness.c",
+          "function": "proof_harness_reverseString",
+          "line": "42",
+          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "free argument must be dynamic object",
+        "property": "proof_harness_reverseString.precondition_instance.11",
+        "sourceLocation": {
+          "file": "Proof_Harness/344_with_harness.c",
+          "function": "proof_harness_reverseString",
+          "line": "42",
+          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "free argument has offset zero",
+        "property": "proof_harness_reverseString.precondition_instance.12",
+        "sourceLocation": {
+          "file": "Proof_Harness/344_with_harness.c",
+          "function": "proof_harness_reverseString",
+          "line": "42",
+          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "double free",
+        "property": "proof_harness_reverseString.precondition_instance.13",
+        "sourceLocation": {
+          "file": "Proof_Harness/344_with_harness.c",
+          "function": "proof_harness_reverseString",
+          "line": "42",
+          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "free called for new[] object",
+        "property": "proof_harness_reverseString.precondition_instance.14",
+        "sourceLocation": {
+          "file": "Proof_Harness/344_with_harness.c",
+          "function": "proof_harness_reverseString",
+          "line": "42",
+          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "description": "free called for stack-allocated object",
+        "property": "proof_harness_reverseString.precondition_instance.15",
+        "sourceLocation": {
+          "file": "Proof_Harness/344_with_harness.c",
+          "function": "proof_harness_reverseString",
+          "line": "42",
+          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+        },
+        "status": "SUCCESS"
+      }
+    ]
+  },
+  {
+    "messageText": "VERIFICATION SUCCESSFUL",
+    "messageType": "STATUS-MESSAGE"
+  },
+  {
+    "cProverStatus": "success"
+  }
+]

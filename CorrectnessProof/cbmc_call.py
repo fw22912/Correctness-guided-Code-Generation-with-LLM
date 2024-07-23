@@ -19,10 +19,10 @@ def run_cbmc(file_path, harness_method_list):
     harness_command = " ".join([f"--function {method}" for method in harness_method_list])
     #harness_command =  " ".join([f"--function {harness_method_list[0]}"]) ###for now just do first, for loop later?
     # print("Command: " + harness_command)
-    print(f'cbmc Proof_Harness/{harness_file_name} {harness_command} --no-standard-checks --no-malloc-may-fail --verbosity 8 --unwind 3 --trace --json-ui')
+    print(f'cbmc Proof_Harness/{harness_file_name} --function combined_proof_harness --no-standard-checks --no-malloc-may-fail --verbosity 8 --unwind 3 --trace --json-ui')
 
     with open(cbmc_output_file, 'w+') as file:
-        subprocess.run(f'cbmc Proof_Harness/{harness_file_name} {harness_command} --no-standard-checks --no-malloc-may-fail --verbosity 8 --unwind 3 --trace --json-ui',
+        subprocess.run(f'cbmc Proof_Harness/{harness_file_name} --function combined_proof_harness --no-standard-checks --no-malloc-may-fail --verbosity 8 --unwind 3 --trace --json-ui',
                        shell=True, stdout=file)
 
     return cbmc_output_file
@@ -43,6 +43,7 @@ def cbmc_verification_status(file_name):
                     return True
                 else:
                     return False
+            # else: return False
 
     # return True
 
