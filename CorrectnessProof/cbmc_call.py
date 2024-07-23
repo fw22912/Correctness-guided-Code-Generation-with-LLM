@@ -35,15 +35,16 @@ def cbmc_verification_status(file_name):
     print("CBMC FILE Path: " + cbmc_result_file)
     with open(cbmc_result_file, 'r') as file:
         data = json.load(file)
-        for item in data:
-            if 'cProverStatus' in item:
-                print("=================STATUS=================")
-                print(item['cProverStatus'])
-                if item['cProverStatus'] == 'success':
-                    return True
-                else:
-                    return False
+    for item in data:
+        if 'cProverStatus' in item:
+            print("=================STATUS=================")
+            print(item['cProverStatus'])
+            if item['cProverStatus'] == 'success':
+                return True
+            else:
+                return False
 
+    return False
     # return True
 
 

@@ -150,8 +150,8 @@ def parse_syntax_error(data):
     return None
 def main(cbmc_output, total_code_with_harnesses, method_list):
 
-
     data = json.loads(cbmc_output) #converts string into json data
+    counter_examples_str = ''
 
     for entry in data:
         message = entry.get("messageText", "")
@@ -159,13 +159,13 @@ def main(cbmc_output, total_code_with_harnesses, method_list):
             syntax = ['syntax']
             line = entry['sourceLocation']['line']
             function = entry['sourceLocation']['function']
-            print('A syntax error was found on line ' + line + ' in function \'' + function + '\'')
-            syntax_location = [line,function]
-            syntax.append(syntax_location)
-            print(syntax)
+            syntax_str = ('A '+ message +' was found on line ' + line + ' in function \'' + function + '\'')
+            # syntax_location = [line,function]
+            # syntax.append(syntax_location)
+            # print(syntax)
             #print(entry)
 
-            return syntax
+            return syntax_str
 
         if 'result' in entry:
             counter_examples = ['result']
@@ -178,29 +178,40 @@ def main(cbmc_output, total_code_with_harnesses, method_list):
                 var = extract_variables(str_of_proof_harness, method)
                 input_list = list(set(input_list + var)) #the input variables across all functions that we want to parse from the trace
             values_from_trace = (extract_variable_values(data, input_list))
-
+            number_of_failures = 0
             for example in values_from_trace:
 
                 if example["status"] == "SUCCESS":
-
-                    print('On line ' + example['sourceLocation']['line'] + ', the test for \''+ example['description'] + '\' passed all tests successfully')
+                    None
+                    #print('On line ' + example['sourceLocation']['line'] + ', the test for \''+ example['description'] + '\' passed all tests successfully')
 
                 elif example['status'] == 'FAILURE':
-
-                    print('On line ' + example['sourceLocation']['line'] + ', the test for \'' + example[
-                        'description'] + '\' failed under the following counter example: ')
+                    number_of_failures += 1
+                    counter_examples_str += 'Counter example ' + str(number_of_failures) + ':\n'
+                    count = 0
+                    line = example['sourceLocation']['line']
+                    function = example['sourceLocation']['function']
+                    #print('On line ' + example['sourceLocation']['line'] + ', the test for \'' + example['description'] + '\' FAILED ')
+                    counter_examples_str += 'On line ' + line + ' in function \'' + function + '\',the test for \'' + example[
+                        'description'] + '\' failed under the following counter example: \n'
                     for key, value in example['counter_example'].items():
-                        line = example['sourceLocation']['line']
-                        function = example['sourceLocation']['function']
-                        data = value['data']
-                        binary = value['binary']
-                        print(key +' has input value ' + data, 'or', binary ,'in binary, on line', line, 'in function', function)
-                        #print(example)
-                        counter_examples.append({'name' : key, 'binary' : binary, 'line' : line, 'function' : function})
-                        print(counter_examples)
-                        print(example)
 
-            return counter_examples
+                        if count == 0:
+                            beg = 'When '
+                        else:
+                            beg = 'and '
+                        count += 1
+                        data = value['data']
+                        name = value['name']
+                        counter_examples_str = counter_examples_str + beg + key +' has input value ' + data + ' under the data type ' + name + '\n'
+                        #print(counter_examples_str)
+                        #print(example)
+                        #counter_examples.append({'name' : key, 'binary' : binary, 'line' : line, 'function' : function})
+                        #print(counter_examples)
+                        #print(example)
+                    counter_examples_str += '\n'
+            print('No. of failuresn:', number_of_failures)
+            return counter_examples_str
 
 
 cbmc_output = '''

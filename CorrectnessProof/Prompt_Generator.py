@@ -71,7 +71,7 @@ def create_prompt(file_content):
     - Use only safe C.
     - Do not use custom generics. # fuzzer limitation
     - Do not remove any code from the original code you have received.
-    - Ensure that all libraries needed, including <assert.h>, are declared at the beginning of the code.
+    - Ensure that all libraries that are needed, including <assert.h> and <stdbool.h>, are declared at the beginning of the code.
     """
 
     return prompt
