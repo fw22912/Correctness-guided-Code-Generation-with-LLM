@@ -1,8 +1,8 @@
 #include <assert.h>   /// for assert
     #include <inttypes.h> /// for uint32_t
     #include <stdio.h>    /// for IO operations
-    #include <stdlib.h>  // for malloc
-    #include <stdbool.h> // for bool
+    #include <stdlib.h>   /// for malloc
+    #include <stdbool.h>  /// for bool
     
     /**
      * @file
@@ -16,7 +16,7 @@
      * original array, otherwise, it returns -1.
      * @author [Swastika Gupta](https://github.com/Swastyy)
      */
-     
+    
     #include <assert.h>   /// for assert
     #include <inttypes.h> /// for uint32_t
     #include <stdio.h>    /// for IO operations
@@ -74,28 +74,53 @@
     }
     
     void proof_harness_duplicateNumber() {
+        uint32_t *in_arr;
         size_t n;
-        __CPROVER_assume(n > 1);
-        uint32_t *in_arr = (uint32_t *)malloc(sizeof(uint32_t) * n);
+        
+        in_arr = (uint32_t *)malloc(sizeof(uint32_t) * (n + 1));
         if (in_arr == NULL) {
             return;
         }
-        for (size_t i = 0; i < n; i++) {
+        
+        __CPROVER_assume(n > 1);
+        
+        for (size_t i = 0; i < n + 1; i++) {
             __CPROVER_assume(in_arr[i] >= 1);
             __CPROVER_assume(in_arr[i] <= n);
         }
+        
         uint32_t result = duplicateNumber(in_arr, n);
+        
         if (result != -1) {
             bool found = false;
-            for (size_t i = 0; i < n; i++) {
-                if (in_arr[i] == result) {
-                    if (found) {
-                        assert(false);
+            if (in_arr != NULL) {
+                for (size_t i = 0; i < n + 1; i++) {
+                    if (in_arr[i] == result && i != result) {
+                        found = true;
+                        break;
                     }
-                    found = true;
                 }
+                assert(found);
             }
-            assert(found);
         }
+        
         free(in_arr);
+    }
+    
+    void proof_harness_test() {
+        uint32_t arr[] = {1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610};
+        size_t n = sizeof(arr) / sizeof(int);
+        
+        uint32_t index = duplicateNumber(arr, n);
+        assert(index == 1);
+    }
+    
+    void proof_harness_main() {
+        test();
+    }
+    
+    void combined_proof_harness() {
+        proof_harness_duplicateNumber();
+        proof_harness_test();
+        proof_harness_main();
     }

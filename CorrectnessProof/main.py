@@ -69,7 +69,7 @@ def main(file_path):
 
                 prompt = counter_example_generator.create_prompt(file_content, enumerated_response_text, counter_examples)
                 last_counter_example = counter_examples
-                #print(f"New Prompt Generated:\n{prompt}")
+                print(f"New Prompt Generated:\n{prompt}")
 
             response_text = Gemini.main(prompt, file_path, method_list)
 

@@ -61,9 +61,12 @@ def create_prompt(file_content):
     # Instruction
     Give me a proof harness code of the below C code.
 
-    # Query
-    Q: Write method "void proof_harness_{{function_name}}()" that tests every methods below for all possible inputs.
-    {query_code}
+    # Query 
+    Q: Write method "void proof_harness_{{function_name}}()" that tests every methods including 'main()' 
+    below for all possible inputs. Then write a method "void combined_proof_harness()" that calls every other proof 
+    harness methods generated. 
+    
+    {query_code}.
 
     # Constraints
     Here are some constraints that you should respect:
@@ -71,7 +74,7 @@ def create_prompt(file_content):
     - Use only safe C.
     - Do not use custom generics. # fuzzer limitation
     - Do not remove any code from the original code you have received.
-    - Ensure that all libraries that are needed, including <assert.h> and <stdbool.h>, are declared at the beginning of the code.
+    - Ensure that all libraries needed, including <assert.h> and <stdbool.h>, are declared at the beginning of the code.
     """
 
     return prompt

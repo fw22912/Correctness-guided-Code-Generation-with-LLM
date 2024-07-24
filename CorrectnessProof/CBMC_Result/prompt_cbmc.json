@@ -7,7 +7,7 @@
     "messageType": "WARNING"
   },
   {
-    "messageText": "CBMC version 6.0.1 (cbmc-6.0.1) 64-bit x86_64 macos",
+    "messageText": "CBMC version 6.0.1 (cbmc-6.0.1) 64-bit arm64 macos",
     "messageType": "STATUS-MESSAGE"
   },
   {
@@ -19,7 +19,7 @@
     "messageType": "STATUS-MESSAGE"
   },
   {
-    "messageText": "Adding CPROVER library (x86_64)",
+    "messageText": "Adding CPROVER library (arm64)",
     "messageType": "STATUS-MESSAGE"
   },
   {
@@ -39,7 +39,7 @@
     "messageType": "STATUS-MESSAGE"
   },
   {
-    "messageText": "Runtime Symex: 0.00437119s",
+    "messageText": "Runtime Symex: 0.00143817s",
     "messageType": "STATUS-MESSAGE"
   },
   {
@@ -51,11 +51,11 @@
     "messageType": "STATUS-MESSAGE"
   },
   {
-    "messageText": "Generated 10 VCC(s), 1 remaining after simplification",
+    "messageText": "Generated 9 VCC(s), 1 remaining after simplification",
     "messageType": "STATUS-MESSAGE"
   },
   {
-    "messageText": "Runtime Postprocess Equation: 3.8634e-05s",
+    "messageText": "Runtime Postprocess Equation: 1.7875e-05s",
     "messageType": "STATUS-MESSAGE"
   },
   {
@@ -67,7 +67,7 @@
     "messageType": "STATUS-MESSAGE"
   },
   {
-    "messageText": "Runtime Convert SSA: 0.00036834s",
+    "messageText": "Runtime Convert SSA: 0.000204708s",
     "messageType": "STATUS-MESSAGE"
   },
   {
@@ -75,7 +75,7 @@
     "messageType": "STATUS-MESSAGE"
   },
   {
-    "messageText": "Runtime Post-process: 6.181e-06s",
+    "messageText": "Runtime Post-process: 1.417e-06s",
     "messageType": "STATUS-MESSAGE"
   },
   {
@@ -87,11 +87,11 @@
     "messageType": "STATUS-MESSAGE"
   },
   {
-    "messageText": "Runtime Solver: 4.1843e-05s",
+    "messageText": "Runtime Solver: 1.8209e-05s",
     "messageType": "STATUS-MESSAGE"
   },
   {
-    "messageText": "Runtime decision procedure: 0.000478824s",
+    "messageText": "Runtime decision procedure: 0.000252251s",
     "messageType": "STATUS-MESSAGE"
   },
   {
@@ -103,7 +103,7 @@
           "file": "<builtin-library-malloc>",
           "function": "malloc",
           "line": "31",
-          "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
         },
         "status": "SUCCESS"
       },
@@ -114,18 +114,18 @@
           "file": "<builtin-library-malloc>",
           "function": "malloc",
           "line": "36",
-          "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
         },
         "status": "SUCCESS"
       },
       {
-        "description": "assertion node != NULL",
+        "description": "assertion node->data == data",
         "property": "proof_harness_newNode.assertion.1",
         "sourceLocation": {
           "file": "Proof_Harness/prompt_with_harness.c",
           "function": "proof_harness_newNode",
-          "line": "27",
-          "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+          "line": "28",
+          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
         },
         "status": "SUCCESS"
       },
@@ -135,30 +135,19 @@
         "sourceLocation": {
           "file": "Proof_Harness/prompt_with_harness.c",
           "function": "proof_harness_newNode",
-          "line": "28",
-          "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
-        },
-        "status": "SUCCESS"
-      },
-      {
-        "description": "assertion node->data == data",
-        "property": "proof_harness_newNode.assertion.3",
-        "sourceLocation": {
-          "file": "Proof_Harness/prompt_with_harness.c",
-          "function": "proof_harness_newNode",
           "line": "29",
-          "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
         },
         "status": "SUCCESS"
       },
       {
         "description": "assertion node->rightNode == NULL",
-        "property": "proof_harness_newNode.assertion.4",
+        "property": "proof_harness_newNode.assertion.3",
         "sourceLocation": {
           "file": "Proof_Harness/prompt_with_harness.c",
           "function": "proof_harness_newNode",
           "line": "30",
-          "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
         },
         "status": "SUCCESS"
       },
@@ -169,7 +158,7 @@
           "file": "Proof_Harness/prompt_with_harness.c",
           "function": "proof_harness_newNode",
           "line": "31",
-          "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
         },
         "status": "SUCCESS"
       },
@@ -180,7 +169,7 @@
           "file": "Proof_Harness/prompt_with_harness.c",
           "function": "proof_harness_newNode",
           "line": "31",
-          "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
         },
         "status": "SUCCESS"
       },
@@ -191,7 +180,7 @@
           "file": "Proof_Harness/prompt_with_harness.c",
           "function": "proof_harness_newNode",
           "line": "31",
-          "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
         },
         "status": "SUCCESS"
       },
@@ -202,7 +191,7 @@
           "file": "Proof_Harness/prompt_with_harness.c",
           "function": "proof_harness_newNode",
           "line": "31",
-          "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
         },
         "status": "SUCCESS"
       },
@@ -213,7 +202,7 @@
           "file": "Proof_Harness/prompt_with_harness.c",
           "function": "proof_harness_newNode",
           "line": "31",
-          "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
         },
         "status": "SUCCESS"
       },
@@ -224,7 +213,7 @@
           "file": "Proof_Harness/prompt_with_harness.c",
           "function": "proof_harness_newNode",
           "line": "31",
-          "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
         },
         "status": "SUCCESS"
       }
