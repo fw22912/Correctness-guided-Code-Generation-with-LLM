@@ -5,7 +5,7 @@ import Prompt_Generator as pg
 import re
 import inspect
 
-base_dir = "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof/Proof_Harness"
+base_dir = "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM Correctness-guided-Code-Generation-with-LLM/CorrectnessProof/Proof_Harness"
 
 
 def configure_genai(api_key):
@@ -23,6 +23,7 @@ def generate_content(prompt):
 
 
 def clean_code(response_text):
+    #print(response_text)
     cleaned_text = response_text.replace('```c', '').replace('```', '').strip()
     return cleaned_text
 
@@ -65,7 +66,7 @@ def main(prompt, file_path, method_list):
     cleaned_text = clean_code(response_text)
     harness_function = extract_harness(response_text)
 
-    generate_file(cleaned_text, file_path)
-    generate_harness_file(harness_function, file_path)
+    #generate_file(cleaned_text, file_path) ######### Remove
+    #generate_harness_file(harness_function, file_path) #####3 remove
 
-    return cleaned_text
+    return cleaned_text, harness_function

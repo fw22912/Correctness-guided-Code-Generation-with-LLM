@@ -7,7 +7,7 @@
     "messageType": "WARNING"
   },
   {
-    "messageText": "CBMC version 6.0.1 (cbmc-6.0.1) 64-bit arm64 macos",
+    "messageText": "CBMC version 6.0.1 (cbmc-6.0.1) 64-bit x86_64 macos",
     "messageType": "STATUS-MESSAGE"
   },
   {
@@ -19,7 +19,7 @@
     "messageType": "STATUS-MESSAGE"
   },
   {
-    "messageText": "Adding CPROVER library (arm64)",
+    "messageText": "Adding CPROVER library (x86_64)",
     "messageType": "STATUS-MESSAGE"
   },
   {
@@ -87,7 +87,7 @@
     "messageType": "STATUS-MESSAGE"
   },
   {
-    "messageText": "Runtime Symex: 0.00566646s",
+    "messageText": "Runtime Symex: 0.0135304s",
     "messageType": "STATUS-MESSAGE"
   },
   {
@@ -103,7 +103,7 @@
     "messageType": "STATUS-MESSAGE"
   },
   {
-    "messageText": "Runtime Postprocess Equation: 3.1334e-05s",
+    "messageText": "Runtime Postprocess Equation: 6.7665e-05s",
     "messageType": "STATUS-MESSAGE"
   },
   {
@@ -115,7 +115,7 @@
     "messageType": "STATUS-MESSAGE"
   },
   {
-    "messageText": "Runtime Convert SSA: 0.00123933s",
+    "messageText": "Runtime Convert SSA: 0.00278499s",
     "messageType": "STATUS-MESSAGE"
   },
   {
@@ -123,7 +123,7 @@
     "messageType": "STATUS-MESSAGE"
   },
   {
-    "messageText": "Runtime Post-process: 0.00921496s",
+    "messageText": "Runtime Post-process: 0.0245294s",
     "messageType": "STATUS-MESSAGE"
   },
   {
@@ -135,11 +135,11 @@
     "messageType": "STATUS-MESSAGE"
   },
   {
-    "messageText": "Runtime Solver: 0.0404151s",
+    "messageText": "Runtime Solver: 0.0858045s",
     "messageType": "STATUS-MESSAGE"
   },
   {
-    "messageText": "Runtime decision procedure: 0.0416905s",
+    "messageText": "Runtime decision procedure: 0.0886765s",
     "messageType": "STATUS-MESSAGE"
   },
   {
@@ -155,7 +155,7 @@
           "file": "<builtin-library-malloc>",
           "function": "malloc",
           "line": "31",
-          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+          "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
         },
         "status": "SUCCESS"
       },
@@ -166,7 +166,7 @@
           "file": "<builtin-library-malloc>",
           "function": "malloc",
           "line": "36",
-          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+          "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
         },
         "status": "SUCCESS"
       },
@@ -177,7 +177,7 @@
           "file": "Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c",
           "function": "test",
           "line": "62",
-          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+          "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
         },
         "status": "SUCCESS"
       },
@@ -188,7 +188,7 @@
           "file": "Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c",
           "function": "proof_harness_duplicateNumber",
           "line": "103",
-          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+          "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
         },
         "status": "FAILURE",
         "trace": [
@@ -197,7 +197,7 @@
             "sourceLocation": {
               "file": "<built-in-additions>",
               "line": "24",
-              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+              "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
             },
             "stepType": "location-only",
             "thread": 0
@@ -209,7 +209,7 @@
               "sourceLocation": {
                 "file": "<built-in-additions>",
                 "line": "24",
-                "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+                "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
               }
             },
             "hidden": true,
@@ -217,7 +217,7 @@
             "sourceLocation": {
               "file": "<built-in-additions>",
               "line": "24",
-              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+              "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
             },
             "stepType": "function-call",
             "thread": 0
@@ -231,7 +231,7 @@
             "sourceLocation": {
               "file": "<builtin-library-free>",
               "line": "7",
-              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+              "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
             },
             "stepType": "assignment",
             "thread": 0,
@@ -250,7 +250,7 @@
             "sourceLocation": {
               "file": "<built-in-additions>",
               "line": "8",
-              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+              "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
             },
             "stepType": "assignment",
             "thread": 0,
@@ -269,7 +269,7 @@
             "sourceLocation": {
               "file": "<built-in-additions>",
               "line": "7",
-              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+              "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
             },
             "stepType": "assignment",
             "thread": 0,
@@ -288,7 +288,7 @@
             "sourceLocation": {
               "file": "<builtin-library-free>",
               "line": "11",
-              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+              "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
             },
             "stepType": "assignment",
             "thread": 0,
@@ -307,7 +307,7 @@
             "sourceLocation": {
               "file": "<built-in-additions>",
               "line": "12",
-              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+              "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
             },
             "stepType": "assignment",
             "thread": 0,
@@ -328,7 +328,7 @@
             "sourceLocation": {
               "file": "<built-in-additions>",
               "line": "9",
-              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+              "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
             },
             "stepType": "assignment",
             "thread": 0,
@@ -347,7 +347,7 @@
             "sourceLocation": {
               "file": "<builtin-library-free>",
               "line": "9",
-              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+              "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
             },
             "stepType": "assignment",
             "thread": 0,
@@ -366,7 +366,7 @@
             "sourceLocation": {
               "file": "<built-in-additions>",
               "line": "16",
-              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+              "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
             },
             "stepType": "assignment",
             "thread": 0,
@@ -385,7 +385,7 @@
               "sourceLocation": {
                 "file": "<built-in-additions>",
                 "line": "24",
-                "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+                "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
               }
             },
             "hidden": true,
@@ -398,7 +398,7 @@
             "sourceLocation": {
               "file": "Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c",
               "line": "122",
-              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+              "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
             },
             "stepType": "location-only",
             "thread": 0
@@ -410,7 +410,7 @@
               "sourceLocation": {
                 "file": "Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c",
                 "line": "122",
-                "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+                "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
               }
             },
             "hidden": false,
@@ -418,7 +418,7 @@
             "sourceLocation": {
               "file": "Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c",
               "line": "122",
-              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+              "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
             },
             "stepType": "function-call",
             "thread": 0
@@ -429,7 +429,7 @@
               "file": "Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c",
               "function": "combined_proof_harness",
               "line": "123",
-              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+              "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
             },
             "stepType": "location-only",
             "thread": 0
@@ -441,7 +441,7 @@
               "sourceLocation": {
                 "file": "Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c",
                 "line": "76",
-                "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+                "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
               }
             },
             "hidden": false,
@@ -450,7 +450,7 @@
               "file": "Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c",
               "function": "combined_proof_harness",
               "line": "123",
-              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+              "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
             },
             "stepType": "function-call",
             "thread": 0
@@ -465,7 +465,7 @@
               "file": "Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c",
               "function": "proof_harness_duplicateNumber",
               "line": "77",
-              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+              "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
             },
             "stepType": "assignment",
             "thread": 0,
@@ -485,7 +485,7 @@
               "file": "Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c",
               "function": "proof_harness_duplicateNumber",
               "line": "78",
-              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+              "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
             },
             "stepType": "assignment",
             "thread": 0,
@@ -507,7 +507,7 @@
               "file": "Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c",
               "function": "proof_harness_duplicateNumber",
               "line": "80",
-              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+              "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
             },
             "stepType": "assignment",
             "thread": 0,
@@ -524,7 +524,7 @@
               "sourceLocation": {
                 "file": "<builtin-library-malloc>",
                 "line": "11",
-                "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+                "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
               }
             },
             "hidden": false,
@@ -533,7 +533,7 @@
               "file": "Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c",
               "function": "proof_harness_duplicateNumber",
               "line": "80",
-              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+              "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
             },
             "stepType": "function-call",
             "thread": 0
@@ -548,7 +548,7 @@
               "file": "Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c",
               "function": "proof_harness_duplicateNumber",
               "line": "80",
-              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+              "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
             },
             "stepType": "assignment",
             "thread": 0,
@@ -566,7 +566,7 @@
               "file": "<builtin-library-malloc>",
               "function": "malloc",
               "line": "17",
-              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+              "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
             },
             "stepType": "location-only",
             "thread": 0
@@ -577,7 +577,7 @@
               "file": "<builtin-library-malloc>",
               "function": "malloc",
               "line": "27",
-              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+              "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
             },
             "stepType": "location-only",
             "thread": 0
@@ -592,7 +592,7 @@
               "file": "<builtin-library-malloc>",
               "function": "malloc",
               "line": "42",
-              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+              "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
             },
             "stepType": "assignment",
             "thread": 0,
@@ -612,7 +612,7 @@
               "file": "<builtin-library-malloc>",
               "function": "malloc",
               "line": "43",
-              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+              "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
             },
             "stepType": "assignment",
             "thread": 0,
@@ -632,7 +632,7 @@
               "file": "<builtin-library-malloc>",
               "function": "malloc",
               "line": "43",
-              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+              "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
             },
             "stepType": "assignment",
             "thread": 0,
@@ -654,7 +654,7 @@
               "file": "<builtin-library-malloc>",
               "function": "malloc",
               "line": "43",
-              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+              "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
             },
             "stepType": "assignment",
             "thread": 0,
@@ -673,7 +673,7 @@
               "file": "<builtin-library-malloc>",
               "function": "malloc",
               "line": "43",
-              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+              "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
             },
             "stepType": "assignment",
             "thread": 0,
@@ -693,7 +693,7 @@
               "file": "<builtin-library-malloc>",
               "function": "malloc",
               "line": "43",
-              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+              "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
             },
             "stepType": "assignment",
             "thread": 0,
@@ -713,7 +713,7 @@
               "file": "<builtin-library-malloc>",
               "function": "malloc",
               "line": "46",
-              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+              "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
             },
             "stepType": "assignment",
             "thread": 0,
@@ -733,7 +733,7 @@
               "file": "<builtin-library-malloc>",
               "function": "malloc",
               "line": "46",
-              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+              "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
             },
             "stepType": "assignment",
             "thread": 0,
@@ -753,7 +753,7 @@
               "file": "<builtin-library-malloc>",
               "function": "malloc",
               "line": "46",
-              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+              "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
             },
             "stepType": "assignment",
             "thread": 0,
@@ -773,7 +773,7 @@
               "file": "<builtin-library-malloc>",
               "function": "malloc",
               "line": "46",
-              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+              "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
             },
             "stepType": "assignment",
             "thread": 0,
@@ -793,7 +793,7 @@
               "file": "<builtin-library-malloc>",
               "function": "malloc",
               "line": "47",
-              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+              "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
             },
             "stepType": "assignment",
             "thread": 0,
@@ -813,7 +813,7 @@
               "file": "<builtin-library-malloc>",
               "function": "malloc",
               "line": "51",
-              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+              "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
             },
             "stepType": "assignment",
             "thread": 0,
@@ -833,7 +833,7 @@
               "file": "<builtin-library-malloc>",
               "function": "malloc",
               "line": "51",
-              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+              "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
             },
             "stepType": "assignment",
             "thread": 0,
@@ -853,7 +853,7 @@
               "file": "<builtin-library-malloc>",
               "function": "malloc",
               "line": "51",
-              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+              "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
             },
             "stepType": "assignment",
             "thread": 0,
@@ -873,7 +873,7 @@
               "file": "<builtin-library-malloc>",
               "function": "malloc",
               "line": "51",
-              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+              "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
             },
             "stepType": "assignment",
             "thread": 0,
@@ -893,7 +893,7 @@
               "file": "<builtin-library-malloc>",
               "function": "malloc",
               "line": "52",
-              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+              "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
             },
             "stepType": "assignment",
             "thread": 0,
@@ -913,7 +913,7 @@
               "file": "<builtin-library-malloc>",
               "function": "malloc",
               "line": "58",
-              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+              "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
             },
             "stepType": "assignment",
             "thread": 0,
@@ -930,7 +930,7 @@
               "sourceLocation": {
                 "file": "<builtin-library-malloc>",
                 "line": "11",
-                "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+                "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
               }
             },
             "hidden": false,
@@ -939,7 +939,7 @@
               "file": "<builtin-library-malloc>",
               "function": "malloc",
               "line": "59",
-              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+              "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
             },
             "stepType": "function-return",
             "thread": 0
@@ -954,7 +954,7 @@
               "file": "Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c",
               "function": "proof_harness_duplicateNumber",
               "line": "80",
-              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+              "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
             },
             "stepType": "assignment",
             "thread": 0,
@@ -974,7 +974,7 @@
               "file": "Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c",
               "function": "proof_harness_duplicateNumber",
               "line": "80",
-              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+              "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
             },
             "stepType": "assignment",
             "thread": 0,
@@ -990,7 +990,7 @@
               "file": "Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c",
               "function": "proof_harness_duplicateNumber",
               "line": "81",
-              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+              "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
             },
             "stepType": "location-only",
             "thread": 0
@@ -1001,7 +1001,7 @@
               "file": "Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c",
               "function": "proof_harness_duplicateNumber",
               "line": "85",
-              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+              "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
             },
             "stepType": "location-only",
             "thread": 0
@@ -1016,7 +1016,7 @@
               "file": "Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c",
               "function": "proof_harness_duplicateNumber",
               "line": "87",
-              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+              "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
             },
             "stepType": "assignment",
             "thread": 0,
@@ -1038,7 +1038,7 @@
               "file": "Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c",
               "function": "proof_harness_duplicateNumber",
               "line": "87",
-              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+              "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
             },
             "stepType": "assignment",
             "thread": 0,
@@ -1056,7 +1056,7 @@
               "file": "Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c",
               "function": "proof_harness_duplicateNumber",
               "line": "87",
-              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+              "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
             },
             "stepType": "loop-head",
             "thread": 0
@@ -1071,7 +1071,7 @@
               "file": "Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c",
               "function": "proof_harness_duplicateNumber",
               "line": "92",
-              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+              "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
             },
             "stepType": "assignment",
             "thread": 0,
@@ -1093,7 +1093,7 @@
               "file": "Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c",
               "function": "proof_harness_duplicateNumber",
               "line": "92",
-              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+              "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
             },
             "stepType": "assignment",
             "thread": 0,
@@ -1112,7 +1112,7 @@
               "sourceLocation": {
                 "file": "Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c",
                 "line": "31",
-                "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+                "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
               }
             },
             "hidden": false,
@@ -1121,7 +1121,7 @@
               "file": "Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c",
               "function": "proof_harness_duplicateNumber",
               "line": "92",
-              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+              "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
             },
             "stepType": "function-call",
             "thread": 0
@@ -1136,7 +1136,7 @@
               "file": "Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c",
               "function": "proof_harness_duplicateNumber",
               "line": "92",
-              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+              "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
             },
             "stepType": "assignment",
             "thread": 0,
@@ -1156,7 +1156,7 @@
               "file": "Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c",
               "function": "proof_harness_duplicateNumber",
               "line": "92",
-              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+              "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
             },
             "stepType": "assignment",
             "thread": 0,
@@ -1174,7 +1174,7 @@
               "file": "Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c",
               "function": "duplicateNumber",
               "line": "33",
-              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+              "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
             },
             "stepType": "location-only",
             "thread": 0
@@ -1189,7 +1189,7 @@
               "file": "Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c",
               "function": "duplicateNumber",
               "line": "36",
-              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+              "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
             },
             "stepType": "assignment",
             "thread": 0,
@@ -1211,7 +1211,7 @@
               "file": "Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c",
               "function": "duplicateNumber",
               "line": "36",
-              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+              "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
             },
             "stepType": "assignment",
             "thread": 0,
@@ -1233,7 +1233,7 @@
               "file": "Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c",
               "function": "duplicateNumber",
               "line": "38",
-              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+              "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
             },
             "stepType": "assignment",
             "thread": 0,
@@ -1255,7 +1255,7 @@
               "file": "Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c",
               "function": "duplicateNumber",
               "line": "38",
-              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+              "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
             },
             "stepType": "assignment",
             "thread": 0,
@@ -1277,7 +1277,7 @@
               "file": "Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c",
               "function": "duplicateNumber",
               "line": "40",
-              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+              "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
             },
             "stepType": "assignment",
             "thread": 0,
@@ -1299,7 +1299,7 @@
               "file": "Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c",
               "function": "duplicateNumber",
               "line": "41",
-              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+              "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
             },
             "stepType": "assignment",
             "thread": 0,
@@ -1317,7 +1317,7 @@
               "file": "Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c",
               "function": "duplicateNumber",
               "line": "42",
-              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+              "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
             },
             "stepType": "location-only",
             "thread": 0
@@ -1332,7 +1332,7 @@
               "file": "Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c",
               "function": "duplicateNumber",
               "line": "40",
-              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+              "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
             },
             "stepType": "assignment",
             "thread": 0,
@@ -1354,7 +1354,7 @@
               "file": "Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c",
               "function": "duplicateNumber",
               "line": "41",
-              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+              "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
             },
             "stepType": "assignment",
             "thread": 0,
@@ -1372,7 +1372,7 @@
               "file": "Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c",
               "function": "duplicateNumber",
               "line": "42",
-              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+              "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
             },
             "stepType": "location-only",
             "thread": 0
@@ -1387,7 +1387,7 @@
               "file": "Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c",
               "function": "duplicateNumber",
               "line": "43",
-              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+              "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
             },
             "stepType": "assignment",
             "thread": 0,
@@ -1405,7 +1405,7 @@
               "file": "Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c",
               "function": "duplicateNumber",
               "line": "44",
-              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+              "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
             },
             "stepType": "loop-head",
             "thread": 0
@@ -1420,7 +1420,7 @@
               "file": "Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c",
               "function": "duplicateNumber",
               "line": "45",
-              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+              "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
             },
             "stepType": "assignment",
             "thread": 0,
@@ -1442,7 +1442,7 @@
               "file": "Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c",
               "function": "duplicateNumber",
               "line": "46",
-              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+              "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
             },
             "stepType": "assignment",
             "thread": 0,
@@ -1460,7 +1460,7 @@
               "file": "Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c",
               "function": "duplicateNumber",
               "line": "44",
-              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+              "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
             },
             "stepType": "location-only",
             "thread": 0
@@ -1471,7 +1471,7 @@
               "file": "Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c",
               "function": "duplicateNumber",
               "line": "44",
-              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+              "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
             },
             "stepType": "loop-head",
             "thread": 0
@@ -1486,7 +1486,7 @@
               "file": "Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c",
               "function": "duplicateNumber",
               "line": "45",
-              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+              "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
             },
             "stepType": "assignment",
             "thread": 0,
@@ -1508,7 +1508,7 @@
               "file": "Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c",
               "function": "duplicateNumber",
               "line": "46",
-              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+              "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
             },
             "stepType": "assignment",
             "thread": 0,
@@ -1526,7 +1526,7 @@
               "file": "Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c",
               "function": "duplicateNumber",
               "line": "44",
-              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+              "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
             },
             "stepType": "location-only",
             "thread": 0
@@ -1537,7 +1537,7 @@
               "file": "Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c",
               "function": "duplicateNumber",
               "line": "44",
-              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+              "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
             },
             "stepType": "loop-head",
             "thread": 0
@@ -1552,7 +1552,7 @@
               "file": "Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c",
               "function": "duplicateNumber",
               "line": "48",
-              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+              "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
             },
             "stepType": "assignment",
             "thread": 0,
@@ -1571,7 +1571,7 @@
               "sourceLocation": {
                 "file": "Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c",
                 "line": "31",
-                "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+                "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
               }
             },
             "hidden": false,
@@ -1580,7 +1580,7 @@
               "file": "Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c",
               "function": "duplicateNumber",
               "line": "49",
-              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+              "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
             },
             "stepType": "function-return",
             "thread": 0
@@ -1595,7 +1595,7 @@
               "file": "Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c",
               "function": "proof_harness_duplicateNumber",
               "line": "92",
-              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+              "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
             },
             "stepType": "assignment",
             "thread": 0,
@@ -1617,7 +1617,7 @@
               "file": "Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c",
               "function": "proof_harness_duplicateNumber",
               "line": "92",
-              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+              "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
             },
             "stepType": "assignment",
             "thread": 0,
@@ -1635,7 +1635,7 @@
               "file": "Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c",
               "function": "proof_harness_duplicateNumber",
               "line": "94",
-              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+              "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
             },
             "stepType": "location-only",
             "thread": 0
@@ -1650,7 +1650,7 @@
               "file": "Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c",
               "function": "proof_harness_duplicateNumber",
               "line": "95",
-              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+              "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
             },
             "stepType": "assignment",
             "thread": 0,
@@ -1672,7 +1672,7 @@
               "file": "Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c",
               "function": "proof_harness_duplicateNumber",
               "line": "95",
-              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+              "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
             },
             "stepType": "assignment",
             "thread": 0,
@@ -1690,7 +1690,7 @@
               "file": "Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c",
               "function": "proof_harness_duplicateNumber",
               "line": "96",
-              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+              "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
             },
             "stepType": "location-only",
             "thread": 0
@@ -1705,7 +1705,7 @@
               "file": "Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c",
               "function": "proof_harness_duplicateNumber",
               "line": "97",
-              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+              "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
             },
             "stepType": "assignment",
             "thread": 0,
@@ -1727,7 +1727,7 @@
               "file": "Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c",
               "function": "proof_harness_duplicateNumber",
               "line": "97",
-              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+              "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
             },
             "stepType": "assignment",
             "thread": 0,
@@ -1745,7 +1745,7 @@
               "file": "Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c",
               "function": "proof_harness_duplicateNumber",
               "line": "97",
-              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+              "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
             },
             "stepType": "loop-head",
             "thread": 0
@@ -1759,7 +1759,7 @@
               "file": "Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c",
               "function": "proof_harness_duplicateNumber",
               "line": "103",
-              "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+              "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
             },
             "stepType": "failure",
             "thread": 0
@@ -1773,7 +1773,7 @@
           "file": "Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c",
           "function": "proof_harness_duplicateNumber",
           "line": "107",
-          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+          "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
         },
         "status": "SUCCESS"
       },
@@ -1784,7 +1784,7 @@
           "file": "Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c",
           "function": "proof_harness_duplicateNumber",
           "line": "107",
-          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+          "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
         },
         "status": "SUCCESS"
       },
@@ -1795,7 +1795,7 @@
           "file": "Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c",
           "function": "proof_harness_duplicateNumber",
           "line": "107",
-          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+          "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
         },
         "status": "SUCCESS"
       },
@@ -1806,7 +1806,7 @@
           "file": "Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c",
           "function": "proof_harness_duplicateNumber",
           "line": "107",
-          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+          "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
         },
         "status": "SUCCESS"
       },
@@ -1817,7 +1817,7 @@
           "file": "Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c",
           "function": "proof_harness_duplicateNumber",
           "line": "107",
-          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+          "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
         },
         "status": "SUCCESS"
       },
@@ -1828,7 +1828,7 @@
           "file": "Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c",
           "function": "proof_harness_duplicateNumber",
           "line": "107",
-          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+          "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
         },
         "status": "SUCCESS"
       },
@@ -1839,7 +1839,7 @@
           "file": "Proof_Harness/floyd_cycle_detection_algorithm_with_harness.c",
           "function": "proof_harness_test",
           "line": "115",
-          "workingDirectory": "/Users/hyoyeon/Desktop/UNI/Faculty Internship/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
+          "workingDirectory": "/Users/osc/Documents/GitHub/Correctness-guided-Code-Generation-with-LLM/CorrectnessProof"
         },
         "status": "SUCCESS"
       }

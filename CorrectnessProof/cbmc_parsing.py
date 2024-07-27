@@ -210,7 +210,7 @@ def main(cbmc_output, total_code_with_harnesses, method_list):
                         #print(counter_examples)
                         #print(example)
                     counter_examples_str += '\n'
-            print('No. of failuresn:', number_of_failures)
+            print('No. of failures:', number_of_failures)
             return counter_examples_str
 
 
