@@ -5,9 +5,10 @@ import Gemini as gemini
 import argparse
 import CounterExample_Generator as cg
 import cbmc_parsing
+import tempfile
 
 
-def run_cbmc(file_path, harness_method_list): ## this bit is needed in case the json file is too large to store in a string?
+def run_cbmc(file_path, total_code_with_harnesses, harness_method_list): ## this bit is needed in case the json file is too large to store in a string?
     import os
     import subprocess
 
@@ -18,9 +19,12 @@ def run_cbmc(file_path, harness_method_list): ## this bit is needed in case the 
 
     harness_command = " ".join([f"--function {method}" for method in harness_method_list])
 
+    with tempfile.NamedTemporaryFile( suffix=".c", delete=False) as temp_file:
+        temp_file.write(total_code_with_harnesses.encode('utf-8'))
+        temp_file_path = temp_file.name
 
-    command_str = f'cbmc Proof_Harness/{harness_file_name} --function combined_proof_harness --no-standard-checks --no-malloc-may-fail --verbosity 8 --unwind 3 --trace --json-ui'
-    print(command_str)
+    command_str = f'cbmc {temp_file_path} --function combined_proof_harness --no-standard-checks --no-malloc-may-fail --verbosity 8 --unwind 3 --trace --json-ui'
+    print(f'cbmc {harness_file_name} --function combined_proof_harness --no-standard-checks --no-malloc-may-fail --verbosity 8 --unwind 3 --trace --json-ui')
 
     try:
         result = subprocess.run(command_str,
@@ -34,7 +38,8 @@ def run_cbmc(file_path, harness_method_list): ## this bit is needed in case the 
         with open(cbmc_output_file, 'w+') as file:
             subprocess.run(command_str, shell=True, stdout=file)
         return cbmc_output_file
-
+    finally:
+        os.remove(temp_file_path)
 
 
 def cbmc_string_or_file(query_string): #leave for later, assume string for now
@@ -73,7 +78,7 @@ def main(file_path, total_code_with_harnesses, harness_method_list): #expects th
 
 
     print("Running CBMC...")
-    cbmc_output = run_cbmc(file_path, harness_method_list) ###############under the current assumption that the json string isn't too big
+    cbmc_output = run_cbmc(file_path, total_code_with_harnesses, harness_method_list) ###############under the current assumption that the json string isn't too big
 
 
     method_list = [item.replace('proof_harness_', '') for item in harness_method_list]

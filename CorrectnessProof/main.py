@@ -31,6 +31,13 @@ def enumerate_c_code(code_with_harness):
     return '\n'.join(enumerated_lines)
 
 
+def remove_comments(original_c_code):
+    # Remove block comments
+    code = re.sub(r'/\*.*?\*/', '', original_c_code, flags=re.DOTALL)
+    # Remove single-line comments
+    code = re.sub(r'//.*', '', code)
+    return code
+
 def main(file_path):
     Gemini.configure_genai(api_key=os.environ['GENAI_API_KEY'])
     file_name = os.path.splitext(os.path.basename(file_path))[0]
@@ -49,7 +56,7 @@ def main(file_path):
 
             enumerated_response_text = enumerate_c_code(response_text)
             print("harness list: ", harness_list)
-            # print("Response Text:  \n", response_text)
+            #print("Response Text:  \n", response_text)
             #print(response_text)
             reiteration, counter_examples = cbmc_call.main(file_path,response_text, harness_list)
 
@@ -85,3 +92,4 @@ if __name__ == "__main__":
     parser.add_argument("file_path", type=str)
     args = parser.parse_args()
     main(args.file_path)
+
