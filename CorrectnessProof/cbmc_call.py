@@ -6,6 +6,14 @@ import argparse
 import CounterExample_Generator as cg
 import cbmc_parsing
 import tempfile
+import signal
+import sys
+
+# Handler function to raise a timeout exception
+def handler(signum, frame):
+    raise TimeoutError("The program took too long to complete")
+
+
 
 
 def run_cbmc(file_path, total_code_with_harnesses, harness_method_list): ## this bit is needed in case the json file is too large to store in a string?
@@ -14,7 +22,7 @@ def run_cbmc(file_path, total_code_with_harnesses, harness_method_list): ## this
 
     output_path = 'CBMC_Result'
     original_file_name = os.path.splitext(os.path.basename(file_path))[0]
-    harness_file_name = original_file_name + "_with_harness.c"
+    harness_file_name = original_file_name + "_with_harness"
     cbmc_output_file = os.path.join(output_path, original_file_name + "_cbmc.json")
 
     harness_command = " ".join([f"--function {method}" for method in harness_method_list])
@@ -24,22 +32,37 @@ def run_cbmc(file_path, total_code_with_harnesses, harness_method_list): ## this
         temp_file_path = temp_file.name
 
     command_str = f'cbmc {temp_file_path} --function combined_proof_harness --no-standard-checks --no-malloc-may-fail --verbosity 8 --unwind 3 --trace --json-ui'
-    print(f'cbmc {harness_file_name} --function combined_proof_harness --no-standard-checks --no-malloc-may-fail --verbosity 8 --unwind 3 --trace --json-ui')
+    print(f'cbmc {harness_file_name}.c --function combined_proof_harness --no-standard-checks --no-malloc-may-fail --verbosity 8 --unwind 3 --trace --json-ui')
+
+    #print(total_code_with_harnesses)
+
+    # Set the signal handler and a timeout alarm
+    signal.signal(signal.SIGALRM, handler)
+    signal.alarm(20)  # Timeout after 20 seconds
 
     try:
         result = subprocess.run(command_str,
         shell=True, capture_output=True, text=True)
-
+        #print(result)
         cbmc_json_string = result.stdout
 
         return cbmc_json_string
+    except TimeoutError as e:
+        print('cbmc took too long to run')
+        sys.exit(1)
+
+
     except Exception as e:
         print(f"An unexpected error occurred, likely because the json file storing the output was too big for the string. This program will proceed now by storing it in a file : {e}")
         with open(cbmc_output_file, 'w+') as file:
             subprocess.run(command_str, shell=True, stdout=file)
+        print('cbmc output file:', cbmc_output_file)
         return cbmc_output_file
+
     finally:
         os.remove(temp_file_path)
+        # Disable the alarm
+        signal.alarm(0)
 
 
 def cbmc_string_or_file(query_string): #leave for later, assume string for now
@@ -48,12 +71,8 @@ def cbmc_string_or_file(query_string): #leave for later, assume string for now
     else:
         return 'string'
 
-def cbmc_verification_status(file_name):
-    # cbmc_result_file = "CBMC_Result/" + file_name + "_cbmc.json"
-    cbmc_result_file = "CBMC_Result/" + file_name + "_cbmc.json"
-    print("CBMC FILE Path: " + cbmc_result_file)
-    with open(cbmc_result_file, 'r') as file: ###############
-        data = json.load(file) ###############
+def cbmc_verification_status(json_str):
+    data = json.loads(json_str)
     for item in data:
         if 'cProverStatus' in item:
             print("=================STATUS=================")
@@ -78,7 +97,10 @@ def main(file_path, total_code_with_harnesses, harness_method_list): #expects th
 
 
     print("Running CBMC...")
+
     cbmc_output = run_cbmc(file_path, total_code_with_harnesses, harness_method_list) ###############under the current assumption that the json string isn't too big
+
+    reiteration = cbmc_verification_status(cbmc_output)
 
 
     method_list = [item.replace('proof_harness_', '') for item in harness_method_list]
@@ -86,5 +108,5 @@ def main(file_path, total_code_with_harnesses, harness_method_list): #expects th
 
     parse = cbmc_parsing.main(cbmc_output, total_code_with_harnesses, method_list)
 
-    reiteration = cbmc_verification_status(file_name)
+
     return reiteration, parse

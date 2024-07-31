@@ -2,6 +2,7 @@ import argparse
 import Gemini
 import cbmc_call
 import os
+import sys
 import Prompt_Generator as prompt_generator
 import re
 import CounterExample_Generator as counter_example_generator
@@ -31,47 +32,62 @@ def enumerate_c_code(code_with_harness):
     return '\n'.join(enumerated_lines)
 
 
-def remove_comments(original_c_code):
+def remove_comments_from_file(file_path):
+    # Read the contents of the file
+    with open(file_path, 'r') as file:
+        code = file.read()
+
     # Remove block comments
-    code = re.sub(r'/\*.*?\*/', '', original_c_code, flags=re.DOTALL)
+    code = re.sub(r'/\*.*?\*/', '', code, flags=re.DOTALL)
     # Remove single-line comments
     code = re.sub(r'//.*', '', code)
-    return code
+
+    # Write the cleaned code back to the file
+    with open(file_path, 'w') as file:
+        file.write(code)
 
 def main(file_path):
     Gemini.configure_genai(api_key=os.environ['GENAI_API_KEY'])
     file_name = os.path.splitext(os.path.basename(file_path))[0]
 
+    remove_comments_from_file(file_path)
+
     print("\nFile name: " + file_name + ".c")
     prompt, method_list, file_content = prompt_generator.main(file_path)
+
     # harness_list = extract_harness_name(file_content)
     gemini_output_code_with_harness, gemini_output_code_only_harness = Gemini.main(prompt, file_path, method_list)
+    #print(gemini_output_code_with_harness)
     # print(harness_list)
     cnt = 0
     response_text = gemini_output_code_with_harness
-    harness_list = extract_harness_name(gemini_output_code_with_harness)
+
     last_counter_example = ''
     while True:
         # try:
-
             enumerated_response_text = enumerate_c_code(response_text)
+
+            harness_list = extract_harness_name(response_text)
             print("harness list: ", harness_list)
             #print("Response Text:  \n", response_text)
-            #print(response_text)
+
             reiteration, counter_examples = cbmc_call.main(file_path,response_text, harness_list)
 
             #print(parse) #parse[0] is either 'syntax' or 'result',
             if reiteration:
                 print("Verification successful\n")
+                print(enumerated_response_text)
                 break
-            elif cnt == 3:
+            elif cnt == 2:
                 print("Verification failed. Moving on to the next example...\n")
                 break
             else:
                 print("Verification Failed. Retrying with a new prompt with counterexamples...\n")
                 cnt += 1
                 print(counter_examples)
+
                 print(enumerated_response_text)
+                #print(enumerated_response_text)
                 #if counter_examples == last_counter_example:
                 #    print('Gemini has failed fix the harness')
                 #    break

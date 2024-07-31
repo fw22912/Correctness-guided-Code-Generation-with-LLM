@@ -193,7 +193,8 @@ def main(cbmc_output, total_code_with_harnesses, method_list):
                     function = example['sourceLocation']['function']
                     #print('On line ' + example['sourceLocation']['line'] + ', the test for \'' + example['description'] + '\' FAILED ')
                     counter_examples_str += 'On line ' + line + ' in function \'' + function + '\',the test for \'' + example[
-                        'description'] + '\' failed under the following counter example: \n'
+                        'description'] + '\' failed '#under the following counter example: \n'
+                    #return counter_examples_str ### this is just for the first line prompt
                     for key, value in example['counter_example'].items():
 
                         if count == 0:
@@ -204,11 +205,7 @@ def main(cbmc_output, total_code_with_harnesses, method_list):
                         data = value['data']
                         name = value['name']
                         counter_examples_str = counter_examples_str + beg + key +' has input value ' + data + ' under the data type ' + name + '\n'
-                        #print(counter_examples_str)
-                        #print(example)
-                        #counter_examples.append({'name' : key, 'binary' : binary, 'line' : line, 'function' : function})
-                        #print(counter_examples)
-                        #print(example)
+
                     counter_examples_str += '\n'
             print('No. of failures:', number_of_failures)
             return counter_examples_str

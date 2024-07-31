@@ -64,6 +64,7 @@ def main(prompt, file_path, method_list):
     response_text = generate_content(prompt)
 
     cleaned_text = clean_code(response_text)
+
     harness_function = extract_harness(response_text)
 
     #generate_file(cleaned_text, file_path) ######### Remove
