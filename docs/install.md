@@ -8,7 +8,6 @@
    export GENAI_API_KEY = "YOUR_GEMINI_API_KEY"
    ```
 ### 3. Running the file(s)
-   The current implementation cannot run multiple files in an identical way running a single file. 
    - To run a **single file**: 
       ```bash
       python3 main.py FILE_NAME/PATH
