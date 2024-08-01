@@ -10,7 +10,7 @@
 ### 3. Running the file(s)
    - **To run a single file**: 
       ```bash
-      python3 main.py FILE_NAME/PATH
+      python3 main.py FILE_NAME
       ```
    - **To run multiple files**: <br>
       Open the run_all.sh file and change the path to the corresponding folder that you would like to run. For example:
