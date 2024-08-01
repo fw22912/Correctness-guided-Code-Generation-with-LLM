@@ -12,7 +12,7 @@
       ```bash
       python3 main.py FILE_NAME/PATH
       ```
-   - **To run multiple files**: \n
+   - **To run multiple files**: <br>
       Open the run_all.sh file and change the path to the corresponding folder that you would like to run. For example:
      ```bash
      #!/bin/bash
