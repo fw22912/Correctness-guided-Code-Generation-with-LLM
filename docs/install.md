@@ -10,9 +10,9 @@
 3. Running the file(s)
    The current implementation cannot run multiple files in an identical way running a single file. 
    - To run a **single file**: 
-   ```bash
-   python3 main.py FILE_NAME/PATH
-   ```
+      ```bash
+      python3 main.py FILE_NAME/PATH
+      ```
    - **To run multiple files**:
      Change the path in ```run_all.sh``` to the corresponding file path that you would like to run.
      ```bash
