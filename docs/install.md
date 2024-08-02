@@ -5,7 +5,7 @@
    ```
 ### 2. Export the API key for Gemini in your terminal
    ```bash
-   export GENAI_API_KEY = "YOUR_GEMINI_API_KEY"
+   export GENAI_API_KEY ="YOUR_GEMINI_API_KEY"
    ```
 ### 3. Running the file(s)
    - **To run a single file**: 
