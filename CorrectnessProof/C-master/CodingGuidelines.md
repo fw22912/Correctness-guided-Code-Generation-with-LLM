@@ -14,6 +14,6 @@ What want the program an user informations?
 
 ## Code style conventions  
 
-See [here](https://users.ece.cmu.edu/~eno/coding/CCodingStandard.html)  
+See [here](https:
 Don't push all code in one line!  
 

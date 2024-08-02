@@ -1,20 +1,10 @@
-/**
- * @file
- * @brief Conversion of [roman numerals](https://en.wikipedia.org/wiki/Roman_numerals) to decimal
- * @details Roman numerals are an ancient Roman numeral system consisting of the symbols I, V, X, L, C, D, and M
- * 
- * @author [Focusucof](https://github.com/Focusucof)
- */
 
-#include <assert.h> /// for assert
-#include <stdio.h>  /// for IO operations
-#include <string.h> /// for strlen()
 
-/**
- * @brief Convert roman numeral symbol to a decimal value helper function
- * @param symbol Roman numeral char
- * @returns Integer of decimal value for given symbol
- */
+#include <assert.h> 
+#include <stdio.h>  
+#include <string.h> 
+
+
 int symbol(char symbol) {
     int value = 0;
     switch(symbol) {
@@ -43,35 +33,28 @@ int symbol(char symbol) {
     return value;    
 }
 
-/**
- * @brief Converts roman numerals into a decimal number
- * @param input Input roman numeral as a C-string
- * @returns The converted number in decimal form
- */
+
 int roman_to_decimal(char input[]) {
-    int result = 0; // result in decimal
+    int result = 0; 
 
     for(int i = 0; i < strlen(input); i++) {
         if(strlen(input) > i + 1) {
             if(symbol(input[i]) >= symbol(input[i + 1])) {
-                result += symbol(input[i]); // add value to sum
+                result += symbol(input[i]); 
             } else {
-                result += symbol(input[i + 1]) - symbol(input[i]); // if the current symbol is smaller than the next (ex. IV), subtract it from the next symbol
-                i++; // skip over an extra symbol 
+                result += symbol(input[i + 1]) - symbol(input[i]); 
+                i++; 
             }
         } else {
-            result += symbol(input[i]); // add value to sum
+            result += symbol(input[i]); 
         }
     }
     return result;
 }
 
-/**
- * @brief Self-test implementations
- * @returns void
- */
+
 static void test() {
-    // 1st test
+    
     char input[] = "MCMIV";
     int expected = 1904;
     
@@ -84,7 +67,7 @@ static void test() {
     assert(output == expected);
     printf("== TEST PASSED ==\n\n");
 
-    // 2nd test
+    
     char input2[] = "MMMDCCXXIV";
     expected = 3724;
     
@@ -97,7 +80,7 @@ static void test() {
     assert(output == expected);
     printf("== TEST PASSED ==\n\n");
 
-    // 3rd test
+    
     char input3[] = "III";
     expected = 3;
     
@@ -111,11 +94,8 @@ static void test() {
     printf("== TEST PASSED ==\n\n");
 }
 
-/**
- * @brief Main function
- * @returns 0 on exit
- */
+
 int main() {
-    test();  // run self-test implementations
+    test();  
     return 0;
 }

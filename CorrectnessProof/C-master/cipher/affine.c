@@ -1,49 +1,24 @@
-/**
- * @file
- * @brief An [affine cipher](https://en.wikipedia.org/wiki/Affine_cipher) is a
- * letter substitution cipher that uses a linear transformation to substitute
- * letters in a message.
- * @details Given an alphabet of length M with characters with numeric values
- * 0-(M-1), an arbitrary character x can be transformed with the expression (ax
- * + b) % M into our ciphertext character. The only caveat is that a must be
- * relatively prime with M in order for this transformation to be invertible,
- * i.e., gcd(a, M) = 1.
- * @author [Daniel Murrow](https://github.com/dsmurrow)
- */
 
-#include <assert.h>  /// for assertions
-#include <stdio.h>   /// for IO
-#include <stdlib.h>  /// for div function and div_t struct as well as malloc and free
-#include <string.h>  /// for strlen, strcpy, and strcmp
 
-/**
- * @brief number of characters in our alphabet (printable ASCII characters)
- */
+#include <assert.h>  
+#include <stdio.h>   
+#include <stdlib.h>  
+#include <string.h>  
+
+
 #define ALPHABET_SIZE 95
 
-/**
- * @brief used to convert a printable byte (32 to 126) to an element of the
- * group Z_95 (0 to 94)
- */
+
 #define Z95_CONVERSION_CONSTANT 32
 
-/**
- * @brief a structure representing an affine cipher key
- */
+
 typedef struct
 {
-    int a;  ///< what the character is being multiplied by
-    int b;  ///< what is being added after the multiplication with `a`
+    int a;  
+    int b;  
 } affine_key_t;
 
-/**
- * @brief finds the value x such that (a * x) % m = 1
- *
- * @param a number we are finding the inverse for
- * @param m the modulus the inversion is based on
- *
- * @returns the modular multiplicative inverse of `a` mod `m`
- */
+
 int modular_multiplicative_inverse(unsigned int a, unsigned int m)
 {
     int x[2] = {1, 0};
@@ -66,7 +41,7 @@ int modular_multiplicative_inverse(unsigned int a, unsigned int m)
         m = a;
         a = div_result.rem;
 
-        // Calculate value of x for this iteration
+        
         int next = x[1] - (x[0] * div_result.quot);
 
         x[1] = x[0];
@@ -76,21 +51,14 @@ int modular_multiplicative_inverse(unsigned int a, unsigned int m)
     return x[1];
 }
 
-/**
- * @brief Given a valid affine cipher key, this function will produce the
- * inverse key.
- *
- * @param key They key to be inverted
- *
- * @returns inverse of key
- */
+
 affine_key_t inverse_key(affine_key_t key)
 {
     affine_key_t inverse;
 
     inverse.a = modular_multiplicative_inverse(key.a, ALPHABET_SIZE);
 
-    // Turn negative results positive
+    
     inverse.a += ALPHABET_SIZE;
     inverse.a %= ALPHABET_SIZE;
 
@@ -99,14 +67,7 @@ affine_key_t inverse_key(affine_key_t key)
     return inverse;
 }
 
-/**
- * @brief Encrypts character string `s` with key
- *
- * @param s string to be encrypted
- * @param key affine key used for encryption
- *
- * @returns void
- */
+
 void affine_encrypt(char *s, affine_key_t key)
 {
     for (int i = 0; s[i] != '\0'; i++)
@@ -121,14 +82,7 @@ void affine_encrypt(char *s, affine_key_t key)
     }
 }
 
-/**
- * @brief Decrypts an affine ciphertext
- *
- * @param s string to be decrypted
- * @param key Key used when s was encrypted
- *
- * @returns void
- */
+
 void affine_decrypt(char *s, affine_key_t key)
 {
     affine_key_t inverse = inverse_key(key);
@@ -145,15 +99,7 @@ void affine_decrypt(char *s, affine_key_t key)
     }
 }
 
-/**
- * @brief Tests a given string
- *
- * @param s string to be tested
- * @param a value of key.a
- * @param b value of key.b
- *
- * @returns void
- */
+
 void test_string(const char *s, const char *ciphertext, int a, int b)
 {
     char *copy = malloc((strlen(s) + 1) * sizeof(char));
@@ -162,20 +108,16 @@ void test_string(const char *s, const char *ciphertext, int a, int b)
     affine_key_t key = {a, b};
 
     affine_encrypt(copy, key);
-    assert(strcmp(copy, ciphertext) == 0);  // assert that the encryption worked
+    assert(strcmp(copy, ciphertext) == 0);  
 
     affine_decrypt(copy, key);
     assert(strcmp(copy, s) ==
-           0);  // assert that we got the same string we started with
+           0);  
 
     free(copy);
 }
 
-/**
- * @brief Test multiple strings
- *
- * @returns void
- */
+
 static void tests()
 {
     test_string("Hello!", "&3ddy2", 7, 11);
@@ -195,11 +137,7 @@ static void tests()
     printf("All tests have successfully passed!\n");
 }
 
-/**
- * @brief main function
- *
- * @returns 0 upon successful program exit
- */
+
 int main()
 {
     tests();

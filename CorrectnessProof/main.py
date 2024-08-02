@@ -64,7 +64,7 @@ def main(file_path):
 
     last_counter_example = ''
     while True:
-        # try:
+        try:
             enumerated_response_text = enumerate_c_code(response_text)
 
             harness_list = extract_harness_name(response_text)
@@ -76,17 +76,17 @@ def main(file_path):
             #print(parse) #parse[0] is either 'syntax' or 'result',
             if reiteration:
                 print("Verification successful\n")
-                print(enumerated_response_text)
-                break
+                #print(enumerated_response_text)
+                return cnt,'success'
             elif cnt == 2:
                 print("Verification failed. Moving on to the next example...\n")
-                break
+                return cnt, 'fail'
             else:
                 print("Verification Failed. Retrying with a new prompt with counterexamples...\n")
                 cnt += 1
                 print(counter_examples)
 
-                print(enumerated_response_text)
+                #print(enumerated_response_text)
                 #print(enumerated_response_text)
                 #if counter_examples == last_counter_example:
                 #    print('Gemini has failed fix the harness')
@@ -98,14 +98,23 @@ def main(file_path):
 
             response_text, gemini_output_code_only_harness = Gemini.main(prompt, file_path, method_list)
 
-        # except Exception as e:
-        #     print(f"An unexpected error occurred: \n{e}")
-        #     break
+        except Exception as e:
+            print(f"An unexpected error occurred: \n{e}")
+            return cnt, 'error'
+
+
+def repeated_file_paths(args):
+    count = 0
+    for i in args.file_paths:
+        main(args.file_paths[count])
+        count += 1
 
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("file_path", type=str)
+    parser.add_argument("file_paths", nargs='+', type=str, help="List of file paths to process")
     args = parser.parse_args()
-    main(args.file_path)
+    repeated_file_paths(args)
+
+
 

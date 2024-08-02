@@ -1,4 +1,4 @@
-/* C program to convert Hexadecimal to Octal number system */
+
 
 #include <stdio.h>
 
@@ -9,7 +9,7 @@ int main()
     long long octal, bin, place;
     int i = 0, rem, val;
 
-    /* Input hexadecimal number from user */
+    
     printf("Enter any hexadecimal number: ");
     fgets(hex, MAX_STR_LEN, stdin);
 
@@ -17,7 +17,7 @@ int main()
     bin = 0ll;
     place = 0ll;
 
-    /* Hexadecimal to binary conversion */
+    
     for (i = 0; hex[i] != '\0'; i++)
     {
         bin = bin * place;
@@ -87,7 +87,7 @@ int main()
 
     place = 1;
 
-    /* Binary to octal conversion */
+    
     while (bin > 0)
     {
         rem = bin % 1000;

@@ -49,14 +49,14 @@ def run_cbmc(file_path, total_code_with_harnesses, harness_method_list): ## this
         return cbmc_json_string
     except TimeoutError as e:
         print('cbmc took too long to run')
-        sys.exit(1)
+
 
 
     except Exception as e:
         print(f"An unexpected error occurred, likely because the json file storing the output was too big for the string. This program will proceed now by storing it in a file : {e}")
         with open(cbmc_output_file, 'w+') as file:
             subprocess.run(command_str, shell=True, stdout=file)
-        print('cbmc output file:', cbmc_output_file)
+        #print('cbmc output file:', cbmc_output_file)
         return cbmc_output_file
 
     finally:

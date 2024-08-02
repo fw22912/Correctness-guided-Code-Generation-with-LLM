@@ -1,6 +1,4 @@
-/*
- * convert from any base to decimal
- */
+
 
 #include <ctype.h>
 #include <stdio.h>

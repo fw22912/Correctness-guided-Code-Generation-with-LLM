@@ -1,16 +1,10 @@
-/**
- * @file
- * @author [TheShubham99](https://github.com/TheShubham99)
- * @author [Krishna Vedala](https://github.com/kvedala)
- * @brief Client side implementation of UDP client-server model
- * @see client_server/udp_server.c
- */
-#ifdef _WIN32                            // if compiling for Windows
-#define _WINSOCK_DEPRECATED_NO_WARNINGS  // will make the code invalid for next
-                                         // MSVC compiler versions
+
+#ifdef _WIN32                            
+#define _WINSOCK_DEPRECATED_NO_WARNINGS  
+                                         
 #include <winsock2.h>
-#define close closesocket /**< map BSD name to Winsock */
-#else                     // if not windows platform
+#define close closesocket 
+#else                     
 #include <arpa/inet.h>
 #include <netdb.h>
 #include <netinet/in.h>
@@ -23,19 +17,19 @@
 #include <stdlib.h>
 #include <string.h>
 
-#define PORT 8080    /**< port number to connect to */
-#define MAXLINE 1024 /**< maximum characters per line */
+#define PORT 8080    
+#define MAXLINE 1024 
 
 #ifdef _WIN32
-/** Cleanup function will be automatically called on program exit */
+
 void cleanup() { WSACleanup(); }
 #endif
 
-/** Driver code */
+
 int main()
 {
 #ifdef _WIN32
-    // when using winsock2.h, startup required
+    
     WSADATA wsData;
     if (WSAStartup(MAKEWORD(2, 2), &wsData) != 0)
     {
@@ -43,7 +37,7 @@ int main()
         return 0;
     }
 
-    atexit(cleanup);  // register at-exit function
+    atexit(cleanup);  
 #endif
 
     int sockfd;
@@ -51,7 +45,7 @@ int main()
     char *hello = "Hello from client";
     struct sockaddr_in servaddr;
 
-    // Creating socket file descriptor
+    
     if ((sockfd = socket(AF_INET, SOCK_DGRAM, 0)) < 0)
     {
         perror("socket creation failed");
@@ -60,7 +54,7 @@ int main()
 
     memset(&servaddr, 0, sizeof(servaddr));
 
-    // Filling server information
+    
     servaddr.sin_family = AF_INET;
     servaddr.sin_port = htons(PORT);
     servaddr.sin_addr.s_addr = INADDR_ANY;

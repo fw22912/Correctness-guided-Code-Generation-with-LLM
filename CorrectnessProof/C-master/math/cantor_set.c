@@ -1,61 +1,51 @@
-/**
- * @file
- * @brief Program to generate [Cantor ternary
- * set](https://en.wikipedia.org/wiki/Cantor_set)
- */
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 
-/** structure to define Cantor set */
+
 typedef struct _cantor_set
 {
-    double start;             /**< start of interval */
-    double end;               /**< end of interval */
-    struct _cantor_set *next; /**< pointer to next set */
+    double start;             
+    double end;               
+    struct _cantor_set *next; 
 } CantorSet;
 
-/** Iterative constructor of all sets in the current level. This function
- * dynamically allocates memory when creating new sets. These are freed by the
- * function ::free_memory.
- * @param head pointer to interval set instance to update
- */
+
 void propagate(CantorSet *head)
 {
-    // if input is NULL, ignore the process
+    
     if (head == NULL)
         return;
 
-    CantorSet *temp = head;  // local pointer to track propagation
+    CantorSet *temp = head;  
 
-    // create new node for the new set
+    
     CantorSet *newNode = (CantorSet *)malloc(sizeof(CantorSet));
 
-    // get 1/3rd of interval
+    
     double diff = (((temp->end) - (temp->start)) / 3);
 
-    // update interval ranges
+    
     newNode->end = temp->end;
     temp->end = ((temp->start) + diff);
     newNode->start = (newNode->end) - diff;
 
-    // update pointer to next set in this level
+    
     newNode->next = temp->next;
 
-    // point to next set
+    
     temp->next = newNode;
 
-    // create next set
+    
     propagate(temp->next->next);
 }
 
-/** Print sets in the current range to `stdout`
- * @param head pointer to first set in the current level
- */
+
 void print(CantorSet *head)
 {
     CantorSet *temp = head;
-    while (temp != NULL)  // print while a valid set is found
+    while (temp != NULL)  
     {
         printf("\t");
         printf("[%lf] -- ", temp->start);
@@ -66,9 +56,7 @@ void print(CantorSet *head)
     printf("\n");
 }
 
-/** Clear memory allocated by ::propagate function.
- * @param head pointer to first allocated instance.
- */
+
 void free_memory(CantorSet *head)
 {
     if (!head)
@@ -80,7 +68,7 @@ void free_memory(CantorSet *head)
     free(head);
 }
 
-/** Main function */
+
 int main(int argc, char const *argv[])
 {
     int start_num, end_num, levels;
@@ -105,7 +93,7 @@ int main(int argc, char const *argv[])
 
     CantorSet head = {.start = start_num, .end = end_num, .next = NULL};
 
-    // loop to propagate each level from top to bottom
+    
     for (int i = 0; i < levels; i++)
     {
         printf("Level %d\t", i);
@@ -116,7 +104,7 @@ int main(int argc, char const *argv[])
     printf("Level %d\t", levels);
     print(&head);
 
-    // delete all memory allocated
+    
     free_memory(head.next);
 
     return 0;

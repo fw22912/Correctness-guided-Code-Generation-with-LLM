@@ -1,16 +1,11 @@
-/**
- * @file
- * @brief Program to identify if a number is [palindrome
- * number](https://en.wikipedia.org/wiki/Palindrome) or not.
- * @see project_euler/problem_4/sol1.c
- */
+
 #include <assert.h>
 #include <stdbool.h>
 #include <stdio.h>
 
 bool isPalindrome(int number);
 
-/** Driver Code */
+
 int main()
 {
     assert(isPalindrome(0));
@@ -20,12 +15,7 @@ int main()
     return 0;
 }
 
-/**
- * Check given number whether is palindrome number or not
- * @param number number to check
- * @return `true` if given number is palindrome number
- * @return `false` if number is not a palindrome number
- */
+
 bool isPalindrome(int number)
 {
     int reversedNumber = 0;

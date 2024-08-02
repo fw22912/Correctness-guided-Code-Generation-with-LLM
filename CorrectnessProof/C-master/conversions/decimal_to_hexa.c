@@ -1,4 +1,4 @@
-/*****Decimal to Hexadecimal conversion*******************/
+
 #include <stdio.h>
 void decimal2Hexadecimal(long num);
 
@@ -14,8 +14,7 @@ int main()
     return 0;
 }
 
-/********function for convert decimal number to hexadecimal
- * number****************/
+
 void decimal2Hexadecimal(long num)
 {
     long decimalnum = num;
@@ -37,7 +36,7 @@ void decimal2Hexadecimal(long num)
         quotient = quotient / 16;
     }
 
-    // print the hexadecimal number
+    
 
     for (i = j; i >= 0; i--)
     {

@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-// Euclid's algorithm
+
 int GCD(int x, int y)
 {
     if (y == 0)

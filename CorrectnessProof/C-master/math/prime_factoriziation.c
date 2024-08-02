@@ -1,26 +1,17 @@
-/*
-    AUTHOR: Christian Bender
-    DATE: 12.02.2019
-    DESCRIPTION: This program calculates the prime factoriziation of a positive
-   integer > 1
-*/
+
 
 #include <assert.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 
-/* initial length of the dynamic array */
+
 #define LEN 10
 
-/* increasing range */
+
 #define STEP 5
 
-/*
-    this type is for the representation of the prim factoriziation
-    - its series/range of prime factors
-    - its length : numbers of prime factors
-*/
+
 typedef struct data
 {
     int *range;
@@ -28,24 +19,22 @@ typedef struct data
 } range;
 typedef range *Range;
 
-/* int_fac : calculates the prime factoriziation of positive integers */
+
 Range int_fact(int);
 
-/* print_arr : prints the integer (heap) array*/
+
 void print_arr(Range);
 
-/* increase : increases the dynamic integer array */
+
 int *increase(int *, int);
 
-/* destroy: destroys the range-structure */
+
 void destroy(Range);
 
-/*
-    main : simle frame program with a simple UI
-*/
+
 int main()
 {
-    int n = 0; /* for user input */
+    int n = 0; 
 
     printf("\t\tPrim factoriziation\n\n");
     printf("positive integer (> 1) ? ");
@@ -59,7 +48,7 @@ int main()
 
 Range int_fact(int n)
 {
-    assert(n > 1); /* precondition : n must be greater then 1*/
+    assert(n > 1); 
 
     int len = LEN;
     int count = 0;
@@ -135,7 +124,7 @@ Range int_fact(int n)
 
 void print_arr(Range pStr)
 {
-    assert(pStr); /* checks whether pStr is a null-pointer */
+    assert(pStr); 
     int i = 0;
     printf("\n");
     for (i; i < pStr->length; i++)
@@ -150,11 +139,11 @@ void print_arr(Range pStr)
 
 int *increase(int *arr, int len)
 {
-    assert(arr); /* checks whether arr is a null-pointer */
+    assert(arr); 
     int *tmp = (int *)realloc(arr, sizeof(int) * (len + STEP));
     assert(tmp);
     return tmp;
-    //    assert(arr);
+    
 }
 
 void destroy(Range r)

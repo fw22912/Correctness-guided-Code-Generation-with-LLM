@@ -1,6 +1,6 @@
-// Program to convert decimal number to octal (Using Reccursion)
-// This program only works for integer decimals
-// Created by Aromal Anil
+
+
+
 
 #include <stdio.h>
 int decimal_to_octal(int decimal)

@@ -1,74 +1,52 @@
-/**
- * @file
- * @brief [Infix to
- * Postfix](https://condor.depaul.edu/ichu/csc415/notes/notes9/Infix.htm)
- * Expression Conversion
- * @details Convert Infixed expressions to Postfix expression.
- * @author [Harsh Karande](https://github.com/harshcut)
- */
 
-// include header files
-#include <stdio.h>  /// for printf() and scanf()
 
-/**
- * @brief a globally declared structure with an array and an variable that
- * points to the topmost index of the array
- */
+
+#include <stdio.h>  
+
+
 struct Stack
 {
-    char arr[10];  ///> static array of integers
-    int tos;       ///> stores index on topmost element in stack
+    char arr[10];  
+    int tos;       
 };
 
-// function headers
-void push(struct Stack *p, char ch);  // pust element in stack
-char pop(struct Stack *p);            // pop topmost element from the stack
-int isOprnd(char ch);                 // check if element is operand or not
-int isEmpty(struct Stack s);          // check if stack is empty
-int getPrecedence (char op1, char op2);        // check operator precedence
-void convert(char infix[],
-             char postfix[]);  // convert infix to postfix expression
 
-/**
- * @brief main function
- * @returns 0 on exit
- */
+void push(struct Stack *p, char ch);  
+char pop(struct Stack *p);            
+int isOprnd(char ch);                 
+int isEmpty(struct Stack s);          
+int getPrecedence (char op1, char op2);        
+void convert(char infix[],
+             char postfix[]);  
+
+
 int main()
 {
-    char infix[20], postfix[20];  // initialize empty infix and postfix array
+    char infix[20], postfix[20];  
 
-    printf("Enter infix expression: ");  // example : A+B-C*D/E$F
-    scanf("%s", infix);                  // get values for infix array
+    printf("Enter infix expression: ");  
+    scanf("%s", infix);                  
 
     convert(infix, postfix);
-    printf("Postfix expression is %s", postfix);  // output : AB+CD*EF$/-
+    printf("Postfix expression is %s", postfix);  
 
     return 0;
 }
 
-/**
- * @brief push function
- * @param *p : used as a pointer variable of stack
- * @param x : char to be pushed in stack
- * @returns void
- */
+
 void push(struct Stack *p, char x)
 {
-    if (p->tos == 9)  // check if stack has reached its max limit
+    if (p->tos == 9)  
     {
         printf("Stack Overflow!");
         return;
     }
 
-    p->tos += 1;         // increment tos
-    p->arr[p->tos] = x;  // assign char x to index of stack pointed by tos
+    p->tos += 1;         
+    p->arr[p->tos] = x;  
 }
 
-/**
- * @brief pop function
- * @param *p : used as a pointer variable of stack
- * @returns x or \0 on exit
- */
+
 char pop(struct Stack *p)
 {
     char x;
@@ -79,58 +57,45 @@ char pop(struct Stack *p)
         return '\0';
     }
 
-    x = p->arr[p->tos];  // assign the value of stack at index tos to x
-    p->tos -= 1;         // decrement tos
+    x = p->arr[p->tos];  
+    p->tos -= 1;         
 
     return x;
 }
 
-/**
- * @brief isOprnd function
- * @param ch : this is the element from the infix array
- * @returns 1 or 0 on exit
- */
+
 int isOprnd(char ch)
 {
     if ((ch >= 65 && ch <= 90) ||
-        (ch >= 97 && ch <= 122) ||  // check if ch is an operator or
-        (ch >= 48 && ch <= 57))     // operand using ASCII values
+        (ch >= 97 && ch <= 122) ||  
+        (ch >= 48 && ch <= 57))     
     {
-        return 1;  // return for true result
+        return 1;  
     }
     else
     {
-        return 0;  // return for false result
+        return 0;  
     }
 }
 
-/**
- * @brief isEmpty function
- * @param s : it is the object reference of stack
- * @returns 1 or 0 on exit
- */
+
 int isEmpty(struct Stack s)
 {
-    if (s.tos == -1)  // check if stack is empty
+    if (s.tos == -1)  
     {
-        return 1;  // return for true result
+        return 1;  
     }
     else
     {
-        return 0;  // return for false result
+        return 0;  
     }
 }
 
-/**
- * @brief convert function
- * @param infix[] : infix array provided by user
- * @param postfix[] : empty array to be given to convert()
- * @returns postfixed expresion or \0 on exit
- */
+
 void convert(char infix[], char postfix[])
 {
-    struct Stack s;  // initialze object reference of stack
-    s.tos = -1;      // initalize the tos
+    struct Stack s;  
+    s.tos = -1;      
 
     int i, j = 0, pr;
     char ch, temp;
@@ -139,10 +104,10 @@ void convert(char infix[], char postfix[])
     {
         ch = infix[i];
 
-        if (isOprnd(ch) == 1)  // check if char is operand or operator
+        if (isOprnd(ch) == 1)  
         {
-            postfix[j] = ch;  // assign ch to postfix array with index j
-            j++;              // incement j
+            postfix[j] = ch;  
+            j++;              
         }
         else
         {
@@ -162,28 +127,28 @@ void convert(char infix[], char postfix[])
                 }
                 else
                 {
-                    while (isEmpty(s) == 0)  // check if stack is empty
+                    while (isEmpty(s) == 0)  
                     {
                         pr = getPrecedence (ch,
-                                   s.arr[s.tos]);  // check operator precedence
+                                   s.arr[s.tos]);  
 
                         if (pr == 1)
                         {
-                            break;  // if ch has a greater precedence than
-                                    // s.arr[s.top]
+                            break;  
+                                    
                         }
 
                         postfix[j] = pop(&s);
                         j++;
                     }
 
-                    push(&s, ch);  // push ch to stack
+                    push(&s, ch);  
                 }
             }
         }
     }
 
-    while (isEmpty(s) == 0)  // check if stack is empty
+    while (isEmpty(s) == 0)  
     {
         postfix[j] = pop(&s);
         j++;
@@ -192,12 +157,7 @@ void convert(char infix[], char postfix[])
     postfix[j] = '\0';
 }
 
-/**
- * @brief getPrecedence function returns the precedence after comparing two operators passed as parameter.
- * @param op1 : first operator
- * @param op2 : second operator
- * @returns 1 or 0 on exit
- */
+
 int getPrecedence (char op1, char op2)
 {
     if (op2 == '$')

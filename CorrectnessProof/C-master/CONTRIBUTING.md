@@ -2,13 +2,13 @@
 
 ## Before contributing
 
-Welcome to [TheAlgorithms/C](https://github.com/TheAlgorithms/C)! Before submitting pull requests, please make sure that you have **read the whole guidelines**. If you have any doubts about this contribution guide, please open [an issue](https://github.com/TheAlgorithms/C/issues/new/choose) or ask on our [Discord server](https://the-algorithms.com/discord/), and clearly state your concerns.
+Welcome to [TheAlgorithms/C](https:
 
 ## Contributing
 
 ### Maintainer/reviewer
 
-**Please check the [reviewer code](https://github.com/TheAlgorithms/C/blob/master/REVIEWER_CODE.md) file for maintainers and reviewers.**
+**Please check the [reviewer code](https:
 
 ### Contributor
 
@@ -16,7 +16,7 @@ Being a contributor at The Algorithms, we request you to follow the points menti
 
 - You did your own work.
   - No plagiarism is allowed. Any plagiarized work will not be merged.
-- Your work will be distributed under the [GNU General Public License v3.0](https://github.com/TheAlgorithms/C/blob/master/LICENSE) once your pull request has been merged.
+- Your work will be distributed under the [GNU General Public License v3.0](https:
 - Please follow the repository guidelines and standards mentioned below.
 
 **New implementation** New implementations are welcome!
@@ -27,7 +27,7 @@ You can add new algorithms or data structures that are **not present in the repo
 
 ### LeetCode solutions
 
-For LeetCode solutions, please check its [**guide**](https://github.com/TheAlgorithms/C/blob/master/leetcode/README.md) to make a proper solution file.
+For LeetCode solutions, please check its [**guide**](https:
 
 ### Making Changes
 
@@ -40,8 +40,8 @@ For LeetCode solutions, please check its [**guide**](https://github.com/TheAlgor
 - You can suggest reasonable changes to existing algorithms.
 - Strictly use snake_case (underscore_separated) in filenames.
 - If you have added or modified code, please make sure the code compiles before submitting.
-- Our automated testing runs [**CMake**](https://cmake.org/) on all the pull requests, so please be sure that your code passes before submitting.
-- Please conform to [Doxygen](https://www.doxygen.nl/manual/docblocks.html) standards and document the code as much as possible. This not only facilitates the readers but also generates the correct info on the website.
+- Our automated testing runs [**CMake**](https:
+- Please conform to [Doxygen](https:
 - **Be consistent in the use of these guidelines.**
 
 #### Documentation
@@ -49,8 +49,8 @@ For LeetCode solutions, please check its [**guide**](https://github.com/TheAlgor
 - Make sure you put useful comments in your code. Do not comment on obvious things.
 - Please avoid creating new directories if at all possible. Try to fit your work into the existing directory structure. If you want to create a new directory, then please check if a similar category has been recently suggested or created by other pull requests.
 - If you have modified/added documentation, please ensure that your language is concise and must not contain grammatical errors.
-- Do not update [`README.md`](https://github.com/TheAlgorithms/C/blob/master/README.md) along with other changes. First, create an issue and then link to that issue in your pull request to suggest specific changes required to [`README.md`](https://github.com/TheAlgorithms/C/blob/master/README.md).
-- The repository follows [Doxygen](https://www.doxygen.nl/manual/docblocks.html) standards and auto-generates the [repository website](https://thealgorithms.github.io/C). Please ensure the code is documented in this structure. A sample implementation is given below.
+- Do not update [`README.md`](https:
+- The repository follows [Doxygen](https:
 
 #### Test
 
@@ -61,10 +61,10 @@ For LeetCode solutions, please check its [**guide**](https://github.com/TheAlgor
 
 ##### Self-test examples
 
-1. [ROT13 Cipher](https://github.com/TheAlgorithms/C/blob/master/cipher/rot13.c) (complex).
+1. [ROT13 Cipher](https:
 
 ```c
-    // NOTE: the `rot13` function is defined in another part of the code.
+    
 
     char test_01[] = "The more I C, the less I see.";
     rot13(test_01);
@@ -79,7 +79,7 @@ For LeetCode solutions, please check its [**guide**](https://github.com/TheAlgor
     assert(strcmp(test_03, "Which witch switched the Swiss wristwatches?") == 0);
 ```
 
-2. [Sudoku Solver](https://github.com/TheAlgorithms/C/blob/master/misc/sudoku_solver.c) (medium).
+2. [Sudoku Solver](https:
 
 ```c
     uint8_t test_array[] = {3, 0, 6, 5, 0, 8, 4, 0, 0, 5, 2, 0, 0, 0, 0, 0, 0,
@@ -88,8 +88,8 @@ For LeetCode solutions, please check its [**guide**](https://github.com/TheAlgor
                             6, 0, 0, 1, 3, 0, 0, 0, 0, 2, 5, 0, 0, 0, 0, 0, 0,
                             0, 0, 7, 4, 0, 0, 5, 2, 0, 6, 3, 0, 0};
     struct sudoku a = {.N = 9, .N2 = 3, .a = test_array};
-    assert(solve(&a));  // ensure that solution is obtained
-                        // NOTE: `solve` is defined in another part of the code.
+    assert(solve(&a));  
+                        
 
     uint8_t expected[] = {3, 1, 6, 5, 7, 8, 4, 9, 2, 5, 2, 9, 1, 3, 4, 7, 6,
                           8, 4, 8, 7, 6, 2, 9, 5, 3, 1, 2, 6, 3, 4, 1, 5, 9,
@@ -104,35 +104,25 @@ For LeetCode solutions, please check its [**guide**](https://github.com/TheAlgor
 3. Small C program that showcases and explains the use of tests.
 
 ```c
-#include <stdio.h>      /// for IO operations
-#include <assert.h>     /// for assert
-#include <stdbool.h>    /// for bool
+#include <stdio.h>      
+#include <assert.h>     
+#include <stdbool.h>    
 
-/**
- * @brief Verifies if the given array
- * contains the given number on it.
- * @param arr the array to be used for checking
- * @param number the number to check if it's inside the array
- * @return false if the number was NOT found in the array
- * @return true if the number WAS found in the array
- */
+
 bool is_number_on_array(const int *arr, const int number) {
     for (int i = 0; i < sizeof(arr); i++) {
         if (arr[i] == number) {
             return true;
         }
         else {
-            // Number not in the current index, keep searching.
+            
         }
     }
 
     return false;
 }
 
-/**
- * @brief Self-test implementations
- * @returns void
- */
+
 static void tests() {
     int arr[] = { 9, 14, 21, 98, 67 };
 
@@ -144,12 +134,9 @@ static void tests() {
     printf("All tests have successfully passed!\n");
 }
 
-/**
- * @brief Main function
- * @returns 0 on exit
- */
+
 int main() {
-    tests(); // run self-test implementations
+    tests(); 
     return 0;
 }
 ```
@@ -157,66 +144,42 @@ int main() {
 #### Typical structure of a program
 
 ```c
-/**
- * @file
- * @brief Add one line description here. Should contain a Wikipedia
- * link or another source explaining the algorithm/implementation.
- * @details
- * This is a multi-line
- * description containing links, references,
- * math equations, etc.
- * @author [Name](https://github.com/handle)
- * @see related_file.c, another_file.c
- */
 
-#include <assert.h>   /// for assert
-#include              /// for `some function here`
 
-/**
- * @brief Struct documentation
- */
+#include <assert.h>   
+#include              
+
+
 struct struct_name {
-    int variable;  ///< short info of this variable
-    char message;  ///< short info
+    int variable;  
+    char message;  
 };
 
-/**
- * @brief Function documentation
- * @param param1 one-line info about param1
- * @param param2 one-line info about param2
- * @returns `true` if ...
- * @returns `false` if ...
- */
+
 bool func(int param1, int param2) {
-    // function statements here
-    if (/*something bad*/) {
+    
+    if () {
         return false;
     }
 
     return true;
 }
 
-/**
- * @brief Self-test implementations
- * @returns void
- */
+
 static void test() {
-    /* desciptions of the following test */
-    assert(func(...) == ...); // this ensures that the algorithm works as expected
+    
+    assert(func(...) == ...); 
 
-    // can have multiple checks
+    
 
-    // this lets the user know that the tests passed
+    
     printf("All tests have successfully passed!\n");
 }
 
-/**
- * @brief Main function
- * @returns 0 on exit
- */
+
 int main() {
-    test(); // run self-test implementations
-    // code here
+    test(); 
+    
     return 0;
 }
 ```
@@ -314,11 +277,11 @@ Common prefixes:
 
 ### Pull Requests
 
-- Checkout our [pull request template](https://github.com/TheAlgorithms/C/blob/master/.github/pull_request_template.md)
+- Checkout our [pull request template](https:
 
 #### Building Locally
 
-Before submitting a pull request, build the code locally or using the convenient [![Gitpod Ready-to-Code](https://img.shields.io/badge/Gitpod-Ready--to--Code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/TheAlgorithms/C) service.
+Before submitting a pull request, build the code locally or using the convenient [![Gitpod Ready-to-Code](https:
 
 ```bash
 cmake -B build -S .
@@ -326,7 +289,7 @@ cmake -B build -S .
 
 #### Static Code Analyzer
 
-We use [`clang-tidy`](https://clang.llvm.org/extra/clang-tidy/) as a static code analyzer with a configuration in [`.clang-tidy`](.clang-tidy).
+We use [`clang-tidy`](https:
 
 ```bash
 clang-tidy --fix --quiet -p build subfolder/file_to_check.c --
@@ -334,7 +297,7 @@ clang-tidy --fix --quiet -p build subfolder/file_to_check.c --
 
 #### Code Formatter
 
-[**`clang-format`**](https://clang.llvm.org/docs/ClangFormat.html) is used for code formatting.
+[**`clang-format`**](https:
 
 - Installation (only needs to be installed once.)
   - Mac (using home-brew): `brew install clang-format`
@@ -349,7 +312,7 @@ clang-tidy --fix --quiet -p build subfolder/file_to_check.c --
 After enabling, it will execute `clang-tidy` and `clang-format` after every push (not a commit).
   - Click on the tab "Actions", then click on the big green button to enable it.
 
-![GitHub Actions](https://user-images.githubusercontent.com/51391473/94609466-6e925100-0264-11eb-9d6f-3706190eab2b.png)
+![GitHub Actions](https:
 
 - The result can create another commit if the actions made any changes on your behalf.
 - Hence, it is better to wait and check the results of GitHub Actions after every push.

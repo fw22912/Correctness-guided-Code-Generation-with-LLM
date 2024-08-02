@@ -1,7 +1,7 @@
-// Binary number to octal number conversion
+
 #include <stdio.h>
 
-// Function that returns the last three digits
+
 int three_digits(int n)
 {
     int r, d = 0, p = 1;
@@ -26,7 +26,7 @@ int main(void)
     while (binary_num > 0)
     {
         if (binary_num >
-            111)  // Checking if binary number is greater than three digits
+            111)  
             td = three_digits(binary_num);
 
         else
@@ -36,7 +36,7 @@ int main(void)
 
         d = 0, base = 1;
 
-        // Converting the last three digits to decimal
+        
         while (td > 0)
         {
             remainder = td % 10;
@@ -45,7 +45,7 @@ int main(void)
             base *= 2;
         }
 
-        res += d * ord;  // Calculating the octal value
+        res += d * ord;  
         ord *= 10;
     }
 

@@ -1,6 +1,4 @@
-/*
- * C Program to Convert Binary to Hexadecimal
- */
+
 #include <stdio.h>
 
 int main()

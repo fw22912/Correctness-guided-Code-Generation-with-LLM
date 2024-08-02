@@ -1,32 +1,15 @@
-/**
- * @file
- * @brief [Matrix Chain
- * Order](https://en.wikipedia.org/wiki/Matrix_chain_multiplication)
- * @details
- * From Wikipedia: Matrix chain multiplication (or the matrix chain ordering
- * problem) is an optimization problem concerning the most efficient way to
- * multiply a given sequence of matrices. The problem is not actually to perform
- * the multiplications, but merely to decide the sequence of the matrix
- * multiplications involved.
- * @author [CascadingCascade](https://github.com/CascadingCascade)
- */
 
-#include <assert.h>  /// for assert
-#include <limits.h>  /// for INT_MAX macro
-#include <stdio.h>   /// for IO operations
-#include <stdlib.h>  /// for malloc() and free()
 
-/**
- * @brief Finds the optimal sequence using the classic O(n^3) algorithm.
- * @param l length of cost array
- * @param p costs of each matrix
- * @param s location to store results
- * @returns number of operations
- */
+#include <assert.h>  
+#include <limits.h>  
+#include <stdio.h>   
+#include <stdlib.h>  
+
+
 int matrixChainOrder(int l, const int *p, int *s)
 {
-    // mat stores the cost for a chain that starts at i and ends on j (inclusive
-    // on both ends)
+    
+    
     int **mat = malloc(l * sizeof(int *));
     for (int i = 0; i < l; ++i)
     {
@@ -37,8 +20,8 @@ int matrixChainOrder(int l, const int *p, int *s)
     {
         mat[i][i] = 0;
     }
-    // cl denotes the difference between start / end indices, cl + 1 would be
-    // chain length.
+    
+    
     for (int cl = 1; cl < l; ++cl)
     {
         for (int i = 0; i < l - cl; ++i)
@@ -58,7 +41,7 @@ int matrixChainOrder(int l, const int *p, int *s)
     }
     int result = mat[0][l - 1];
 
-    // Free dynamically allocated memory
+    
     for (int i = 0; i < l; ++i)
     {
         free(mat[i]);
@@ -68,14 +51,7 @@ int matrixChainOrder(int l, const int *p, int *s)
     return result;
 }
 
-/**
- * @brief Recursively prints the solution
- * @param l dimension of the solutions array
- * @param s solutions
- * @param i starting index
- * @param j ending index
- * @returns void
- */
+
 void printSolution(int l, int *s, int i, int j)
 {
     if (i == j)
@@ -89,10 +65,7 @@ void printSolution(int l, int *s, int i, int j)
     putchar(')');
 }
 
-/**
- * @brief Self-test implementations
- * @returns void
- */
+
 static void test()
 {
     int sizes[] = {35, 15, 5, 10, 20, 25};
@@ -108,12 +81,9 @@ static void test()
     printf("\n");
 }
 
-/**
- * @brief Main function
- * @returns 0
- */
+
 int main()
 {
-    test();  // run self-test implementations
+    test();  
     return 0;
 }

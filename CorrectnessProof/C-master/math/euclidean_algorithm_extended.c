@@ -1,71 +1,32 @@
-/**
- * @{
- * @file
- * @brief Program to perform the [extended Euclidean
- * algorithm](https://en.wikipedia.org/wiki/Extended_Euclidean_algorithm)
- *
- * @details The extended Euclidean algorithm, on top of finding the GCD (greatest common
- * divisor) of two integers a and b, also finds the values x and y such that
- * ax+by = gcd(a, b)
- */
 
-#include <assert.h>  /// for tests
-#include <stdio.h>   /// for IO
-#include <stdlib.h>  /// for div function and corresponding div_t struct
 
-/**
- * @brief a structure holding the values resulting from the extended Euclidean
- * algorithm
- */
+#include <assert.h>  
+#include <stdio.h>   
+#include <stdlib.h>  
+
+
 typedef struct euclidean_result
 {
-    int gcd;   ///< the greatest common divisor calculated with the Euclidean
-               ///< algorithm
-    int x, y;  ///< the values x and y such that ax + by = gcd(a, b)
+    int gcd;   
+               
+    int x, y;  
 } euclidean_result_t;
 
-/**
- * @brief gives queue-like behavior to an array of two ints, pushing an element
- * onto the end and pushing one off the front
- *
- * @param arr an array of ints acting as a queue
- * @param newval the value being pushed into arr
- *
- * @returns void
- */
+
 static inline void xy_push(int arr[2], int newval)
 {
     arr[1] = arr[0];
     arr[0] = newval;
 }
 
-/**
- * @brief calculates the value of x or y and push those into the small 'queues'
- *
- * @details Both x and y are found by taking their value from 2 iterations ago minus the
- * product of their value from 1 iteration ago and the most recent quotient.
- *
- * @param quotient the quotient from the latest iteration of the Euclidean
- * algorithm
- * @param prev the 'queue' holding the values of the two previous iterations
- *
- * @returns void
- */
+
 static inline void calculate_next_xy(int quotient, int prev[2])
 {
     int next = prev[1] - (prev[0] * quotient);
     xy_push(prev, next);
 }
 
-/**
- * @brief performs the extended Euclidean algorithm on integer inputs a and b
- *
- * @param a first integer input
- * @param b second integer input
- *
- * @returns euclidean_result_t containing the gcd, and values x and y such that
- * ax + by = gcd
- */
+
 euclidean_result_t extended_euclidean_algorithm(int a, int b)
 {
     int previous_remainder = 1;
@@ -74,7 +35,7 @@ euclidean_result_t extended_euclidean_algorithm(int a, int b)
     div_t div_result;
     euclidean_result_t result;
 
-    /* swap values of a and b */
+    
     if (abs(a) < abs(b))
     {
         a ^= b;
@@ -104,20 +65,9 @@ euclidean_result_t extended_euclidean_algorithm(int a, int b)
     return result;
 }
 
-/** @} */
 
-/**
- * @brief perform one single check on the result of the algorithm with provided
- * parameters and expected output
- *
- * @param a first paramater for Euclidean algorithm
- * @param b second parameter for Euclidean algorithm
- * @param gcd expected value of result.gcd
- * @param x expected value of result.x
- * @param y expected value of result.y
- *
- * @returns void
- */
+
+
 static inline void single_test(int a, int b, int gcd, int x, int y)
 {
     euclidean_result_t result;
@@ -128,10 +78,7 @@ static inline void single_test(int a, int b, int gcd, int x, int y)
     assert(result.y == y);
 }
 
-/**
- * @brief Perform tests on known results
- * @returns void
- */
+
 static void test()
 {
     single_test(40, 27, 1, -2, 3);
@@ -143,12 +90,9 @@ static void test()
     printf("All tests have successfully passed!\n");
 }
 
-/**
- * @brief Main Function
- * @returns 0 upon successful program exit
- */
+
 int main()
 {
-    test();  // run self-test implementations
+    test();  
     return 0;
 }
