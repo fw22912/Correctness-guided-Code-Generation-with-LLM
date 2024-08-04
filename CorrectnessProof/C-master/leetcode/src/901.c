@@ -1,8 +1,8 @@
-// Use monotonic stack.
-// Keep the stack of monotonically increasing price and index.
 
-// Runtime: O(n)
-// Space: O(n)
+
+
+
+
 typedef struct stack{
     int price;
     int index;
@@ -59,10 +59,4 @@ void stockSpannerFree(StockSpanner* obj) {
     free(obj);
 }
 
-/**
- * Your StockSpanner struct will be instantiated and called as such:
- * StockSpanner* obj = stockSpannerCreate();
- * int param_1 = stockSpannerNext(obj, price);
- 
- * stockSpannerFree(obj);
- */
+

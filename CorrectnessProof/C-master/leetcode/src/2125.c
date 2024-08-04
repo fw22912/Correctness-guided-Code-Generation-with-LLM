@@ -10,9 +10,9 @@ int coundDevices(char* bankRow){
     return result;
 }
 
-// Counting devices in each row
-// Runtime: O(n*m), n-number of bank rows, m - max size of row.
-// Space: O(1)
+
+
+
 int numberOfBeams(char ** bank, int bankSize){
     int prevRowDevices = 0;
     int result = 0;

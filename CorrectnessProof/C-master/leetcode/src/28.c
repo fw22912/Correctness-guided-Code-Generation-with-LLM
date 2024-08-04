@@ -1,7 +1,4 @@
-/*
- * brute force approach
- * time complexity: O(mn)
- */
+
 int strStr(char *haystack, char *needle)
 {
     int i = 0;
@@ -44,16 +41,11 @@ int strStr(char *haystack, char *needle)
     return -1;
 }
 
-/* ----------------------------------------------------------------------------------------
- */
 
-/*
- * KMP algorithm
- * time complexity: O(m + n)
- */
 
-/* fills overlap with longest proper prefix which is also suffix for each index
- * in needle */
+
+
+
 void fill_overlap(char *needle, int len_needle, int *overlap)
 {
     int len = 0;
@@ -80,8 +72,8 @@ void fill_overlap(char *needle, int len_needle, int *overlap)
 
 int strStr(char *haystack, char *needle)
 {
-    int i = 0; /* index for haystack */
-    int j = 0; /* index for needle */
+    int i = 0; 
+    int j = 0; 
 
     int len_needle = strlen(needle);
     int len_haystack = strlen(haystack);
@@ -116,5 +108,4 @@ int strStr(char *haystack, char *needle)
     return -1;
 }
 
-/* ----------------------------------------------------------------------------------------
- */
+

@@ -1,11 +1,4 @@
-/**
- * Definition for a binary tree node.
- * struct TreeNode {
- *     int val;
- *     struct TreeNode *left;
- *     struct TreeNode *right;
- * };
- */
+
 
 struct TreeNode *convertBST(int *nums, int left, int right)
 {

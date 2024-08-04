@@ -1,27 +1,8 @@
-/**
- * @file
- * @author [Carlos Rafael](https://github.com/CarlosZoft)
- * @author [Herick Lima](https://github.com/hericklima22)
- * @brief [naval_battle](https://en.wikipedia.org/wiki/Battleship_(game))
- * implementation in C using only the stdio.h for Standard Input and Output.
- * @details  Naval battle is a game, to be played by two people. It consists of
- * knocking down the enemy ship, through shots , when hit the ship is
- * revealed with the respective number of its size. Example: size 3 = 3 3 3 on
- * the board.
- * To play - boats over size 1, need direction; V -> vertical and H ->
- * horizontal. Example Input 1 A H -> line 1, column A, direction H
- * (Horizontal).
- */
 
-#include <stdio.h>  /// for Standard Input Output
 
-/**
- * @brief Function validEntryLineColumn
- * Responsible for validating entries, for positioning boats
- * @param line matrix row
- * @param column matrix column
- * @returns if the row and column are valid
- */
+#include <stdio.h>  
+
+
 int validEntryLineColumn(int line, char column)
 {
     if ((line >= 1 && line <= 10) && (column >= 65 && column <= 74))
@@ -31,15 +12,7 @@ int validEntryLineColumn(int line, char column)
 
     return 0;
 }
-/**
- * @brief Function validatePosition
- * Responsible for checking if the position can receive the boat.
- * @param mat board
- * @param boat boat
- * @param line matrix row
- * @param column matrix column
- * @returns if the position is valid
- */
+
 int validatePosition(int mat[10][10], int boat, int line, int column,
                      char guide)
 {
@@ -95,14 +68,7 @@ int validatePosition(int mat[10][10], int boat, int line, int column,
     }
     return 0;
 }
-/**
- * @brief Function canShoot
- * Responsible to verify that it is a valid position to shoot
- * @param mat board
- * @param line matrix row
- * @param column matrix column
- * @returns if the position is valid for shooting
- */
+
 
 int canShoot(int mat[10][10], int line, int column)
 {
@@ -115,12 +81,7 @@ int canShoot(int mat[10][10], int line, int column)
 
     return 1;
 }
-/**
- * @brief Function positionBoat
- * Responsible for placing the boats on the board, according to the size.
- * @param mat board
- * @param boat boat
- */
+
 void positionBoat(int mat[10][10], int boat)
 {
     int line, j;
@@ -258,11 +219,7 @@ void positionBoat(int mat[10][10], int boat)
         }
     }
 }
-/**
- * @brief Function printMessage
- * Responsible for printing the auxiliary message
- * @param msg msg with board
- */
+
 void printMessage(char *msg)
 {
     printf("************************\n");
@@ -271,12 +228,7 @@ void printMessage(char *msg)
     printf("*\n");
     printf("************************\n");
 }
-/**
- * @brief Function printMessageScore
- * Responsible for printing the score messages
- * @param pts1 player 1 score
- * @param pts2 player 2 score
- */
+
 void printMessageScore(int pts1, int pts2)
 {
     printf("************************\n");
@@ -286,13 +238,7 @@ void printMessageScore(int pts1, int pts2)
     printf("*\n");
     printf("************************\n");
 }
-/**
- * @brief Function printTable
- * Responsible for printing the board
- * @param logic return of the logical matrix
- * @param stage game step
- * @returns char for visual matrix
- */
+
 char printTable(int logic, int stage)
 {
     if (stage == 0)
@@ -346,12 +292,7 @@ char printTable(int logic, int stage)
         }
     }
 }
-/**
- * @brief Function printsTray
- * Responsible for printing the visual board for the user
- * @param mat Matrix
- * @param stage game step
- */
+
 void printsTray(int mat[10][10], int stage)
 {
     int logic;
@@ -401,13 +342,7 @@ void printsTray(int mat[10][10], int stage)
         printf("\n");
     }
 }
-/**
- * @brief Function shoot
- * Responsible for saying if he hit a boat
- * @param mat board
- * @param line matrix row
- * @param column matrix column
- */
+
 void shoot(int mat[10][10], int line, int column)
 {
     if (mat[line][column] == 0 || mat[line][column] == -1)
@@ -430,14 +365,7 @@ void shoot(int mat[10][10], int line, int column)
         mat[line][column] = 30;
     }
 }
-/**
- * @brief Function calculateScore
- * Responsible for calculating the score obtained during the game
- * @param mat board
- * @param line matrix row
- * @param column matrix column
- * @returns resulting score
- */
+
 
 int calculateScore(int mat[10][10], int line, int column)
 {
@@ -641,14 +569,7 @@ int calculateScore(int mat[10][10], int line, int column)
     }
     return 0;
 }
-/**
- * @brief Function printPositioning
- * Responsible for printing messages for positioning boats on the board; of
- * player 1 and 2
- * @param Player number representing the Player
- * @param boat number that represents the boat
- * @param nm which message to print
- */
+
 void printPositioning(int Player, int boat, int nm)
 {
     if (Player == 1)
@@ -806,10 +727,7 @@ void printPositioning(int Player, int boat, int nm)
         }
     }
 }
-/**
- * @brief Main function
- * @returns 0 on exit
- */
+
 int main()
 {
     int Player1[10][10];
@@ -819,7 +737,7 @@ int main()
     int line, col = 0, lin = 0;
     char column;
 
-    // filling matrix with 0
+    
     for (int i = 0; i < 10; i++)
     {
         for (int j = 0; j < 10; j++)
@@ -829,7 +747,7 @@ int main()
         }
     }
 
-    // positioning boats
+    
     for (int i = 1; i <= 2; i++)
     {
         for (int j = 1; j <= 6; j++)
@@ -879,7 +797,7 @@ int main()
         }
     }
 
-    // starting the game
+    
     while (plays <= 40)
     {
         if (plays % 2 != 0)
@@ -935,10 +853,7 @@ int main()
 
         plays++;
     }
-    /**
-     * the one with the most points wins, or the one who knocks down all boats
-     * first.
-     */
+    
     printMessage("END GAME\n");
     printMessageScore(pts1, pts2);
 

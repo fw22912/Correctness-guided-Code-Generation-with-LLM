@@ -1,16 +1,9 @@
-/**
- * Definition for a binary tree node.
- * struct TreeNode {
- *     int val;
- *     struct TreeNode *left;
- *     struct TreeNode *right;
- * };
- */
 
 
-// Depth-First Search
-// Runtime: O(n)
-// Space: O(1)
+
+
+
+
 struct TreeNode* trimBST(struct TreeNode* root, int low, int high){
     if (root == NULL){
         return NULL;

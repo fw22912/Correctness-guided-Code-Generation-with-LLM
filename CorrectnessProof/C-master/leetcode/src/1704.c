@@ -16,9 +16,9 @@ bool isVowel(char chr){
     return false;
 }
 
-// Counting
-// Runtime: O(n)
-// Space: O(1)
+
+
+
 bool halvesAreAlike(char * s){
     int lenS = strlen(s);
     int halfVowels = 0;

@@ -1,4 +1,4 @@
-// Queue ADT implementation ... COMP2521
+
 
 #include "queue.h"
 #include <assert.h>
@@ -17,7 +17,7 @@ typedef struct QueueRep
     NodeT *tail;
 } QueueRep;
 
-// set up empty queue
+
 queue newQueue()
 {
     queue Q = malloc(sizeof(QueueRep));
@@ -27,7 +27,7 @@ queue newQueue()
     return Q;
 }
 
-// remove unwanted queue
+
 void dropQueue(queue Q)
 {
     NodeT *curr = Q->head;
@@ -40,10 +40,10 @@ void dropQueue(queue Q)
     free(Q);
 }
 
-// check whether queue is empty
+
 int QueueIsEmpty(queue Q) { return (Q->length == 0); }
 
-// insert an int at end of queue
+
 void QueueEnqueue(queue Q, int v)
 {
     NodeT *new = malloc(sizeof(NodeT));
@@ -63,7 +63,7 @@ void QueueEnqueue(queue Q, int v)
     Q->length++;
 }
 
-// remove int from front of queue
+
 int QueueDequeue(queue Q)
 {
     assert(Q->length > 0);
@@ -79,26 +79,26 @@ int QueueDequeue(queue Q)
     return d;
 }
 
-// By
-//  .----------------.  .----------------.  .----------------.
-//  .-----------------.  .----------------.  .----------------.
-// | .--------------. || .--------------. || .--------------. ||
-// .--------------. | | .--------------. || .--------------. | | |  _________ |
-// || | _____  _____ | || |      __      | || | ____  _____  | | | |  ____  ____
-// | || |     ____     | | | | |  _   _  |  | || ||_   _||_   _|| || |     /  \
-// | || ||_   \|_   _| | | | | |_   ||   _| | || |   .'    `.   | | | | |_/ | |
-// \_|  | || |  | |    | |  | || |    / /\ \    | || |  |   \ | |   | | | |   |
-// |__| |   | || |  /  .--.  \  | | | |     | |      | || |  | '    ' |  | || |
-// / ____ \   | || |  | |\ \| |   | | | |   |  __  |   | || |  | |    | |  | |
-// | |    _| |_     | || |   \ `--' /   | || | _/ /    \ \_ | || | _| |_\   |_
-// | | | |  _| |  | |_  | || |  \  `--'  /  | | | |   |_____|    | || | `.__.'
-// | || ||____|  |____|| || ||_____|\____| | | | | |____||____| | || | `.____.'
-// | | | |              | || |              | || |              | || | | | | |
-// | || |              | | | '--------------' || '--------------' ||
-// '--------------' || '--------------' | | '--------------' || '--------------'
-// |
-//  '----------------'  '----------------'  '----------------'
-//  '----------------'   '----------------'  '----------------'
 
-//  Email :    z5261243@unsw.edu.au
-//             hhoanhtuann@gmail.com
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

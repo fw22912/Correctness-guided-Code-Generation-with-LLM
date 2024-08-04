@@ -36,9 +36,9 @@ int getEndValidIndex(int* dp, char* s, int index, int lenS){
     return notValid;
 }
 
-// Dynamic Programming. UP -> down approach.
-// Runtime: O(n)
-// Space: O(n)
+
+
+
 int longestValidParentheses(char * s){
     int lenS = strlen(s);
     if (lenS == 0){

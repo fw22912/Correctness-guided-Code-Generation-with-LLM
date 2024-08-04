@@ -7,7 +7,7 @@
 
 #define L List_T
 
-/* Initial list */
+
 L List_init(void)
 {
     L list;
@@ -16,7 +16,7 @@ L List_init(void)
     return list;
 }
 
-/* Push an element into top of the list */
+
 L List_push(L list, void *val)
 {
     L new_elem = (L)malloc(sizeof(L));
@@ -25,7 +25,7 @@ L List_push(L list, void *val)
     return new_elem;
 }
 
-/* Length of list */
+
 int List_length(L list)
 {
     int n;
@@ -33,7 +33,7 @@ int List_length(L list)
     return n - 1;
 }
 
-/* Convert list to array */
+
 void **List_toArray(L list)
 {
     int i, n = List_length(list) + 1;
@@ -48,7 +48,7 @@ void **List_toArray(L list)
     return array;
 }
 
-/* Create and return a list */
+
 L List_list(L list, void *val, ...)
 {
     va_list ap;
@@ -66,7 +66,7 @@ L List_list(L list, void *val, ...)
     return list;
 }
 
-/* Append 2 lists together */
+
 L List_append(L list, L tail)
 {
     L *p = &list;

@@ -1,6 +1,6 @@
-#include <limits.h>  /// for INT_MIN
-#include <stdio.h>   /// for IO operations
-#include <stdlib.h>  /// for dynamic memory allocation
+#include <limits.h>  
+#include <stdio.h>   
+#include <stdlib.h>  
 
 typedef struct max_heap
 {
@@ -9,18 +9,14 @@ typedef struct max_heap
     int count;
 } Heap;
 
-Heap *create_heap(Heap *heap); /*Creates a max_heap structure and returns a
-                                  pointer to the struct*/
-void down_heapify(Heap *heap, int index); /*Pushes an element downwards in the
-                                             heap to find its correct position*/
-void up_heapify(Heap *heap, int index); /*Pushes an element upwards in the heap
-                                           to find its correct position*/
-void push(Heap *heap, int x);           /*Inserts an element in the heap*/
-void pop(Heap *heap); /*Removes the top element from the heap*/
-int top(Heap *heap); /*Returns the top element of the heap or returns INT_MIN if
-                        heap is empty*/
-int empty(Heap *heap); /*Checks if heap is empty*/
-int size(Heap *heap);  /*Returns the size of heap*/
+Heap *create_heap(Heap *heap); 
+void down_heapify(Heap *heap, int index); 
+void up_heapify(Heap *heap, int index); 
+void push(Heap *heap, int x);           
+void pop(Heap *heap); 
+int top(Heap *heap); 
+int empty(Heap *heap); 
+int size(Heap *heap);  
 
 int main()
 {

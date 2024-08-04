@@ -25,7 +25,7 @@ int binarySearch(int array[], int leng, int searchX)
             left = pos + 1;
         }
     }
-    return -1; /* not found */
+    return -1; 
 }
 
 int main(int argc, char *argv[])

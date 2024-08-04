@@ -9,9 +9,9 @@ void visitRooms(int key, int** rooms, int roomsSize, int* roomsColSize, int* vis
     }
 }
 
-// Depth-first search
-// Runtime: O(n)
-// Space: O(n)
+
+
+
 bool canVisitAllRooms(int** rooms, int roomsSize, int* roomsColSize){
     int* visitedRooms = calloc(roomsSize, sizeof(int));
     visitRooms(0, rooms, roomsSize, roomsColSize, visitedRooms);

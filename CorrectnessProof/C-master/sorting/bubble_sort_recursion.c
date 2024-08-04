@@ -1,19 +1,11 @@
-/**
- * @file
- * @brief [Bubble sort](https://en.wikipedia.org/wiki/Bubble_sort) algorithm
- * implementation using recursion.
- */
+
 #include <assert.h>
 #include <stdbool.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
 
-/**
- * Swapped two numbers using pointer
- * @param first first pointer of first number
- * @param second second pointer of second number
- */
+
 void swap(int *first, int *second)
 {
     int temp = *first;
@@ -21,11 +13,7 @@ void swap(int *first, int *second)
     *second = temp;
 }
 
-/**
- * Bubble sort algorithm implements using recursion
- * @param arr array to be sorted
- * @param size size of array
- */
+
 void bubbleSort(int *arr, int size)
 {
     if (size == 1)
@@ -47,15 +35,13 @@ void bubbleSort(int *arr, int size)
     }
 }
 
-/**
- * Test function
- */
+
 void test()
 {
     const int size = 10;
     int *arr = (int *)calloc(size, sizeof(int));
 
-    /* generate size random numbers from 0 to 100 */
+    
     for (int i = 0; i < size; i++)
     {
         arr[i] = rand() % 100;
@@ -68,10 +54,10 @@ void test()
     free(arr);
 }
 
-/** Driver Code */
+
 int main()
 {
-    /* Intializes random number generator */
+    
     srand(time(NULL));
     test();
     return 0;

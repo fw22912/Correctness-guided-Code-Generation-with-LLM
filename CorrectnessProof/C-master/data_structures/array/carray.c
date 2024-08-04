@@ -1,30 +1,6 @@
-/*
- * CArray.c
- *
- * Author: Leonardo Vencovsky
- * Created on 19/03/2018
- *
- * Modified by: Leonardo Vencovsky
- * Last modified: 19/03/2018
- *
- * Array Implementations in C
- *
- * Compiled in Visual Studio 2017
- *
- */
 
-/*
-Return Codes
 
--1 - Array Erased
-0 - Success
-1 - Invalid Position
-2 - Position already initialized (use update function)
-3 - Position not initialized (use insert function)
-4 - Position already empty
-5 - Array is full
 
-*/
 
 #include "carray.h"
 #include <stdio.h>
@@ -254,7 +230,7 @@ CArray *valuePositionsCArray(CArray *array, int value)
     {
         if (array->array[i] == value)
         {
-            // Hopefully this won't overflow
+            
             resultArray->array[j] = i;
             j++;
         }

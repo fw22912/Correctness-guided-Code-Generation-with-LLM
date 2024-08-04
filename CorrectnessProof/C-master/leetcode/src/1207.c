@@ -12,8 +12,7 @@ bool uniqueOccurrences(int *arr, int arrSize)
         else
             map[arr[i]] += 1;
     }
-    /* number of occurrences is sorted by decreasing order
-       Ex: 3 2 1 0 0 0 0 */
+    
     qsort(map, MAP_SIZE, sizeof(int), cmpvalue);
     i = 0;
     while (map[i])

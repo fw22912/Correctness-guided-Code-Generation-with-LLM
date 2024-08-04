@@ -1,21 +1,16 @@
-/**
- * Kyler Smith, 2017
- * Stack data structure implementation.
- */
 
-////////////////////////////////////////////////////////////////////////////////
-// INCLUDES
+
+
+
 #include <stdio.h>
 #include <stdlib.h>
 
-////////////////////////////////////////////////////////////////////////////////
-// MACROS: CONSTANTS
 
-////////////////////////////////////////////////////////////////////////////////
-// DATA STRUCTURES
-/**
- * creating a stucture with 'data'(type:int), two pointers 'next','pre' (type: struct node) .
- */
+
+
+
+
+
 struct node
 {
     int data;
@@ -23,12 +18,12 @@ struct node
     struct node *pre;
 } * head, *tmp;
 
-////////////////////////////////////////////////////////////////////////////////
-// GLOBAL VARIABLES
+
+
 int count = 0;
 
-////////////////////////////////////////////////////////////////////////////////
-// FUNCTION PROTOTYPES
+
+
 void create();
 void push(int x);
 int pop();
@@ -36,8 +31,8 @@ int peek();
 int size();
 int isEmpty();
 
-////////////////////////////////////////////////////////////////////////////////
-// MAIN ENTRY POINT
+
+
 
 int main(int argc, char const *argv[])
 {
@@ -46,7 +41,7 @@ int main(int argc, char const *argv[])
     create();
     push(4);
     x = pop();
-    // 4. Count: 0. Empty: 1.
+    
     printf("%d.\t\tCount: %d.\tEmpty: %d.\n", x, size(), isEmpty());
 
     push(1);
@@ -54,9 +49,9 @@ int main(int argc, char const *argv[])
     push(3);
     x = pop();
     y = pop();
-    // 3, 2. Count: 1. Empty: 0;
+    
     printf("%d, %d.\t\tCount: %d.\tEmpty: %d.\n", x, y, size(), isEmpty());
-    pop();  // Empty the stack.
+    pop();  
 
     push(5);
     push(6);
@@ -65,20 +60,16 @@ int main(int argc, char const *argv[])
     y = pop();
     push(8);
     z = pop();
-    // 1, 6, 7, 8. Count: 2. Empty: 0.
+    
     printf("%d, %d, %d.\tCount: %d.\tEmpty: %d.\n", x, y, z, size(), isEmpty());
 
     return 0;
 }
 
-/**
- * Initialize the stack to NULL.
- */
+
 void create() { head = NULL; }
 
-/**
- * Push data onto the stack.
- */
+
 void push(int x)
 {
     if (head == NULL)
@@ -100,9 +91,7 @@ void push(int x)
     ++count;
 }
 
-/**
- * Pop data from the stack
- */
+
 int pop()
 {
     int returnData;
@@ -130,9 +119,7 @@ int pop()
     return returnData;
 }
 
-/**
- * Returns the next value to be popped.
- */
+
 int peek()
 {
     if (head != NULL)
@@ -144,14 +131,10 @@ int peek()
     }
 }
 
-/**
- * Returns the size of the stack.
- */
+
 int size() { return count; }
 
-/**
- * Returns 1 if stack is empty, returns 0 if not empty.
- */
+
 int isEmpty()
 {
     if (count == 0)

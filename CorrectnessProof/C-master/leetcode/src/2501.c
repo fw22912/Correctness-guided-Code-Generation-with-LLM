@@ -15,11 +15,11 @@ int longestSquareStreakDp(int* numsSet, int numsSetSize, int* dp, long num){
     return dp[num];
 }
 
-// Dynamic approach. Up -> down.
-// Runtime: O(numsSize)
-// Space: O(max(nums))
+
+
+
 int longestSquareStreak(int* nums, int numsSize){
-    // Find nums maximum
+    
     int numMax = 0;
     for(int i = 0; i < numsSize; i++){
         numMax = max(numMax, nums[i]);
@@ -28,12 +28,12 @@ int longestSquareStreak(int* nums, int numsSize){
     int* numsSet = calloc(numMax + 1, sizeof(int));
     int* dp = calloc(numMax + 1, sizeof(int));
     
-    // Init set of nums
+    
     for(int i = 0; i < numsSize; i++){
         numsSet[nums[i]] = 1;
     }
 
-    // Find result
+    
     int result = -1;
     for(int i = 0; i < numsSize; i++){
         long num = nums[i];

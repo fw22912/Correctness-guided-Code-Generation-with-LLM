@@ -1,5 +1,4 @@
-/* Boyer-Moore Majority Vote Algorithm
- * http://www.cs.utexas.edu/~moore/best-ideas/mjrty/ */
+
 int majorityElement(int *nums, int numsSize)
 {
     int count = 1;

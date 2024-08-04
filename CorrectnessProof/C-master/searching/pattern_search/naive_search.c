@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 
-/* Naive Pattern Search algorithm (brute force way) */
+
 void naive_search(char *str, char *pattern)
 {
     int len_str = strlen(str);
@@ -24,7 +24,7 @@ int main()
 {
     char str[] = "AABCAB12AFAABCABFFEGABCAB";
     char pat1[] = "ABCAB";
-    char pat2[] = "FFF"; /* not found */
+    char pat2[] = "FFF"; 
     char pat3[] = "CAB";
 
     printf("String test: %s\n", str);

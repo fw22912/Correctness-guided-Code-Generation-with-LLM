@@ -1,98 +1,62 @@
-/**
- * @addtogroup hash Hash algorithms
- * @{
- * @file
- * @author [Daniel Murrow](https://github.com/dsmurrow)
- * @brief [Blake2b cryptographic hash
- * function](https://www.rfc-editor.org/rfc/rfc7693)
- *
- * The Blake2b cryptographic hash function provides
- * hashes for data that are secure enough to be used in
- * cryptographic applications. It is designed to perform
- * optimally on 64-bit platforms. The algorithm can output
- * digests between 1 and 64 bytes long, for messages up to
- * 128 bits in length. Keyed hashing is also supported for
- * keys up to 64 bytes in length.
- */
-#include <assert.h>    /// for asserts
-#include <inttypes.h>  /// for fixed-width integer types e.g. uint64_t and uint8_t
-#include <stdio.h>     /// for IO
-#include <stdlib.h>    /// for malloc, calloc, and free. As well as size_t
 
-/* Warning suppressed is in blake2b() function, more
- * details are over there */
+#include <assert.h>    
+#include <inttypes.h>  
+#include <stdio.h>     
+#include <stdlib.h>    
+
+
 #ifdef __GNUC__
 #pragma GCC diagnostic ignored "-Wshift-count-overflow"
 #elif _MSC_VER
 #pragma warning(disable : 4293)
 #endif
 
-/**
- * @brief the size of a data block in bytes
- */
+
 #define bb 128
 
-/**
- * @brief max key length for BLAKE2b
- */
+
 #define KK_MAX 64
 
-/**
- * @brief max length of BLAKE2b digest in bytes
- */
+
 #define NN_MAX 64
 
-/**
- * @brief ceiling division macro without floats
- *
- * @param a dividend
- * @param b divisor
- */
+
 #define CEIL(a, b) (((a) / (b)) + ((a) % (b) != 0))
 
-/**
- * @brief returns minimum value
- */
+
 #define MIN(a, b) ((a) < (b) ? (a) : (b))
 
-/**
- * @brief returns maximum value
- */
+
 #define MAX(a, b) ((a) > (b) ? (a) : (b))
 
-/**
- * @brief macro to rotate 64-bit ints to the right
- * Ripped from RFC 7693
- */
+
 #define ROTR64(n, offset) (((n) >> (offset)) ^ ((n) << (64 - (offset))))
 
-/**
- * @brief zero-value initializer for u128 type
- */
+
 #define U128_ZERO \
     {             \
         0, 0      \
     }
 
-/** 128-bit number represented as two uint64's */
+
 typedef uint64_t u128[2];
 
-/** Padded input block containing bb bytes */
+
 typedef uint64_t block_t[bb / sizeof(uint64_t)];
 
-static const uint8_t R1 = 32;  ///< Rotation constant 1 for mixing function G
-static const uint8_t R2 = 24;  ///< Rotation constant 2 for mixing function G
-static const uint8_t R3 = 16;  ///< Rotation constant 3 for mixing function G
-static const uint8_t R4 = 63;  ///< Rotation constant 4 for mixing function G
+static const uint8_t R1 = 32;  
+static const uint8_t R2 = 24;  
+static const uint8_t R3 = 16;  
+static const uint8_t R4 = 63;  
 
 static const uint64_t blake2b_iv[8] = {
     0x6A09E667F3BCC908, 0xBB67AE8584CAA73B, 0x3C6EF372FE94F82B,
     0xA54FF53A5F1D36F1, 0x510E527FADE682D1, 0x9B05688C2B3E6C1F,
-    0x1F83D9ABFB41BD6B, 0x5BE0CD19137E2179};  ///< BLAKE2b Initialization vector
-                                              ///< blake2b_iv[i] = floor(2**64 *
-                                              ///< frac(sqrt(prime(i+1)))),
-                                              ///< where prime(i) is the i:th
-                                              ///< prime number
+    0x1F83D9ABFB41BD6B, 0x5BE0CD19137E2179};  
+                                              
+                                              
+                                              
+                                              
 
 static const uint8_t blake2b_sigma[12][16] = {
     {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15},
@@ -107,27 +71,16 @@ static const uint8_t blake2b_sigma[12][16] = {
     {10, 2, 8, 4, 7, 6, 1, 5, 15, 11, 9, 14, 3, 12, 13, 0},
     {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15},
     {14, 10, 4, 8, 9, 15, 13, 6, 1, 12, 0, 2, 11, 7, 5,
-     3}};  ///< word schedule permutations for each round of the algorithm
+     3}};  
 
-/**
- * @brief put value of n into dest
- *
- * @param dest 128-bit number to get copied from n
- * @param n value put into dest
- *
- * @returns void
- */
+
 static inline void u128_fill(u128 dest, size_t n)
 {
     dest[0] = n & UINT64_MAX;
 
     if (sizeof(n) > 8)
     {
-        /* The C standard does not specify a maximum length for size_t,
-         * although most machines implement it to be the same length as
-         * uint64_t. On machines where size_t is 8 bytes long this will issue a
-         * compiler warning, which is why it is suppressed. But on a machine
-         * where size_t is greater than 8 bytes, this will work as normal. */
+        
         dest[1] = n >> 64;
     }
     else
@@ -136,17 +89,10 @@ static inline void u128_fill(u128 dest, size_t n)
     }
 }
 
-/**
- * @brief increment an 128-bit number by a given amount
- *
- * @param dest the value being incremented
- * @param n what dest is being increased by
- *
- * @returns void
- */
+
 static inline void u128_increment(u128 dest, uint64_t n)
 {
-    /* Check for overflow */
+    
     if (UINT64_MAX - dest[0] <= n)
     {
         dest[1]++;
@@ -155,23 +101,7 @@ static inline void u128_increment(u128 dest, uint64_t n)
     dest[0] += n;
 }
 
-/**
- * @brief blake2b mixing function G
- *
- * Shuffles values in block v depending on
- * provided indeces a, b, c, and d. x and y
- * are also mixed into the block.
- *
- * @param v array of words to be mixed
- * @param a first index
- * @param b second index
- * @param c third index
- * @param d fourth index
- * @param x first word being mixed into v
- * @param y second word being mixed into y
- *
- * @returns void
- */
+
 static void G(block_t v, uint8_t a, uint8_t b, uint8_t c, uint8_t d, uint64_t x,
               uint64_t y)
 {
@@ -185,39 +115,25 @@ static void G(block_t v, uint8_t a, uint8_t b, uint8_t c, uint8_t d, uint64_t x,
     v[b] = ROTR64(v[b] ^ v[c], R4);
 }
 
-/**
- * @brief compression function F
- *
- * Securely mixes the values in block m into
- * the state vector h. Value at v[14] is also
- * inverted if this is the final block to be
- * compressed.
- *
- * @param h the state vector
- * @param m message vector to be compressed into h
- * @param t 128-bit offset counter
- * @param f flag to indicate whether this is the final block
- *
- * @returns void
- */
+
 static void F(uint64_t h[8], block_t m, u128 t, int f)
 {
     int i;
     block_t v;
 
-    /* v[0..7] := h[0..7] */
+    
     for (i = 0; i < 8; i++)
     {
         v[i] = h[i];
     }
-    /* v[8..15] := IV[0..7] */
+    
     for (; i < 16; i++)
     {
         v[i] = blake2b_iv[i - 8];
     }
 
-    v[12] ^= t[0]; /* v[12] ^ (t mod 2**w) */
-    v[13] ^= t[1]; /* v[13] ^ (t >> w) */
+    v[12] ^= t[0]; 
+    v[13] ^= t[1]; 
 
     if (f)
     {
@@ -245,44 +161,7 @@ static void F(uint64_t h[8], block_t m, u128 t, int f)
     }
 }
 
-/**
- * @brief driver function to perform the hashing as described in specification
- *
- * pseudocode: (credit to authors of RFC 7693 listed above)
- * FUNCTION BLAKE2( d[0..dd-1], ll, kk, nn )
- * |
- * |     h[0..7] := IV[0..7]          // Initialization Vector.
- * |
- * |     // Parameter block p[0]
- * |     h[0] := h[0] ^ 0x01010000 ^ (kk << 8) ^ nn
- * |
- * |     // Process padded key and data blocks
- * |     IF dd > 1 THEN
- * |     |       FOR i = 0 TO dd - 2 DO
- * |     |       |       h := F( h, d[i], (i + 1) * bb, FALSE )
- * |     |       END FOR.
- * |     END IF.
- * |
- * |     // Final block.
- * |     IF kk = 0 THEN
- * |     |       h := F( h, d[dd - 1], ll, TRUE )
- * |     ELSE
- * |     |       h := F( h, d[dd - 1], ll + bb, TRUE )
- * |     END IF.
- * |
- * |     RETURN first "nn" bytes from little-endian word array h[].
- * |
- * END FUNCTION.
- *
- * @param dest destination of hashing digest
- * @param d message blocks
- * @param dd length of d
- * @param ll 128-bit length of message
- * @param kk length of secret key
- * @param nn length of hash digest
- *
- * @returns 0 upon successful hash
- */
+
 static int BLAKE2B(uint8_t *dest, block_t *d, size_t dd, u128 ll, uint8_t kk,
                    uint8_t nn)
 {
@@ -291,7 +170,7 @@ static int BLAKE2B(uint8_t *dest, block_t *d, size_t dd, u128 ll, uint8_t kk,
     uint64_t h[8];
     u128 t = U128_ZERO;
 
-    /* h[0..7] = IV[0..7] */
+    
     for (i = 0; i < 8; i++)
     {
         h[i] = blake2b_iv[i];
@@ -314,12 +193,12 @@ static int BLAKE2B(uint8_t *dest, block_t *d, size_t dd, u128 ll, uint8_t kk,
     }
     F(h, d[dd - 1], ll, 1);
 
-    /* copy bytes from h to destination buffer */
+    
     for (i = 0; i < nn; i++)
     {
         if (i % sizeof(uint64_t) == 0)
         {
-            /* copy values from uint64 to 8 u8's */
+            
             for (j = 0; j < sizeof(uint64_t); j++)
             {
                 uint16_t offset = 8 * j;
@@ -336,21 +215,7 @@ static int BLAKE2B(uint8_t *dest, block_t *d, size_t dd, u128 ll, uint8_t kk,
     return 0;
 }
 
-/**
- * @brief blake2b hash function
- *
- * This is the front-end function that sets up the argument for BLAKE2B().
- *
- * @param message the message to be hashed
- * @param len length of message (0 <= len < 2**128) (depends on sizeof(size_t)
- * for this implementation)
- * @param key optional secret key
- * @param kk length of optional secret key (0 <= kk <= 64)
- * @param nn length of output digest (1 <= nn < 64)
- *
- * @returns NULL if heap memory couldn't be allocated. Otherwise heap allocated
- * memory nn bytes large
- */
+
 uint8_t *blake2b(const uint8_t *message, size_t len, const uint8_t *key,
                  uint8_t kk, uint8_t nn)
 {
@@ -388,14 +253,14 @@ uint8_t *blake2b(const uint8_t *message, size_t len, const uint8_t *key,
         return NULL;
     }
 
-    /* If there is a secret key it occupies the first block */
+    
     for (i = 0; i < kk; i++)
     {
         long_hold = key[i];
         long_hold <<= 8 * (i % 8);
 
         word_in_block = (i % bb) / 8;
-        /* block_index will always be 0 because kk <= 64 and bb = 128*/
+        
         blocks[0][word_in_block] |= long_hold;
     }
 
@@ -403,8 +268,7 @@ uint8_t *blake2b(const uint8_t *message, size_t len, const uint8_t *key,
 
     for (i = 0; i < len; i++)
     {
-        /* long_hold exists because the bit-shifting will overflow if we don't
-         * store the value */
+        
         long_hold = message[i];
         long_hold <<= 8 * (i % 8);
 
@@ -423,12 +287,9 @@ uint8_t *blake2b(const uint8_t *message, size_t len, const uint8_t *key,
     return dest;
 }
 
-/** @} */
 
-/**
- * @brief Self-test implementations
- * @returns void
- */
+
+
 static void assert_bytes(const uint8_t *expected, const uint8_t *actual,
                          uint8_t len)
 {
@@ -444,16 +305,12 @@ static void assert_bytes(const uint8_t *expected, const uint8_t *actual,
     }
 }
 
-/**
- * @brief testing function
- *
- * @returns void
- */
+
 static void test()
 {
     uint8_t *digest = NULL;
 
-    /* "abc" example straight out of RFC-7693 */
+    
     uint8_t abc[3] = {'a', 'b', 'c'};
     uint8_t abc_answer[64] = {
         0xBA, 0x80, 0xA5, 0x3F, 0x98, 0x1C, 0x4D, 0x0D, 0x6A, 0x27, 0x97,
@@ -539,11 +396,7 @@ static void test()
     printf("All tests have successfully passed!\n");
 }
 
-/**
- * @brief main function
- *
- * @returns 0 on successful program exit
- */
+
 int main()
 {
     test();

@@ -1,15 +1,8 @@
-/**
- * Definition for a binary tree node.
- * struct TreeNode {
- *     int val;
- *     struct TreeNode *left;
- *     struct TreeNode *right;
- * };
- */
 
-// Depth first search approach.
-// Runtime: O(n)
-// Space: O(1)
+
+
+
+
 bool checkIsBst(struct TreeNode* node, bool leftBoundInf, int leftBound, bool rightBoundInf, int rightBound){
     return 
         (node == NULL)

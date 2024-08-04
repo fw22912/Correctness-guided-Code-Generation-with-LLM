@@ -1,12 +1,12 @@
 #define max(x,y)(((x)>(y))?(x):(y))
 #define min(x,y)(((x)<(y))?(x):(y))
 
-// Max stack. Runtime: O(n), Space: O(n)
-// Algorithm description: 
-// - Calculate the stack of maximums from right board.
-// - For each index find left maximum and right maximum of height
-// - The each index if heights could place nor greater than minimum of left and right max minus curr height
-// - Sum all index in result
+
+
+
+
+
+
 int trap(int* height, int heightSize){
     int* rightMaxStack = malloc(heightSize * sizeof(int));
     rightMaxStack[heightSize - 1] = height[heightSize - 1];

@@ -1,38 +1,16 @@
-/**
- * @file
- *
- * @brief
- * Dynamic [Stack](https://en.wikipedia.org/wiki/Stack_(abstract_data_type)),
- * just like Dynamic Array, is a stack data structure whose the length or
- * capacity (maximum number of elements that can be stored) increases or
- * decreases in real time based on the operations (like insertion or deletion)
- * performed on it.
- *
- * In this implementation, functions such as PUSH, POP, PEEK, show_capacity,
- * isempty, and stack_size are coded to implement dynamic stack.
- *
- * @author [SahilK-027](https://github.com/SahilK-027)
- *
- */
-#include <assert.h>  /// to verify assumptions made by the program and print a diagnostic message if this assumption is false.
-#include <inttypes.h>  /// to provide a set of integer types with universally consistent definitions that are operating system-independent
-#include <stdio.h>     /// for IO operations
-#include <stdlib.h>  /// for including functions involving memory allocation such as `malloc`
-/**
- * @brief DArrayStack Structure of stack.
- */
+
+#include <assert.h>  
+#include <inttypes.h>  
+#include <stdio.h>     
+#include <stdlib.h>  
+
 typedef struct DArrayStack
 {
-    int capacity, top;  ///< to store capacity and top of the stack
-    int *arrPtr;        ///< array pointer
+    int capacity, top;  
+    int *arrPtr;        
 } DArrayStack;
 
-/**
- * @brief Create a Stack object
- *
- * @param cap Capacity of stack
- * @return DArrayStack* Newly created stack object pointer
- */
+
 DArrayStack *create_stack(int cap)
 {
     DArrayStack *ptr;
@@ -44,14 +22,7 @@ DArrayStack *create_stack(int cap)
     return (ptr);
 }
 
-/**
- * @brief As this is stack implementation using dynamic array this function will
- * expand the size of the stack by twice as soon as the stack is full.
- *
- * @param ptr Stack pointer
- * @param cap Capacity of stack
- * @return DArrayStack*: Modified stack
- */
+
 DArrayStack *double_array(DArrayStack *ptr, int cap)
 {
     int newCap = 2 * cap;
@@ -67,15 +38,7 @@ DArrayStack *double_array(DArrayStack *ptr, int cap)
     return ptr;
 }
 
-/**
- * @brief As this is stack implementation using dynamic array this function will
- * shrink the size of stack by twice as soon as the stack's capacity and size
- * has significant difference.
- *
- * @param ptr Stack pointer
- * @param cap Capacity of stack
- * @return DArrayStack*: Modified stack
- */
+
 DArrayStack *shrink_array(DArrayStack *ptr, int cap)
 {
     int newCap = cap / 2;
@@ -91,13 +54,7 @@ DArrayStack *shrink_array(DArrayStack *ptr, int cap)
     return ptr;
 }
 
-/**
- * @brief The push function pushes the element onto the stack.
- *
- * @param ptr Stack pointer
- * @param data Value to be pushed onto stack
- * @return int Position of top pointer
- */
+
 int push(DArrayStack *ptr, int data)
 {
     if (ptr->top == (ptr->capacity) - 1)
@@ -115,12 +72,7 @@ int push(DArrayStack *ptr, int data)
     return ptr->top;
 }
 
-/**
- * @brief The pop function to pop an element from the stack.
- *
- * @param ptr Stack pointer
- * @return int Popped value
- */
+
 int pop(DArrayStack *ptr)
 {
     if (ptr->top == -1)
@@ -142,13 +94,7 @@ int pop(DArrayStack *ptr)
     return ele;
 }
 
-/**
- * @brief To retrieve or fetch the first element of the Stack or the element
- * present at the top of the Stack.
- *
- * @param ptr Stack pointer
- * @return int Top of the stack
- */
+
 int peek(DArrayStack *ptr)
 {
     if (ptr->top == -1)
@@ -159,21 +105,10 @@ int peek(DArrayStack *ptr)
     return ptr->arrPtr[ptr->top];
 }
 
-/**
- * @brief To display the current capacity of the stack.
- *
- * @param ptr Stack pointer
- * @return int Current capacity of the stack
- */
+
 int show_capacity(DArrayStack *ptr) { return ptr->capacity; }
 
-/**
- * @brief The function is used to check whether the stack is empty or not and
- * return true or false accordingly.
- *
- * @param ptr Stack pointer
- * @return int returns 1 -> true OR returns 0 -> false
- */
+
 int isempty(DArrayStack *ptr)
 {
     if (ptr->top == -1)
@@ -183,19 +118,10 @@ int isempty(DArrayStack *ptr)
     return 0;
 }
 
-/**
- * @brief Used to get the size of the Stack or the number of elements present in
- * the Stack.
- *
- * @param ptr Stack pointer
- * @return int size of stack
- */
+
 int stack_size(DArrayStack *ptr) { return ptr->top + 1; }
 
-/**
- * @brief Self-test implementations
- * @returns void
- */
+
 static void test()
 {
     DArrayStack *NewStack;
@@ -239,12 +165,9 @@ static void test()
     assert(pop(NewStack) == -1);
 }
 
-/**
- * @brief Main function
- * @returns 0 on exit
- */
+
 int main()
 {
-    test();  // run self-test implementations
+    test();  
     return 0;
 }

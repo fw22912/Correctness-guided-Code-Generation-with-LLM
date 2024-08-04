@@ -1,5 +1,5 @@
-// Graph ADT
-// Adjacency Matrix Representation
+
+
 #include "Graph.h"
 #include <assert.h>
 #include <stdio.h>
@@ -7,9 +7,9 @@
 
 typedef struct GraphRep
 {
-    int **edges;  // adjacency matrix
-    int nV;       // #vertices
-    int nE;       // #edges
+    int **edges;  
+    int nV;       
+    int nE;       
 } GraphRep;
 
 Graph newGraph(int V)
@@ -22,10 +22,10 @@ Graph newGraph(int V)
     g->nV = V;
     g->nE = 0;
 
-    // allocate memory for each row
+    
     g->edges = malloc(V * sizeof(int *));
     assert(g->edges != NULL);
-    // allocate memory for each column and initialise with 0
+    
     for (i = 0; i < V; i++)
     {
         g->edges[i] = calloc(V, sizeof(int));
@@ -35,7 +35,7 @@ Graph newGraph(int V)
     return g;
 }
 
-// check if vertex is valid in a graph
+
 bool validV(Graph g, Vertex v) { return (g != NULL && v >= 0 && v < g->nV); }
 
 void insertEdge(Graph g, Edge e)
@@ -43,7 +43,7 @@ void insertEdge(Graph g, Edge e)
     assert(g != NULL && validV(g, e.v) && validV(g, e.w));
 
     if (!g->edges[e.v][e.w])
-    {  // edge e not in graph
+    {  
         g->edges[e.v][e.w] = 1;
         g->edges[e.w][e.v] = 1;
         g->nE++;
@@ -55,7 +55,7 @@ void removeEdge(Graph g, Edge e)
     assert(g != NULL && validV(g, e.v) && validV(g, e.w));
 
     if (g->edges[e.v][e.w])
-    {  // edge e in graph
+    {  
         g->edges[e.v][e.w] = 0;
         g->edges[e.w][e.v] = 0;
         g->nE--;
@@ -92,26 +92,26 @@ void freeGraph(Graph g)
     free(g);
 }
 
-// By
-//  .----------------.  .----------------.  .----------------.
-//  .-----------------.  .----------------.  .----------------.
-// | .--------------. || .--------------. || .--------------. ||
-// .--------------. | | .--------------. || .--------------. | | |  _________ |
-// || | _____  _____ | || |      __      | || | ____  _____  | | | |  ____  ____
-// | || |     ____     | | | | |  _   _  |  | || ||_   _||_   _|| || |     /  \
-// | || ||_   \|_   _| | | | | |_   ||   _| | || |   .'    `.   | | | | |_/ | |
-// \_|  | || |  | |    | |  | || |    / /\ \    | || |  |   \ | |   | | | |   |
-// |__| |   | || |  /  .--.  \  | | | |     | |      | || |  | '    ' |  | || |
-// / ____ \   | || |  | |\ \| |   | | | |   |  __  |   | || |  | |    | |  | |
-// | |    _| |_     | || |   \ `--' /   | || | _/ /    \ \_ | || | _| |_\   |_
-// | | | |  _| |  | |_  | || |  \  `--'  /  | | | |   |_____|    | || | `.__.'
-// | || ||____|  |____|| || ||_____|\____| | | | | |____||____| | || | `.____.'
-// | | | |              | || |              | || |              | || | | | | |
-// | || |              | | | '--------------' || '--------------' ||
-// '--------------' || '--------------' | | '--------------' || '--------------'
-// |
-//  '----------------'  '----------------'  '----------------'
-//  '----------------'   '----------------'  '----------------'
 
-//  Email :    z5261243@unsw.edu.au
-//             hhoanhtuann@gmail.com
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

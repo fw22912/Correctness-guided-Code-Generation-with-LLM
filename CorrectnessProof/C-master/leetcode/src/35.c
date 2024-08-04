@@ -14,7 +14,7 @@ int searchInsert(int *nums, int numsSize, int target)
     return low;
 }
 
-/* Recursive version */
+
 int searchInsert(int *nums, int numsSize, int target)
 {
     int idx = numsSize - 1;

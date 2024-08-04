@@ -1,16 +1,9 @@
-/**
- * Definition for a binary tree node.
- * struct TreeNode {
- *     int val;
- *     struct TreeNode *left;
- *     struct TreeNode *right;
- * };
- */
 
-// The list for TreeNodes.
+
+
 struct ListItem {
-    struct TreeNode* node; // TreeNode pointer
-    struct ListItem* next; // Pointer to the next ListItem
+    struct TreeNode* node; 
+    struct ListItem* next; 
 };
 
 bool findTargetPath(struct TreeNode* node, struct TreeNode* target, struct ListItem* path){
@@ -49,11 +42,11 @@ void freeList(struct ListItem* target){
 }
 
 
-// Find full path for p and q.
-// Find the longest common path in paths.
 
-// Runtime: O(n)
-// Space: O(n)
+
+
+
+
 struct TreeNode* lowestCommonAncestor(struct TreeNode* root, struct TreeNode* p, struct TreeNode* q) {
     struct ListItem* pPath = malloc(sizeof(struct ListItem));
     struct ListItem* qPath = malloc(sizeof(struct ListItem));

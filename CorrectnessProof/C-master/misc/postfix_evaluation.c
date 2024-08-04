@@ -1,35 +1,22 @@
-/**
- * @file
- * @brief [Postfix evaluation algorithm](https://www.includehelp.com/c/evaluation-of-postfix-expressions-using-stack-with-c-program.aspx) implementation
- * @details
- * The input postfix expression is of type string upto 49 characters (including space delimiters).
- * Supported operations- '+', '-', '/', '*', '%'
- * @author [Kumar Yash](https://github.com/kumaryash18)
- */
+
  
-#include <stdio.h>	/// for IO operations
-#include <string.h>	/// for strlen()
-#include <ctype.h>	/// for isdigit()
-#include <stdlib.h>	/// for exit()
-#include <stdint.h>	/// for int8_t
-#include <assert.h>	/// for assert
+#include <stdio.h>	
+#include <string.h>	
+#include <ctype.h>	
+#include <stdlib.h>	
+#include <stdint.h>	
+#include <assert.h>	
 
-/**
- * @brief array implementation of stack using structure
- */
+
 struct Stack {
-	int8_t stack[20];		///< array stack
-	int top;		///< stores index of the top element
+	int8_t stack[20];		
+	int top;		
 };
-struct Stack st;		///< global declaration of stack st
+struct Stack st;		
 
-/**
- * @brief Function to push on the stack
- * @param opd number to be pushed in the stack
- * @returns void
- */
+
 void push(int8_t opd) {
-	if(st.top == 19)	{		// overflow condition
+	if(st.top == 19)	{		
 		printf("Stack overflow...");
 		exit(1);
 	}
@@ -37,13 +24,10 @@ void push(int8_t opd) {
 	st.stack[st.top] = opd;
 }
 
-/**
- * @brief Function to pop from the stack
- * @returns popped number
- */
+
 int8_t pop() {
-	int8_t item;				///< to store the popped value to be returned
-	if(st.top == -1) {		// underflow condition
+	int8_t item;				
+	if(st.top == -1) {		
 		printf("Stack underflow...");
 		exit(1);
 	}
@@ -52,11 +36,7 @@ int8_t pop() {
 	return item;
 }
 
-/**
- * @brief Function to evaluate postfix expression
- * @param post the input postfix expression
- * @returns evaluated answer
- */
+
 int8_t evaluate(char post[]) {
 	int8_t it1;
 	int8_t it2;
@@ -65,7 +45,7 @@ int8_t evaluate(char post[]) {
     int i;
     for(i = 0; i < strlen(post); i++) {
 		if(post[i] == ' ') {
-			continue;			// ignore delimiter
+			continue;			
 		}
 		else if(isdigit(post[i])) {
 			number = 0;
@@ -98,31 +78,20 @@ int8_t evaluate(char post[]) {
 	return pop();
 }
 
-/**
- * @brief Self-test implementations
- * @returns void
- */
+
 static void test() {
-    /* check sample test case
-	   input: "2 10 + 9 6 - /"
-	   expected output: 4
-	 */
+    
 	char temp1[50] = "2 10 + 9 6 - /";
-	assert(evaluate(temp1) == 4); 			/// this ensures that the algorithm works as expected
-	/* input: "4 2 + 3 5 1 - * +"
-	   expected output: 18
-	 */
+	assert(evaluate(temp1) == 4); 			
+	
 	char temp2[50] = "4 2 + 3 5 1 - * +";
-	assert(evaluate(temp2) == 18); 			/// this ensures that the algorithm works as expected
+	assert(evaluate(temp2) == 18); 			
 	printf("All tests have successfully passed!\n");
 }
 
-/**
- * @brief Main function
- * @returns 0 on exit
- */
+
 int main() {
-	st.top = -1;			/// initialize
-	test();				/// run self-test implementations
+	st.top = -1;			
+	test();				
 	return 0;
 }

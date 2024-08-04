@@ -5,7 +5,7 @@ void pigeonholeSort(int arr[], int size)
 {
     int i, j, min = arr[0], max = arr[0], range;
 
-    // Getting range of the array using max and min
+    
     for (i = 1; i < size; i++)
     {
         if (arr[i] < min)
@@ -15,7 +15,7 @@ void pigeonholeSort(int arr[], int size)
     }
     range = max - min + 1;
 
-    // Make 'holes' and put array's numbers in holes
+    
     int *holes = (int *)malloc(sizeof(int) * range);
     for (i = 0; i < range; i++)
     {
@@ -26,7 +26,7 @@ void pigeonholeSort(int arr[], int size)
         holes[arr[i] - min]++;
     }
 
-    // Copy the numbers back to the original array
+    
     j = 0;
     for (i = 0; i < range; i++)
     {

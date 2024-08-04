@@ -1,6 +1,4 @@
-/*
- * Iterative approach
- */
+
 struct ListNode *mergeTwoLists(struct ListNode *l1, struct ListNode *l2)
 {
     struct ListNode *list = NULL;
@@ -50,9 +48,7 @@ struct ListNode *mergeTwoLists(struct ListNode *l1, struct ListNode *l2)
     return NULL;
 }
 
-/*
- * Recursive approach
- */
+
 struct ListNode *mergeTwoLists(struct ListNode *l1, struct ListNode *l2)
 {
     if (!l1)

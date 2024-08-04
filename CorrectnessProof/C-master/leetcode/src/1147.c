@@ -36,9 +36,9 @@ int longestDecompositionDp(char* text, int textLen, int index, int* dp){
     return result;
 }
 
-// Dynamic programming. Up -> down approach.
-// Runtime: O(n*n)
-// Space: O(n)
+
+
+
 int longestDecomposition(char * text){
     int textLen = strlen(text);
     int* dp = calloc(textLen, sizeof(int));

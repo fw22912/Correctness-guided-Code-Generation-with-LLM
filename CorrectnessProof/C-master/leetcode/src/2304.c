@@ -1,9 +1,9 @@
 #define min(x,y)(((x)<(y))?(x):(y))
 
-// DP up -> down. We are going down from gridline to gridline
-// and collect the minumum cost path.
-// Runtime : O(gridSize*gridColSize*gridColSize)
-// Space: O(gridColSize)
+
+
+
+
 int minPathCost(int** grid, int gridSize, int* gridColSize, int** moveCost, int moveCostSize, int* moveCostColSize){
     int* dp = (int*)calloc(gridColSize[0], sizeof(int));
     int* newDp = (int*)calloc(gridColSize[0], sizeof(int));
@@ -28,13 +28,13 @@ int minPathCost(int** grid, int gridSize, int* gridColSize, int** moveCost, int 
         }
     }
     
-    // Find minimum value.
+    
     int minValue = dp[0] + grid[gridSize - 1][0];
     for(int j = 1; j < gridColSize[0]; j++){
         minValue = min(minValue, dp[j] + grid[gridSize - 1][j]);
     }
     
-    // free resources
+    
     free(dp);
     free(newDp);
     

@@ -4,16 +4,16 @@
 
 char *to_rna(const char s[])
 {
-    /* determines the length of the given string */
+    
     int len = strlen(s);
 
-    /* creates a return string */
+    
     char *ans = malloc(sizeof(char) * len);
 
-    /* for the loop */
+    
     int i = 0;
 
-    /* actual compile process */
+    
     for (i = 0; i < len; i++)
     {
         switch (s[i])

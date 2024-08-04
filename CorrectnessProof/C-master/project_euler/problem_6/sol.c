@@ -1,10 +1,7 @@
-/**
- * \file
- * \brief [Problem 6](https://projecteuler.net/problem=6) solution
- */
+
 #include <stdio.h>
 
-/** Main function */
+
 int main(void)
 {
     unsigned s1 = 0, s2 = 0, i;

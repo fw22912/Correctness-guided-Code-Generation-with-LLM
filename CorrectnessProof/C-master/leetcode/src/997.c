@@ -1,6 +1,6 @@
-// Using hashtable.
-// Runtime: O(n + len(trust))
-// Space: O(n)
+
+
+
 int findJudge(int n, int** trust, int trustSize, int* trustColSize){
     int* personsToTrust = calloc(n + 1, sizeof(int));
     int* personsFromTrust = calloc(n + 1, sizeof(int));

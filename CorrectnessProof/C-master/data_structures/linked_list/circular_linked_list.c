@@ -1,11 +1,11 @@
-/* Circularly Linked List (Basic Operations) - Program to create a Circularly linked list abstract data type and perform various operations on it (Variable first and last declared globally) */
+
 
 #include  <stdio.h>
 #include <conio.h>
 #include  <stdlib.h>
 #define  NULL  0
 
-/* Assume that the data portion of each node consists of ONLY an integer.*/
+
 struct  node
 {
   int  data ;
@@ -14,9 +14,9 @@ struct  node
 
 struct  node  *first=NULL ;
 struct  node  *last=NULL ;
-/* first and last are global variables and need not be passed to any function. Any changes made to variables first and last by any of the functions in the program will be reflected in the entire program */
 
-/* This function is responsible for creating the Circularly Linked List right from the BEGINNING. */
+
+
 void  create()
 {
   int  i , n ;
@@ -42,19 +42,19 @@ void  create()
     else
     {
 	  last->next=pnode ;
-	  last=pnode ;    /* last keeps track of last node */
+	  last=pnode ;    
     }
 
     last->next=first ;
   }
 }
 
-/* This function will delete a node with value k from the Linked List if such a node exists */
+
 void  deletenode(int  k)
 {
   struct  node  *p , *follow ;
 
-  /* searching the required node */
+  
   p=first ;
   follow=NULL ;
   while(follow!=last)
@@ -69,26 +69,26 @@ void  deletenode(int  k)
     printf("Required node not found.\n") ;
   else
   {
-    if(p==first&&p==last)  /* deleting the one and the only node */
+    if(p==first&&p==last)  
 	  first=last=NULL ;
-    else if(p==first)       /* deleting the first node */
+    else if(p==first)       
     {
       first=first->next ;
       last->next=first ;
     }
-    else if(p==last)      /* deleting the last node */
+    else if(p==last)      
     {
       last=follow ;
       last->next=first ;
     }
-    else		/* deleting any other node */
+    else		
       follow->next=p->next ;
 
     free(p) ;
   }
 }
 
-/* This function will go through all the nodes of Linked List exactly once and will display data value of each node */
+
 void  traverse()
 {
   struct  node  *p , *follow ;

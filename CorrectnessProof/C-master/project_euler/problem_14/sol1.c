@@ -1,53 +1,35 @@
-/**
- * \file
- * \brief [Problem 14](https://projecteuler.net/problem=14) solution
- * \author [Krishna Vedala](https://github.com/kvedala)
- *
- * Since the computational values for each iteration step are independent,
- * we can compute them in parallel. However, the maximum values should be
- * updated in synchrony so that we do not get into a "race condition".
- *
- * To compile with supporintg gcc or clang, the flag "-fopenmp" should be
- * passes while with Microsoft C compiler, the flag "/fopenmp" should be
- * used. If you are using the provided CMAKE compilation, it will automatically
- * detect OPENMP and compile with it for you.
- *
- * Automatically detects for OPENMP using the _OPENMP macro.
- */
+
 #include <stdio.h>
 #include <stdlib.h>
 #ifdef _OPENMP
 #include <omp.h>
 #endif
 
-/**
- * Computes the length of collatz sequence for a given
- * starting number
- */
+
 long long collatz(long long start_num)
 {
     long long length = 1;
 
-    while (start_num != 1) /* loop till we reach 1 */
+    while (start_num != 1) 
     {
-        if (start_num & 0x01) /* check for odd */
+        if (start_num & 0x01) 
             start_num = 3 * start_num + 1;
         else
-            start_num >>= 1; /* simpler divide by 2 */
+            start_num >>= 1; 
         length++;
     }
 
     return length;
 }
 
-/** Main function */
+
 int main(int argc, char **argv)
 {
     long long max_len = 0, max_len_num = 0;
     long long MAX_NUM = 1000000;
 
     if (argc ==
-        2) /* set commandline argumnet as the maximum iteration number */
+        2) 
     {
         MAX_NUM = atoll(argv[1]);
         printf("Maximum number: %lld\n", MAX_NUM);
@@ -62,8 +44,8 @@ int main(int argc, char **argv)
         long long L = collatz(i);
         if (L > max_len)
         {
-            max_len = L;     /* length of sequence */
-            max_len_num = i; /* starting number */
+            max_len = L;     
+            max_len_num = i; 
         }
 
 #if defined(_OPENMP) && defined(DEBUG)

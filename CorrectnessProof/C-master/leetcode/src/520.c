@@ -9,18 +9,18 @@ bool detectCapitalUse(char *word)
         if (isupper(word[i]))
             countUpper++;
     }
-    /* All lower case */
+    
     if (countUpper == 0)
         return 1;
-    /* 1st character is upper, and the rest is lower case */
+    
     if (countUpper == 1 && isupper(word[0]))
         return 1;
-    /* Check all character is upper case? */
+    
     else
         return countUpper == len;
 }
 
-/* Another way */
+
 bool isAllUpper(char *word)
 {
     int len = strlen(word);

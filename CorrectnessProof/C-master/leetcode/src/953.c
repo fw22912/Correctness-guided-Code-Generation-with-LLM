@@ -19,9 +19,9 @@ bool isWordLess(char* word1, char* word2, int* charOrder){
     return word1Length <= word2Length;
 }
 
-// Keep array-hashtable of order letters.
-// Runtime: O(n)
-// Space: O(1)
+
+
+
 bool isAlienSorted(char ** words, int wordsSize, char * order){
     const int lowerCaseLettersNumber = 26;
     int charorder[lowerCaseLettersNumber];

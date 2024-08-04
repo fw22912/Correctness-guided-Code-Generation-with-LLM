@@ -1,19 +1,9 @@
-/**
- * @file
- * @brief Implementation of [merge
- * sort](https://en.wikipedia.org/wiki/Merge_sort) algorithm
- */
+
 #include <stdio.h>
 #include <stdlib.h>
 
-/**
- * @addtogroup sorting Sorting algorithms
- * @{
- */
-/** Swap two integer variables
- * @param [in,out] a pointer to first variable
- * @param [in,out] b pointer to second variable
- */
+
+
 void swap(int *a, int *b)
 {
     int t;
@@ -22,17 +12,10 @@ void swap(int *a, int *b)
     *b = t;
 }
 
-/**
- * @brief Perform merge of segments.
- *
- * @param a array to sort
- * @param l left index for merge
- * @param r right index for merge
- * @param n total number of elements in the array
- */
+
 void merge(int *a, int l, int r, int n)
 {
-    int *b = (int *)malloc(n * sizeof(int)); /* dynamic memory must be freed */
+    int *b = (int *)malloc(n * sizeof(int)); 
     if (b == NULL)
     {
         printf("Can't Malloc! Please try again.");
@@ -78,12 +61,7 @@ void merge(int *a, int l, int r, int n)
     free(b);
 }
 
-/** Merge sort algorithm implementation
- * @param a array to sort
- * @param n number of elements in the array
- * @param l index to sort from
- * @param r index to sort till
- */
+
 void merge_sort(int *a, int n, int l, int r)
 {
     if (r - l == 1)
@@ -98,23 +76,23 @@ void merge_sort(int *a, int n, int l, int r)
         merge(a, l, r, n);
     }
 
-    /* no change if l == r */
+    
 }
-/** @} */
 
-/** Main function */
+
+
 int main(void)
 {
     int *a, n, i;
     printf("Enter Array size: ");
     scanf("%d", &n);
-    if (n <= 0) /* exit program if arraysize is not greater than 0 */
+    if (n <= 0) 
     {
         printf("Array size must be Greater than 0!\n");
         return 1;
     }
     a = (int *)malloc(n * sizeof(int));
-    if (a == NULL) /* exit program if can't malloc memory */
+    if (a == NULL) 
     {
         printf("Can't Malloc! Please try again.");
         return 1;

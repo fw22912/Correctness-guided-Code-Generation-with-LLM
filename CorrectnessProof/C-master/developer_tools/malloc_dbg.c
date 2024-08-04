@@ -1,53 +1,35 @@
-/**
- * @file
- * @brief This file contains malloc_dbg, calloc_dbg, free_dbg and printLeaks implementations.
- * @author [tinouduart33](https://github.com/tinouduart33)
- */
 
-#include <stdlib.h> /// For the malloc, calloc and free functions.
-#include <stdio.h> /// For IO operations (printf).
-#include <string.h> /// For the memcmp function.
-#include "malloc_dbg.h" /// Header file which contains the prototypes of malloc_dbg, calloc_dbg and fre_dbg.
 
-/* We must undef these macros in order to use the real malloc / calloc and free functions */
+#include <stdlib.h> 
+#include <stdio.h> 
+#include <string.h> 
+#include "malloc_dbg.h" 
+
+
 #undef malloc
 #undef calloc
 #undef free
 
-/**
- * @brief Structure used to save an allocated pointer
- */
+
 typedef struct MEMORY_INFORMATION
 {
-	void* ptr; ///< Pointer returned by malloc / calloc
-	const char* fileName; ///< File in which malloc or calloc has been called
-	const char* functionName; ///< Function in which malloc or calloc has been called
-	size_t bytes; ///< Number of bytes allocated
-	int line; ///< Line number (in file) corresponding to the malloc / calloc call
-	struct MEMORY_INFORMATION* next; ///< Next element in the list
-	struct MEMORY_INFORMATION* previous; ///< Previous element in the list
+	void* ptr; 
+	const char* fileName; 
+	const char* functionName; 
+	size_t bytes; 
+	int line; 
+	struct MEMORY_INFORMATION* next; 
+	struct MEMORY_INFORMATION* previous; 
 } mem_info;
 
-/** We use a global variable for the list so we can use it at any time.
- * */
+
 mem_info* memoryInformation = NULL;
 
-/** Another global variable. This one is used to know if we already call the atexit function.
- * */
+
 int atexitCalled = 0;
 
 
-/**
- * @brief addMemInfo function add a memory allocation in the memoryInfo list.
- * @details This function creates a new element and add it on top of the list
- * @param memoryInfo Pointer to the doubly linked list used to store all of the allocations
- * @param ptrToreturn Pointer returned by malloc or calloc
- * @param bytes Size in bytes of the allocation
- * @param line Line where the allocation has been called
- * @param filename File where the allocation has been called
- * @param functionName Name of the function where the allocation has been called
- * @returns mem_info pointer if it succeeds, NULL otherwise
- */
+
 mem_info* addMemInfo(mem_info* memoryInfo, void* ptrToReturn, size_t bytes, int line, const char* filename, const char* functionName)
 {
 	mem_info* newMemInfo = (mem_info*)malloc(sizeof(mem_info));
@@ -69,13 +51,7 @@ mem_info* addMemInfo(mem_info* memoryInfo, void* ptrToReturn, size_t bytes, int 
 	return newMemInfo;
 }
 
-/**
- * @brief inList function is used to know if an element is already in the memoryInfo list.
- * @details This function is used to know if an allocation in a specific file at a specific line already exists in the list.
- * @param filename File in which malloc or calloc has been called
- * @param line Line number in the file in which malloc or calloc has been called
- * @returns Position of the element in the list if the element is found, -1 otherwise.
- */
+
 int inList(const char* filename, int line)
 {
 	mem_info* tmp = memoryInformation;
@@ -97,13 +73,7 @@ int inList(const char* filename, int line)
 	return -1;
 }
 
-/**
- * @brief editInfo function is used to edit an element in the memoryInfo list.
- * @details This function is used to edit the number of bytes allocated at a specific line.
- * @param elemPos Position of an element in the doubly linked list memoryInfo
- * @param bytes Size of the allocation in bytes
- * @returns Nothing.
- */
+
 void editInfo(int elemPos, size_t bytes)
 {
 	int counter = 0;
@@ -117,15 +87,7 @@ void editInfo(int elemPos, size_t bytes)
 	tmp->bytes += bytes;
 }
 
-/**
- * @brief malloc_dbg function is a wrapper around the malloc function.
- * @details This function calls malloc and allocates the number of bytes passed in the parameters.
- * If the allocation succeeds then it add the pointer returned by malloc in the mem_info list.
- * @param bytes Size of the allocation in bytes
- * @param filename Caller file
- * @param functionName Caller function
- * @returns Pointer returned by malloc if it's valid, NULL otherwhise.
- */
+
 void* malloc_dbg(size_t bytes, int line, const char* filename, const char* functionName)
 {
 	void* ptrToReturn = malloc(bytes);
@@ -135,17 +97,17 @@ void* malloc_dbg(size_t bytes, int line, const char* filename, const char* funct
 		return NULL;
 	}
 
-	// We must check atexitCalled value to know if we already called the function
+	
 	if (!atexitCalled)
 	{
-		atexit(printLeaks); // Used to call printLeaks when the program exit
+		atexit(printLeaks); 
 		atexitCalled = 1;
 	}
 
 	pos = inList(filename, line);
 	if (pos == -1)
 	{
-		// Add a new element in the mem_info list
+		
 		memoryInformation = addMemInfo(memoryInformation, ptrToReturn, bytes, line, filename, functionName);
 		if (!memoryInformation)
 		{
@@ -160,17 +122,7 @@ void* malloc_dbg(size_t bytes, int line, const char* filename, const char* funct
 	return ptrToReturn;
 }
 
-/**
- * @brief calloc_dbg function is a wrapper around the calloc function.
- * @details This function calls calloc and allocates the number of bytes passed in the parameters.
- * If the allocation succeeds then it add the pointer returned by malloc in the mem_info list.
- * @param elementCount number of element to allocate
- * @param elementSize Size of each element
- * @param line Line number in the caller file
- * @param filename Caller file
- * @param functionName Caller function
- * @returns Pointer returned by calloc if it's valid, NULL otherwhise.
- */
+
 void* calloc_dbg(size_t elementCount, size_t elementSize, int line, const char* filename, const char* functionName)
 {
 	void* ptrToReturn = calloc(elementCount, elementSize);
@@ -179,14 +131,14 @@ void* calloc_dbg(size_t elementCount, size_t elementSize, int line, const char* 
 		return NULL;
 	}
 
-	// We must check atexitCalled value to know if we already called the function
+	
 	if (!atexitCalled)
 	{
-		atexit(printLeaks); // Used to call printLeaks when the program exit
+		atexit(printLeaks); 
 		atexitCalled = 1;
 	}
 
-	// Add a new element in the mem_info list
+	
 	memoryInformation = addMemInfo(memoryInformation, ptrToReturn, elementCount * elementSize, line, filename, functionName);
 	if (!memoryInformation)
 	{
@@ -197,21 +149,14 @@ void* calloc_dbg(size_t elementCount, size_t elementSize, int line, const char* 
 	return ptrToReturn;
 }
 
-/**
- * @brief free_dbg function is used to free the memory allocated to a pointer.
- * @details This function free the memory pointed by the pointer passed in parameter.
- * To free this pointer, we loop through the mem_info list and check if we find the pointer.
- * Once it's found, the pointer is freed and the element is deleted from the list.
- * @param ptrToFree Pointer that must be freed
- * @returns Nothing.
- */
+
 void free_dbg(void* ptrToFree)
 {
 	mem_info* tmp = memoryInformation;
 	mem_info* toFree = NULL;
 	mem_info* previous = NULL;
 
-	// Check if the head contains the pointer to free
+	
 	if (tmp->ptr == ptrToFree)
 	{
 		toFree = tmp;
@@ -225,10 +170,10 @@ void free_dbg(void* ptrToFree)
 		return;
 	}
 
-	// We can loop through the list without any problems, the head is not the pointer
+	
 	while (tmp)
 	{
-		if (tmp->ptr == ptrToFree) // If we found the pointer that must be freed
+		if (tmp->ptr == ptrToFree) 
 		{
 			toFree = tmp;
 			tmp = tmp->next;
@@ -255,12 +200,7 @@ void free_dbg(void* ptrToFree)
 	}
 }
 
-/**
- * @brief printLeaks function is used to print all the memory leaks.
- * @details This function is called when the program exits. It loop through the mem_info list and if it's not empty,
- * it prints the memory leaks.
- * @returns Nothing.
- */
+
 void printLeaks()
 {
 	mem_info* tmp = memoryInformation;

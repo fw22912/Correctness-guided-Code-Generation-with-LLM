@@ -3,14 +3,14 @@
 #include <stdlib.h>
 #include <string.h>
 
-// Structure for storing a graph
+
 struct Graph
 {
     int vertexNum;
     int **edges;
 };
 
-// Constructs a graph with V vertices and E edges
+
 void createGraph(struct Graph *G, int V)
 {
     G->vertexNum = V;
@@ -23,17 +23,17 @@ void createGraph(struct Graph *G, int V)
     }
 }
 
-// Adds the given edge to the graph
+
 void addEdge(struct Graph *G, int src, int dst, int weight)
 {
     G->edges[src][dst] = weight;
 }
 
-// Utility function to find minimum distance vertex in mdist
+
 int minDistance(int mdist[], int vset[], int V)
 {
     int minVal = INT_MAX;
-    static int minInd = -1; //remembers the previous value if not modified in the loop
+    static int minInd = -1; 
     for (int i = 0; i < V; i++)
         if (vset[i] == 0 && mdist[i] < minVal)
         {
@@ -44,7 +44,7 @@ int minDistance(int mdist[], int vset[], int V)
     return minInd;
 }
 
-// Utility function to print distances
+
 void print(int dist[], int V)
 {
     printf("\nVertex  Distance\n");
@@ -57,22 +57,22 @@ void print(int dist[], int V)
     }
 }
 
-// The main function that finds the shortest path from given source
-// to all other vertices using Dijkstra's Algorithm.It doesn't work on negative
-// weights
+
+
+
 void Dijkstra(struct Graph *graph, int src)
 {
     int V = graph->vertexNum;
-    int mdist[V];  // Stores updated distances to vertex
-    int vset[V];   // vset[i] is true if the vertex i included
-                   // in the shortest path tree
+    int mdist[V];  
+    int vset[V];   
+                   
 
-    // Initialise mdist and vset. Set distance of source as zero
+    
     for (int i = 0; i < V; i++) mdist[i] = INT_MAX, vset[i] = 0;
 
     mdist[src] = 0;
 
-    // iterate to find shortest path
+    
     for (int count = 0; count < V - 1; count++)
     {
         int u = minDistance(mdist, vset, V);
@@ -91,7 +91,7 @@ void Dijkstra(struct Graph *graph, int src)
     return;
 }
 
-// Driver Function
+
 int main()
 {
     int V, E, gsrc;

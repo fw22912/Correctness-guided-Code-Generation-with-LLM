@@ -5,9 +5,9 @@ int diff(const int* i, const int* j)
 }
 
 
-// Sorting.
-// Runtime: O(n*log(n))
-// Space: O(1)
+
+
+
 int hIndex(int* citations, int citationsSize){
     qsort(citations, citationsSize, sizeof(int), (int(*) (const void*, const void*)) diff);
 

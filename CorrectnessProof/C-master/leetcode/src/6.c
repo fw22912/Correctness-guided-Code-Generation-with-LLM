@@ -1,31 +1,12 @@
-/**
- * @file
- * @brief Implementation of the [ZigZag
- * Conversion](https://leetcode.com/problems/zigzag-conversion/) Leetcode
- * problem
- * @details
- * A decent solution to the ZigZag conversion problem.
- * Take advantage of the fact that the maximum gap between the chars is 2 times
- * the depth(the number of rows).
- * The actual gap between the two first chars of a rows depends on the depth of
- * the row. The gaps between successives chars on the same row is the complement
- * of the first gap to the maximum gap.
- * @author [straight_into_the_wall](https://github.com/straight-into-the-wall)
- */
 
-#include <assert.h>  /// for assert
-#include <stdint.h>  /// for unsigned int with fixed size
-#include <stdio.h>   /// for IO operations
-#include <stdlib.h>  /// for malloc
-#include <string.h>  /// for string tools
 
-/**
- * @brief Convert a string to the it's zigzag equivalent on a given number of
- * rows.
- * @param in the string in input.
- * @param numRows the desired number of rows.
- * @returns the converted new (malloced) string.
- */
+#include <assert.h>  
+#include <stdint.h>  
+#include <stdio.h>   
+#include <stdlib.h>  
+#include <string.h>  
+
+
 char* convert(char* in, uint16_t numRows)
 {
     uint16_t len = strlen(in);
@@ -48,14 +29,14 @@ char* convert(char* in, uint16_t numRows)
     uint16_t o = 0;
     uint16_t delta = 0;
 
-    // first row
+    
     while (i < len)
     {
         out[o++] = in[i];
         i += rr;
     }
 
-    // middle rows
+    
     for (uint16_t l = 1; l < max; l++)
     {
         i = l;
@@ -68,7 +49,7 @@ char* convert(char* in, uint16_t numRows)
         }
     }
 
-    // last row
+    
     i = max;
     while (i < len)
     {
@@ -79,10 +60,7 @@ char* convert(char* in, uint16_t numRows)
     return out;
 }
 
-/**
- * @brief Self-test implementations
- * @returns void
- */
+
 static void testZigZag(char* s, int numRows, char* expected)
 {
     char* ret = convert(s, numRows);
@@ -93,10 +71,7 @@ static void testZigZag(char* s, int numRows, char* expected)
     free(ret);
 }
 
-/**
- * @brief Self-test implementations
- * @returns void
- */
+
 static void test()
 {
     char* s01 = "PAYPALISHIRING";
@@ -140,12 +115,9 @@ static void test()
     testZigZag(s04, 472, r04);
 }
 
-/**
- * @brief Main function
- * @returns 0 on exit
- */
+
 int main(void)
 {
-    test();  // run self-test implementations
+    test();  
     return 0;
 }

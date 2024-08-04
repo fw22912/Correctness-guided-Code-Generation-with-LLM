@@ -1,11 +1,4 @@
-/**
- * Definition for a binary tree node.
- * struct TreeNode {
- *     int val;
- *     struct TreeNode *left;
- *     struct TreeNode *right;
- * };
- */
+
 
 struct NodeDistributeInfo {
     int distributeMoves;
@@ -27,7 +20,7 @@ struct NodeDistributeInfo* getDisturb(struct TreeNode* node) {
     int coinsToLeft = 1 - leftDistribute->distributeExcess;
     int coinsToRight = 1 - rightDistribute->distributeExcess;
 
-    // Calculate moves as excess and depth between left and right subtrees.
+    
     result->distributeMoves = leftDistribute->distributeMoves + rightDistribute->distributeMoves + abs(coinsToLeft) + abs(coinsToRight);
     result->distributeExcess = node->val - coinsToLeft - coinsToRight;
 
@@ -37,11 +30,11 @@ struct NodeDistributeInfo* getDisturb(struct TreeNode* node) {
     return result;
 }
 
-// Depth-first search .
-// On each node-step we try to recombinate coins between left and right subtree. 
-// We know that coins are the same number that nodes, and we can get coins by depth
-// Runtime: O(n)
-// Space: O(1)
+
+
+
+
+
 int distributeCoins(struct TreeNode* root) {
     return getDisturb(root)->distributeMoves;
 }

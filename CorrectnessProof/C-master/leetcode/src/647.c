@@ -1,5 +1,5 @@
 
-/* Author : Saurav Dubey */
+
 
 int countSubstrings(char *s)
 {
@@ -8,7 +8,7 @@ int countSubstrings(char *s)
     int count = 0;
     for (i = 0; i < len; i++)
     {
-        // cases handled for both odd and even lenghted Palindrome
+        
 
         count += countPalin(s, i, i, len);
         if (i != len - 1)

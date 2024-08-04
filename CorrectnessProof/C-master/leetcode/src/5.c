@@ -1,11 +1,7 @@
-/**
- * Find longest palindrome by traversing the string and checking how
- * long palindrome can be constructed from each element by going left and right.
- * Checking palindromes of types '..aa..' and '..bab..'
- */
 
-#include <stdlib.h> /// for allocating new string via malloc()
-#include <string.h> /// for copying the contents of the string via strncpy()
+
+#include <stdlib.h> 
+#include <string.h> 
 
 char * longestPalindrome(char * s) {
     int si_max = 0, ei_max = 0, sz_max = 0, sz, i, delta_i;

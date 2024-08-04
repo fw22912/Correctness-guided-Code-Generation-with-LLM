@@ -7,10 +7,10 @@ void countCharsForStringSlice(int* charsCounter, char* s, int length, int sign) 
     }
 }
 
-// Sliding window
-// Calculate number of chars in the current slide. 
-// Runtime: O(n)
-// Space: O(1) - only number of english lowercase letters.
+
+
+
+
 bool checkInclusion(char* s1, char* s2) {
     int lengthS1 = strlen(s1);
     int lengthS2 = strlen(s2);
@@ -22,7 +22,7 @@ bool checkInclusion(char* s1, char* s2) {
 
     int* charsCounter = calloc(EnglishLettersNumber, sizeof(int));
 
-    // We keep counters of s1 with '-' sign. It has to be offset by s2 chars
+    
     countCharsForStringSlice(charsCounter, s1, lengthS1, -1);
     countCharsForStringSlice(charsCounter, s2, lengthS1, 1);
 

@@ -14,9 +14,9 @@ long getSum(int* nums, int numsSize, int divizor){
     return result;
 }
 
-// Divide and conquer
-// Runtime: O(n*log(n))
-// Space: O(1)
+
+
+
 int smallestDivisor(int* nums, int numsSize, int threshold){
     int maxNum = 0;
     for (int i = 0; i < numsSize; i++){

@@ -79,6 +79,6 @@ void display(struct node *p)
             printf("\t%d\n", p->info);
             p = p->link;
         }
-        // printf("%d\n",p->info);
+        
     }
 }

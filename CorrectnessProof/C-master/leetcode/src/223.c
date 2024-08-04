@@ -12,9 +12,9 @@ int intersectionSize(int p11, int p12, int p21, int p22){
     return min(p22 - p11, p12 - p11);
 }
 
-// Calculation area of the A, then area of the B then minus intersection of A and B
-// Runtime: O(1)
-// Space: O(1)
+
+
+
 int computeArea(int ax1, int ay1, int ax2, int ay2, int bx1, int by1, int bx2, int by2){
     int areaA = (ay2 - ay1) * (ax2 - ax1);
     int areaB = (by2 - by1) * (bx2 - bx1);

@@ -1,11 +1,7 @@
-/**
- * @file
- * @brief Functions related to 3D quaternions and Euler angles.
- * @author Krishna Vedala
- */
+
 
 #include <stdio.h>
-#ifdef __arm__  // if compiling for ARM-Cortex processors
+#ifdef __arm__  
 #define LIBQUAT_ARM
 #include <arm_math.h>
 #else
@@ -15,40 +11,14 @@
 
 #include "geometry_datatypes.h"
 
-/**
- * @addtogroup quats 3D Quaternion operations
- * @{
- */
 
-/**
- * Function to convert given Euler angles to a quaternion.
- * \f{eqnarray*}{
- * q_{0} & =
- * &\cos\left(\frac{\phi}{2}\right)\cos\left(\frac{\theta}{2}\right)\cos\left(\frac{\psi}{2}\right)
- * +
- * \sin\left(\frac{\phi}{2}\right)\sin\left(\frac{\theta}{2}\right)\sin\left(\frac{\psi}{2}\right)\\
- * q_{1} & =
- * &\sin\left(\frac{\phi}{2}\right)\cos\left(\frac{\theta}{2}\right)\cos\left(\frac{\psi}{2}\right)
- * -
- * \cos\left(\frac{\phi}{2}\right)\sin\left(\frac{\theta}{2}\right)\sin\left(\frac{\psi}{2}\right)\\
- * q_{2} & =
- * &\cos\left(\frac{\phi}{2}\right)\sin\left(\frac{\theta}{2}\right)\cos\left(\frac{\psi}{2}\right)
- * +
- * \sin\left(\frac{\phi}{2}\right)\cos\left(\frac{\theta}{2}\right)\sin\left(\frac{\psi}{2}\right)\\
- * q_{3} & =
- * &\cos\left(\frac{\phi}{2}\right)\cos\left(\frac{\theta}{2}\right)\sin\left(\frac{\psi}{2}\right)
- * -
- * \sin\left(\frac{\phi}{2}\right)\sin\left(\frac{\theta}{2}\right)\cos\left(\frac{\psi}{2}\right)\\
- * \f}
- *
- * @param [in] in_euler input Euler angles instance
- * @returns converted quaternion
- */
+
+
 quaternion quat_from_euler(const euler *in_euler)
 {
     quaternion out_quat;
 
-    if (!in_euler)  // if null
+    if (!in_euler)  
     {
         fprintf(stderr, "%s: Invalid input.", __func__);
         return out_quat;
@@ -71,24 +41,11 @@ quaternion quat_from_euler(const euler *in_euler)
     return temp;
 }
 
-/**
- * Function to convert given quaternion to Euler angles.
- * \f{eqnarray*}{
- * \phi & = &
- * \tan^{-1}\left[\frac{2\left(q_0q_1+q_2q_3\right)}{1-2\left(q_1^2+q_2^2\right)}\right]\\
- * \theta & =
- * &-\sin^{-1}\left[2\left(q_0q_2-q_3q_1\right)\right]\\
- * \psi & = &
- * \tan^{-1}\left[\frac{2\left(q_0q_3+q_1q_2\right)}{1-2\left(q_2^2+q_3^2\right)}\right]\\
- * \f}
- *
- * @param [in] in_quat input quaternion instance
- * @returns converted euler angles
- */
+
 euler euler_from_quat(const quaternion *in_quat)
 {
     euler out_euler;
-    if (!in_quat)  // if null
+    if (!in_quat)  
     {
         fprintf(stderr, "%s: Invalid input.", __func__);
         return out_euler;
@@ -106,31 +63,12 @@ euler euler_from_quat(const quaternion *in_quat)
     return out_euler;
 }
 
-/**
- * Function to multiply two quaternions.
- * \f{eqnarray*}{
- * \mathbf{c} & = & \mathbf{a}\otimes\mathbf{b}\\
- * & = & \begin{bmatrix}a_{0} & a_{1} & a_{2} &
- *  a_{3}\end{bmatrix}\otimes\begin{bmatrix}b_{0} & b_{1} & b_{2} &
- *  b_{3}\end{bmatrix}\\
- * & = &
- * \begin{bmatrix}
- *  a_{0}b_{0}-a_{1}b_{1}-a_{2}b_{2}-a_{3}b_{3}\\
- *  a_{0}b_{1}+a_{1}b_{0}+a_{2}b_{3}-a_{3}b_{2}\\
- *  a_{0}b_{2}-a_{1}b_{3}+a_{2}b_{0}+a_{3}b_{1}\\
- *  a_{0}b_{3}+a_{1}b_{2}-a_{2}b_{1}+a_{3}b_{0}
- * \end{bmatrix}^{T}
- * \f}
- *
- * @param [in] in_quat1 first input quaternion instance
- * @param [in] in_quat2 second input quaternion instance
- * @returns resultant quaternion
- */
+
 quaternion quaternion_multiply(const quaternion *in_quat1,
                                const quaternion *in_quat2)
 {
     quaternion out_quat;
-    if (!in_quat1 || !in_quat2)  // if null
+    if (!in_quat1 || !in_quat2)  
     {
         fprintf(stderr, "%s: Invalid input.", __func__);
         return out_quat;
@@ -148,7 +86,7 @@ quaternion quaternion_multiply(const quaternion *in_quat1,
     return out_quat;
 }
 
-/** @} */
+
 
 static void test()
 {

@@ -15,19 +15,19 @@ int partition(int arr[], int low, int high)
 
     while (1)
     {
-        /* Find leftmost element >= pivot */
+        
         do
         {
             i++;
         } while (arr[i] < pivot);
 
-        /* Find rightmost element <= pivot */
+        
         do
         {
             j--;
         } while (arr[j] > pivot);
 
-        /* if two pointers met */
+        
         if (i >= j)
             return j;
 

@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 void longestSub(int *ARRAY, int ARRAY_LENGTH, int **RESULT, int *RESULT_LENGTH)
-{  // RESULT and RESULT_LENGTH will be modified by their pointers
+{  
 
     if (ARRAY_LENGTH <= 1)
     {

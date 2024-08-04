@@ -1,14 +1,4 @@
-/*
-I walk  through the grids and record the path numbers at the
-same time.
-By using a 2D array called paths, it will add up possible so
-urce path and save the number.
-Noted that:
-if  the  destination has   obstacle,   we  can't    reach it
-the first  grid  (paths[0][0]) always  set  as 1    our  previous
-path source  is    either  from top   or left  border of grid has
-different condition
-*/
+
 
 int uniquePathsWithObstacles(int** obstacleGrid, int obstacleGridSize,
                              int* obstacleGridColSize)

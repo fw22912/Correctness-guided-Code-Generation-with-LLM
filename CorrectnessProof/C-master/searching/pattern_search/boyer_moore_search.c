@@ -10,10 +10,10 @@ void computeArray(char *pattern, int size, int arr[NUM_OF_CHARS])
     int i;
 
     for (i = 0; i < NUM_OF_CHARS; i++) arr[i] = -1;
-    /* Fill the actual value of last occurrence of a character */
+    
     for (i = 0; i < size; i++) arr[(int)pattern[i]] = i;
 }
-/* Boyer Moore Search algorithm  */
+
 void boyer_moore_search(char *str, char *pattern)
 {
     int n = strlen(str);
@@ -42,7 +42,7 @@ int main()
 {
     char str[] = "AABCAB12AFAABCABFFEGABCAB";
     char pat1[] = "ABCAB";
-    char pat2[] = "FFF"; /* not found */
+    char pat2[] = "FFF"; 
     char pat3[] = "CAB";
 
     printf("String test: %s\n", str);

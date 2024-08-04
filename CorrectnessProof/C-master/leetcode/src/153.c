@@ -4,10 +4,10 @@ int findMin(int *nums, int numsSize)
     while (low < high)
     {
         int mid = low + (high - low) / 2;
-        /* minimum is on left side */
+        
         if (nums[mid] < nums[high])
             high = mid;
-        /* minimum is on right side */
+        
         else
             low = mid + 1;
     }

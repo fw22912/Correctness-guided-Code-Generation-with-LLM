@@ -5,7 +5,7 @@ struct ListNode *deleteDuplicates(struct ListNode *head)
 
     if (head->next && head->val == head->next->val)
     {
-        /* Remove all duplicate numbers */
+        
         while (head->next && head->val == head->next->val)
         {
             head = head->next;

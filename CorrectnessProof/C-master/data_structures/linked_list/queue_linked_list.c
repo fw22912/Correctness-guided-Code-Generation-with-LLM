@@ -1,9 +1,6 @@
-/* Queue using Linked List - Program to create a queue ADT using linked list.
-ADT should support the following operations 1)  Createqueue 2)  Insert into the
-queue 3)  Delete from the queue 4)  destroyqueue
-*/
 
-/* queue q declared globally */
+
+
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -22,8 +19,7 @@ struct queue
 
 struct queue q;
 
-/* This function initializes the queue to empty by making both front and rear as
- * NULL */
+
 void createqueue() { q.front = q.rear = NULL; }
 
 int empty()
@@ -46,7 +42,7 @@ void insert(int x)
     }
 
     pnode->data = x;
-    pnode->next = NULL; /* New node is always last node */
+    pnode->next = NULL; 
 
     if (empty())
         q.front = q.rear = pnode;
@@ -71,7 +67,7 @@ int removes()
     p = q.front;
     x = (q.front)->data;
     q.front = (q.front)->next;
-    if (q.front == NULL) /* Queue contained only one node */
+    if (q.front == NULL) 
         q.rear = NULL;
     free(p);
     return x;

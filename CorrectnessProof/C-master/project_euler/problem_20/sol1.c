@@ -1,28 +1,18 @@
-/**
- * \file
- * \brief [Problem 20](https://projecteuler.net/problem=20) solution
- * \author [Krishna Vedala](https://github.com/kvedala)
- *
- * Implementation uses a custom `big_int` structure that can store arbitrarily
- * large integer numbers.
- */
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
 
-/**
- * store arbitratily large integer values
- * as a linked list of digits.
- */
+
 typedef struct _big_int
 {
-    char value;                  /**< tens place (single digit) */
-    struct _big_int *next_digit; /**< hundreds place */
-    struct _big_int *prev_digit; /**< units place */
+    char value;                  
+    struct _big_int *next_digit; 
+    struct _big_int *prev_digit; 
 } big_int;
 
 #ifdef DEBUG
-/** print a digit from large integer */
+
 void print_digit(const big_int *my_int)
 {
     printf("\tValue : %d\n\tNext : %p\n\tPrev : %p\n", my_int->value,
@@ -30,10 +20,7 @@ void print_digit(const big_int *my_int)
 }
 #endif
 
-/**
- * Function that allocates memory to add another
- * digit at the MSB
- */
+
 big_int *add_digit(big_int *digit, char value)
 {
     if (digit == NULL)
@@ -69,10 +56,7 @@ big_int *add_digit(big_int *digit, char value)
     return digit->next_digit;
 }
 
-/**
- * Function to remove digits preceeding the
- * current digit.
- */
+
 char remove_digits(big_int *digit, int N)
 {
     if (digit == NULL)
@@ -91,12 +75,12 @@ char remove_digits(big_int *digit, int N)
     return remove_digits(digit->next_digit, 0);
 }
 
-/** Main function */
+
 int main(int argc, char **argv)
 {
     unsigned int N = 5;
-    big_int *ptr = add_digit(NULL, 1); /* start with 1 */
-    const big_int *ptr0 = ptr;         /* save the first location */
+    big_int *ptr = add_digit(NULL, 1); 
+    const big_int *ptr0 = ptr;         
     unsigned long sum_digits = 0;
     unsigned long num_digits = 0;
 
@@ -111,7 +95,7 @@ int main(int argc, char **argv)
 #ifdef DEBUG
         printf("%3d: ", i);
 #endif
-        ptr = (big_int *)ptr0; /* multiply every digit with i */
+        ptr = (big_int *)ptr0; 
         while (ptr)
         {
 #ifdef DEBUG
@@ -133,17 +117,14 @@ int main(int argc, char **argv)
             ptr->value = tmp;
 
             if (i == N)
-                /*
-                 * sum digits on the last iteration
-                 * this avoid having another loop over all digits
-                 */
+                
                 sum_digits += tmp;
 
             if (ptr->next_digit)
-                /* more digits available */
+                
                 ptr = ptr->next_digit;
             else
-                /* no more digits left - reached MSB */
+                
                 break;
         }
 #ifdef DEBUG
@@ -158,19 +139,17 @@ int main(int argc, char **argv)
     printf("%d! = ", N);
 #endif
 
-    /* Notice that in the loop above, we make sure that at the end of the loop,
-     * ptr is pointing to the last digit. Thus we can avoid using another loop.
-     */
-    // ptr = &my_int;
-    // /* move ptr to the MSB digit */
-    // while (ptr->next_digit)
-    //     ptr = ptr->next_digit;
+    
+    
+    
+    
+    
     do
     {
-        putchar(ptr->value + 0x30); /* convert digit to ASCII char */
+        putchar(ptr->value + 0x30); 
         ptr = ptr->prev_digit;
         num_digits++;
-    } while (ptr); /* after coming to units place, there will be no valid ptr */
+    } while (ptr); 
 
     printf("\nTime taken: %.4g millisecond\n",
            1e3 * (end_time - start_time) / CLOCKS_PER_SEC);

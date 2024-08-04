@@ -1,14 +1,11 @@
-/*
- * Algorithm : Bucket Sort
- * Time-Complexity : O(n)
- */
+
 #include <assert.h>
 #include <stdio.h>
 #include <stdlib.h>
 
-#define NARRAY 8    /* array size */
-#define NBUCKET 5   /* bucket size */
-#define INTERVAL 10 /* bucket range */
+#define NARRAY 8    
+#define NBUCKET 5   
+#define INTERVAL 10 
 
 struct Node
 {
@@ -27,17 +24,17 @@ void BucketSort(int arr[])
     int i, j;
     struct Node **buckets;
 
-    /* allocate memory for array of pointers to the buckets */
+    
     buckets = (struct Node **)malloc(sizeof(struct Node *) * NBUCKET);
 
-    /* initialize pointers to the buckets */
+    
     for (i = 0; i < NBUCKET; ++i)
     {
         buckets[i] = NULL;
     }
 
-    /* put items into the buckets */
-    /* creates a link list in each bucket slot */
+    
+    
     for (i = 0; i < NARRAY; ++i)
     {
         struct Node *current;
@@ -48,7 +45,7 @@ void BucketSort(int arr[])
         buckets[pos] = current;
     }
 
-    /* check what's in each bucket */
+    
     for (i = 0; i < NBUCKET; i++)
     {
         printf("Bucket[\"%d\"] : ", i);
@@ -56,13 +53,13 @@ void BucketSort(int arr[])
         printf("\n");
     }
 
-    /* sorting bucket using Insertion Sort */
+    
     for (i = 0; i < NBUCKET; ++i)
     {
         buckets[i] = InsertionSort(buckets[i]);
     }
 
-    /* check what's in each bucket */
+    
     printf("--------------\n");
     printf("Buckets after sorted\n");
     for (i = 0; i < NBUCKET; i++)
@@ -72,21 +69,21 @@ void BucketSort(int arr[])
         printf("\n");
     }
 
-    /* put items back to original array */
+    
     for (j = 0, i = 0; i < NBUCKET; ++i)
     {
         struct Node *node;
         node = buckets[i];
         while (node)
         {
-            // precondition for avoiding out of bounds by the array
+            
             assert(j < NARRAY);
             arr[j++] = node->data;
             node = node->next;
         }
     }
 
-    /* free memory */
+    
     for (i = 0; i < NBUCKET; ++i)
     {
         struct Node *node;
@@ -103,11 +100,11 @@ void BucketSort(int arr[])
     return;
 }
 
-/* Insertion Sort */
+
 struct Node *InsertionSort(struct Node *list)
 {
     struct Node *k, *nodeList;
-    /* need at least two items to sort */
+    
     if (list == NULL || list->next == NULL)
     {
         return list;
@@ -115,35 +112,35 @@ struct Node *InsertionSort(struct Node *list)
 
     nodeList = list;
     k = list->next;
-    nodeList->next = NULL; /* 1st node is new list */
+    nodeList->next = NULL; 
     while (k != NULL)
     {
         struct Node *ptr;
-        /* check if insert before first */
+        
         if (nodeList->data > k->data)
         {
             struct Node *tmp;
             tmp = k;
-            k = k->next;  // important for the while
+            k = k->next;  
             tmp->next = nodeList;
             nodeList = tmp;
             continue;
         }
 
-        // from begin up to end
-        // finds [i] > [i+1]
+        
+        
         for (ptr = nodeList; ptr->next != NULL; ptr = ptr->next)
         {
             if (ptr->next->data > k->data)
                 break;
         }
 
-        // if found (above)
+        
         if (ptr->next != NULL)
         {
             struct Node *tmp;
             tmp = k;
-            k = k->next;  // important for the while
+            k = k->next;  
             tmp->next = ptr->next;
             ptr->next = tmp;
             continue;
@@ -151,7 +148,7 @@ struct Node *InsertionSort(struct Node *list)
         else
         {
             ptr->next = k;
-            k = k->next;  // important for the while
+            k = k->next;  
             ptr->next->next = NULL;
             continue;
         }

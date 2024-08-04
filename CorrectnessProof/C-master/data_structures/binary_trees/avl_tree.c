@@ -45,7 +45,7 @@ int heightDiff(avlNode *node)
         return (nodeHeight(node->left) - nodeHeight(node->right));
 }
 
-/* Returns the node with min key in the left subtree*/
+
 avlNode *minNode(avlNode *node)
 {
     avlNode *temp = node;
@@ -118,36 +118,36 @@ avlNode *insert(avlNode *node, int key)
     if (node == NULL)
         return (newNode(key));
 
-    /*Binary Search Tree insertion*/
+    
 
     if (key < node->key)
         node->left =
-            insert(node->left, key); /*Recursive insertion in L subtree*/
+            insert(node->left, key); 
     else if (key > node->key)
         node->right =
-            insert(node->right, key); /*Recursive insertion in R subtree*/
+            insert(node->right, key); 
 
-    /* Node  Height as per the AVL formula*/
+    
     node->height = (max(nodeHeight(node->left), nodeHeight(node->right)) + 1);
 
-    /*Checking for the balance condition*/
+    
     int balance = heightDiff(node);
 
-    /*Left Left */
+    
     if (balance > 1 && key < (node->left->key))
         return rightRotate(node);
 
-    /*Right Right */
+    
     if (balance < -1 && key > (node->right->key))
         return leftRotate(node);
 
-    /*Left Right */
+    
     if (balance > 1 && key > (node->left->key))
     {
         node = LeftRightRotate(node);
     }
 
-    /*Right Left */
+    
     if (balance < -1 && key < (node->right->key))
     {
         node = RightLeftRotate(node);
@@ -163,65 +163,65 @@ avlNode *delete (avlNode *node, int queryNum)
 
     if (queryNum < node->key)
         node->left =
-            delete (node->left, queryNum); /*Recursive deletion in L subtree*/
+            delete (node->left, queryNum); 
     else if (queryNum > node->key)
         node->right =
-            delete (node->right, queryNum); /*Recursive deletion in R subtree*/
+            delete (node->right, queryNum); 
     else
     {
-        /*Single or No Children*/
+        
         if ((node->left == NULL) || (node->right == NULL))
         {
             avlNode *temp = node->left ? node->left : node->right;
 
-            /* No Children*/
+            
             if (temp == NULL)
             {
                 temp = node;
                 node = NULL;
             }
-            else /*Single Child : copy data to the parent*/
+            else 
                 *node = *temp;
 
             free(temp);
         }
         else
         {
-            /*Two Children*/
+            
 
-            /*Get the smallest key in the R subtree*/
+            
             avlNode *temp = minNode(node->right);
-            node->key = temp->key; /*Copy that to the root*/
+            node->key = temp->key; 
             node->right =
                 delete (node->right,
-                        temp->key); /*Delete the smallest in the R subtree.*/
+                        temp->key); 
         }
     }
 
-    /*single node in tree*/
+    
     if (node == NULL)
         return node;
 
-    /*Update height*/
+    
     node->height = (max(nodeHeight(node->left), nodeHeight(node->right)) + 1);
 
     int balance = heightDiff(node);
 
-    /*Left Left */
+    
     if ((balance > 1) && (heightDiff(node->left) >= 0))
         return rightRotate(node);
 
-    /*Left Right */
+    
     if ((balance > 1) && (heightDiff(node->left) < 0))
     {
         node = LeftRightRotate(node);
     }
 
-    /*Right Right */
+    
     if ((balance < -1) && (heightDiff(node->right) >= 0))
         return leftRotate(node);
 
-    /*Right Left */
+    
     if ((balance < -1) && (heightDiff(node->right) < 0))
     {
         node = RightLeftRotate(node);

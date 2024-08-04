@@ -1,40 +1,17 @@
-/**
- * @file
- * \brief This file is a simple implementation of a Threaded Binary Tree
- *
- * Threaded Binary Tree is a binary tree variant in which all left child
- * pointers that are NULL (in Linked list representation) point to its
- * in-order predecessor, and all right child pointers that are NULL
- * (in Linked list representation) point to its in-order successor.
- * It has the following functionalities:
- * - Insertion
- * - Search
- * - Deletion
- * - Listing of node keys inorder,preorder,postorder
- *
- * -see binary_search_tree.c
- *
- * \author [Amitha Nayak](https://github.com/amitnayakblr)
- */
+
 
 #include <stdio.h>
 #include <stdlib.h>
 
-/**
- * Node, the basic data structure of the tree
- */
+
 typedef struct Node
 {
-    int data;           /**< stores the number */
-    struct Node *llink; /**< link to left child */
-    struct Node *rlink; /**< link to right child */
+    int data;           
+    struct Node *llink; 
+    struct Node *rlink; 
 } node;
 
-/**
- * creates a new node
- * param[in] data value to be inserted
- * \returns a pointer to the new node
- */
+
 node *create_node(int data)
 {
     node *ptr = (node *)malloc(sizeof(node));
@@ -43,16 +20,12 @@ node *create_node(int data)
     return ptr;
 }
 
-/**
- * inserts a node into the tree
- * param[in,out] root pointer to node pointer to the topmost node of the tree
- * param[in] data value to be inserted into the tree
- */
+
 void insert_bt(node **root, int data)
 {
     node *new_node = create_node(data);
-    node *temp;  // to be deleted
-    node *prev;  // keeps track of the parent of the element deleted
+    node *temp;  
+    node *prev;  
     if (*root == NULL)
     {
         *root = new_node;
@@ -90,11 +63,7 @@ void insert_bt(node **root, int data)
     }
 }
 
-/**
- * searches for the element
- * \param[in] root node pointer to the topmost node of the tree
- * \param[in] ele value searched for
- */
+
 void search(node *root, int ele)
 {
     node *temp = root;
@@ -122,10 +91,7 @@ void search(node *root, int ele)
         printf("%s\n", "Element found.");
 }
 
-/**
- * performs inorder traversal
- * param[in] curr node pointer to the topmost node of the tree
- */
+
 void inorder_display(node *curr)
 {
     if (curr != NULL)
@@ -136,10 +102,7 @@ void inorder_display(node *curr)
     }
 }
 
-/**
- * performs postorder traversal
- * param[in] curr node pointer to the topmost node of the tree
- */
+
 void postorder_display(node *curr)
 {
     if (curr != NULL)
@@ -150,10 +113,7 @@ void postorder_display(node *curr)
     }
 }
 
-/**
- * performs preorder traversal
- * param[in] curr node pointer to the topmost node of the tree
- */
+
 void preorder_display(node *curr)
 {
     if (curr != NULL)
@@ -164,12 +124,7 @@ void preorder_display(node *curr)
     }
 }
 
-/**
- * deletion of a node from the tree
- * if the node isn't present in the tree, it takes no action.
- * param[in,out] root pointer to node pointer to the topmost node of the tree
- * param[in] ele value to be deleted from the tree
- */
+
 void delete_bt(node **root, int ele)
 {
     node *temp;
@@ -180,7 +135,7 @@ void delete_bt(node **root, int ele)
     {
         temp = *root;
         prev = NULL;
-        // search
+        
         while (temp != NULL)
         {
             if (temp->data == ele)
@@ -204,7 +159,7 @@ void delete_bt(node **root, int ele)
         return;
     else
     {
-        node *replacement;  // deleted node's replacement
+        node *replacement;  
         node *t;
         if (temp->llink == NULL && temp->rlink == NULL)
         {
@@ -220,15 +175,15 @@ void delete_bt(node **root, int ele)
         }
         else
         {
-            replacement = temp->rlink;  // replaced with inorder successor
+            replacement = temp->rlink;  
             t = replacement;
             while (t->llink != NULL)
             {
                 t = t->llink;
             }
             t->llink =
-                temp->llink;  // leftmost node of the replacement is linked to
-                              // the left child of the deleted node
+                temp->llink;  
+                              
         }
 
         if (temp == *root)
@@ -249,9 +204,7 @@ void delete_bt(node **root, int ele)
     }
 }
 
-/**
- * main function
- */
+
 int main()
 {
     printf("BINARY THREADED TREE: \n");

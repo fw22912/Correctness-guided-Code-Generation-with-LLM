@@ -1,8 +1,8 @@
 #define min(X, Y)  ((X) < (Y) ? (X) : (Y))
 
-// Dynamic programming approach. Down -> Up.
-// Runtime: O(n)
-// Space: O(1)
+
+
+
 int minimumDeletions(char * s){
     int len = strlen(s);
     

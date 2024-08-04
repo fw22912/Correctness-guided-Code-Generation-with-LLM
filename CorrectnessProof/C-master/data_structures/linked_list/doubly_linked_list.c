@@ -1,94 +1,42 @@
-/**
- * @file
- * @brief Implementation of [Doubly linked list](https://en.wikipedia.org/wiki/Doubly_linked_list)
- * @details
- * A doubly linked list is a data structure with a sequence
- * of components called nodes. Within that nodes there are
- * three elements: a value recorded, a pointer to the next
- * node, and a pointer to the previous node.
- *
- * In this implementation, the functions of creating the list,
- * inserting by position, deleting by position, searching 
- * for value, printing the list, and an example of how the
- * list works were coded.
- *
- * @author  [Gabriel Mota Bromonschenkel Lima](https://github.com/GabrielMotaBLima)
- */
+
 #include <stdio.h>
 #include <stdlib.h>
 
-/**
- * @brief Doubly linked list struct
- */
+
 typedef struct list
 {
-    double value;               ///< value saved on each node
-    struct list *next, *prev;   ///< directing to other nodes or NULL
+    double value;               
+    struct list *next, *prev;   
 } List;
 
-/**
- * @brief   Create list function, a new list containing one node will be created
- * @param   value       a value to be saved into the first list node
- * @returns new_list    the list created
- */
+
 List *create(double value);
 
-/**
- * @brief   Insertion by position into the list function
- * @param   list    a doubly linked List
- * @param   value   a value to be inserted into the list
- * @param   pos     a position into the list for value insertion
- * @returns list    the input list with a node more or the same list
- */
+
 List *insert(List *list, double value, int pos);
 
-/**
- * @brief   Deletion by position into the list function
- * @param   list    a doubly linked List
- * @param   pos     a position into the list for value Deletion
- * @returns list    the input list with deleted values or the same list
- */
+
 List *delete(List *list, int pos);
 
-/**
- * @brief   Search value into the list function
- * @param   list    a doubly linked list
- * @param   value   a value to be looked for into the list
- * @returns `1`     if the looked up value exists
- * @returns `0`     if the looked up value doesn't exist
- */
+
 int search(List *list, double value);
 
-/**
- * @brief   Print list function
- * @param   list    a doubly linked List
- * @returns void
- */
+
 void print(List *list);
 
-/**
- * @brief   Example function
- * @returns void
- */
+
 void example();
 
-/**
- * @brief   Main function
- * @returns 0   on exit
- */
+
 int main()
 {
-    // examples for better understanding
+    
     example();
-    // code here
+    
     return 0;
 }
 
-/**
- * @brief   Create list function, a new list containing one node will be created
- * @param   value       a value to be saved into the first list node
- * @returns new_list    the list created
- */
+
 List *create(double value)
 {
     List *new_list = (List *)malloc(sizeof(List));
@@ -98,23 +46,17 @@ List *create(double value)
     return new_list;
 }
 
-/**
- * @brief   Insertion by position into the list function
- * @param   list    a doubly linked List
- * @param   value   a value to be inserted into the list
- * @param   pos     a position into the list for value insertion
- * @returns list    the input list with a node more or the same list
- */
+
 List *insert(List *list, double value, int pos)
 {
-    // list NULL case
+    
     if (list == NULL)
     {
         list = create(value);
         return list;
     }
 
-    // position existing case
+    
     if (pos > 0)
     {
         List *cpy = list, *tmp = cpy;
@@ -126,7 +68,7 @@ List *insert(List *list, double value, int pos)
             tmp = tmp->next;
         }
 
-        // first position case
+        
         if (pos == 1)
         {
             List *new_node = create(value);
@@ -136,7 +78,7 @@ List *insert(List *list, double value, int pos)
             return list;
         }
 
-        // position existing in list range case
+        
         if (size + 2 > pos)
         {
             while (cpy->next != NULL && index < pos)
@@ -149,7 +91,7 @@ List *insert(List *list, double value, int pos)
             List *new_node = (List *)malloc(sizeof(List));
             new_node->value = value;
 
-            // position into list with no poiting for NULL
+            
             if (flag == pos)
             {
                 cpy->prev->next = new_node;
@@ -158,7 +100,7 @@ List *insert(List *list, double value, int pos)
                 cpy->prev = new_node;
             }
 
-            // last position case
+            
             if (flag < pos)
             {
                 new_node->next = cpy->next;
@@ -170,19 +112,14 @@ List *insert(List *list, double value, int pos)
     }
 }
 
-/**
- * @brief   Deletion by position into the list function
- * @param   list    a doubly linked List
- * @param   pos     a position into the list for value Deletion
- * @returns list    the input list with deleted values or the same list
- */
+
 List *delete(List *list, int pos)
 {
-    // list NULL case
+    
     if (list == NULL)
         return list;
 
-    // position existing case
+    
     if (pos > 0)
     {
         List *cpy = list, *tmp = cpy;
@@ -194,7 +131,7 @@ List *delete(List *list, int pos)
             tmp = tmp->next;
         }
 
-        // first position case
+        
         if (pos == 1)
         {
             if (size == 1)
@@ -204,7 +141,7 @@ List *delete(List *list, int pos)
             return cpy;
         }
 
-        // position existing in list range case
+        
         if (size + 2 > pos)
         {
             while (cpy->next != NULL && index < pos)
@@ -216,14 +153,14 @@ List *delete(List *list, int pos)
 
             if (flag == pos)
             {
-                // position into list with no poiting for NULL
+                
                 if (cpy->next != NULL)
                 {
                     cpy->prev->next = cpy->next;
                     cpy->next->prev = cpy->prev;
                 }
 
-                // last position case
+                
                 else
                     cpy->prev->next = NULL;
             }
@@ -232,13 +169,7 @@ List *delete(List *list, int pos)
     }
 }
 
-/**
- * @brief   Search value into the list function
- * @param   list    a doubly linked list
- * @param   value   a value to be looked for into the list
- * @returns `1`     if the looked up value exists
- * @returns `0`     if the looked up value doesn't exist
- */
+
 int search(List *list, double value)
 {
     if (list == NULL)
@@ -248,11 +179,7 @@ int search(List *list, double value)
     search(list->next, value);
 }
 
-/**
- * @brief   Print list function
- * @param   list    a doubly linked List
- * @returns void
- */
+
 void print(List *list)
 {
     if (list != NULL)
@@ -262,10 +189,7 @@ void print(List *list)
     }
 }
 
-/**
- * @brief   Example function
- * @returns void
- */
+
 void example()
 {
     List *my_list = NULL;

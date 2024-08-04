@@ -1,13 +1,7 @@
-/**
- * \file
- * \brief [Problem 7](https://projecteuler.net/problem=7) solution.
- * @see Faster version problem_7/sol.c
- */
+
 #include <stdio.h>
 
-/** Main function
- * @return 0 on exit
- */
+
 int main()
 {
     int n;

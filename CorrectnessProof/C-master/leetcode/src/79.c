@@ -39,8 +39,8 @@ bool exitsWord(int i, int j, char** board, int boardSize, int* boardColSize, int
 }
 
 
-// Use backtracking.
-// Runtime: Runtime: O(n*m*4^len(word))
+
+
 bool exist(char** board, int boardSize, int* boardColSize, char* word){
     int* vistedPointSet = (int*) calloc(getPointKey(boardSize, boardColSize[0], boardSize, boardColSize[0]), sizeof(int));
 

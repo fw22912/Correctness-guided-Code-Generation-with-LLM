@@ -25,9 +25,9 @@ int maximizeTarget(char * answerKey, char targetChar, int k){
     return result;
 }
 
-// Use sliding window approach + two pointers.
-// Runtime: O(n)
-// Space: O(1)
+
+
+
 int maxConsecutiveAnswers(char * answerKey, int k){
     return max(maximizeTarget(answerKey, 'T', k), maximizeTarget(answerKey, 'F', k));
 }

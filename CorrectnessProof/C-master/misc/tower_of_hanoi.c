@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-// Function for Tower of Hanoi algorithm
+
 void hanoi(int noOfDisks, char where, char to, char extra)
 {
     if (noOfDisks != 0)
@@ -16,7 +16,7 @@ int main(void)
 {
     int noOfDisks;
 
-    // Asks the number of disks in the tower
+    
     printf("Number of disks: \n");
     scanf("%d", &noOfDisks);
 

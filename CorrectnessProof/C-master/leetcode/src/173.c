@@ -1,11 +1,4 @@
-/**
- * Definition for a binary tree node.
- * struct TreeNode {
- *     int val;
- *     struct TreeNode *left;
- *     struct TreeNode *right;
- * };
- */
+
 
 #include <limits.h>
 
@@ -52,7 +45,7 @@ BSTIterator *bSTIteratorCreate(struct TreeNode *root)
     return obj;
 }
 
-/** @return the next smallest number */
+
 int bSTIteratorNext(BSTIterator *obj)
 {
     int NextValue = obj->values[obj->CurrentIndex];
@@ -60,7 +53,7 @@ int bSTIteratorNext(BSTIterator *obj)
     return NextValue;
 }
 
-/** @return whether we have a next smallest number */
+
 bool bSTIteratorHasNext(BSTIterator *obj)
 {
     if (!obj->NumberOfNodes)

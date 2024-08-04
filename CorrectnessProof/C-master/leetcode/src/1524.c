@@ -1,6 +1,6 @@
-// Counting whole summ. evens sums number and odd summs number.
-// Runtime: O(n),
-// Space: O(1)
+
+
+
 int numOfSubarrays(int* arr, int arrSize){
     int result = 0;
     int curSumm = 0;

@@ -1,13 +1,13 @@
-////////////////////////////////////////////////////////////////////////////////
-// INCLUDES
+
+
 #include "include.h";
 
-////////////////////////////////////////////////////////////////////////////////
-// GLOBAL VARIABLES
+
+
 int count;
 
-////////////////////////////////////////////////////////////////////////////////
-// MAIN ENTRY POINT
+
+
 
 int main(int argc, char const *argv[])
 {
@@ -23,9 +23,7 @@ void create()
     tail = NULL;
 }
 
-/**
- * Puts an item into the Queue.
- */
+
 void enque(int x)
 {
     if (head == NULL)
@@ -44,9 +42,7 @@ void enque(int x)
     }
 }
 
-/**
- * Takes the next item from the Queue.
- */
+
 int deque()
 {
     int returnData = 0;
@@ -67,7 +63,5 @@ int deque()
     return returnData;
 }
 
-/**
- * Returns the size of the Queue.
- */
+
 int size() { return count; }

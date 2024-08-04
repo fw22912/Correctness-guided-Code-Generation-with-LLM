@@ -1,12 +1,4 @@
-/**
- * \file
- * \brief [Problem 23](https://projecteuler.net/problem=23) solution -
- * optimization using look-up array
- * \author [Krishna Vedala](https://github.com/kvedala)
- *
- * Optimization applied - compute & store abundant numbers once
- * into a look-up array.
- */
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
@@ -14,20 +6,10 @@
 #include <omp.h>
 #endif
 
-/**
- * This is the global array to be used to store a flag to identify
- * if a particular number is abundant (1) or not (0).
- * Using a whole byte to store a binary info would be redundant.
- * We will use each byte to represent 8 numbers by relying on bits.
- * This saves memory required by 1/8
- */
+
 char *abundant_flags = NULL;
 
-/**
- * \returns -1 if N is deficient
- * \returns 1 if N is abundant
- * \returns 0 if N is perfect
- */
+
 char get_perfect_number(unsigned long N)
 {
     unsigned long sum = 1;
@@ -53,24 +35,20 @@ char get_perfect_number(unsigned long N)
     return ret;
 }
 
-/**
- * Is the given number an abundant number (1) or not (0)
- */
+
 char is_abundant(unsigned long N)
 {
-    // return abundant_flags[N >> 3] & (1 << N % 8) ? 1 : 0;
+    
     return abundant_flags[N >> 3] & (1 << (N & 7))
                ? 1
-               : 0; /* optimized modulo operation */
+               : 0; 
 }
 
-/**
- * Find the next abundant number after N and not including N
- */
+
 unsigned long get_next_abundant(unsigned long N)
 {
     unsigned long i;
-    /* keep checking successive numbers till an abundant number is found */
+    
     for (i = N + 1; !is_abundant(i); ++i)
     {
         ;
@@ -78,18 +56,10 @@ unsigned long get_next_abundant(unsigned long N)
     return i;
 }
 
-/**
- * check if a given number can be represented as a sum
- * of two abundant numbers.
- * \returns 1 - if yes
- * \returns 0 - if not
- */
+
 char is_sum_of_abundant(unsigned long N)
 {
-    /* optimized logic:
-     * i + j = N   where both i and j should be abundant
-     * hence we can simply check for j = N - i as we loop through i
-     */
+    
     for (unsigned long i = get_next_abundant(1); i <= (N >> 1);
          i = get_next_abundant(i))
     {
@@ -104,10 +74,10 @@ char is_sum_of_abundant(unsigned long N)
     return 0;
 }
 
-/** Main function */
+
 int main(int argc, char **argv)
 {
-    long MAX_N = 28123; /* Limit of numbers to check */
+    long MAX_N = 28123; 
 
     unsigned long sum = 0;
     if (argc == 2)
@@ -115,9 +85,7 @@ int main(int argc, char **argv)
         MAX_N = strtoul(argv[1], NULL, 10);
     }
 
-    /* byte array to store flags to identify abundant numbers
-     * the flags are identified by bits
-     */
+    
     abundant_flags = (char *)calloc(MAX_N >> 3, 1);
     if (!abundant_flags)
     {
@@ -134,7 +102,7 @@ int main(int argc, char **argv)
 
     clock_t start_time = clock();
 
-    /* Loop to set abundant flags */
+    
     long N;
 #ifdef _OPENMP
 #pragma omp for schedule(runtime)
@@ -144,15 +112,15 @@ int main(int argc, char **argv)
         char ret = get_perfect_number(N);
         if (ret == 1)
         {
-            // int byte_offset = N % 8, index = N >> 3;
+            
             int byte_offset = N & 7, index = N >> 3;
 #ifdef _OPENMP
 #pragma omp critical
 #endif
             abundant_flags[index] |= ret << byte_offset;
         }
-        // if (i % 100 == 0)
-        //     printf("... %5lu: %8lu\r", i, sum);
+        
+        
     }
 
     clock_t end_time = clock();
@@ -169,9 +137,9 @@ int main(int argc, char **argv)
         clock_t start_time1 = clock();
         if (!is_sum_of_abundant(i))
         {
-            // #ifdef _OPENMP
-            // #pragma omp critical
-            // #endif
+            
+            
+            
             sum += i;
         }
         clock_t end_time1 = clock();

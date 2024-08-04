@@ -1,71 +1,32 @@
-/**
- * @file k_means_clustering.c
- * @brief K Means Clustering Algorithm implemented
- * @details
- * This file has K Means algorithm implemmented
- * It prints test output in eps format
- *
- * Note:
- * Though the code for clustering works for all the
- * 2D data points and can be extended for any size vector
- * by making the required changes, but note that
- * the output method i.e. printEPS is only good for
- * polar data points i.e. in a circle and both test
- * use the same.
- * @author [Lakhan Nad](https://github.com/Lakhan-Nad)
- */
 
-#define _USE_MATH_DEFINES /* required for MS Visual C */
-#include <float.h>        /* DBL_MAX, DBL_MIN */
-#include <math.h>         /* PI, sin, cos */
-#include <stdio.h>        /* printf */
-#include <stdlib.h>       /* rand */
-#include <string.h>       /* memset */
-#include <time.h>         /* time */
 
-/*!
- * @addtogroup machine_learning Machine Learning Algorithms
- * @{
- * @addtogroup k_means K-Means Clustering Algorithm
- * @{
- */
+#define _USE_MATH_DEFINES 
+#include <float.h>        
+#include <math.h>         
+#include <stdio.h>        
+#include <stdlib.h>       
+#include <string.h>       
+#include <time.h>         
 
-/*! @struct observation
- *  a class to store points in 2d plane
- *  the name observation is used to denote
- *  a random point in plane
- */
+
+
+
 typedef struct observation
 {
-    double x;  /**< abscissa of 2D data point */
-    double y;  /**< ordinate of 2D data point */
-    int group; /**< the group no in which this observation would go */
+    double x;  
+    double y;  
+    int group; 
 } observation;
 
-/*! @struct cluster
- *  this class stores the coordinates
- *  of centroid of all the points
- *  in that cluster it also
- *  stores the count of observations
- *  belonging to this cluster
- */
+
 typedef struct cluster
 {
-    double x;     /**< abscissa centroid of this cluster */
-    double y;     /**< ordinate of centroid of this cluster */
-    size_t count; /**< count of observations present in this cluster */
+    double x;     
+    double y;     
+    size_t count; 
 } cluster;
 
-/*!
- * Returns the index of centroid nearest to
- * given observation
- *
- * @param o  observation
- * @param clusters  array of cluster having centroids coordinates
- * @param k  size of clusters array
- *
- * @returns the index of nearest centroid for given observation
- */
+
 int calculateNearst(observation* o, cluster clusters[], int k)
 {
     double minD = DBL_MAX;
@@ -74,7 +35,7 @@ int calculateNearst(observation* o, cluster clusters[], int k)
     int i = 0;
     for (; i < k; i++)
     {
-        /* Calculate Squared Distance*/
+        
         dist = (clusters[i].x - o->x) * (clusters[i].x - o->x) +
                (clusters[i].y - o->y) * (clusters[i].y - o->y);
         if (dist < minD)
@@ -86,14 +47,7 @@ int calculateNearst(observation* o, cluster clusters[], int k)
     return index;
 }
 
-/*!
- * Calculate centoid and assign it to the cluster variable
- *
- * @param observations  an array of observations whose centroid is calculated
- * @param size  size of the observations array
- * @param centroid  a reference to cluster object to store information of
- * centroid
- */
+
 void calculateCentroid(observation observations[], size_t size,
                        cluster* centroid)
 {
@@ -111,36 +65,13 @@ void calculateCentroid(observation observations[], size_t size,
     centroid->y /= centroid->count;
 }
 
-/*!
- *    --K Means Algorithm--
- * 1. Assign each observation to one of k groups
- *    creating a random initial clustering
- * 2. Find the centroid of observations for each
- *    cluster to form new centroids
- * 3. Find the centroid which is nearest for each
- *    observation among the calculated centroids
- * 4. Assign the observation to its nearest centroid
- *    to create a new clustering.
- * 5. Repeat step 2,3,4 until there is no change
- *    the current clustering and is same as last
- *    clustering.
- *
- * @param observations  an array of observations to cluster
- * @param size  size of observations array
- * @param k  no of clusters to be made
- *
- * @returns pointer to cluster object
- */
+
 cluster* kMeans(observation observations[], size_t size, int k)
 {
     cluster* clusters = NULL;
     if (k <= 1)
     {
-        /*
-        If we have to cluster them only in one group
-        then calculate centroid of observations and
-        that will be a ingle cluster
-        */
+        
         clusters = (cluster*)malloc(sizeof(cluster));
         memset(clusters, 0, sizeof(cluster));
         calculateCentroid(observations, size, clusters);
@@ -149,7 +80,7 @@ cluster* kMeans(observation observations[], size_t size, int k)
     {
         clusters = malloc(sizeof(cluster) * k);
         memset(clusters, 0, k * sizeof(cluster));
-        /* STEP 1 */
+        
         for (size_t j = 0; j < size; j++)
         {
             observations[j].group = rand() % k;
@@ -157,18 +88,18 @@ cluster* kMeans(observation observations[], size_t size, int k)
         size_t changed = 0;
         size_t minAcceptedError =
             size /
-            10000;  // Do until 99.99 percent points are in correct cluster
+            10000;  
         int t = 0;
         do
         {
-            /* Initialize clusters */
+            
             for (int i = 0; i < k; i++)
             {
                 clusters[i].x = 0;
                 clusters[i].y = 0;
                 clusters[i].count = 0;
             }
-            /* STEP 2*/
+            
             for (size_t j = 0; j < size; j++)
             {
                 t = observations[j].group;
@@ -181,8 +112,8 @@ cluster* kMeans(observation observations[], size_t size, int k)
                 clusters[i].x /= clusters[i].count;
                 clusters[i].y /= clusters[i].count;
             }
-            /* STEP 3 and 4 */
-            changed = 0;  // this variable stores change in clustering
+            
+            changed = 0;  
             for (size_t j = 0; j < size; j++)
             {
                 t = calculateNearst(observations + j, clusters, k);
@@ -192,14 +123,12 @@ cluster* kMeans(observation observations[], size_t size, int k)
                     observations[j].group = t;
                 }
             }
-        } while (changed > minAcceptedError);  // Keep on grouping until we have
-                                               // got almost best clustering
+        } while (changed > minAcceptedError);  
+                                               
     }
     else
     {
-        /* If no of clusters is more than observations
-           each observation can be its own cluster
-        */
+        
         clusters = (cluster*)malloc(sizeof(cluster) * k);
         memset(clusters, 0, k * sizeof(cluster));
         for (int j = 0; j < size; j++)
@@ -213,27 +142,9 @@ cluster* kMeans(observation observations[], size_t size, int k)
     return clusters;
 }
 
-/**
- * @}
- * @}
- */
 
-/*!
- * A function to print observations and clusters
- * The code is taken from
- * http://rosettacode.org/wiki/K-means%2B%2B_clustering.
- * Even the K Means code is also inspired from it
- *
- * @note To print in a file use pipeline operator
- * ```sh
- * ./k_means_clustering > image.eps
- * ```
- *
- * @param observations  observations array
- * @param len  size of observation array
- * @param cent  clusters centroid's array
- * @param k  size of cent array
- */
+
+
 void printEPS(observation pts[], size_t len, cluster cent[], int k)
 {
     int W = 400, H = 400;
@@ -303,21 +214,11 @@ void printEPS(observation pts[], size_t len, cluster cent[], int k)
     }
     printf("\n%%%%EOF");
 
-    // free accquired memory
+    
     free(colors);
 }
 
-/*!
- * A function to test the kMeans function
- * Generates 100000 points in a circle of
- * radius 20.0 with center at (0,0)
- * and cluster them into 5 clusters
- *
- * <img alt="Output for 100000 points divided in 5 clusters" src=
- * "https://raw.githubusercontent.com/TheAlgorithms/C/docs/images/machine_learning/k_means_clustering/kMeansTest1.png"
- * width="400px" heiggt="400px">
- * @returns None
- */
+
 static void test()
 {
     size_t size = 100000L;
@@ -334,25 +235,15 @@ static void test()
         observations[i].x = radius * cos(ang);
         observations[i].y = radius * sin(ang);
     }
-    int k = 5;  // No of clusters
+    int k = 5;  
     cluster* clusters = kMeans(observations, size, k);
     printEPS(observations, size, clusters, k);
-    // Free the accquired memory
+    
     free(observations);
     free(clusters);
 }
 
-/*!
- * A function to test the kMeans function
- * Generates 1000000 points in a circle of
- * radius 20.0 with center at (0,0)
- * and cluster them into 11 clusters
- *
- * <img alt="Output for 1000000 points divided in 11 clusters" src=
- * "https://raw.githubusercontent.com/TheAlgorithms/C/docs/images/machine_learning/k_means_clustering/kMeansTest2.png"
- * width="400px" heiggt="400px">
- * @returns None
- */
+
 void test2()
 {
     size_t size = 1000000L;
@@ -369,22 +260,19 @@ void test2()
         observations[i].x = radius * cos(ang);
         observations[i].y = radius * sin(ang);
     }
-    int k = 11;  // No of clusters
+    int k = 11;  
     cluster* clusters = kMeans(observations, size, k);
     printEPS(observations, size, clusters, k);
-    // Free the accquired memory
+    
     free(observations);
     free(clusters);
 }
 
-/*!
- * This function calls the test
- * function
- */
+
 int main()
 {
     srand(time(NULL));
     test();
-    /* test2(); */
+    
     return 0;
 }

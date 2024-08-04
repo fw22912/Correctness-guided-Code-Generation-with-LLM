@@ -1,4 +1,4 @@
-#include <stdlib.h> // for qsort()
+#include <stdlib.h> 
 
 int cmp(const void* a, const void* b) {
     const int *A = a, *B = b;

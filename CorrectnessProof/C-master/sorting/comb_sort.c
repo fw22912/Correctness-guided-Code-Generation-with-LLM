@@ -1,16 +1,16 @@
 #include <stdio.h>
 #include <stdlib.h>
-#define SHRINK 1.3  // suggested shrink factor value
+#define SHRINK 1.3  
 
 void sort(int *numbers, int size)
 {
     int gap = size;
-    while (gap > 1)  // gap = 1 means that the array is sorted
+    while (gap > 1)  
     {
         gap = gap / SHRINK;
         int i = 0;
         while ((i + gap) < size)
-        {  // similiar to the Shell Sort
+        {  
             if (numbers[i] > numbers[i + gap])
             {
                 int tmp = numbers[i];

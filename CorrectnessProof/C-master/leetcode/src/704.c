@@ -20,7 +20,7 @@ int search(int *nums, int numsSize, int target)
     return -1;
 }
 
-/* Another solution: Using bsearch() */
+
 int cmpint(const void *a, const void *b) { return *(int *)a - *(int *)b; }
 
 int search(int *nums, int numsSize, int target)

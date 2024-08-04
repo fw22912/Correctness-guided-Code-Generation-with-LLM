@@ -1,19 +1,9 @@
-/**
- * \file
- * \brief [Problem 15](https://projecteuler.net/problem=15) solution
- * \author [Krishna Vedala](https://github.com/kvedala)
- */
+
 #include <stdint.h>
 #include <stdio.h>
 #include <stdlib.h>
 
-/**
- * At every node, there are 2 possible ways to move -> down or right.
- * Since it is a square grid, there are in all, 2N steps with N down
- * and N right options, without preference for order.
- * Hence, the path can be be traced in N out of 2N number of ways.
- * This is the same as binomial coeeficient.
- */
+
 unsigned long long number_of_paths(int N)
 {
     unsigned long long path = 1;
@@ -26,7 +16,7 @@ unsigned long long number_of_paths(int N)
     return path;
 }
 
-/** Main function */
+
 int main(int argc, char **argv)
 {
     int N = 20;

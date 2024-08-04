@@ -3,9 +3,9 @@ int compare(const int* i, const int* j)
     return *i - *j;
 }
 
-// Sorting.
-// Runtime: O(n*log(n))
-// Space: O(n)
+
+
+
 int maximumBags(int* capacity, int capacitySize, int* rocks, int rocksSize, int additionalRocks) {
     int* capacityLeft = malloc(capacitySize * sizeof(int));
     for (int i = 0; i < capacitySize; i++) {

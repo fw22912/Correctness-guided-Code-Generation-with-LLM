@@ -1,22 +1,9 @@
-/**
- * @addtogroup hash Hash algorithms
- * @{
- * @file hash_crc32.c
- * @author [Christian Bender](https://github.com/christianbender)
- * @brief 32-bit [CRC
- * hash](https://en.wikipedia.org/wiki/Cyclic_redundancy_check#CRC-32_algorithm)
- * algorithm
- */
+
 #include <assert.h>
 #include <inttypes.h>
 #include <stdio.h>
 
-/**
- * @brief 32-bit CRC algorithm implementation
- *
- * @param s NULL terminated ASCII string to hash
- * @return 32-bit hash result
- */
+
 uint32_t crc32(const char* s)
 {
     uint32_t crc = 0xffffffff;
@@ -35,10 +22,7 @@ uint32_t crc32(const char* s)
     return crc ^ 0xffffffff;
 }
 
-/**
- * @brief Test function for ::crc32
- * \returns None
- */
+
 void test_crc32()
 {
     assert(crc32("Hello World") == 1243066710);
@@ -48,9 +32,9 @@ void test_crc32()
     printf("Tests passed\n");
 }
 
-/** @} */
 
-/** Main function */
+
+
 int main()
 {
     test_crc32();

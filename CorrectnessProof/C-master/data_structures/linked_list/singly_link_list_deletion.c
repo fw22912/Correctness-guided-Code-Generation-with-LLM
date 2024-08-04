@@ -1,8 +1,4 @@
-/*Includes structure for a node which can be use to make new nodes of the Linked
-  List. It is assumed that the data in nodes will be an integer, though function
-  can be modified according to the data type, easily. deleteNode deletes a node
-  when passed with a key of the node.
-*/
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <assert.h>
@@ -12,14 +8,14 @@ struct node
     struct node *link;
 };
 struct node *start = NULL;
-//////////////////////////////////////////////////////////////////
-struct node *createnode() // function to create node
+
+struct node *createnode() 
 {
     struct node *t;
     t = (struct node *)malloc(sizeof(struct node));
     return (t);
 }
-//////////////////////////////////////////////////////////////////
+
 int insert(int pos, int d)
 {
     struct node *new;
@@ -60,8 +56,8 @@ int insert(int pos, int d)
     return 0;
         }
 
-///////////////////////////////////////////////////////////////////
-int deletion(int pos) // function to delete from any position
+
+int deletion(int pos) 
 {
     struct node *t;
     if (start == NULL)
@@ -89,15 +85,15 @@ int deletion(int pos) // function to delete from any position
                 }
                 prev = prev->link;
             }
-            struct node *n = prev->link; // n points to required node to be deleted
+            struct node *n = prev->link; 
             prev->link = n->link;
             free(n);
         }
     }
     return 0;
 }
-///////////////////////////////////////////////////////////////////
-void viewlist() // function to display values
+
+void viewlist() 
 {
     struct node *p;
     if (start == NULL)
@@ -114,7 +110,7 @@ void viewlist() // function to display values
         }
     }
 }
-//////////////////////////////////////////////////////////////////
+
 static void test()
 {
     insert(1, 39);
@@ -126,7 +122,7 @@ static void test()
 
     printf("Self-tests successfully passed!\n");
 }
-//////////////////////////////////////////////////////////////////
+
 int main()
 {
     int n = 0, pos = 0, p = 0, num = 0, c = 0;

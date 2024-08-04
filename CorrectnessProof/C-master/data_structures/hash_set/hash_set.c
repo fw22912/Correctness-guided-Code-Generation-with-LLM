@@ -28,7 +28,7 @@ unsigned put(hash_set_t *set, long long hash, void *value)
             return 0;
         }
 
-        // collision
+        
         resize(set);
 
         return put(set, hash, value);
@@ -58,7 +58,7 @@ void delete (hash_set_t *set, void *value)
     set->keys[retrieve_index_from_hash(hash(value), set->capacity)] = NULL;
 }
 
-// adler_32 hash
+
 long long hash(void *value)
 {
     char *str = value;

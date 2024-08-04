@@ -1,4 +1,4 @@
-/* 1st way: Using 2 pointers */
+
 int *sortedSquares(int *A, int ASize, int *returnSize)
 {
     int i, start = 0, end = ASize - 1;
@@ -20,7 +20,7 @@ int *sortedSquares(int *A, int ASize, int *returnSize)
     return res;
 }
 
-/* 2nd way: Using qsort */
+
 int cmpval(const void *a, const void *b) { return *(int *)a - *(int *)b; }
 
 int *sortedSquares(int *A, int ASize, int *returnSize)

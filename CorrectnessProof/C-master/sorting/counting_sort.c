@@ -1,9 +1,4 @@
-/*
-  > Counting sort is a sorting technique based on keys between a specific range.
-  > integer sorting algorithm
-  > Worst-case performance O(n+k)
-  > Stabilized by prefix sum array
-*/
+
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -28,13 +23,13 @@ int main()
     int *b = (int *)malloc((l + 1) * sizeof(int));
     memset(b, 0, (l + 1) * sizeof(b[0]));
 
-    for (i = 0; i < n; i++) b[a[i]]++;  // hashing number to array index
+    for (i = 0; i < n; i++) b[a[i]]++;  
 
-    for (i = 0; i < (l + 1); i++)  // unstable , stabilized by prefix sum array
+    for (i = 0; i < (l + 1); i++)  
     {
         if (b[i] > 0)
         {
-            while (b[i] != 0)  // for case when number exists more than once
+            while (b[i] != 0)  
             {
                 printf("%d ", i);
                 b[i]--;

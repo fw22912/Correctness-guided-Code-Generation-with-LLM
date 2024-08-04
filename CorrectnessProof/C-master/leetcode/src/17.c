@@ -1,16 +1,7 @@
-/**
- * Letter Combinations of a Phone Number problem
- * The algorithm determines the final size of the return array (combs) and allocates
- * corresponding letter for each element, assuming that the return array is alphabetically sorted.
- * It does so by running two loops for each letter:
- *   - the first loop determines the starting positions of the sequence of subsequent letter positions
- *   - the second loop determines the length of each subsequent sequence for each letter
- * The size and space complexity are both O("size of final array"), as even though there are 4 loops,
- * each element in the final array is accessed only once.
- */
 
-#include <stdlib.h> // for the malloc() function
-#include <string.h> // for the strlen() function
+
+#include <stdlib.h> 
+#include <string.h> 
 
 char *get_letters(char digit) {
     switch (digit) {
@@ -60,12 +51,12 @@ char **letterCombinations(char *digits, int *return_size) {
 
     k_tot = 1;
     l_tot = (*return_size);
-    for (i = 0; i < digits_size; i++) { // loop accross digits
+    for (i = 0; i < digits_size; i++) { 
         cp = get_letters(digits[i]);
         l_tot /= strlen(cp);
-        for (j = 0; j < strlen(cp); j++) { // loop accross letters of the digit
-            for (k = 0; k < k_tot; k++) { // loop across the subset starting positions for each letter
-                for (l = 0; l < l_tot; l++) { // loop accross each subset positions for each letter
+        for (j = 0; j < strlen(cp); j++) { 
+            for (k = 0; k < k_tot; k++) { 
+                for (l = 0; l < l_tot; l++) { 
                     ind = k * l_tot * strlen(cp) + l + l_tot * j;
                     combs[ind][i] = cp[j];
                 }

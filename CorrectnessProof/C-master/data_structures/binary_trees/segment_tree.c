@@ -1,57 +1,26 @@
-/**
- * @file segment_tree.c
- * @brief segment trees with only point updates
- * @details
- * This code implements segment trees. Segment trees are general structures
- * which allow range based queries in a given array in logN time.
- * Segment tree with point updates allow update of single element in the array
- * in logN time.
- * [Learn more about segment trees
- * here](https://codeforces.com/blog/entry/18051)
- * @author [Lakhan Nad](https://github.com/Lakhan-Nad)
- */
 
-#include <assert.h>   /* for assert */
-#include <inttypes.h> /* for int32 */
-#include <stdio.h>    /* for scanf printf */
-#include <stdlib.h>   /* for malloc, free */
-#include <string.h>   /* for memcpy, memset */
 
-/**
- * Function that combines two data to generate a new one
- * The name of function might be misleading actually combine here signifies the
- * fact that in segment trees we take partial result from two ranges and using
- * partial results we derive the result for joint range of those two ranges
- * For Example: array(1,2,3,4,5,6) sum of range [0,2] = 6
- * and sum of range [3,5] = 15 the combined sum of two range is 6+15=21
- * @note The function is same to binary function in Discrete Mathematics
- * @param a pointer to first data
- * @param b pointer to second data
- * @param result pointer to memory location where result of combining a and b is
- * to be stored
- */
+#include <assert.h>   
+#include <inttypes.h> 
+#include <stdio.h>    
+#include <stdlib.h>   
+#include <string.h>   
+
+
 typedef void (*combine_function)(const void *a, const void *b, void *result);
 
-/**
- * This structures holds all the data that is required by a segment tree
- */
+
 typedef struct segment_tree
 {
-    void *root;       /**< the root of formed segment tree */
-    void *identity;   /**< identity element for combine function */
-    size_t elem_size; /**< size in bytes of each data element */
-    size_t length;    /**< total size of array which segment tree represents*/
-    /** the function to be used to combine two node's
-     * data to form parent's data
-     */
+    void *root;       
+    void *identity;   
+    size_t elem_size; 
+    size_t length;    
+    
     combine_function combine;
 } segment_tree;
 
-/**
- * Builds a Segment tree
- * It is assumed that leaves of tree already contains data.
- * @param tree pointer to segment tree to be build
- */
+
 void segment_tree_build(segment_tree *tree)
 {
     size_t elem_size = tree->elem_size;
@@ -67,15 +36,7 @@ void segment_tree_build(segment_tree *tree)
     }
 }
 
-/**
- * For point updates
- * This function updates the element at given index and also updates segment
- * tree accordingly
- *
- * @param tree pointer to segment tree
- * @param index the index whose element is to be updated (0 based indexing used)
- * @param val pointer to value that is to be replaced at given index
- */
+
 void segment_tree_update(segment_tree *tree, size_t index, void *val)
 {
     size_t elem_size = tree->elem_size;
@@ -92,16 +53,7 @@ void segment_tree_update(segment_tree *tree, size_t index, void *val)
     }
 }
 
-/**
- * Query the segment tree
- * This function helps in range query of segment tree
- * This function assumes that the given range is valid
- * Performs the query in range [l,r]
- * @param tree pointer to segment tree
- * @param l the start of range
- * @param r the end of range
- * @param res the pointer to memory where result of query is stored
- */
+
 void segment_tree_query(segment_tree *tree, long long l, long long r, void *res)
 {
     size_t elem_size = tree->elem_size;
@@ -125,18 +77,7 @@ void segment_tree_query(segment_tree *tree, long long l, long long r, void *res)
     }
 }
 
-/**
- * Initializes Segment Tree
- * Accquires memory for segment tree
- * and fill the leaves of segment tree with data from array
- * @param arr the array data upon which segment tree is build
- * @param elem_size size of each element in segment tree
- * @param len total no of elements in array
- * @param identity the identity element for combine_function
- * @param func the combine_function used to build segment tree
- *
- * @returns pointer to sgement tree build
- */
+
 segment_tree *segment_tree_init(void *arr, size_t elem_size, size_t len,
                                 void *identity, combine_function func)
 {
@@ -147,31 +88,21 @@ segment_tree *segment_tree_init(void *arr, size_t elem_size, size_t len,
     tree->root = malloc(sizeof(char) * elem_size * (2 * len - 1));
     tree->identity = malloc(sizeof(char) * elem_size);
     char *ptr = (char *)tree->root;
-    memset(ptr, 0, (len - 1) * elem_size);  // Initializing memory
+    memset(ptr, 0, (len - 1) * elem_size);  
     ptr = ptr + (len - 1) * elem_size;
-    memcpy(ptr, arr, elem_size * len);  // copy the leaf nodes i.e. array data
-    memcpy(tree->identity, identity, elem_size);  // copy identity element
+    memcpy(ptr, arr, elem_size * len);  
+    memcpy(tree->identity, identity, elem_size);  
     return tree;
 }
 
-/**
- * Dispose Segment Tree
- * Frees all heap memory accquired by segment tree
- * @param tree pointer to segment tree
- */
+
 void segment_tree_dispose(segment_tree *tree)
 {
     free(tree->root);
     free(tree->identity);
 }
 
-/**
- * Prints the data in segment tree
- * The data should be of int type
- * A utility to print segment tree
- * with data type of int
- * @param tree pointer to segment tree
- */
+
 void segment_tree_print_int(segment_tree *tree)
 {
     char *base = (char *)tree->root;
@@ -183,25 +114,13 @@ void segment_tree_print_int(segment_tree *tree)
     printf("\n");
 }
 
-/**
- * Utility for test
- * A function compare for minimum between two integers
- * This function is used as combine_function for RMQ
- * @param a pointer to integer a
- * @param b pointer to integer b
- * @param c pointer where minimum of a and b is tored as result
- */
+
 void minimum(const void *a, const void *b, void *c)
 {
     *(int *)c = *(int *)a < *(int *)b ? *(int *)a : *(int *)b;
 }
 
-/**
- * Test RMQ
- * Testing Segment tree using
- * Range Minimum Queries
- * @returns void
- */
+
 static void test()
 {
     int32_t arr[10] = {1, 0, 3, 5, 7, 2, 11, 6, -2, 8};
@@ -224,10 +143,7 @@ static void test()
     segment_tree_dispose(tree);
 }
 
-/**
- * @brief Main Function
- * @returns 0 on exit
- */
+
 int main()
 {
     test();

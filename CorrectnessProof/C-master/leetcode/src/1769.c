@@ -1,12 +1,10 @@
-/**
- * Note: The returned array must be malloced, assume caller calls free().
- */
 
-// Count one's from right. Each step from right side decrease for one for each 1's and increase from left:
-// 1001*0101  -> left: 4 + 1, right: 2 + 4
-// 10010*101  -> left: (4+1) + (1+1), right: (2-1) + (4-1)
-// Runtime: O(n)
-// Space: O(1)
+
+
+
+
+
+
 int* minOperations(char* boxes, int* returnSize){
     int leftOnes = 0;
     int leftCommonDistance = 0;

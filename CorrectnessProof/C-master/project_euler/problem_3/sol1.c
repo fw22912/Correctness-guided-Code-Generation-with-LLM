@@ -1,17 +1,8 @@
-/**
- * \file
- * \brief [Problem 3](https://projecteuler.net/problem=3) solution
- *
- * Problem:
- *
- * The prime factors of 13195 are 5,7,13 and 29. What is the largest prime
- * factor of a given number N? e.g. for 10, largest prime factor = 5. For 17,
- * largest prime factor = 17.
- */
+
 #include <math.h>
 #include <stdio.h>
 
-/** Check if the given number is prime */
+
 char isprime(int no)
 {
     int sq;
@@ -35,7 +26,7 @@ char isprime(int no)
     return 1;
 }
 
-/** Main function */
+
 int main()
 {
     int maxNumber = 0;

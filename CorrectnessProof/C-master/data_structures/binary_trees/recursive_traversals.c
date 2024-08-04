@@ -1,13 +1,10 @@
-/* Includes the functions for Recursive Traversals
-   of a Binary Tree. It is assumed that nodes and
-   tree have been created as per create_node.c
- */
+
 
 #include <stdio.h>
 
 void inOrderTraversal(struct node *node)
 {
-    if (node == NULL)  // if tree is empty
+    if (node == NULL)  
         return;
 
     inOrderTraversal(node->leftNode);
@@ -17,7 +14,7 @@ void inOrderTraversal(struct node *node)
 
 void preOrderTraversal(struct node *node)
 {
-    if (node == NULL)  // if tree is empty
+    if (node == NULL)  
         return;
 
     printf("\t%d\t", node->data);
@@ -27,7 +24,7 @@ void preOrderTraversal(struct node *node)
 
 void postOrderTraversal(struct node *node)
 {
-    if (node == NULL)  // if tree is empty
+    if (node == NULL)  
         return;
 
     postOrderTraversal(node->leftNode);
@@ -37,9 +34,7 @@ void postOrderTraversal(struct node *node)
 
 int main(void)
 {
-    /* traversals can be done by simply invoking the
-       function with a pointer to the root node.
-    */
+    
 
     return 0;
 }

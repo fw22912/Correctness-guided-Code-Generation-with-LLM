@@ -1,6 +1,6 @@
-// Dynamic Programming
-// Runtime: O(n)
-// Space: O(1)
+
+
+
 int tribonacci(int n){
     int t0 = 0;
     int t1 = 1;

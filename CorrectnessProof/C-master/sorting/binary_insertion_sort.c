@@ -1,10 +1,8 @@
-/* Sorting of array list using binary insertion sort
- * Using binary search to find the proper location for
- * inserting the selected item at each iteration. */
+
 #include <stdio.h>
 #include <stdlib.h>
 
-/*Displays the array, passed to this method*/
+
 void display(int *arr, int n)
 {
     int i;
@@ -27,10 +25,7 @@ int binarySearch(int *arr, int key, int low, int high)
     else
         return binarySearch(arr, key, mid + 1, high);
 }
-/*This is where the sorting of the array takes place
- arr[] --- Array to be sorted
- size --- Array Size
- */
+
 void insertionSort(int *arr, int size)
 {
     int i, j, key, index;
@@ -38,16 +33,15 @@ void insertionSort(int *arr, int size)
     {
         j = i - 1;
         key = arr[i];
-        /* Use binrary search to find exact key's index */
+        
         index = binarySearch(arr, key, 0, j);
-        /* Move all elements greater than key from [index...j]
-         * to one position */
+        
         while (j >= index)
         {
             arr[j + 1] = arr[j];
             j = j - 1;
         }
-        /* Insert key value in right place */
+        
         arr[j + 1] = key;
     }
 }
@@ -56,7 +50,7 @@ int main(int argc, const char *argv[])
 {
     int n;
     printf("Enter size of array:\n");
-    scanf("%d", &n);  // E.g. 8
+    scanf("%d", &n);  
 
     printf("Enter the elements of the array\n");
     int i;

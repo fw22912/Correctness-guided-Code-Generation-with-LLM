@@ -1,12 +1,7 @@
-/**
- * \file
- * \brief [Problem 9](https://projecteuler.net/problem=9) solution - A naive
- * implementation
- * \author [Krishna Vedala](https://github.com/kvedala)
- */
+
 #include <stdio.h>
 
-/** Main function */
+
 int main(void)
 {
     for (int a = 1; a < 300; a++)

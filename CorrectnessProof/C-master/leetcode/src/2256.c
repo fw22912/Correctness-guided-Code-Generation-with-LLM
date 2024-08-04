@@ -1,9 +1,9 @@
-// Prefix sum.
-// - Calculate whole nums sum.
-// - Calculate currIndex sum.
-// - Compare averages
-// Runtime: O(n)
-// Space: O(1)
+
+
+
+
+
+
 
 int minimumAverageDifference(int* nums, int numsSize){
     long numsSum = 0;
@@ -12,7 +12,7 @@ int minimumAverageDifference(int* nums, int numsSize){
     }
     
     long currSum = 0;
-    long minAverage = 9223372036854775807; // Long max
+    long minAverage = 9223372036854775807; 
     int minIndex = 0;
     
     for (int i = 0; i < numsSize; i++){

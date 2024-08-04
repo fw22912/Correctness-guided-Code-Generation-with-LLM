@@ -1,6 +1,4 @@
-/**
- * Note: The returned array must be malloced, assume caller calls free().
- */
+
 int find(int* sets, int index){
     while (sets[index] != index){
         index = sets[index];
@@ -16,9 +14,9 @@ void unionSet(int* sets, int i1, int i2){
     sets[i1Parent] = i2Parent;
 }
 
-// Union find
-// Runtime: O(n)
-// Space: O(n)
+
+
+
 int* findRedundantConnection(int** edges, int edgesSize, int* edgesColSize, int* returnSize){
     int setsSize = edgesSize + 1;
     int* sets = malloc(setsSize * sizeof(int));

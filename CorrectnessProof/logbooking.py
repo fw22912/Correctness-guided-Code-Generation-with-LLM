@@ -19,7 +19,8 @@ def python_print():
         print(row)
 
 
-def clear_workbook(filename):
+def clear_workbook():
+    filename = 'script_log.xlsx'
     # Load the workbook
     workbook = openpyxl.load_workbook(filename)
 
@@ -72,11 +73,7 @@ def log_to_excel(program_name, iterations, duration, status):
     # Save the workbook
     wb.save(filename)
 
-def repeated_file_paths(args):
-    count = 0
-    for i in args.file_paths:
-        main(args.file_paths[count])
-        count += 1
+
 
 def stats():
     filename = 'script_log.xlsx'
@@ -123,12 +120,31 @@ def main(program_name):
         log_to_excel(program_name, '0', duration, f"Failure: {str(e)}")
 
 
+def process_file(file_path):
+    # Your main processing function for each file
+    main(file_path)
 
+def find_c_files(directory):
+    c_files = []
+    for root, _, files in os.walk(directory):
+        for file in files:
+            if file.endswith('.c'):
+                c_files.append(os.path.join(root, file))
+    return c_files
+
+def repeated_file_paths(args):
+    for path in args.file_paths:
+        if os.path.isfile(path) and path.endswith('.c'):
+            process_file(path)
+        elif os.path.isdir(path):
+            c_files = find_c_files(path)
+            for c_file in c_files:
+                process_file(c_file)
 
 if __name__ == "__main__":
-    #clear_workbook('script_log.xlsx')
+    #clear_workbook()
     parser = argparse.ArgumentParser()
-    parser.add_argument("file_paths", nargs='+', type=str, help="List of file paths to process")
+    parser.add_argument("file_paths", nargs='+', type=str, help="List of file paths or directories to process")
     args = parser.parse_args()
     repeated_file_paths(args)
     stats()

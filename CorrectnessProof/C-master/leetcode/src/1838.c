@@ -5,9 +5,9 @@ int compare(const int* i, const int* j)
     return *i - *j;
 }
 
-// Sort + prefix sum + windows sliding
-// Runtime: O(n*log(n))
-// Space: O(n)
+
+
+
 int maxFrequency(int* nums, int numsSize, int k){
     qsort(nums, numsSize, sizeof (int), (int(*) (const void*, const void*)) compare);
     long* prefixSum = malloc(numsSize * sizeof(long));

@@ -18,7 +18,7 @@ struct T
     elem_t *head;
 };
 
-/* Initial stack */
+
 T Stack_init(void)
 {
     T stack;
@@ -28,21 +28,21 @@ T Stack_init(void)
     return stack;
 }
 
-/* Check empty stack*/
+
 int Stack_empty(T stack)
 {
     assert(stack);
     return stack->count == 0;
 }
 
-/* Return size of the stack */
+
 int Stack_size(T stack)
 {
     assert(stack);
     return stack->count;
 }
 
-/* Push an element into the stack */
+
 void Stack_push(T stack, void *val)
 {
     elem_t *t;
@@ -55,7 +55,7 @@ void Stack_push(T stack, void *val)
     stack->count++;
 }
 
-/* Pop an element out of the stack */
+
 void *Stack_pop(T stack)
 {
     void *val;
@@ -71,7 +71,7 @@ void *Stack_pop(T stack)
     return val;
 }
 
-/* Print all elements in the stack */
+
 void Stack_print(Stack_T stack)
 {
     assert(stack);

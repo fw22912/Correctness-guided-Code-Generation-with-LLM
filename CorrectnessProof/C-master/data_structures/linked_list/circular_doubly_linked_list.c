@@ -1,41 +1,18 @@
-/**
- * @file
- *
- * @details
- * Circular [Doubly Linked
- * List](https://en.wikipedia.org/wiki/Doubly_linked_list) combines the
- * properties of a doubly linked list and a circular linked list in which two
- * consecutive elements are linked or connected by the previous. Next, the
- * pointer and the last node point to the first node via the next pointer, and
- * the first node points to the last node via the previous pointer.
- *
- * In this implementation, functions to insert at the head, insert at the last
- * index, delete the first node, delete the last node, display list, and get
- * list size functions are coded.
- *
- * @author [Sahil Kandhare](https://github.com/SahilK-027)
- *
- */
 
-#include <assert.h>  /// to verify assumptions made by the program and print a diagnostic message if this assumption is false.
-#include <inttypes.h>  /// to provide a set of integer types with universally consistent definitions that are operating system-independent
-#include <stdio.h>     /// for IO operations
-#include <stdlib.h>  /// for including functions involving memory allocation such as `malloc`
 
-/**
- * @brief Circular Doubly linked list struct
- */
+#include <assert.h>  
+#include <inttypes.h>  
+#include <stdio.h>     
+#include <stdlib.h>  
+
+
 typedef struct node
 {
-    struct node *prev, *next;  ///< List pointers
-    uint64_t value;            ///< Data stored on each node
+    struct node *prev, *next;  
+    uint64_t value;            
 } ListNode;
 
-/**
- * @brief Create a list node
- * @param data                  the data that the node initialises with
- * @return ListNode*            pointer to the newly created list node
- */
+
 ListNode *create_node(uint64_t data)
 {
     ListNode *new_list = (ListNode *)malloc(sizeof(ListNode));
@@ -45,13 +22,7 @@ ListNode *create_node(uint64_t data)
     return new_list;
 }
 
-/**
- * @brief Insert a node at start of list
- * @param head                  start pointer of list
- * @param data                  the data that the node initialises with
- * @return ListNode*            pointer to the newly created list node
- * inserted at the head
- */
+
 ListNode *insert_at_head(ListNode *head, uint64_t data)
 {
     if (head == NULL)
@@ -73,14 +44,7 @@ ListNode *insert_at_head(ListNode *head, uint64_t data)
     }
 }
 
-/**
- * @brief Insert a node at end of list
- *
- * @param head                  start pointer of list
- * @param data                  the data that the node initialises with
- * @return ListNode*            pointer to the newly added list node that was
- * inserted at the head of list.
- */
+
 ListNode *insert_at_tail(ListNode *head, uint64_t data)
 {
     if (head == NULL)
@@ -102,12 +66,7 @@ ListNode *insert_at_tail(ListNode *head, uint64_t data)
     }
 }
 
-/**
- * @brief  Function for deletion of the first node in list
- *
- * @param head              start pointer of list
- * @return ListNode*        pointer to the list node after deleting first node
- */
+
 ListNode *delete_from_head(ListNode *head)
 {
     if (head == NULL)
@@ -131,12 +90,7 @@ ListNode *delete_from_head(ListNode *head)
     return head;
 }
 
-/**
- * @brief Function for deletion of the last node in list
- *
- * @param head              start pointer of list
- * @return ListNode*        pointer to the list node after deleting first node
- */
+
 ListNode *delete_from_tail(ListNode *head)
 {
     if (head == NULL)
@@ -160,12 +114,7 @@ ListNode *delete_from_tail(ListNode *head)
     return head;
 }
 
-/**
- * @brief The function that will return current size of list
- *
- * @param head      start pointer of list
- * @return int      size of list
- */
+
 int getsize(ListNode *head)
 {
     if (!head)
@@ -182,11 +131,7 @@ int getsize(ListNode *head)
     return size;
 }
 
-/**
- * @brief   Display list function
- * @param   head   start pointer of list
- * @returns void
- */
+
 
 void display_list(ListNode *head)
 {
@@ -212,14 +157,7 @@ void display_list(ListNode *head)
     printf("\n");
 }
 
-/**
- * @brief access the list by index
- * @param list pointer to the target list
- * @param index access location
- * @returns the value at the specified index,
- *          wrapping around if the index is larger than the size of the target
- * list
- */
+
 uint64_t get(ListNode *list, const int index)
 {
     if (list == NULL || index < 0)
@@ -234,10 +172,7 @@ uint64_t get(ListNode *list, const int index)
     return temp->value;
 }
 
-/**
- * @brief Self-test implementations
- * @returns void
- */
+
 static void test()
 {
     ListNode *testList = NULL;
@@ -278,27 +213,24 @@ static void test()
         display_list(testList);
         testList = delete_from_tail(testList);
         assert(getsize(testList) == i);
-        // If list is not empty, assert that accessing the just removed element
-        // will wrap around to the list head
+        
+        
         if (testList != NULL)
         {
             assert(get(testList, i) == testList->value);
         }
         else
         {
-            // If the list is empty, assert that the elements were removed after
-            // the correct number of iterations
+            
+            
             assert(i == 0);
         }
     }
 }
 
-/**
- * @brief Main function
- * @returns 0 on exit
- */
+
 int main()
 {
-    test();  // run self-test implementations
+    test();  
     return 0;
 }

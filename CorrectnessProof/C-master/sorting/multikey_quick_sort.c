@@ -1,18 +1,11 @@
-/* demo.c -- Implementations of multikey quicksort and ternary search trees
-   Usage
-    demo                  Run basic timings on /usr/dict/words
-    demo <file>           Run basic timings on <file>
-    demo <file> trysearch Interactive pm and nn search on <file>
-    demo <file> nncost    Run near neigbhor expers on <file>
-    demo <file> pmcost    Interactive partial match expers on <file>
- */
+
 
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 #include <time.h>
 
-// MULTIKEY QUICKSORT
+
 
 #ifndef min
 #define min(a, b) ((a) <= (b) ? (a) : (b))
@@ -86,7 +79,7 @@ void ssort1(char *x[], int n, int depth)
 
 void ssort1main(char *x[], int n) { ssort1(x, n, 0); }
 
-// ssort2 -- Faster Version of Multikey Quicksort
+
 
 void vecswap2(char **a, char **b, int n)
 {
@@ -124,7 +117,7 @@ void inssort(char **a, int n, int d)
     for (pi = a + 1; --n > 0; pi++)
         for (pj = pi; pj > a; pj--)
         {
-            // Inline strcmp: break if *(pj-1) <= *pj
+            
             for (s = *(pj - 1) + d, t = *pj + d; *s == *t && *s != 0; s++, t++)
                 ;
             if (*s <= *t)
@@ -146,7 +139,7 @@ void ssort2(char **a, int n, int depth)
     pm = a + (n / 2);
     pn = a + (n - 1);
     if (n > 30)
-    {  // On big arrays, pseudomedian of 9
+    {  
         d = (n / 8);
         pl = med3(pl, pl + d, pl + 2 * d);
         pm = med3(pm - d, pm, pm + d);
@@ -198,7 +191,7 @@ void ssort2(char **a, int n, int depth)
 
 void ssort2main(char **a, int n) { ssort2(a, n, 0); }
 
-// TERNARY SEARCH TREE ALGS
+
 
 typedef struct tnode *Tptr;
 typedef struct tnode
@@ -208,7 +201,7 @@ typedef struct tnode
 } Tnode;
 Tptr root;
 
-// Insert 1 -- Simple Insertion Algorithm
+
 
 Tptr insert1(Tptr p, char *s)
 {
@@ -241,7 +234,7 @@ void cleanup1(Tptr p)
     }
 }
 
-// Insert 2 -- Faster version of Insert
+
 
 #define BUFSIZE 1000
 Tptr buffer;
@@ -272,7 +265,7 @@ void insert2(char *s)
     }
     for (;;)
     {
-        // *p = (Tptr) malloc(sizeof(Tnode));
+        
         if (bufn-- == 0)
         {
             buffer = (Tptr)malloc(BUFSIZE * sizeof(Tnode));
@@ -298,7 +291,7 @@ void cleanup2()
     for (i = 0; i < freen; i++) free(freearr[i]);
 }
 
-// Search Algorithms
+
 
 int search1(char *s)
 {
@@ -343,7 +336,7 @@ int search2(char *s)
     return 0;
 }
 
-// Advanced searching: Partial match, near words
+
 
 int nodecnt;
 char *srcharr[100000];
