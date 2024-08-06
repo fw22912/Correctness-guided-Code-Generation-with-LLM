@@ -1,6 +1,10 @@
 # Correctness-guided-Code-Generation-with-LLM
 A respository for 'Correctness-guided Code Generation with LLM' from University of Bristol.
 
+Here is the link to the benchmark of using counter examples:
+[Link text](https://uob-my.sharepoint.com/:x:/r/personal/pj21274_bristol_ac_uk/Documents/script_log.xlsx?d=w8508a5048bd74a209c2914e4530b52a6&csf=1&web=1&e=sNltSW)
+
+
 Bellow is an example of a prompt used for Gemini to generate code based on counter examples:
 ```text
      # Preamble
