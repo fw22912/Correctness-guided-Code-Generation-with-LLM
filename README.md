@@ -1,8 +1,8 @@
 # Correctness-guided-Code-Generation-with-LLM
 A respository for 'Correctness-guided Code Generation with LLM' from University of Bristol.
-```text
-Bellow is an example of a prompt used for Gemini to generate code based on counter examples:
 
+Bellow is an example of a prompt used for Gemini to generate code based on counter examples:
+```text
      # Preamble
     You are given the original C code file, previous output, and the counter examples. Your job is to improve the 
     incorrect methods only based on the provided counter examples.
@@ -488,4 +488,3 @@ When x has input value 0 under the data type integer
     - Do not remove any code from the original code you have received.
     - Ensure that all libraries needed, including <assert.h> and <stdbool.h>, are declared at the beginning of the code.
 
-'''
