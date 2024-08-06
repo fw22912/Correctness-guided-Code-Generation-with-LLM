@@ -2,7 +2,7 @@
 A respository for 'Correctness-guided Code Generation with LLM' from University of Bristol.
 ```text
 Bellow is an example of a prompt used for Gemini to generate code based on counter examples:
-```text
+
      # Preamble
     You are given the original C code file, previous output, and the counter examples. Your job is to improve the 
     incorrect methods only based on the provided counter examples.
