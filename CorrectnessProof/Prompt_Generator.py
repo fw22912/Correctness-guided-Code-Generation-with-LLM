@@ -7,6 +7,8 @@ def read_c_file(file_path):
         content = file.read()
     return content
 
+
+
 def create_prompt(file_content):
     query_code = file_content
 

@@ -37,7 +37,7 @@ def clear_workbook():
 
 
 
-def log_to_excel(program_name, iterations, duration, status):
+def log_to_excel(program_name, iterations, duration, status, error_msg):
     filename = 'script_log.xlsx'
 
     # Check if the file exists
@@ -61,14 +61,14 @@ def log_to_excel(program_name, iterations, duration, status):
             row[1].value = iterations
             row[2].value = duration
             row[3].value = status
-            row[4].value = "Task completed successfully" if status == "success" else "Task failed"
+            row[4].value = error_msg
             found = True
             break
 
     # If not found, append a new row
     if not found:
-        ws.append([program_name, iterations, duration, status,
-                   "Task completed successfully" if status == "success" else "Task failed"])
+
+        ws.append([program_name, iterations, duration, status, error_msg])
 
     # Save the workbook
     wb.save(filename)
@@ -87,7 +87,8 @@ def stats():
 
     # Iterate through all sheets
     for row in ws.iter_rows( values_only=True):
-        total_count += 1
+        if row[3] != 'error':
+            total_count += 1
         if row[3] == 'success':
             success_count += 1
 
@@ -103,21 +104,17 @@ def main(program_name):
     start_time = time.time()
 
     try:
-        iterations, status = m.main(program_name)
 
-
+        iterations, status, error_message = m.main(program_name)
 
         duration = time.time() - start_time
-        log_to_excel(program_name, iterations, duration, status)
+        log_to_excel(program_name, iterations, duration, status, error_message)
 
         python_print()
 
-
-
-
     except Exception as e:
         duration = time.time() - start_time
-        log_to_excel(program_name, '0', duration, f"Failure: {str(e)}")
+        log_to_excel(program_name, '0', duration, "error", 'logbook error:'+str(e))
 
 
 def process_file(file_path):
@@ -142,7 +139,7 @@ def repeated_file_paths(args):
                 process_file(c_file)
 
 if __name__ == "__main__":
-    #clear_workbook()
+    clear_workbook()
     parser = argparse.ArgumentParser()
     parser.add_argument("file_paths", nargs='+', type=str, help="List of file paths or directories to process")
     args = parser.parse_args()

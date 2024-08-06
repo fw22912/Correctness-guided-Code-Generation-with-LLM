@@ -22,6 +22,7 @@ def generate_content(prompt):
     return response.text
 
 
+
 def clean_code(response_text):
     #print(response_text)
     cleaned_text = response_text.replace('```c', '').replace('```', '').strip()
@@ -57,7 +58,7 @@ def generate_harness_file(harness_functions, original_file_path):
             f.write(func)
 
 
-def main(prompt, file_path, method_list):
+def main(prompt):
 
     # prompt = generate_prompt(file_path)
     print("Running Gemini-Flask...")
@@ -66,8 +67,5 @@ def main(prompt, file_path, method_list):
     cleaned_text = clean_code(response_text)
 
     harness_function = extract_harness(response_text)
-
-    #generate_file(cleaned_text, file_path) ######### Remove
-    #generate_harness_file(harness_function, file_path) #####3 remove
 
     return cleaned_text, harness_function

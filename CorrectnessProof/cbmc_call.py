@@ -49,6 +49,7 @@ def run_cbmc(file_path, total_code_with_harnesses, harness_method_list): ## this
         return cbmc_json_string
     except TimeoutError as e:
         print('cbmc took too long to run')
+        return 'cbmc took too long to run'
 
 
 
@@ -100,13 +101,16 @@ def main(file_path, total_code_with_harnesses, harness_method_list): #expects th
 
     cbmc_output = run_cbmc(file_path, total_code_with_harnesses, harness_method_list) ###############under the current assumption that the json string isn't too big
 
-    reiteration = cbmc_verification_status(cbmc_output)
+    if cbmc_output == 'cbmc took too long to run':
+        return False, '', 'cbmc took too long to run'
 
+    else:
+        reiteration = cbmc_verification_status(cbmc_output)
 
-    method_list = [item.replace('proof_harness_', '') for item in harness_method_list]
-    #print(method_list)
+        method_list = [item.replace('proof_harness_', '') for item in harness_method_list]
 
-    parse = cbmc_parsing.main(cbmc_output, total_code_with_harnesses, method_list)
+        counter_examples = cbmc_parsing.main(cbmc_output, total_code_with_harnesses, method_list)
 
+        current_error_reason_for_failure = cbmc_parsing.reason(cbmc_output)
 
-    return reiteration, parse
+        return reiteration, counter_examples, current_error_reason_for_failure

@@ -1,5 +1,6 @@
 import os
 
+
 def create_prompt(file_content, prev_output, counterexamples):
     prompt = f"""
      # Preamble

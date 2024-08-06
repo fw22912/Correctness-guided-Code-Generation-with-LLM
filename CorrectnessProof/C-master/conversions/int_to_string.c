@@ -44,7 +44,7 @@ static void test()
 
         
         
-        snprintf(str1, MAX_SIZE, "%o", value);  /
+        snprintf(str1, MAX_SIZE, "%o", value);  
         assert(strcmp(str1, int_to_string(value, str2, 8)) == 0);
         snprintf(str1, MAX_SIZE, "%d", value); 
         assert(strcmp(str1, int_to_string(value, str2, 10)) == 0);

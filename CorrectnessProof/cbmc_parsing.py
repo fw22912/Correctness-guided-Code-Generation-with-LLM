@@ -119,6 +119,7 @@ def extract_variable_values(data, variables):
                             if lhs in variables and lhs not in found_variables:  # finds the first call valued instance of the variable
 
                                 found_variables[lhs] = item['value']
+                                #print(found_variables)
 
                 example['property'] = property_
                 example['description'] = description
@@ -148,66 +149,78 @@ def parse_syntax_error(data):
             return entry
 
     return None
+
+def reason(cbmc_output):
+    data = json.loads(cbmc_output)
+    for entry in data:
+        message = entry.get('messageText','')
+        if 'syntax error' in message:
+            return 'syntax'
+        elif 'file not found' in message:
+            return 'file not found'
+        elif 'result' in entry:
+            return 'assertion'
+def parse_results(total_code_with_harnesses, method_list, data, counter_examples_str):
+
+    str_of_proof_harness = extract_harnesses(total_code_with_harnesses, method_list)  # str of proof harnesses c code relevant to correct method
+    # print(str_of_proof_harness)
+    input_list = []
+    for method in method_list:
+        var = extract_variables(str_of_proof_harness, method)
+        input_list = list(
+            set(input_list + var))  # the input variables across all functions that we want to parse from the trace
+    values_from_trace = (extract_variable_values(data, input_list))
+    number_of_failures = 0
+
+    for example in values_from_trace:
+
+        if example["status"] == "SUCCESS":
+            None
+            # print('On line ' + example['sourceLocation']['line'] + ', the test for \''+ example['description'] + '\' passed all tests successfully')
+
+        elif example['status'] == 'FAILURE':
+
+            number_of_failures += 1
+            counter_examples_str += 'Counter example ' + str(number_of_failures) + ':\n'
+            count = 0
+            line = example['sourceLocation']['line']
+            function = example['sourceLocation']['function']
+            # print('On line ' + example['sourceLocation']['line'] + ', the test for \'' + example['description'] + '\' FAILED ')
+            counter_examples_str += 'On line ' + line + ' in function \'' + function + '\',the test for \'' + example[
+                'description'] + '\' failed under the following counter example: \n'
+            # return counter_examples_str ### this is just for the first line prompt
+            for key, value in example['counter_example'].items():
+
+                if count == 0:
+                    beg = 'When '
+                else:
+                    beg = 'and '
+                count += 1
+                data = value['data']
+                name = value['name']
+                counter_examples_str = counter_examples_str + beg + key + ' has input value ' + data + ' under the data type ' + name + '\n'
+
+            counter_examples_str += '\n'
+    print('No. of failures:', number_of_failures)
+    return counter_examples_str
+
 def main(cbmc_output, total_code_with_harnesses, method_list):
 
     data = json.loads(cbmc_output) #converts string into json data
     counter_examples_str = ''
-
+    #print(data)
     for entry in data:
         message = entry.get("messageText", "")
         if "syntax error" in message:
-            syntax = ['syntax']
+
             line = entry['sourceLocation']['line']
             function = entry['sourceLocation']['function']
             syntax_str = ('A '+ message +' was found on line ' + line + ' in function \'' + function + '\'')
-            # syntax_location = [line,function]
-            # syntax.append(syntax_location)
-            # print(syntax)
-            #print(entry)
-
             return syntax_str
 
-        if 'result' in entry:
-            counter_examples = ['result']
+        elif 'result' in entry:
 
-            str_of_proof_harness = extract_harnesses(total_code_with_harnesses, method_list) #str of proof harnesses c code relevant to correct method
-            #print(str_of_proof_harness)
-            input_list = []
-            for method in method_list:
-
-                var = extract_variables(str_of_proof_harness, method)
-                input_list = list(set(input_list + var)) #the input variables across all functions that we want to parse from the trace
-            values_from_trace = (extract_variable_values(data, input_list))
-            number_of_failures = 0
-            for example in values_from_trace:
-
-                if example["status"] == "SUCCESS":
-                    None
-                    #print('On line ' + example['sourceLocation']['line'] + ', the test for \''+ example['description'] + '\' passed all tests successfully')
-
-                elif example['status'] == 'FAILURE':
-                    number_of_failures += 1
-                    counter_examples_str += 'Counter example ' + str(number_of_failures) + ':\n'
-                    count = 0
-                    line = example['sourceLocation']['line']
-                    function = example['sourceLocation']['function']
-                    #print('On line ' + example['sourceLocation']['line'] + ', the test for \'' + example['description'] + '\' FAILED ')
-                    counter_examples_str += 'On line ' + line + ' in function \'' + function + '\',the test for \'' + example[
-                        'description'] + '\' failed '#under the following counter example: \n'
-                    #return counter_examples_str ### this is just for the first line prompt
-                    for key, value in example['counter_example'].items():
-
-                        if count == 0:
-                            beg = 'When '
-                        else:
-                            beg = 'and '
-                        count += 1
-                        data = value['data']
-                        name = value['name']
-                        counter_examples_str = counter_examples_str + beg + key +' has input value ' + data + ' under the data type ' + name + '\n'
-
-                    counter_examples_str += '\n'
-            print('No. of failures:', number_of_failures)
+            counter_examples_str = parse_results(total_code_with_harnesses, method_list, data, counter_examples_str)
             return counter_examples_str
 
 
